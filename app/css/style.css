@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
 .loader {
   background: none repeat scroll 0 0 #ffffff;
   bottom: 0;
@@ -21,3 +22,151 @@
     left: 50%;
     top: 50%;
     position: absolute; }
+
+body {
+  font-family: Roboto, sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 35px;
+  font-family: Roboto ,Helvetica, Arial, sans-serif;
+  letter-spacing: 1px; }
+
+.top-navigation {
+  padding: 35px; }
+  .top-navigation a {
+    color: white; }
+  .top-navigation .navbar-nav li {
+    margin-right: 35px; }
+
+.navbar-custom {
+  padding: 20px 0;
+  font-size: 20px; }
+  .navbar-custom a.navbar-brand {
+    color: white;
+    font-size: 34px;
+    font-family: "Courgette", sans-serif;
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear; }
+  .navbar-custom .nav-custom ul li {
+    display: inline-block; }
+  .navbar-custom .nav-custom ul a {
+    color: white;
+    -webkit-transition: .5s all ease-out;
+    -moz-transition: .5s all ease-out;
+    transition: .5s all ease-out; }
+  .navbar-custom .nav-custom ul li.active a {
+    border-bottom: 3px solid black;
+    color: black; }
+  .navbar-custom .nav-custom ul a:hover {
+    color: black; }
+  .navbar-custom .nav-custom .navbar-header .navbar-toggle {
+    padding: 4px 20px;
+    color: white; }
+
+.top-nav-collapse {
+  padding: 5px;
+  background-color: rgba(248, 248, 248, 0.95); }
+  .top-nav-collapse a {
+    color: black !important; }
+  .top-nav-collapse i {
+    color: black; }
+
+@media (min-width: 767px) {
+  .navbar {
+    -webkit-transition: all .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out, padding .5s ease-in-out;
+    transition: all .5s ease-in-out, padding .5s ease-in-out; } }
+
+.home-section {
+  background-color: red;
+  color: white;
+  padding: 200px 0; }
+  .home-section .home-title {
+    font-weight: bold;
+    font-size: 80px; }
+  .home-section .home-sub-title {
+    font-weight: 300;
+    margin-bottom: 85px; }
+  .home-section .home-proxies-btn {
+    padding: 30px 70px;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px; }
+  .home-section .home-img {
+    width: 100%;
+    position: absolute;
+    bottom: -300px;
+    left: 0%;
+    right: 0; }
+
+.compare-section {
+  color: white;
+  padding: 100px;
+  background-color: #16142b; }
+  .compare-section .container {
+    margin-top: 270px; }
+  .compare-section .section-title {
+    font-weight: bold; }
+
+.benefits-section {
+  padding: 100px 200px; }
+  .benefits-section .section-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 90px; }
+  .benefits-section .benefit-item {
+    padding: 50px; }
+    .benefits-section .benefit-item i {
+      color: red;
+      font-size: 60px;
+      margin-bottom: 20px; }
+
+.solution-section {
+  padding: 100px 200px;
+  color: white;
+  background-color: #16142b; }
+  .solution-section .section-title {
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 50px; }
+  .solution-section .section-text {
+    font-weight: 300;
+    font-size: 23px; }
+  .solution-section .section-btn {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 50px;
+    margin-top: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; }
+  .solution-section #accordion .card {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 0; }
+    .solution-section #accordion .card .card-header button {
+      color: black; }
+      .solution-section #accordion .card .card-header button i {
+        font-size: 25px;
+        margin-right: 20px; }
+    .solution-section #accordion .card .card-body {
+      padding: 35px;
+      border: 0;
+      background-color: #3d3b57;
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px; }

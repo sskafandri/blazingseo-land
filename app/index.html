@@ -10,6 +10,14 @@
     <!--reset css-->
     <link rel="stylesheet" href="libs/reset-css/reset.css">
 
+    <!--bootstrap-->
+    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+
+    <!--custom styles-->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,19 +30,19 @@
 
 
 <!--NAVIGATION START-->
-<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-custom fixed-top invisible" role="navigation">
     <div class="container">
 
         <div class="navbar-header nav">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <button type="button" class="navbar-toggle invisible" data-toggle="collapse" data-target=".navbar-main-collapse">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </button>
-            <a href="#home" class="navbar-brand page-scroll">Startup</a>
+            <a href="#home" class="navbar-brand">Blazing SEO</a>
         </div>
 
 
-        <div class="collapse navbar-collapse navbar-right navbar-main-collapse nav-custom">
-            <ul id="top-menu" class="nav navbar-nav">
+        <div class=" navbar-collapse navbar-right navbar-main-collapse nav-custom">
+            <ul id="top-menu" class="">
 
                 <!-- Hidden li included to remove active class from about link when scrolled up past about section
                   <li class="hidden">
@@ -50,7 +58,231 @@
         </div>
     </div>
 </nav>
+
+<nav id="top-navigation" class="top-navigation navbar navbar-expand-lg fixed-top">
+
+    <div class="container">
+        <a href="#" class="navbar-brand">
+            Blazing Seo
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Careers</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <button class="btn btn-light my-2 my-sm-0 text-danger" type="submit">Join Us</button>
+
+            <button class="btn btn-outline-danger my-2 my-sm-0 text-light" type="submit">Login</button>
+
+
+        </div>
+    </div>
+</nav>
 <!--NAVIGATION END-->
+
+<!--home section start-->
+<section id="home" class="home-section" >
+    <div class="container text-center">
+        <h1 class="home-title">Private Proxies with Power</h1>
+        <h3 class="home-sub-title text-uppercase">Unlimited threads and bandwidth</h3>
+        <a href="#" class="home-proxies-btn btn-light text-danger ">Get Blazing Proxies Now</a>
+        <div class="home-img" ><img src="img/home.png" alt="home" width="800px"></div>
+
+    </div>
+</section>
+
+<!--compare section start-->
+<section id="compare" class="compare-section">
+
+    <div class=" container text-center">
+
+        <h2 class="section-title">How do We Compare?</h2>
+
+        <img src="img/compare.png" alt="compare">
+
+    </div>
+</section>
+<!--compare section end-->
+
+<!--benefits section start-->
+<section id="benefits" class="benefits-section">
+    <div class="pl-5 pr-5 container-fluid text-center">
+    <h3 class="section-title">From Unlimited Bandwidth to HTTP/HTTPS/SOCKS Support, Our Proxies Do it all!</h3>
+
+        <div class="row">
+            <div class="col-3 benefit-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <h4 class="benefit-title">Speed</h4>
+                <p class="benefit-description">1 Gbps Unmetered Bandwidth. No more silly Limits, crank up the speed!</p>
+            </div>
+            <div class="col-3 benefit-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <h4 class="benefit-title">Speed</h4>
+                <p class="benefit-description">1 Gbps Unmetered Bandwidth. No more silly Limits, crank up the speed!</p>
+            </div>
+            <div class="col-3 benefit-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <h4 class="benefit-title">Speed</h4>
+                <p class="benefit-description">1 Gbps Unmetered Bandwidth. No more silly Limits, crank up the speed!</p>
+            </div>
+            <div class="col-3 benefit-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <h4 class="benefit-title">Speed</h4>
+                <p class="benefit-description">1 Gbps Unmetered Bandwidth. No more silly Limits, crank up the speed!</p>
+            </div>
+            <div class="col-3 benefit-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <h4 class="benefit-title">Speed</h4>
+                <p class="benefit-description">1 Gbps Unmetered Bandwidth. No more silly Limits, crank up the speed!</p>
+            </div>
+            <div class="col-3 benefit-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <h4 class="benefit-title">Speed</h4>
+                <p class="benefit-description">1 Gbps Unmetered Bandwidth. No more silly Limits, crank up the speed!</p>
+            </div>
+            <div class="col-3 benefit-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <h4 class="benefit-title">Speed</h4>
+                <p class="benefit-description">1 Gbps Unmetered Bandwidth. No more silly Limits, crank up the speed!</p>
+            </div>
+            <div class="col-3 benefit-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <h4 class="benefit-title">Speed</h4>
+                <p class="benefit-description">1 Gbps Unmetered Bandwidth. No more silly Limits, crank up the speed!</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!--benefits section end-->
+
+
+<!--solution section start-->
+<section id="solutions" class="solution-section">
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 mr-auto ml-auto">
+                <h2 class="section-title">Customized Solutions</h2>
+                <p class="section-text">Blazing SEO is proud to announce our latest product offering: Clean, Virgin, C Blocks!</p>
+
+                <a href="#" class="section-btn btn btn-light text-dark">Learn More</a>
+            </div>
+            <div class="col-sm-3 ml-auto mr-auto">
+
+                <div id="accordion">
+                    <div class="card">
+                        <div class="card-header" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class=" btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <i class="fab fa-cloudversify"></i>
+                                    Full C Class Subnet
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTwo">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <i class="fab fa-cloudversify"></i>
+                                    Virgin IPs
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingThree">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-server"></i>
+
+                                    Multiple ASN Setup
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    <i class="fas fa-server"></i>
+
+
+                                    Different datacenter locations
+                                </button>
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!--solution section end-->
+
+
+<section id="join-us" class="section-join text-center">
+
+    <h4 class="section title">
+        Join the 12,000+ Satisfied Users!
+    </h4>
+    <form action="">
+
+    </form>
+</section>
+
+
 
 
 <!--[if lt IE 9]>
@@ -65,5 +297,11 @@
 <script src="libs/jquery/dist/jquery.min.js"></script>
 <!--Preloader-->
 <script src="js/preloader/preloader.js"></script>
+<!--Bootstrap-->
+<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+<!--Custom scripts-->
+<script src="js/common.js"></script>
 </body>
 </html>
