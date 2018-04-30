@@ -1,1 +1,25 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+@font-face {
+  font-family: MetropolisRegular;
+  src: url("../fonts/metropolis/Metropolis-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MetropolisExtraBold;
+  src: url("../fonts/metropolis/Metropolis-ExtraBold.otf") format("opentype");
+}
+
+
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../fonts/metropolis/Metropolis-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MetropolisSemiBold;
+  src: url("../fonts/metropolis/Metropolis-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: MetropolisBlack;
+  src: url("../fonts/metropolis/Metropolis-Black.otf") format("opentype");
+}

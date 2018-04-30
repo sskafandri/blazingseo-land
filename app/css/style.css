@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i");
 .loader {
   background: none repeat scroll 0 0 #ffffff;
   bottom: 0;
@@ -23,8 +22,28 @@
     top: 50%;
     position: absolute; }
 
+@font-face {
+  font-family: MetropolisRegular;
+  src: url("../fonts/metropolis/Metropolis-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisExtraBold;
+  src: url("../fonts/metropolis/Metropolis-ExtraBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../fonts/metropolis/Metropolis-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisSemiBold;
+  src: url("../fonts/metropolis/Metropolis-SemiBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisBlack;
+  src: url("../fonts/metropolis/Metropolis-Black.otf") format("opentype"); }
+
 body {
-  font-family: Roboto, sans-serif; }
+  font-family: 'MetropolisRegular',Roboto, sans-serif; }
 
 h1,
 h2,
@@ -33,12 +52,22 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  font-family: Roboto ,Helvetica, Arial, sans-serif;
+  font-family: 'MetropolisExtraBold',Roboto ,Helvetica, Arial, sans-serif;
   letter-spacing: 1px; }
+
+.img-responsive {
+  width: 100%;
+  height: auto; }
 
 .top-navigation {
   padding: 35px; }
+  .top-navigation .nav-container {
+    padding: 0 20%; }
+  .top-navigation button {
+    font-family: MetropolisSemiBold;
+    width: 80px; }
   .top-navigation a {
+    font-family: MetropolisSemiBold;
     color: white; }
   .top-navigation .navbar-nav li {
     margin-right: 35px; }
@@ -76,28 +105,30 @@ h6 {
 
 .top-nav-collapse {
   padding: 5px;
-  background-color: rgba(248, 248, 248, 0.95); }
-  .top-nav-collapse a {
-    color: black !important; }
-  .top-nav-collapse i {
-    color: black; }
+  background-color: #ff1719;
+  -webkit-box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75); }
 
 @media (min-width: 767px) {
   .navbar {
+    height: 110px;
     -webkit-transition: all .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: all .5s ease-in-out, padding .5s ease-in-out;
     transition: all .5s ease-in-out, padding .5s ease-in-out; } }
 
 .home-section {
-  background-color: red;
+  background: url("../img/home-ellipse.png") no-repeat center, red;
+  -webkit-background-size: cover;
+  background-size: cover;
   color: white;
   padding: 200px 0; }
   .home-section .home-title {
     font-weight: bold;
     font-size: 80px; }
   .home-section .home-sub-title {
-    font-weight: 300;
-    margin-bottom: 85px; }
+    margin-bottom: 85px;
+    font-family: MetropolisRegular; }
   .home-section .home-proxies-btn {
     padding: 30px 70px;
     font-size: 30px;
@@ -107,15 +138,16 @@ h6 {
     border-radius: 50px; }
   .home-section .home-img {
     width: 100%;
+    height: auto;
     position: absolute;
-    bottom: -300px;
     left: 0%;
     right: 0; }
 
 .compare-section {
   color: white;
   padding: 100px;
-  background-color: #16142b; }
+  background: url("../img/compare-bg.png") no-repeat center center;
+  background-size: cover; }
   .compare-section .container {
     margin-top: 270px; }
   .compare-section .section-title {
@@ -127,8 +159,12 @@ h6 {
     font-size: 35px;
     font-weight: bold;
     margin-bottom: 90px; }
+  .benefits-section img {
+    margin-bottom: 40px; }
   .benefits-section .benefit-item {
     padding: 50px; }
+    .benefits-section .benefit-item .benefit-title {
+      font-family: MetropolisBold, sans-serif; }
     .benefits-section .benefit-item i {
       color: red;
       font-size: 60px;
@@ -137,8 +173,9 @@ h6 {
 .solution-section {
   padding: 100px 200px;
   color: white;
-  background-color: #16142b; }
+  background-color: #211f35; }
   .solution-section .section-title {
+    font-family: MetropolisBold;
     margin-top: 50px;
     font-weight: bold;
     font-size: 50px; }
@@ -153,20 +190,287 @@ h6 {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px; }
-  .solution-section #accordion .card {
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    border: 0; }
-    .solution-section #accordion .card .card-header button {
-      color: black; }
-      .solution-section #accordion .card .card-header button i {
-        font-size: 25px;
-        margin-right: 20px; }
-    .solution-section #accordion .card .card-body {
-      padding: 35px;
+  .solution-section #accordion {
+    font-family: MetropolisRegular; }
+    .solution-section #accordion .card {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      border: 0; }
+      .solution-section #accordion .card .card-header button {
+        font-family: MetropolisRegular; }
+      .solution-section #accordion .card .card-header button {
+        color: black; }
+        .solution-section #accordion .card .card-header button i {
+          font-size: 25px;
+          margin-right: 20px; }
+      .solution-section #accordion .card .card-body {
+        padding: 35px;
+        border: 0;
+        background-color: #171627;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px; }
+        .solution-section #accordion .card .card-body .learn-more-link {
+          display: block;
+          margin-top: 15px;
+          color: #16cee0;
+          font-weight: 700; }
+
+.location-section {
+  padding: 150px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0086c9+0,207cca+0,2989d8+50,229ed5+100 */
+  background: url("../img/Locations-bg.png") no-repeat, #229ed5;
+  background-size: contain;
+  position: relative;
+  color: white; }
+  .location-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .location-section .country-location {
+    color: black;
+    margin-top: 100px;
+    background-color: #fff;
+    border-radius: 5px; }
+    .location-section .country-location .item-header {
+      color: white;
+      font-family: MetropolisExtraBold, sans-serif;
+      padding: 20px 30px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 5px;
+      background-color: #75d701; }
+    .location-section .country-location .item-sub-header {
+      font-family: MetropolisBold, sans-serif;
+      padding: 20px 30px;
+      background-color: #56a902;
+      color: white; }
+    .location-section .country-location .item-body {
+      padding: 30px; }
+  .location-section .section-title {
+    font-family: MetropolisBold, sans-serif;
+    font-size: 35px; }
+  .location-section p {
+    font-size: 12px;
+    font-family: MetropolisSemiBold, sans-serif; }
+  .location-section ul {
+    margin-top: 20px;
+    width: 70%; }
+    .location-section ul li {
+      display: inline-block;
+      margin-top: 20px; }
+      .location-section ul li a {
+        color: black;
+        font-family: MetropolisSemiBold, sans-serif;
+        background-color: white;
+        padding: 10px 30px;
+        margin-right: 5px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px; }
+        .location-section ul li a.btn-more {
+          background-color: red;
+          color: white; }
+
+.join-section {
+  padding: 100px 0px;
+  color: white;
+  background-color: #005abb; }
+  .join-section .section-title {
+    font-family: MetropolisSemiBold, sans-serif; }
+  .join-section a:hover, .join-section a:visited, .join-section a:hover, .join-section a:link {
+    color: rgba(255, 255, 255, 0.6); }
+  .join-section .register {
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .join-section .field {
+    width: 100%;
+    height: 70px;
+    position: relative; }
+    .join-section .field input {
+      outline: none;
+      width: 100%;
+      border-radius: 35px;
+      height: 70px;
       border: 0;
-      background-color: #3d3b57;
-      border-bottom-left-radius: 7px;
-      border-bottom-right-radius: 7px; }
+      padding: 20px 0 0 40px;
+      font-size: 0;
+      background: #1566BB;
+      transition: background .3s ease;
+      color: #ffffff; }
+      .join-section .field input span {
+        color: red; }
+      .join-section .field input:focus {
+        font-size: 23px; }
+        .join-section .field input:focus::selection {
+          background: rgba(188, 232, 255, 0.5); }
+      .join-section .field input.active {
+        background: #1566BB;
+        font-size: 23px; }
+    .join-section .field input,
+    .join-section .field button {
+      position: absolute;
+      height: 70px; }
+    .join-section .field button {
+      background: rgba(0, 0, 0, 0.3);
+      background: white;
+      right: 0;
+      border: 0;
+      width: 50%;
+      border-radius: 35px;
+      font-size: 20px;
+      font-weight: bold;
+      color: red;
+      cursor: pointer;
+      transition: width .3s ease, background .3s ease, opacity .3s ease;
+      pointer-events: none; }
+      .join-section .field button.active {
+        font-weight: bold;
+        background: white;
+        opacity: 1;
+        pointer-events: auto; }
+        .join-section .field button.active:hover {
+          background: white; }
+      .join-section .field button.full {
+        width: 100%; }
+    .join-section .field input:focus + label {
+      font-size: 10px;
+      transform: translate(16px, 11px);
+      color: rgba(255, 255, 255, 0.7); }
+    .join-section .field label {
+      padding-left: 20px;
+      font-size: 20px;
+      font-family: "MetropolisRegular";
+      color: white;
+      position: absolute;
+      color: white;
+      transform: translate(16px, 20px);
+      transition: transform .3s ease, font-size .3s ease, color .3s .1s ease; }
+      .join-section .field label.active {
+        font-size: 20px;
+        transform: translate(16px, 11px);
+        color: rgba(255, 255, 255, 0.7); }
+    .join-section .field input:focus + label + button {
+      opacity: 1; }
+
+.pricing-section {
+  padding: 150px 100px; }
+  .pricing-section .section-title {
+    font-size: 40px; }
+  .pricing-section .btn-try-free {
+    background-color: #ff1315;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    color: white;
+    font-family: MetropolisBold, sans-serif;
+    font-size: 18px;
+    padding: 20px 20px;
+    margin-bottom: 30px; }
+  .pricing-section .price-nav {
+    padding: 0 30px; }
+  .pricing-section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px; }
+    .pricing-section ul li {
+      background-color: #f4f5f7;
+      border-radius: 10px;
+      display: inline-block;
+      padding: 10px 0; }
+      .pricing-section ul li a {
+        width: 100%;
+        padding: 30px 50px;
+        font-size: 20px;
+        font-family: MetropolisBold,sans-serif; }
+        .pricing-section ul li a img {
+          float: right; }
+  .pricing-section .prices {
+    margin-top: 30px; }
+    .pricing-section .prices .price {
+      min-height: 300px;
+      text-align: center;
+      background-color: #e5e6e8;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px; }
+      .pricing-section .prices .price .price-recommended {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 10px 0;
+        color: white;
+        font-family: MetropolisExtraBold, sans-serif;
+        background-color: blue;
+        margin-bottom: 20px; }
+      .pricing-section .prices .price .price-body {
+        padding: 50px 0; }
+      .pricing-section .prices .price .price-title {
+        color: #565656;
+        font-family: MetropolisExtraBold, sans-serif;
+        margin-bottom: 10px; }
+      .pricing-section .prices .price .price-sub-title {
+        color: #b4b5b6;
+        font-family: MetropolisBold, sans-serif; }
+      .pricing-section .prices .price .price-value {
+        display: block;
+        font-size: 50px;
+        font-family: MetropolisSemiBold,sans-serif; }
+      .pricing-section .prices .price .learn-more-link {
+        font-family: MetropolisBold, sans-serif;
+        padding: 5px 20px;
+        background-color: #ff1315;
+        color: white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px; }
+
+.support-section {
+  background-color: #064097;
+  color: white; }
+  .support-section .section-title {
+    margin-top: 100px;
+    font-family: MetropolisBlack, sans-serif;
+    font-size: 30px; }
+  .support-section .section-text {
+    font-family: MetropolisRegular, sans-serif;
+    font-size: 18px;
+    margin-bottom: 100px; }
+  .support-section .item-big {
+    width: 170px;
+    padding: 20px;
+    background-color: white;
+    color: red;
+    font-family: MetropolisExtraBold, sans-serif;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px; }
+  .support-section .item {
+    background-color: white;
+    font-family: MetropolisExtraBold, sans-serif;
+    font-size: 13px;
+    width: 150px;
+    border-radius: 5px;
+    color: black;
+    padding: 30px;
+    margin-right: 90px; }
+
+.footer-section {
+  padding: 150px 0;
+  background-color: #0b3068;
+  color: #5e89cc;
+  font-family: MetropolisRegular, sans-serif; }
+  .footer-section ul a {
+    font-family: MetropolisRegular, sans-serif; }
+  .footer-section ul a.menu-header {
+    font-family: MetropolisExtraBold, sans-serif;
+    color: white; }
+  .footer-section ul li {
+    margin-bottom: 30px; }
+  .footer-section .copyright {
+    font-family: MetropolisRegular, sans-serif;
+    margin-top: 70px;
+    color: white; }

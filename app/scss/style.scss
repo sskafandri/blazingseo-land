@@ -6,7 +6,7 @@ $lightGrey: rgba(248, 248, 248, 0.95);
 
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: 'MetropolisRegular',Roboto, sans-serif;
 }
 
 h1,
@@ -16,14 +16,30 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  font-family:  Roboto ,Helvetica, Arial, sans-serif;
+  font-family:  'MetropolisExtraBold',Roboto ,Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
 }
 
 .top-navigation{
   padding: 35px;
 
+  .nav-container{
+    padding: 0 20%;
+  }
+
+  button{
+    font-family: MetropolisSemiBold;
+
+    width: 80px;
+
+  }
   a{
+    font-family: MetropolisSemiBold;
     color: white;
   }
 
@@ -90,15 +106,18 @@ h6 {
 
 .top-nav-collapse {
   padding: 5px;
-  background-color: $lightGrey;
+  background-color: #ff1719;
+  -webkit-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
 
   // changing color of text and button when scrolling
   a {
-    color: black !important;
+    //color: black !important;
   }
 
   i {
-    color: black;
+    //color: black;
   }
 
 }
@@ -106,6 +125,8 @@ h6 {
 // media query for scrolling
 @media (min-width: 767px) {
   .navbar {
+    height: 110px;
+
     -webkit-transition: all .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: all .5s ease-in-out, padding .5s ease-in-out;
     transition: all .5s ease-in-out, padding .5s ease-in-out;
@@ -115,7 +136,10 @@ h6 {
 
 .home-section{
 
-  background-color: red;
+
+  background: url("../img/home-ellipse.png") no-repeat  center , red;
+  -webkit-background-size: cover;
+  background-size: cover;
   color: white;
 
   padding: 200px 0;
@@ -126,8 +150,8 @@ h6 {
   }
 
   .home-sub-title{
-    font-weight: 300;
     margin-bottom: 85px;
+    font-family: MetropolisRegular;
   }
   
   .home-proxies-btn{
@@ -142,17 +166,20 @@ h6 {
 
   .home-img{
     width: 100%;
+    height: auto;
     position: absolute;
-    bottom: -300px;
     left: 0%;
     right: 0;
   }
 }
 
 .compare-section{
+
   color: white;
   padding: 100px;
-  background-color: #16142b;
+  background: url("../img/compare-bg.png") no-repeat center center;
+  background-size: cover ;
+  //background-color: #16142b;
 
   .container{
     margin-top: 270px;
@@ -174,8 +201,16 @@ h6 {
     margin-bottom: 90px;
   }
 
+  img{
+    margin-bottom: 40px;
+  }
+
   .benefit-item{
     padding: 50px;
+
+    .benefit-title{
+      font-family: MetropolisBold, sans-serif;
+    }
 
     i{
       color: red;
@@ -189,9 +224,10 @@ h6 {
 .solution-section{
   padding: 100px 200px;
   color: white;
-  background-color: #16142b;
+  background-color: #211f35;
 
   .section-title{
+    font-family: MetropolisBold;
     margin-top: 50px;
     font-weight: bold;
     font-size: 50px;
@@ -214,6 +250,7 @@ h6 {
   }
 
   #accordion{
+    font-family: MetropolisRegular;
     .card{
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -222,6 +259,10 @@ h6 {
       border: 0;
 
       .card-header{
+        button{
+
+          font-family: MetropolisRegular;
+        }
 
         button{
           i{
@@ -237,13 +278,423 @@ h6 {
       .card-body{
         padding: 35px;
         border: 0;
-        background-color: #3d3b57;
+        background-color: #171627;
 
         border-bottom-left-radius: 7px;
         border-bottom-right-radius: 7px;
+
+        .learn-more-link{
+          display: block;
+          margin-top: 15px;
+          color: #16cee0;
+          font-weight: 700;
+        }
       }
 
 
     }
+  }
+}
+
+.location-section{
+  padding: 150px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0086c9+0,207cca+0,2989d8+50,229ed5+100 */
+  background:url("../img/Locations-bg.png") no-repeat ,#229ed5;
+  //-webkit-background-size: cover;
+  background-size: contain;
+  position: relative;
+  //overflow: hidden;
+  color: white;
+
+  img{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+  }
+
+  .country-location{
+    color: black;
+    margin-top: 100px;
+    background-color: #fff;
+
+    border-radius: 5px;
+
+    .item-header{
+      color: white;
+      font-family: MetropolisExtraBold, sans-serif;
+      padding: 20px 30px;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 5px;
+      background-color: #75d701;
+    }
+
+    .item-sub-header{
+      font-family: MetropolisBold, sans-serif;
+      padding: 20px 30px;
+      background-color: #56a902;
+      color: white;
+    }
+
+    .item-body{
+      padding: 30px;
+    }
+
+  }
+
+  .section-title{
+    font-family: MetropolisBold, sans-serif;
+    font-size: 35px;
+  }
+
+  p{
+    font-size: 12px;
+    font-family: MetropolisSemiBold, sans-serif;
+  }
+
+  ul{
+    margin-top: 20px;
+    width:70%;
+    li{
+      display: inline-block;
+      margin-top: 20px;
+
+      a{
+        color: black;
+        font-family: MetropolisSemiBold, sans-serif;
+        background-color: white;
+        padding: 10px 30px;
+
+
+        margin-right: 5px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+
+        &.btn-more{
+          background-color: red;
+          color: white;
+        }
+      }
+
+
+    }
+  }
+
+
+  //background: url("../img/Locations-bg.png") no-repeat;
+  //min-height: 500px;
+  //-webkit-background-size: cover;
+  //background-size: cover;
+}
+
+.join-section{
+  padding: 100px 0px;
+  color: white;
+  background-color: #005abb;
+
+  .section-title{
+    font-family: MetropolisSemiBold, sans-serif;
+  }
+
+
+  a {
+    &:hover,
+    &:visited,
+    &:hover,
+    &:link {
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  .register {
+    margin: 50px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .field {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    input {
+      outline: none;
+      width: 100%;
+      border-radius: 35px;
+      height: 70px;
+      border: 0;
+      padding: 20px 0 0 40px;
+      font-size: 0;
+      background: #1566BB;
+      transition: background .3s ease;
+      color: #ffffff;
+
+      span{
+        color: red;
+      }
+
+      &:focus {
+        font-size: 23px;
+
+        &::selection {
+          background: rgba(188, 232, 255, 0.5);
+
+        }
+      }
+      &.active {
+        background: #1566BB;
+        font-size: 23px;
+      }
+    }
+    input,
+    button {
+      position: absolute;
+      height: 70px;
+    }
+    button {
+      background: rgba(0, 0, 0, 0.3);
+      background: white;
+      right: 0;
+      border: 0;
+      width: 50%;
+      border-radius: 35px;
+      font-size: 20px;
+      font-weight: bold;
+      color: red;
+      cursor: pointer;
+      transition:
+              width .3s ease,
+              background .3s ease,
+              opacity .3s ease;
+      pointer-events: none;
+      &.active {
+        //color: #ffffff;
+
+        font-weight: bold;
+        background: white;
+        opacity: 1;
+        pointer-events: auto;
+        &:hover {
+          background: white;
+        }
+      }
+      &.full {
+        width: 100%;
+      }
+    }
+    input:focus + label {
+      font-size: 10px;
+      transform: translate(16px, 11px);
+      color: rgba(255, 255, 255, 0.7);
+    }
+    label {
+      padding-left: 20px;
+
+        font-size: 20px;
+        font-family: "MetropolisRegular";
+        color: rgb( 255, 255, 255 );
+
+
+
+      position: absolute;
+      color: rgba(255, 255, 255, 1);
+      transform: translate(16px, 20px);
+      transition:
+              transform .3s ease,
+              font-size .3s ease,
+              color .3s .1s ease;
+      &.active {
+        font-size: 20px;
+        transform: translate(16px, 11px);
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+    input:focus + label + button {
+      opacity: 1;
+    }
+  }
+}
+
+.pricing-section{
+  padding: 150px 100px;
+
+  .section-title{
+    font-size: 40px;
+  }
+  
+  .btn-try-free{
+    background-color: #ff1315;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    color: white;
+    font-family: MetropolisBold, sans-serif;
+    font-size: 18px;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+  }
+
+  .price-nav{
+    padding: 0 30px;
+  }
+
+  ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-column-gap: 20px;
+
+
+    li{
+      background-color: #f4f5f7;
+      border-radius: 10px;
+      display: inline-block;
+      padding: 10px 0;
+
+      a{
+        width: 100%;
+        padding: 30px 50px;
+        font-size: 20px;
+
+        font-family: MetropolisBold,sans-serif;
+
+        img{
+          float: right;
+        }
+      }
+    }
+  }
+
+  .prices{
+    margin-top: 30px;
+
+    .price{
+      min-height: 300px;
+      text-align: center;
+      background-color: #e5e6e8;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+
+      .price-recommended{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 10px 0;
+        color: white;
+        font-family: MetropolisExtraBold, sans-serif;
+        background-color: blue;
+        margin-bottom: 20px;
+
+      }
+
+      .price-body{
+        padding: 50px 0 ;
+      }
+
+      .price-title{
+        color: #565656;
+        font-family: MetropolisExtraBold, sans-serif;
+        margin-bottom: 10px;
+      }
+
+      .price-sub-title{
+        color: #b4b5b6;
+        font-family: MetropolisBold, sans-serif;
+      }
+
+      .price-value{
+        display: block;
+        font-size: 50px;
+        font-family: MetropolisSemiBold,sans-serif;
+      }
+
+      .learn-more-link{
+        font-family: MetropolisBold, sans-serif;
+        padding: 5px 20px;
+        background-color: #ff1315;
+        color: white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+      }
+    }
+  }
+
+
+}
+
+
+
+.support-section{
+  background-color: #064097;
+  color: white;
+
+  .section-title{
+    margin-top: 100px;
+    font-family: MetropolisBlack, sans-serif;
+    font-size: 30px;
+  }
+
+  .section-text{
+    font-family: MetropolisRegular, sans-serif;
+    font-size: 18px;
+    margin-bottom: 100px;
+  }
+
+  .item-big{
+
+    width: 170px;
+    padding: 20px;
+    background-color: white;
+
+    color: red;
+    font-family: MetropolisExtraBold, sans-serif;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+  }
+
+  .item{
+    background-color: white;font-family: MetropolisExtraBold, sans-serif;
+    font-size: 13px;
+
+    width: 150px;
+    border-radius: 5px;
+    color: black;
+    padding: 30px;
+    margin-right: 90px;
+  }
+}
+
+
+.footer-section{
+  padding: 150px 0;
+  background-color: #0b3068;
+  color: #5e89cc;
+  font-family: MetropolisRegular, sans-serif;
+
+
+  ul{
+    a{
+      //color: white;
+      font-family: MetropolisRegular, sans-serif;
+    }
+
+    a.menu-header{
+      font-family: MetropolisExtraBold, sans-serif;
+      color: white;
+    }
+    li{
+      margin-bottom: 30px;
+    }
+  }
+
+  .copyright{
+    font-family: MetropolisRegular, sans-serif;
+    margin-top: 70px;
+    color: white;
   }
 }
