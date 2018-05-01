@@ -87,11 +87,17 @@ h6 {
     transition: all .5s ease-in-out, padding .5s ease-in-out; } }
 
 .home-section {
-  background: url("../img/home-ellipse.png") no-repeat center, red;
-  -webkit-background-size: cover;
-  background-size: cover;
-  color: white;
-  padding: 255px 0; }
+  background: red;
+  color: white; }
+  .home-section:before {
+    position: absolute;
+    content: ' ';
+    height: 105%;
+    width: 100%;
+    background: url("../img/home-ellipse.png") no-repeat center;
+    background-size: cover; }
+  .home-section .padding-box {
+    padding: 255px 0; }
   .home-section .home-title {
     font-weight: bold;
     font-size: 80px; }
@@ -208,12 +214,17 @@ h6 {
           font-weight: 700; }
 
 .location-section {
-  padding: 150px 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0086c9+0,207cca+0,2989d8+50,229ed5+100 */
-  background: url("../img/Locations-bg.png") no-repeat, #229ed5;
-  background-size: contain;
   position: relative;
   color: white; }
+  .location-section .padding-box {
+    padding: 100px 0; }
+  .location-section:before {
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("../img/map-world-vector-bg.png") no-repeat center left, #229ed5; }
   .location-section img {
     position: absolute;
     top: 0;
@@ -239,18 +250,23 @@ h6 {
       font-family: MetropolisBold, sans-serif;
       padding: 10px 25px;
       background-color: #56a902;
-      color: white; }
+      color: white;
+      font-size: 12px; }
     .location-section .country-location .item-body {
       padding: 25px; }
       .location-section .country-location .item-body h5 {
         font-family: MetropolisBold, sans-serif;
         margin-bottom: 10px;
-        font-size: 15px; }
+        font-size: 15px;
+        letter-spacing: 0;
+        margin-bottom: 0; }
       .location-section .country-location .item-body h6 {
         font-family: MetropolisRegular, sans-serif;
         font-size: 12px;
         letter-spacing: 0px;
-        color: #4a4a4a; }
+        color: #4a4a4a;
+        letter-spacing: 0;
+        margin-bottom: 0; }
       .location-section .country-location .item-body ul {
         margin: 0 auto;
         display: grid;
@@ -279,6 +295,13 @@ h6 {
       grid-template-columns: 1fr 1fr;
       font-family: MetropolisBold, sans-serif; }
       .location-section .country-location .item-footer button {
+        height: auto;
+        cursor: pointer;
+        color: white;
+        outline: none;
+        font-size: 10px;
+        padding: 0;
+        border: 0;
         background-color: #56a902;
         -webkit-border-radius: 20px;
         -moz-border-radius: 20px;
@@ -287,7 +310,8 @@ h6 {
         color: #56a902;
         vertical-align: middle;
         text-align: center;
-        padding: 10px; }
+        padding: 10px;
+        font-size: 10px; }
   .location-section .section-title {
     font-family: MetropolisBold, sans-serif;
     font-size: 45px; }
@@ -437,12 +461,10 @@ h6 {
           position: absolute;
           pointer-events: none; }
         .pricing-section ul li.active:after {
-          border-color: rgba(1, 82, 204, 0);
           border-top-color: #0152cc;
           border-width: 20px;
           margin-left: -20px; }
         .pricing-section ul li.active:before {
-          border-color: transparent;
           border-width: 23px;
           margin-left: -23px; }
       .pricing-section ul li a {
@@ -547,22 +569,20 @@ h6 {
     margin-top: 70px;
     color: white; }
 
-@media (min-width: 768px) and (max-width: 1400px) {
+@media (min-width: 1000px) and (max-width: 1400px) {
   .top-navigation .nav-container {
     padding: 0 20px; }
-  .home-section {
-    padding: 150px 0; }
-    .home-section .home-title {
-      font-size: 60px; }
-    .home-section .home-sub-title {
-      font-size: 20px; }
-    .home-section .home-proxies-btn {
-      padding: 20px 45px;
-      font-size: 15px; }
-    .home-section .home-img {
-      position: relative;
-      max-width: 500px;
-      margin-top: 40px; }
+  .home-section .home-title {
+    font-size: 60px; }
+  .home-section .home-sub-title {
+    font-size: 20px; }
+  .home-section .home-proxies-btn {
+    padding: 20px 45px;
+    font-size: 15px; }
+  .home-section .home-img {
+    position: relative;
+    max-width: 500px;
+    margin-top: 40px; }
   .compare-section {
     padding: 70px 100px; }
     .compare-section .container {
@@ -579,47 +599,47 @@ h6 {
     font-size: 17px; }
   .solution-section .card-header .accordion-toggle:after {
     font-size: 15px; }
-  .location-section {
-    padding: 75px 0; }
-    .location-section .country-location .item-header {
-      padding: 10px 25px; }
-    .location-section .country-location .item-sub-header {
-      padding: 9px 25px;
-      font-size: 10px; }
-    .location-section .country-location .item-body {
-      padding: 25px;
-      padding-bottom: 5px; }
-      .location-section .country-location .item-body h5 {
-        font-size: 15px; }
-      .location-section .country-location .item-body h6 {
-        margin-bottom: 10px; }
-      .location-section .country-location .item-body ul {
-        margin-left: 33px; }
-        .location-section .country-location .item-body ul li {
-          padding: 0; }
-          .location-section .country-location .item-body ul li:first-child:before {
-            width: 35px;
-            padding: 6px;
-            top: -6px;
-            left: -52px; }
-    .location-section .country-location .item-footer {
-      grid-template-columns: 1fr;
-      padding: 15px;
-      padding-top: 0; }
-      .location-section .country-location .item-footer button {
-        grid-row: 2; }
-    .location-section .section-title {
-      font-size: 29px; }
-    .location-section p {
-      font-size: 12px; }
-    .location-section ul {
-      width: 100%; }
-      .location-section ul li {
-        margin-top: 15px; }
-        .location-section ul li a {
-          font-size: 11px;
-          padding: 5px 19px;
-          margin-right: 0px; }
+  .location-section:before {
+    background-position: -220px center; }
+  .location-section .country-location .item-header {
+    padding: 10px 25px; }
+  .location-section .country-location .item-sub-header {
+    padding: 9px 25px;
+    font-size: 10px; }
+  .location-section .country-location .item-body {
+    padding: 25px;
+    padding-bottom: 5px; }
+    .location-section .country-location .item-body h5 {
+      font-size: 15px; }
+    .location-section .country-location .item-body h6 {
+      margin-bottom: 10px; }
+    .location-section .country-location .item-body ul {
+      margin-left: 33px; }
+      .location-section .country-location .item-body ul li {
+        padding: 0; }
+        .location-section .country-location .item-body ul li:first-child:before {
+          width: 35px;
+          padding: 6px;
+          top: -6px;
+          left: -52px; }
+  .location-section .country-location .item-footer {
+    grid-template-columns: 1fr;
+    padding: 15px;
+    padding-top: 0; }
+    .location-section .country-location .item-footer button {
+      grid-row: 2; }
+  .location-section .section-title {
+    font-size: 29px; }
+  .location-section p {
+    font-size: 12px; }
+  .location-section ul {
+    width: 100%; }
+    .location-section ul li {
+      margin-top: 15px; }
+      .location-section ul li a {
+        font-size: 11px;
+        padding: 5px 19px;
+        margin-right: 0px; }
   .pricing-section {
     padding: 100px 10px; }
     .pricing-section ul li a {
@@ -628,3 +648,62 @@ h6 {
     padding: 100px 0; }
     .footer-section ul li {
       margin-bottom: 25px; } }
+
+@media (min-width: 1400px) and (max-width: 1800px) {
+  .top-navigation .nav-container {
+    padding: 0 7%; }
+  .home-section .home-title {
+    font-size: 60px; }
+  .home-section .home-sub-title {
+    font-size: 20px; }
+  .home-section .home-proxies-btn {
+    padding: 20px 45px;
+    font-size: 15px; }
+  .home-section .home-img {
+    position: relative;
+    max-width: 700px;
+    margin-top: 140px; }
+  .benefits-section {
+    padding: 100px 0; }
+    .benefits-section .section-title {
+      font-size: 28px; }
+  .location-section:before {
+    background-position-x: -166px; }
+  .location-section .country-location .item-header {
+    font-size: 13px;
+    padding: 10px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; }
+  .location-section .country-location .item-sub-header {
+    font-size: 10px;
+    padding: 10px 15px; }
+  .location-section .country-location .item-body {
+    padding: 15px; }
+    .location-section .country-location .item-body h5 {
+      font-size: 13px;
+      margin-bottom: 0; }
+    .location-section .country-location .item-body h6 {
+      margin-bottom: 0; }
+    .location-section .country-location .item-body ul {
+      margin: 0 0 0 27px; }
+      .location-section .country-location .item-body ul li {
+        padding: 0;
+        font-size: 13px;
+        margin-top: 15px; }
+        .location-section .country-location .item-body ul li:first-child:before {
+          width: 30px;
+          padding: 5px;
+          top: -5px;
+          left: -42px; }
+  .location-section .country-location .item-footer {
+    padding: 15px; }
+    .location-section .country-location .item-footer span {
+      padding: 0; }
+  .location-section .section-title {
+    font-size: 33px; }
+  .location-section p {
+    font-size: 13px; }
+  .location-section ul {
+    width: 100%; }
+    .location-section ul li a {
+      font-size: 14px; } }

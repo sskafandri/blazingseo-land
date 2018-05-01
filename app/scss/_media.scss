@@ -1,7 +1,7 @@
 
 
 
-@media (min-width: 768px) and (max-width: 1400px){
+@media (min-width: 1000px) and (max-width: 1400px){
 
 
 	.top-navigation{
@@ -15,9 +15,9 @@
 
 	.home-section {
 
-		padding: 150px 0;
+		.padding-box{
 
-
+		}
 
 		.home-title{
 			font-size: 60px
@@ -83,9 +83,12 @@
 	} 
 
 	.location-section{
-		padding: 75px 0;
 
-		.country-location {
+		&:before {
+			background-position: -220px center;
+		}
+
+			.country-location {
 
 			.item-header{
 				padding: 10px 25px;
@@ -183,3 +186,125 @@
 		}
 	}
 }
+
+@media (min-width: 1400px) and (max-width: 1800px){
+	.top-navigation{
+		.nav-container {
+			padding: 0 7%;
+		}
+	}
+
+	.home-section{
+
+		.home-title{
+			font-size: 60px
+
+		}
+
+		.home-sub-title{
+			font-size: 20px;
+		}
+
+		.home-proxies-btn {
+			padding: 20px 45px;
+			font-size: 15px;
+		}
+
+
+		.home-img{
+			position: relative;
+			max-width: 700px;
+			margin-top: 140px;
+		}
+	}
+
+	.benefits-section{
+
+		padding: 100px 0;
+
+		.section-title {
+			font-size: 28px;
+		}
+	}
+
+	.location-section{
+		&:before{
+			background-position-x: -166px;
+		}
+
+		.country-location {
+			.item-header{
+				font-size: 13px;
+				padding: 10px 15px;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+			}
+
+			.item-sub-header{
+				font-size: 10px;
+				padding: 10px 15px;
+			}
+
+			.item-body{
+
+				padding: 15px;
+
+				h5{
+					font-size: 13px;
+
+					margin-bottom: 0;
+				}
+
+				h6{
+					margin-bottom: 0;
+				}
+
+				ul{
+					margin: 0 0 0 27px;
+
+					li{
+
+						&:first-child:before {
+							width: 30px;
+							padding: 5px;
+							top: -5px;
+							left: -42px;
+						}
+						padding: 0;
+						font-size: 13px;
+						margin-top: 15px;
+
+					}
+				}
+			}
+
+			.item-footer{
+				padding: 15px;
+
+				span{
+					padding: 0;
+				}
+			}
+		}
+
+		.section-title{
+			font-size: 33px;
+		}
+
+		p{
+			font-size: 13px;
+		}
+
+		ul{
+			width: 100%;
+
+			li{
+
+				a{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
