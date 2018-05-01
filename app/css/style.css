@@ -474,3 +474,7 @@ h6 {
     font-family: MetropolisRegular, sans-serif;
     margin-top: 70px;
     color: white; }
+
+@media (min-width: 768) and (max-width: 1000px) {
+  .top-navigation .nav-container {
+    padding: 0; } }
