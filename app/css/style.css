@@ -167,8 +167,29 @@ h6 {
       margin-bottom: 10px;
       border: 0; }
       .solution-section #accordion .card .card-header button {
-        font-family: MetropolisRegular; }
+        font-family: MetropolisRegular, sans-serif; }
+      .solution-section #accordion .card .card-header .accordion-toggle:after {
+        /* symbol for "opening" panels */
+        font-family: 'MetropolisExtraBold', sans-serif;
+        /* essential for enabling glyphicon */
+        content: "-";
+        /* adjust as needed, taken from bootstrap.css */
+        float: right;
+        /* adjust as needed */
+        color: #16cfe0;
+        /* adjust as needed */
+        font-size: 20px; }
+      .solution-section #accordion .card .card-header .accordion-toggle.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "+";
+        /* adjust as needed, taken from bootstrap.css */ }
       .solution-section #accordion .card .card-header button {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        border: 0;
+        background: transparent;
+        width: 100%;
+        text-align: left;
         color: black; }
         .solution-section #accordion .card .card-header button i {
           font-size: 25px;
@@ -202,13 +223,16 @@ h6 {
     color: black;
     margin-top: 100px;
     background-color: #fff;
-    border-radius: 5px; }
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; }
     .location-section .country-location .item-header {
       color: white;
+      font-size: 20px;
       font-family: MetropolisExtraBold, sans-serif;
       padding: 10px 25px;
-      border-top-left-radius: 4px;
-      border-top-right-radius: 5px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
       background-color: #75d701; }
     .location-section .country-location .item-sub-header {
       font-family: MetropolisBold, sans-serif;
@@ -223,13 +247,51 @@ h6 {
         font-size: 15px; }
       .location-section .country-location .item-body h6 {
         font-family: MetropolisRegular, sans-serif;
-        font-size: 10px;
-        letter-spacing: 0px; }
+        font-size: 12px;
+        letter-spacing: 0px;
+        color: #4a4a4a; }
+      .location-section .country-location .item-body ul {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative; }
+        .location-section .country-location .item-body ul li {
+          position: relative;
+          padding: 10px; }
+        .location-section .country-location .item-body ul li:first-child:before {
+          content: "5";
+          position: absolute;
+          text-align: center;
+          width: 50px;
+          padding: 13px;
+          color: white;
+          top: 0;
+          left: -55px;
+          font-family: MetropolisBold, sans-serif;
+          background-color: #56a902;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+          border-radius: 50%; }
+    .location-section .country-location .item-footer {
+      padding: 25px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      font-family: MetropolisBold, sans-serif; }
+      .location-section .country-location .item-footer button {
+        background-color: #56a902;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px; }
+      .location-section .country-location .item-footer span {
+        color: #56a902;
+        vertical-align: middle;
+        text-align: center;
+        padding: 10px; }
   .location-section .section-title {
     font-family: MetropolisBold, sans-serif;
-    font-size: 35px; }
+    font-size: 45px; }
   .location-section p {
-    font-size: 12px;
+    font-size: 16px;
     font-family: MetropolisSemiBold, sans-serif; }
   .location-section ul {
     margin-top: 20px;
@@ -339,16 +401,17 @@ h6 {
     font-size: 40px; }
   .pricing-section .btn-try-free {
     background-color: #ff1315;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
     color: white;
     font-family: MetropolisBold, sans-serif;
     font-size: 18px;
-    padding: 20px 20px;
-    margin-bottom: 30px; }
+    padding: 20px 40px;
+    margin: 30px 0; }
   .pricing-section .price-nav {
-    padding: 0 30px; }
+    padding: 0 30px;
+    margin-bottom: 100px; }
   .pricing-section ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -357,14 +420,40 @@ h6 {
       background-color: #f4f5f7;
       border-radius: 10px;
       display: inline-block;
-      padding: 10px 0; }
+      padding: 10px 0;
+      position: relative; }
+      .pricing-section ul li.active {
+        background-color: #0152cc; }
+        .pricing-section ul li.active a {
+          color: white; }
+        .pricing-section ul li.active:after, .pricing-section ul li.active:before {
+          top: 100%;
+          left: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none; }
+        .pricing-section ul li.active:after {
+          border-color: rgba(1, 82, 204, 0);
+          border-top-color: #0152cc;
+          border-width: 20px;
+          margin-left: -20px; }
+        .pricing-section ul li.active:before {
+          border-color: transparent;
+          border-width: 23px;
+          margin-left: -23px; }
       .pricing-section ul li a {
         width: 100%;
         padding: 30px 50px;
         font-size: 20px;
+        color: #353535;
+        line-height: 40px;
         font-family: MetropolisBold,sans-serif; }
         .pricing-section ul li a img {
-          float: right; }
+          float: right;
+          margin-right: 15px; }
   .pricing-section .prices {
     margin-top: 30px; }
     .pricing-section .prices .price {
@@ -416,23 +505,28 @@ h6 {
     font-size: 18px;
     margin-bottom: 100px; }
   .support-section .item-big {
-    width: 170px;
-    padding: 20px;
+    font-size: 14px;
+    margin: 50px auto 0;
+    width: 111px;
+    padding: 15px;
     background-color: white;
     color: red;
     font-family: MetropolisExtraBold, sans-serif;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px; }
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px; }
   .support-section .item {
     background-color: white;
     font-family: MetropolisExtraBold, sans-serif;
-    font-size: 13px;
-    width: 150px;
-    border-radius: 5px;
+    font-size: 14px;
+    margin-top: 50px;
+    width: 85px;
+    padding: 15px;
     color: black;
-    padding: 30px;
-    margin-right: 90px; }
+    margin-right: 90px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    border-radius: 17px; }
 
 .footer-section {
   padding: 150px 0;

@@ -24,7 +24,12 @@ $(document).ready(function() {
     });
     // jQuery Resize Height END
 
+
+
+
 });
+
+
 
 
 var $form = $('.register');
