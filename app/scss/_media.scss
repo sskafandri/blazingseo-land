@@ -66,10 +66,18 @@
 	.solution-section{
 
 		.section-title{
-		font-size: 43px;	
+			font-size: 43px;
 		}
 		.section-text {
     		font-size: 17px;
+		}
+
+		.card-header{
+
+			.accordion-toggle:after {
+				font-size: 15px;
+			}
+
 		}
 
 	} 
