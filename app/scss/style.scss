@@ -50,60 +50,6 @@ h6 {
   }
 }
 
-.navbar-custom {
-
-  padding: 20px 0;
-  font-size: 20px;
-
-  a.navbar-brand {
-    color: white;
-    font-size: 34px;
-    font-family: "Courgette", sans-serif;
-
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-
-  }
-
-  .nav-custom {
-
-    ul {
-
-      li{
-        display: inline-block;
-      }
-      a {
-        color: white;
-
-        -webkit-transition: .5s all ease-out;
-        -moz-transition: .5s all ease-out;
-        transition: .5s all ease-out;
-      }
-
-      li.active a {
-        border-bottom: 3px solid black;
-        color: black;
-      }
-
-      a:hover {
-        color: black;
-      }
-    }
-
-    .navbar-header .navbar-toggle {
-      padding: 4px 20px;
-      color: white;
-    }
-
-  }
-}
-
 .top-nav-collapse {
   padding: 5px;
   background-color: #ff1719;
@@ -143,7 +89,7 @@ h6 {
   background-size: cover;
   color: white;
 
-  padding: 200px 0;
+  padding: 255px 0;
 
   .home-title{
     font-weight: bold;
@@ -167,8 +113,8 @@ h6 {
   }
 
   .home-img{
-    margin-top: 50px;
-    max-width: 900px;
+    margin-top: 220px;
+    max-width: 1000px;
     width: 100%;
     height: auto;
   }
