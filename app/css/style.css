@@ -441,7 +441,7 @@ h6 {
           border-width: 20px;
           margin-left: -20px; }
         .pricing-section ul li.active:before {
-          border-color: transparent;
+          border-color: rgba(0, 0, 0, 0);
           border-width: 23px;
           margin-left: -23px; }
       .pricing-section ul li a {
