@@ -326,7 +326,7 @@ h6 {
     .item-header{
       color: white;
       font-family: MetropolisExtraBold, sans-serif;
-      padding: 20px 30px;
+      padding: 10px 25px;
       border-top-left-radius: 4px;
       border-top-right-radius: 5px;
       background-color: #75d701;
@@ -334,17 +334,18 @@ h6 {
 
     .item-sub-header{
       font-family: MetropolisBold, sans-serif;
-      padding: 20px 30px;
+      padding: 10px 25px;
       background-color: #56a902;
       color: white;
     }
 
     .item-body{
-      padding: 30px;
+      padding: 25px;
 
       h5{
         font-family: MetropolisBold, sans-serif;
         margin-bottom: 10px;
+        font-size: 15px
       }
 
       h6{
