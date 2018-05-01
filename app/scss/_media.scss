@@ -90,10 +90,41 @@
 
 			.item-body{
 				padding: 25px;
+				padding-bottom: 5px;
 
 				h5{
 					font-size: 15px;
 				}
+				h6{
+					margin-bottom: 10px;
+				}
+
+				ul{
+					margin-left: 33px;
+					li{
+
+						&:first-child:before{
+							width: 35px;
+							padding: 6px;
+							top: -6px;
+							left: -52px;
+						}
+						padding: 0;
+
+					}
+				}
+			}
+
+			.item-footer{
+				grid-template-columns: 1fr;
+				padding: 15px;
+				padding-top: 0;
+
+
+				button{
+					grid-row: 2;
+				}
+
 			}
 		}
 
@@ -112,17 +143,35 @@
 			li{
 				margin-top: 15px;
 
-
 				a{
 					font-size: 11px;
 					padding: 5px 19px;
 					margin-right: 0px;
 				}
 			}
+		}
+	}
 
+	.pricing-section {
+		padding: 100px 10px;
+
+		ul{
+			li{
+				a{
+					padding: 30px 40px;
+				}
+			}
 		}
 	}
 
 
+	.footer-section {
+		padding: 100px 0;
 
+		ul{
+			li{
+				margin-bottom: 25px;
+			}
+		}
+	}
 }

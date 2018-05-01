@@ -534,6 +534,7 @@ h6 {
   color: #5e89cc;
   font-family: MetropolisRegular, sans-serif; }
   .footer-section ul a {
+    color: #5e89cc;
     font-family: MetropolisRegular, sans-serif; }
   .footer-section ul a.menu-header {
     font-family: MetropolisExtraBold, sans-serif;
@@ -583,9 +584,27 @@ h6 {
       padding: 9px 25px;
       font-size: 10px; }
     .location-section .country-location .item-body {
-      padding: 25px; }
+      padding: 25px;
+      padding-bottom: 5px; }
       .location-section .country-location .item-body h5 {
         font-size: 15px; }
+      .location-section .country-location .item-body h6 {
+        margin-bottom: 10px; }
+      .location-section .country-location .item-body ul {
+        margin-left: 33px; }
+        .location-section .country-location .item-body ul li {
+          padding: 0; }
+          .location-section .country-location .item-body ul li:first-child:before {
+            width: 35px;
+            padding: 6px;
+            top: -6px;
+            left: -52px; }
+    .location-section .country-location .item-footer {
+      grid-template-columns: 1fr;
+      padding: 15px;
+      padding-top: 0; }
+      .location-section .country-location .item-footer button {
+        grid-row: 2; }
     .location-section .section-title {
       font-size: 29px; }
     .location-section p {
@@ -597,4 +616,12 @@ h6 {
         .location-section ul li a {
           font-size: 11px;
           padding: 5px 19px;
-          margin-right: 0px; } }
+          margin-right: 0px; }
+  .pricing-section {
+    padding: 100px 10px; }
+    .pricing-section ul li a {
+      padding: 30px 40px; }
+  .footer-section {
+    padding: 100px 0; }
+    .footer-section ul li {
+      margin-bottom: 25px; } }
