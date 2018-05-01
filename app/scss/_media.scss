@@ -11,7 +11,111 @@
 		}
 
 	}
-	
+
+
+	.home-section {
+
+
+		.home-title{
+			font-size: 60px
+
+		}
+
+		.home-sub-title{
+			font-size: 20px;
+		}
+
+		.home-proxies-btn {
+  		    padding: 20px 45px;
+    		font-size: 15px;
+		}
+
+
+		.home-img{
+			position: relative;
+			max-width: 500px;
+			margin-top: 40px;
+		}
+	}
+
+	.compare-section .container{
+		margin-top: 220px;
+	}
+
+	.benefits-section {
+    	padding: 75px 0px;
+
+    	.section-title {
+    	font-size: 30px;
+    	}
+
+    	.benefit-item {
+    		padding: 15px;
+		}
+
+
+	}
+
+	.solution-section{
+
+		.section-title{
+		font-size: 43px;	
+		}
+		.section-text {
+    		font-size: 17px;
+		}
+
+	} 
+
+	.location-section{
+		padding: 75px 0;
+
+		.country-location {
+
+			.item-header{
+				padding: 10px 25px;
+			}
+
+			.item-sub-header {
+			    padding: 9px 25px;
+			    font-size: 10px;
+			}
+
+			.item-body{
+				padding: 25px;
+
+				h5{
+					font-size: 15px;
+				}
+			}
+		}
+
+
+		.section-title{
+			font-size: 29px
+		}
+
+		p{
+			font-size: 12px;
+		}
+
+		ul{
+			width: 100%;
+
+			li{
+				margin-top: 15px;
+
+
+				a{
+					font-size: 11px;
+					padding: 5px 19px;
+					margin-right: 0px;
+				}
+			}
+
+		}
+	}
+
 
 
 }

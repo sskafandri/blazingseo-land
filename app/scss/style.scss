@@ -125,6 +125,7 @@ h6 {
 // media query for scrolling
 @media (min-width: 767px) {
   .navbar {
+
     height: 75px;
 
     -webkit-transition: all .5s ease-in-out, padding .5s ease-in-out;
@@ -340,6 +341,17 @@ h6 {
 
     .item-body{
       padding: 30px;
+
+      h5{
+        font-family: MetropolisBold, sans-serif;
+        margin-bottom: 10px;
+      }
+
+      h6{
+        font-family: MetropolisRegular, sans-serif;
+        font-size: 10px;
+        letter-spacing: 0px;
+      }
     }
 
   }
