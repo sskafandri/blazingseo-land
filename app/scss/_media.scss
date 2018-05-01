@@ -15,6 +15,9 @@
 
 	.home-section {
 
+		padding: 150px 0;
+
+
 
 		.home-title{
 			font-size: 60px
@@ -38,8 +41,12 @@
 		}
 	}
 
-	.compare-section .container{
-		margin-top: 220px;
+	.compare-section {
+		padding: 70px 100px;
+
+		.container{
+			margin-top: 200px;
+		}
 	}
 
 	.benefits-section {
