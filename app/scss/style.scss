@@ -138,7 +138,6 @@ button{
   }
 }
 
-
 .home-section{
 
   &:before {
@@ -219,7 +218,6 @@ button{
 
 }
 
-
 .benefits-section{
   padding: 100px 200px;
 
@@ -247,7 +245,6 @@ button{
     }
   }
 }
-
 
 .solution-section{
   padding: 100px 200px;
@@ -316,6 +313,14 @@ button{
           width: 97%;
           text-align: left;
           color: black;
+          outline: none;
+
+
+
+          &:hover{
+            //outline: none;
+            //background-color: black;
+          }
 
           span{
             display: inline-block;
@@ -520,9 +525,24 @@ button{
         -moz-border-radius: 15px;
         border-radius: 15px;
 
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+
+        &:hover{
+          color: white;
+          background-color: red;
+        }
+
         &.btn-more {
           background-color: red;
           color: white;
+
+          &:hover{
+            background-color: #b80000;
+          }
         }
       }
 
@@ -593,7 +613,10 @@ button{
     button {
       position: absolute;
       height: 70px;
+      cursor: pointer;
+
     }
+    
     button {
       background: rgba(0, 0, 0, 0.3);
       background: white;
@@ -604,14 +627,12 @@ button{
       font-size: 20px;
       font-weight: bold;
       color: red;
-      cursor: pointer;
       transition:
               width .3s ease,
               background .3s ease,
               opacity .3s ease;
       pointer-events: none;
       &.active {
-        //color: #ffffff;
 
         font-weight: bold;
         background: white;
@@ -674,8 +695,11 @@ button{
     font-family: MetropolisBold, sans-serif;
     font-size: 18px;
     padding: 20px 40px;
-
     margin: 30px 0;
+
+    &:hover{
+      background-color: #d41315;
+    }
   }
 
   .price-nav{
@@ -697,12 +721,38 @@ button{
 
       position: relative;
 
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+
+      &:hover{
+        background-color: #0155d9;
+
+        a{
+          color: white;
+        }
+      }
+
+
 
       &.active{
         background-color: #0152cc;
 
+        &:hover{
+          background-color: #0145ad;
+
+          &:after {
+            border-top-color: #0145ad;
+          }
+
+        }
+
         a{
           color: white;
+
+
         }
 
         &:after, &:before {
@@ -714,6 +764,12 @@ button{
           width: 0;
           position: absolute;
           pointer-events: none;
+
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
         }
 
         &:after {
@@ -736,8 +792,16 @@ button{
         font-size: 20px;
         color: #353535;
         line-height: 40px;
-
         font-family: MetropolisBold,sans-serif;
+
+
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+
+
 
         img{
           float: right;
@@ -867,14 +931,21 @@ button{
     a{
       color: #5e89cc;
       font-family: MetropolisRegular, sans-serif;
+
     }
 
     a.menu-header{
       font-family: MetropolisExtraBold, sans-serif;
       color: white;
+
+
     }
     li{
       margin-bottom: 30px;
+
+      a:hover{
+        text-decoration: underline;
+      }
     }
   }
 
@@ -884,10 +955,5 @@ button{
     color: white;
   }
 }
-
-
-
-
-
 
 @import "media";

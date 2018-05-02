@@ -240,7 +240,8 @@ button {
         background: transparent;
         width: 97%;
         text-align: left;
-        color: black; }
+        color: black;
+        outline: none; }
         .solution-section #accordion .card .card-header button span {
           display: inline-block;
           width: 80%; }
@@ -375,10 +376,20 @@ button {
         margin-right: 5px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
-        border-radius: 15px; }
+        border-radius: 15px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .location-section ul li a:hover {
+          color: white;
+          background-color: red; }
         .location-section ul li a.btn-more {
           background-color: red;
           color: white; }
+          .location-section ul li a.btn-more:hover {
+            background-color: #b80000; }
 
 .join-section {
   padding: 100px 0px;
@@ -420,7 +431,8 @@ button {
     .join-section .field input,
     .join-section .field button {
       position: absolute;
-      height: 70px; }
+      height: 70px;
+      cursor: pointer; }
     .join-section .field button {
       background: rgba(0, 0, 0, 0.3);
       background: white;
@@ -431,7 +443,6 @@ button {
       font-size: 20px;
       font-weight: bold;
       color: red;
-      cursor: pointer;
       transition: width .3s ease, background .3s ease, opacity .3s ease;
       pointer-events: none; }
       .join-section .field button.active {
@@ -477,6 +488,8 @@ button {
     font-size: 18px;
     padding: 20px 40px;
     margin: 30px 0; }
+    .pricing-section .btn-try-free:hover {
+      background-color: #d41315; }
   .pricing-section .price-nav {
     padding: 0 30px;
     margin-bottom: 100px; }
@@ -489,9 +502,22 @@ button {
       border-radius: 10px;
       display: inline-block;
       padding: 10px 0;
-      position: relative; }
+      position: relative;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .pricing-section ul li:hover {
+        background-color: #0155d9; }
+        .pricing-section ul li:hover a {
+          color: white; }
       .pricing-section ul li.active {
         background-color: #0152cc; }
+        .pricing-section ul li.active:hover {
+          background-color: #0145ad; }
+          .pricing-section ul li.active:hover:after {
+            border-top-color: #0145ad; }
         .pricing-section ul li.active a {
           color: white; }
         .pricing-section ul li.active:after, .pricing-section ul li.active:before {
@@ -502,7 +528,12 @@ button {
           height: 0;
           width: 0;
           position: absolute;
-          pointer-events: none; }
+          pointer-events: none;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s; }
         .pricing-section ul li.active:after {
           border-top-color: #0152cc;
           border-width: 20px;
@@ -516,7 +547,12 @@ button {
         font-size: 20px;
         color: #353535;
         line-height: 40px;
-        font-family: MetropolisBold,sans-serif; }
+        font-family: MetropolisBold,sans-serif;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
         .pricing-section ul li a img {
           float: right;
           margin-right: 15px; }
@@ -607,6 +643,8 @@ button {
     color: white; }
   .footer-section ul li {
     margin-bottom: 30px; }
+    .footer-section ul li a:hover {
+      text-decoration: underline; }
   .footer-section .copyright {
     font-family: MetropolisRegular, sans-serif;
     margin-top: 70px;
