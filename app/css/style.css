@@ -583,7 +583,29 @@ h6 {
     font-size: 20PX; }
   .home-section .home-img {
     margin-top: 100px;
-    max-width: 450px; }
+    max-width: 500px; }
+  .compare-section .container {
+    margin-top: 200px; }
+  .benefits-section {
+    padding: 100px 10px; }
+    .benefits-section .section-title {
+      font-size: 25px;
+      margin-bottom: 30px; }
+    .benefits-section .benefit-item {
+      padding: 20px; }
+      .benefits-section .benefit-item img {
+        margin-bottom: 15px; }
+      .benefits-section .benefit-item .benefit-title {
+        font-size: 20px;
+        letter-spacng: 0;
+        margin-bottom: 10px; }
+  .solution-section {
+    padding: 60px 150px; }
+    .solution-section .section-title {
+      font-size: 40px;
+      margin-top: 0; }
+    .solution-section .section-text {
+      font-size: 17px; }
   .location-section:before {
     -webkit-background-size: 85%;
     background-size: 85%;
@@ -637,7 +659,28 @@ h6 {
       .location-section ul li a {
         font-size: 11px;
         padding: 5px 19px;
-        margin-right: 0px; } }
+        margin-right: 0px; }
+  .join-section {
+    padding: 75px 0; }
+  .pricing-section {
+    padding: 75px 50px; }
+    .pricing-section .section-title {
+      font-size: 30px;
+      margin-bottom: 20px; }
+    .pricing-section .btn-try-free {
+      font-size: 17px;
+      padding: 13px 35px; }
+    .pricing-section .price-nav {
+      margin-bottom: 50px; }
+    .pricing-section ul li a {
+      font-size: 17px;
+      padding: 30px 0 0 20px; }
+  .footer-section {
+    padding: 75px 0; }
+    .footer-section ul li {
+      margin-bottom: 20px; }
+    .footer-section .copyright {
+      margin-top: 33px; } }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .top-navigation .nav-container {
@@ -653,7 +696,7 @@ h6 {
     font-size: 15px; }
   .home-section .home-img {
     position: relative;
-    max-width: 500px;
+    max-width: 700px;
     margin-top: 40px; }
   .compare-section {
     padding: 70px 100px; }
