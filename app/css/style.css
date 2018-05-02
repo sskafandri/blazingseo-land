@@ -181,8 +181,6 @@ h6 {
         /* essential for enabling glyphicon */
         content: "-";
         /* adjust as needed, taken from bootstrap.css */
-        float: right;
-        /* adjust as needed */
         color: #16cfe0;
         /* adjust as needed */
         font-size: 20px; }
@@ -198,9 +196,9 @@ h6 {
         width: 97%;
         text-align: left;
         color: black; }
-        .solution-section #accordion .card .card-header button i {
-          font-size: 25px;
-          margin-right: 20px; }
+        .solution-section #accordion .card .card-header button span {
+          display: inline-block;
+          width: 80%; }
       .solution-section #accordion .card .card-body {
         padding: 35px;
         border: 0;

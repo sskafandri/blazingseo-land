@@ -222,12 +222,31 @@ h6 {
           font-family: MetropolisRegular, sans-serif;
         }
 
+        //.grid{
+        //  text-align: left;
+        //  color:black !important;
+        //  display: grid;
+        //  grid-template-columns: 50px 1fr 40px;
+        //
+        //}
+        //
+        //.arrow{
+        //  font-family: 'MetropolisExtraBold', sans-serif;  /* essential for enabling glyphicon */
+        //  color: #16cfe0;         /* adjust as needed */
+        //  font-size: 20px;
+        //}
+        //
+        //.accordion-toggle.collapsed .arrow{
+        //  content: "+";    /* adjust as needed, taken from bootstrap.css */
+        //
+        //}
+
 
         .accordion-toggle:after {
           /* symbol for "opening" panels */
           font-family: 'MetropolisExtraBold', sans-serif;  /* essential for enabling glyphicon */
           content: "-";    /* adjust as needed, taken from bootstrap.css */
-          float: right;        /* adjust as needed */
+          //float: right;        /* adjust as needed */
           //text-align: right;
           color: #16cfe0;         /* adjust as needed */
           font-size: 20px;
@@ -246,13 +265,12 @@ h6 {
           background: transparent;
           width: 97%;
           text-align: left;
-
-
-          i{
-            font-size: 25px;
-            margin-right: 20px;
-          }
           color: black;
+
+          span{
+            display: inline-block;
+            width: 80%;
+          }
         }
       }
 
