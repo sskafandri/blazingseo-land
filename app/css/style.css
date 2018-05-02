@@ -564,7 +564,16 @@ button {
       background-color: #e5e6e8;
       -webkit-border-radius: 20px;
       -moz-border-radius: 20px;
-      border-radius: 20px; }
+      border-radius: 20px;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+      .pricing-section .prices .price:hover {
+        -webkit-box-shadow: 1px 1px 16px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 1px 1px 16px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 16px 8px rgba(0, 0, 0, 0.3); }
       .pricing-section .prices .price .price-recommended {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -593,7 +602,14 @@ button {
         color: white;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
-        border-radius: 10px; }
+        border-radius: 10px;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s; }
+        .pricing-section .prices .price .learn-more-link:hover {
+          background-color: #c71315; }
 
 .support-section {
   background-color: #064097;
@@ -649,6 +665,70 @@ button {
     font-family: MetropolisRegular, sans-serif;
     margin-top: 70px;
     color: white; }
+
+.faq-welcome-section {
+  color: white;
+  padding: 250px 0 50px;
+  background: url("../img/home-ellipse.png") no-repeat center, red;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .faq-welcome-section h1 {
+    font-size: 70px;
+    font-family: MetropolisBold,sans-serif; }
+
+.faq-content-section {
+  background-color: #ededed;
+  padding: 80px 0 100px; }
+  .faq-content-section .grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); }
+    .faq-content-section .grid-container a {
+      font-family: MetropolisBold, sans-serif;
+      color: #353535;
+      font-size: 15px; }
+      .faq-content-section .grid-container a img {
+        margin-bottom: 20px; }
+  .faq-content-section .question {
+    width: 100%;
+    border-radius: 20px;
+    background-color: white; }
+    .faq-content-section .question .question-header {
+      width: 100%;
+      background-color: white; }
+      .faq-content-section .question .question-header .question-btn:after {
+        /* symbol for "opening" panels */
+        font-family: 'MetropolisExtraBold', sans-serif;
+        /* essential for enabling glyphicon */
+        content: "-";
+        /* adjust as needed, taken from bootstrap.css */
+        float: right;
+        /* adjust as needed */
+        color: #16cfe0;
+        /* adjust as needed */
+        font-size: 20px; }
+      .faq-content-section .question .question-header .question-btn.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "+";
+        /* adjust as needed, taken from bootstrap.css */ }
+      .faq-content-section .question .question-header .question-btn {
+        transition: all ease 1s;
+        font-family: MetropolisSemiBold, sans-serif;
+        font-size: 18px;
+        outline: none;
+        padding: 30px 50px;
+        width: 100%;
+        border: 0;
+        text-align: left;
+        color: white;
+        background-color: black; }
+      .faq-content-section .question .question-header .question-btn.collapsed {
+        background-color: transparent;
+        color: #353535; }
+    .faq-content-section .question .question-body {
+      transition: all 0.9s ease !important;
+      padding: 50px; }
+    .faq-content-section .question .collapsing {
+      transition: all 0.9s ease; }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .top-navigation .nav-container {
