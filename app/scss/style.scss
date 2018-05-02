@@ -20,6 +20,15 @@ h6 {
   letter-spacing: 1px;
 }
 
+a,
+button{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
 .img-responsive {
   width: 100%;
   height: auto;
@@ -38,9 +47,58 @@ h6 {
     width: 80px;
 
   }
-  a{
-    font-family: MetropolisSemiBold;
-    color: white;
+  .navbar-collapse{
+    button:hover{
+      box-shadow: -2px 0 2px 1px white;
+
+    }
+
+    a{
+      font-family: MetropolisSemiBold, sans-serif;
+      color: white;
+      position: relative;
+      z-index: 1;
+
+      &,
+      &:after,
+      &:before {
+        transition: all .8s;
+
+      }
+
+      &:hover{
+        color: black;
+      }
+
+      &:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 1px;
+        content: '.';
+        color: transparent;
+        background: white;
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+        padding: 10px;
+
+        //-webkit-border-radius: 10px;
+        //-moz-border-radius: 10px;
+        //border-radius: 10px;
+      }
+
+      &:hover:after {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+      }
+    }
   }
 
   .navbar-nav{
@@ -120,6 +178,18 @@ h6 {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
+
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+
+    &:hover{
+      -webkit-box-shadow: 0px 1px 20px 0px white;
+      -moz-box-shadow: 0px 1px 20px 0px white;
+      box-shadow: 0px 1px 20px 0px white;
+    }
     
   }
 
@@ -222,26 +292,6 @@ h6 {
           font-family: MetropolisRegular, sans-serif;
         }
 
-        //.grid{
-        //  text-align: left;
-        //  color:black !important;
-        //  display: grid;
-        //  grid-template-columns: 50px 1fr 40px;
-        //
-        //}
-        //
-        //.arrow{
-        //  font-family: 'MetropolisExtraBold', sans-serif;  /* essential for enabling glyphicon */
-        //  color: #16cfe0;         /* adjust as needed */
-        //  font-size: 20px;
-        //}
-        //
-        //.accordion-toggle.collapsed .arrow{
-        //  content: "+";    /* adjust as needed, taken from bootstrap.css */
-        //
-        //}
-
-
         .accordion-toggle:after {
           /* symbol for "opening" panels */
           font-family: 'MetropolisExtraBold', sans-serif;  /* essential for enabling glyphicon */
@@ -297,18 +347,18 @@ h6 {
   }
 }
 
-.location-section{
+.location-section {
 
-  .padding-box{
-    padding: 100px 0 ;
+  .padding-box {
+    padding: 100px 0;
   }
 
-  &:before{
+  &:before {
     content: ' ';
     height: 100%;
     width: 100%;
     position: absolute;
-    background:url("../img/map-world-vector-bg.png") no-repeat center left,#229ed5;
+    background: url("../img/map-world-vector-bg.png") no-repeat center left, #229ed5;
     //-webkit-background-size: cover;
     //background-size: cover;
   }
@@ -321,15 +371,15 @@ h6 {
   //overflow: hidden;
   color: white;
 
-  img{
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
-  .country-location{
+  .country-location {
     color: black;
     margin-top: 100px;
     background-color: #fff;
@@ -338,7 +388,7 @@ h6 {
     -moz-border-radius: 20px;
     border-radius: 20px;
 
-    .item-header{
+    .item-header {
       color: white;
       font-size: 20px;
       font-family: MetropolisExtraBold, sans-serif;
@@ -349,7 +399,7 @@ h6 {
 
     }
 
-    .item-sub-header{
+    .item-sub-header {
       font-family: MetropolisBold, sans-serif;
       padding: 10px 25px;
       background-color: #56a902;
@@ -358,10 +408,11 @@ h6 {
 
     }
 
-    .item-body{
+    .item-body {
       padding: 25px;
+      padding-bottom: 0;
 
-      h5{
+      h5 {
         font-family: MetropolisBold, sans-serif;
         margin-bottom: 10px;
         font-size: 15px;
@@ -369,7 +420,7 @@ h6 {
         margin-bottom: 0;
       }
 
-      h6{
+      h6 {
         font-family: MetropolisRegular, sans-serif;
         font-size: 12px;
         letter-spacing: 0px;
@@ -378,28 +429,27 @@ h6 {
         margin-bottom: 0;
       }
 
-      ul{
+      ul {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         position: relative;
 
-        li{
+        li {
           position: relative;
-          padding: 10px;
         }
-        
-        li:first-child{
-          &:before{
+
+        li:first-child {
+          &:before {
             content: "5";
             position: absolute;
             text-align: center;
-            width: 50px;
-            padding: 13px;
+            width: 40px;
+            padding: 8px;
 
             color: white;
-            top: 0;
-            left: -55px;
+            top: -7px;
+            left: -57px;
 
             font-family: MetropolisBold, sans-serif;
             background-color: #56a902;
@@ -412,13 +462,13 @@ h6 {
       }
     }
 
-    .item-footer{
-      padding:  25px;
+    .item-footer {
+      padding: 25px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       font-family: MetropolisBold, sans-serif;
-      
-      button{
+
+      button {
         height: auto;
         cursor: pointer;
         color: white;
@@ -431,7 +481,7 @@ h6 {
         -moz-border-radius: 20px;
         border-radius: 20px;
       }
-      span{
+      span {
         color: #56a902;
         vertical-align: middle;
         text-align: center;
@@ -442,50 +492,42 @@ h6 {
     }
   }
 
-  .section-title{
+  .section-title {
     font-family: MetropolisBold, sans-serif;
     font-size: 45px;
   }
 
-  p{
+  p {
     font-size: 16px;
     font-family: MetropolisSemiBold, sans-serif;
   }
 
-  ul{
+  ul {
     margin-top: 20px;
-    width:70%;
-    li{
+    width: 70%;
+    li {
       display: inline-block;
       margin-top: 20px;
 
-      a{
+      a {
         color: black;
         font-family: MetropolisSemiBold, sans-serif;
         background-color: white;
         padding: 10px 30px;
-
 
         margin-right: 5px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
         border-radius: 15px;
 
-        &.btn-more{
+        &.btn-more {
           background-color: red;
           color: white;
         }
       }
 
-
     }
   }
-
-
-  //background: url("../img/Locations-bg.png") no-repeat;
-  //min-height: 500px;
-  //-webkit-background-size: cover;
-  //background-size: cover;
 }
 
 .join-section{
