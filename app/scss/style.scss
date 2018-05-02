@@ -219,15 +219,16 @@ h6 {
 
       .card-header{
         button{
-
           font-family: MetropolisRegular, sans-serif;
         }
+
 
         .accordion-toggle:after {
           /* symbol for "opening" panels */
           font-family: 'MetropolisExtraBold', sans-serif;  /* essential for enabling glyphicon */
           content: "-";    /* adjust as needed, taken from bootstrap.css */
           float: right;        /* adjust as needed */
+          //text-align: right;
           color: #16cfe0;         /* adjust as needed */
           font-size: 20px;
         }
@@ -243,7 +244,7 @@ h6 {
           font-size: 1rem;
           border: 0;
           background: transparent;
-          width: 100%;
+          width: 97%;
           text-align: left;
 
 
