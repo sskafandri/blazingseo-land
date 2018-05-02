@@ -584,6 +584,8 @@ h6 {
   .home-section .home-img {
     margin-top: 100px;
     max-width: 450px; }
+  .compare-section .container {
+    margin-top: 200px; }
   .location-section:before {
     -webkit-background-size: 85%;
     background-size: 85%;
