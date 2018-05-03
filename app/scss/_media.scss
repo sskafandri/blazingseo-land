@@ -2,6 +2,15 @@
 
 
 
+
+	  .faq-welcome-section{
+		  padding: 150px 0 50px;
+
+
+		  h1{
+			  font-size: 40px;
+		  }
+	  }
   }
 
 
@@ -9,6 +18,8 @@
 
   @media (min-width: 992px) and (max-width: 1200px){
 
+	  //----------------------------------------------------------------------------------------------------------------
+	  // home page start
 	.top-navigation{
 
 		.nav-container{
@@ -89,7 +100,6 @@
         font-size: 17px;
       }
 	}
-
 
 	.location-section{
 		&:before{
@@ -241,7 +251,22 @@
 			margin-top: 33px;
 		}
 	}
-}
+	  //home page end
+	  //----------------------------------------------------------------------------------------------------------------
+
+	  .faq-welcome-section{
+		  h1{
+			  font-size: 50px;
+		  }
+	  }
+
+	  .affiliate-welcome-section{
+		  h1 {
+			  font-size: 50px;
+
+		  }
+	  }
+  }
 
 
 
