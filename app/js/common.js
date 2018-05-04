@@ -1,6 +1,36 @@
 $(document).ready(function() {
 
 
+
+    $("#sandwich").click(function() {
+        $("#sandwich").toggleClass("active");
+    });
+
+    // MENU STAFF START
+    $(".menu-list li a").click(function () {
+        $(".top-menu").fadeOut(600);
+        $(".top-content").css("opacity", 1);
+        $("#sandwich").toggleClass("active");
+    });
+
+
+
+    $('.toggle-menu').click(function () {
+        if ($(".top-menu").is(":visible")) {
+            $(".top-content").css("opacity", 1);
+            $(".menu-list li a").removeClass("fadeInUp animated");
+            $(".top-menu").fadeOut(600);
+            $(".menu-list li a").addClass("fadeOutUp animated");
+        } else {
+            $(".top-content").css("opacity", .1);
+            $(".menu-list li a").removeClass("fadeOutUp animated");
+            $(".top-menu").fadeIn(600);
+            $(".menu-list li a").addClass("fadeInUp animated");
+        };
+    })
+    // MENU STAFF END
+
+
     // jQuery to collapse the navbar on scroll
     $(window).scroll(function () {
         if ($(".navbar").offset().top > 50) {

@@ -1,5 +1,8 @@
 @import "preloader/preloader";
 @import "core/fonts";
+@import "burger-menu/sandwich";
+
+@import "nav";
 
 
 $lightGrey: rgba(248, 248, 248, 0.95);
@@ -17,12 +20,11 @@ $lightGrey: rgba(248, 248, 248, 0.95);
   z-index: 1000;
 
   a{
-    color: black;
     padding: 20px 100px;
     background-color: #ff0026;
     border-radius: 10px;
     border: 1px solid #eeeeee;
-    font-family: MetropolisExtraBold;
+    font-family: MetropolisExtraBold, sans-serif;
     color: white;
 
     -webkit-transition: all 0.9s;
@@ -74,13 +76,17 @@ button{
   padding: 35px;
 
   .nav-container{
-    padding: 0 20%;
+    padding: 0 10%;
   }
 
-  button{
-    font-family: MetropolisSemiBold;
-
+  .toggle-menu{
+    font-family: MetropolisSemiBold, sans-serif;
+    outline: none;
+    background-color: transparent;
+    border:0;
     width: 80px;
+
+    z-index: 2000;
 
   }
   .navbar-collapse{
@@ -103,7 +109,7 @@ button{
       }
 
       &:hover{
-        color: black;
+        color: red;
       }
 
       &:after {
@@ -124,9 +130,6 @@ button{
         z-index: -1;
         padding: 10px;
 
-        //-webkit-border-radius: 10px;
-        //-moz-border-radius: 10px;
-        //border-radius: 10px;
       }
 
       &:hover:after {
@@ -172,6 +175,25 @@ button{
     -moz-transition: all .5s ease-in-out, padding .5s ease-in-out;
     transition: all .5s ease-in-out, padding .5s ease-in-out;
   }
+}
+
+@media (min-width: 991px) {
+
+  .top-navigation {
+
+
+    .nav-container {
+      padding: 0 15%;
+    }
+
+    #sandwich{
+
+      display: none;
+
+    }
+  }
+
+
 }
 
 .home-section{
@@ -963,6 +985,18 @@ button{
     -webkit-border-radius:17px;
     -moz-border-radius:17px;
     border-radius: 17px;
+
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+
+    &:hover{
+      -webkit-box-shadow: -7px 12px 16px 3px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: -7px 12px 16px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: -7px 12px 16px 3px rgba(0, 0, 0, 0.3);
+    }
   }
 
   .item{
@@ -977,6 +1011,19 @@ button{
     -webkit-border-radius: 17px;
     -moz-border-radius: 17px;
     border-radius: 17px;
+
+
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+
+    &:hover{
+      -webkit-box-shadow: -7px 12px 16px 3px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: -7px 12px 16px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: -7px 12px 16px 3px rgba(0, 0, 0, 0.3);
+    }
   }
 }
 
