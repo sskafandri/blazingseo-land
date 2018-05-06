@@ -1,5 +1,13 @@
+  @media (min-width: 768px) and (max-width: 991px) {
 
-@media (min-width: 992px) and (max-width: 1200px){
+
+
+  }
+
+
+
+
+  @media (min-width: 992px) and (max-width: 1200px){
 
 	.top-navigation{
 
@@ -35,7 +43,7 @@
 
 		.home-img{
 			margin-top: 100px;
-			max-width: 450px;
+			max-width: 500px;
 		}
 	}
 
@@ -43,6 +51,43 @@
 		.container{
 			margin-top: 200px;
 		}
+	}
+
+	.benefits-section{
+		padding: 100px 10px;
+
+
+		.section-title{
+			font-size: 25px;
+			margin-bottom: 30px;
+		}
+
+		.benefit-item{
+			padding: 20px;
+
+			img{
+				margin-bottom: 15px;
+			}
+
+			.benefit-title{
+				font-size: 20px;
+				letter-spacng: 0;
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.solution-section{
+		padding: 60px 150px;
+
+      .section-title{
+        font-size: 40px;
+        margin-top: 0;
+      }
+
+      .section-text{
+        font-size: 17px;
+      }
 	}
 
 
@@ -146,6 +191,56 @@
 		}
 	}
 
+	.join-section{
+		padding: 75px 0;
+	}
+
+	.pricing-section{
+		padding: 75px 50px;
+
+		.section-title{
+			font-size: 30px;
+			margin-bottom: 20px;
+		}
+
+		.btn-try-free{
+			font-size: 17px;
+			padding: 13px 35px;
+		}
+
+      .price-nav{
+        margin-bottom: 50px;
+      }
+
+        ul{
+
+          li{
+
+            a{
+
+              font-size: 17px;
+              padding: 30px 0 0 20px;
+
+            }
+          }
+        }
+	}
+
+	.footer-section{
+		padding: 75px 0;
+
+
+		ul{
+
+			li{
+				margin-bottom: 20px;
+			}
+		}
+
+		.copyright{
+			margin-top: 33px;
+		}
+	}
 }
 
 
@@ -188,7 +283,7 @@
 
 		.home-img{
 			position: relative;
-			max-width: 500px;
+			max-width: 700px;
 			margin-top: 40px;
 		}
 	}
@@ -241,8 +336,76 @@
 		}
 
 
+      .country-location {
 
-		.section-title{
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+
+        .item-header{
+
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+
+          padding: 10px 10px;
+          font-size: 14px	;
+        }
+
+        .item-sub-header {
+          padding: 9px 10px;
+          font-size: 9px;
+        }
+
+        .item-body{
+          padding: 10px;
+          padding-bottom: 5px;
+
+          h5{
+            font-size: 12px;
+          }
+          h6{
+            font-size: 10px;
+            margin-bottom: 5px;
+          }
+
+          ul{
+            margin-left: 33px;
+            li{
+
+
+
+              font-size: 11px;
+              padding: 0;
+
+              &:first-child:before{
+                width: 30px;
+                padding: 6px;
+                top: -6px;
+                left: -38px;
+              }
+
+            }
+          }
+        }
+
+        .item-footer{
+          grid-template-columns: 1fr;
+          padding: 15px;
+          padding-top: 0;
+
+
+          button{
+            padding: 5px;
+            grid-row: 2;
+          }
+
+        }
+      }
+
+
+      .section-title{
 			font-size: 29px
 		}
 
@@ -316,7 +479,7 @@
 		.home-img{
 			position: relative;
 			max-width: 700px;
-			margin-top: 140px;
+			margin-top: 100px;
 		}
 	}
 
@@ -335,6 +498,10 @@
 		}
 
 		.country-location {
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          
 			.item-header{
 				font-size: 13px;
 				padding: 10px 15px;
@@ -350,6 +517,7 @@
 			.item-body{
 
 				padding: 15px;
+                padding-bottom: 0;
 
 				h5{
 					font-size: 13px;
@@ -370,7 +538,7 @@
 							width: 30px;
 							padding: 5px;
 							top: -5px;
-							left: -42px;
+							left: -38px;
 						}
 						padding: 0;
 						font-size: 13px;
@@ -381,9 +549,17 @@
 			}
 
 			.item-footer{
-				padding: 15px;
+				padding: 10px;
+
+              grid-template-columns: 1fr;
+
+                button{
+                  padding: 5px;
+                }
 
 				span{
+                  grid-row: 1/2;
+                  margin-bottom: 5px;
 					padding: 0;
 				}
 			}
@@ -408,5 +584,9 @@
 			}
 		}
 	}
+
+  .pricing-section{
+    padding: 100px 50px;
+  }
 }
 

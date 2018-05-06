@@ -20,6 +20,15 @@ h6 {
   letter-spacing: 1px;
 }
 
+a,
+button{
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: none;
+  }
+}
+
 .img-responsive {
   width: 100%;
   height: auto;
@@ -38,9 +47,58 @@ h6 {
     width: 80px;
 
   }
-  a{
-    font-family: MetropolisSemiBold;
-    color: white;
+  .navbar-collapse{
+    button:hover{
+      box-shadow: -2px 0 2px 1px white;
+
+    }
+
+    a{
+      font-family: MetropolisSemiBold, sans-serif;
+      color: white;
+      position: relative;
+      z-index: 1;
+
+      &,
+      &:after,
+      &:before {
+        transition: all .8s;
+
+      }
+
+      &:hover{
+        color: black;
+      }
+
+      &:after {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+        width: 100%;
+        height: 1px;
+        content: '.';
+        color: transparent;
+        background: white;
+        visibility: hidden;
+        opacity: 0;
+        z-index: -1;
+        padding: 10px;
+
+        //-webkit-border-radius: 10px;
+        //-moz-border-radius: 10px;
+        //border-radius: 10px;
+      }
+
+      &:hover:after {
+        opacity: 1;
+        visibility: visible;
+        height: 100%;
+      }
+    }
   }
 
   .navbar-nav{
@@ -79,7 +137,6 @@ h6 {
     transition: all .5s ease-in-out, padding .5s ease-in-out;
   }
 }
-
 
 .home-section{
 
@@ -120,6 +177,18 @@ h6 {
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
+
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+
+    &:hover{
+      -webkit-box-shadow: 0px 1px 20px 0px white;
+      -moz-box-shadow: 0px 1px 20px 0px white;
+      box-shadow: 0px 1px 20px 0px white;
+    }
     
   }
 
@@ -149,7 +218,6 @@ h6 {
 
 }
 
-
 .benefits-section{
   padding: 100px 200px;
 
@@ -177,7 +245,6 @@ h6 {
     }
   }
 }
-
 
 .solution-section{
   padding: 100px 200px;
@@ -222,26 +289,6 @@ h6 {
           font-family: MetropolisRegular, sans-serif;
         }
 
-        //.grid{
-        //  text-align: left;
-        //  color:black !important;
-        //  display: grid;
-        //  grid-template-columns: 50px 1fr 40px;
-        //
-        //}
-        //
-        //.arrow{
-        //  font-family: 'MetropolisExtraBold', sans-serif;  /* essential for enabling glyphicon */
-        //  color: #16cfe0;         /* adjust as needed */
-        //  font-size: 20px;
-        //}
-        //
-        //.accordion-toggle.collapsed .arrow{
-        //  content: "+";    /* adjust as needed, taken from bootstrap.css */
-        //
-        //}
-
-
         .accordion-toggle:after {
           /* symbol for "opening" panels */
           font-family: 'MetropolisExtraBold', sans-serif;  /* essential for enabling glyphicon */
@@ -266,6 +313,14 @@ h6 {
           width: 97%;
           text-align: left;
           color: black;
+          outline: none;
+
+
+
+          &:hover{
+            //outline: none;
+            //background-color: black;
+          }
 
           span{
             display: inline-block;
@@ -297,18 +352,18 @@ h6 {
   }
 }
 
-.location-section{
+.location-section {
 
-  .padding-box{
-    padding: 100px 0 ;
+  .padding-box {
+    padding: 100px 0;
   }
 
-  &:before{
+  &:before {
     content: ' ';
     height: 100%;
     width: 100%;
     position: absolute;
-    background:url("../img/map-world-vector-bg.png") no-repeat center left,#229ed5;
+    background: url("../img/map-world-vector-bg.png") no-repeat center left, #229ed5;
     //-webkit-background-size: cover;
     //background-size: cover;
   }
@@ -321,15 +376,15 @@ h6 {
   //overflow: hidden;
   color: white;
 
-  img{
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }
 
-  .country-location{
+  .country-location {
     color: black;
     margin-top: 100px;
     background-color: #fff;
@@ -338,7 +393,7 @@ h6 {
     -moz-border-radius: 20px;
     border-radius: 20px;
 
-    .item-header{
+    .item-header {
       color: white;
       font-size: 20px;
       font-family: MetropolisExtraBold, sans-serif;
@@ -349,7 +404,7 @@ h6 {
 
     }
 
-    .item-sub-header{
+    .item-sub-header {
       font-family: MetropolisBold, sans-serif;
       padding: 10px 25px;
       background-color: #56a902;
@@ -358,10 +413,11 @@ h6 {
 
     }
 
-    .item-body{
+    .item-body {
       padding: 25px;
+      padding-bottom: 0;
 
-      h5{
+      h5 {
         font-family: MetropolisBold, sans-serif;
         margin-bottom: 10px;
         font-size: 15px;
@@ -369,7 +425,7 @@ h6 {
         margin-bottom: 0;
       }
 
-      h6{
+      h6 {
         font-family: MetropolisRegular, sans-serif;
         font-size: 12px;
         letter-spacing: 0px;
@@ -378,28 +434,27 @@ h6 {
         margin-bottom: 0;
       }
 
-      ul{
+      ul {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
         position: relative;
 
-        li{
+        li {
           position: relative;
-          padding: 10px;
         }
-        
-        li:first-child{
-          &:before{
+
+        li:first-child {
+          &:before {
             content: "5";
             position: absolute;
             text-align: center;
-            width: 50px;
-            padding: 13px;
+            width: 40px;
+            padding: 8px;
 
             color: white;
-            top: 0;
-            left: -55px;
+            top: -7px;
+            left: -57px;
 
             font-family: MetropolisBold, sans-serif;
             background-color: #56a902;
@@ -412,13 +467,13 @@ h6 {
       }
     }
 
-    .item-footer{
-      padding:  25px;
+    .item-footer {
+      padding: 25px;
       display: grid;
       grid-template-columns: 1fr 1fr;
       font-family: MetropolisBold, sans-serif;
-      
-      button{
+
+      button {
         height: auto;
         cursor: pointer;
         color: white;
@@ -431,7 +486,7 @@ h6 {
         -moz-border-radius: 20px;
         border-radius: 20px;
       }
-      span{
+      span {
         color: #56a902;
         vertical-align: middle;
         text-align: center;
@@ -442,50 +497,57 @@ h6 {
     }
   }
 
-  .section-title{
+  .section-title {
     font-family: MetropolisBold, sans-serif;
     font-size: 45px;
   }
 
-  p{
+  p {
     font-size: 16px;
     font-family: MetropolisSemiBold, sans-serif;
   }
 
-  ul{
+  ul {
     margin-top: 20px;
-    width:70%;
-    li{
+    width: 70%;
+    li {
       display: inline-block;
       margin-top: 20px;
 
-      a{
+      a {
         color: black;
         font-family: MetropolisSemiBold, sans-serif;
         background-color: white;
         padding: 10px 30px;
-
 
         margin-right: 5px;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
         border-radius: 15px;
 
-        &.btn-more{
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+
+        &:hover{
+          color: white;
+          background-color: red;
+        }
+
+        &.btn-more {
           background-color: red;
           color: white;
+
+          &:hover{
+            background-color: #b80000;
+          }
         }
       }
 
-
     }
   }
-
-
-  //background: url("../img/Locations-bg.png") no-repeat;
-  //min-height: 500px;
-  //-webkit-background-size: cover;
-  //background-size: cover;
 }
 
 .join-section{
@@ -551,7 +613,10 @@ h6 {
     button {
       position: absolute;
       height: 70px;
+      cursor: pointer;
+
     }
+    
     button {
       background: rgba(0, 0, 0, 0.3);
       background: white;
@@ -562,14 +627,12 @@ h6 {
       font-size: 20px;
       font-weight: bold;
       color: red;
-      cursor: pointer;
       transition:
               width .3s ease,
               background .3s ease,
               opacity .3s ease;
       pointer-events: none;
       &.active {
-        //color: #ffffff;
 
         font-weight: bold;
         background: white;
@@ -632,8 +695,11 @@ h6 {
     font-family: MetropolisBold, sans-serif;
     font-size: 18px;
     padding: 20px 40px;
-
     margin: 30px 0;
+
+    &:hover{
+      background-color: #d41315;
+    }
   }
 
   .price-nav{
@@ -655,12 +721,38 @@ h6 {
 
       position: relative;
 
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+
+      &:hover{
+        background-color: #0155d9;
+
+        a{
+          color: white;
+        }
+      }
+
+
 
       &.active{
         background-color: #0152cc;
 
+        &:hover{
+          background-color: #0145ad;
+
+          &:after {
+            border-top-color: #0145ad;
+          }
+
+        }
+
         a{
           color: white;
+
+
         }
 
         &:after, &:before {
@@ -672,6 +764,12 @@ h6 {
           width: 0;
           position: absolute;
           pointer-events: none;
+
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
         }
 
         &:after {
@@ -694,8 +792,16 @@ h6 {
         font-size: 20px;
         color: #353535;
         line-height: 40px;
-
         font-family: MetropolisBold,sans-serif;
+
+
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+
+
 
         img{
           float: right;
@@ -716,6 +822,20 @@ h6 {
       -moz-border-radius: 20px;
       border-radius: 20px;
 
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+
+      &:hover{
+        -webkit-box-shadow: 1px 1px 16px 8px rgba(0, 0, 0, 0.3);
+        -moz-box-shadow: 1px 1px 16px 8px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 16px 8px rgba(0, 0, 0, 0.3);
+      }
+
+
+
       .price-recommended{
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -724,6 +844,7 @@ h6 {
         font-family: MetropolisExtraBold, sans-serif;
         background-color: blue;
         margin-bottom: 20px;
+
 
       }
 
@@ -756,14 +877,22 @@ h6 {
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
+
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -ms-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        
+        &:hover{
+          background-color: #c71315;
+        }
       }
     }
   }
 
 
 }
-
-
 
 .support-section{
   background-color: #064097;
@@ -825,14 +954,21 @@ h6 {
     a{
       color: #5e89cc;
       font-family: MetropolisRegular, sans-serif;
+
     }
 
     a.menu-header{
       font-family: MetropolisExtraBold, sans-serif;
       color: white;
+
+
     }
     li{
       margin-bottom: 30px;
+
+      a:hover{
+        text-decoration: underline;
+      }
     }
   }
 
@@ -843,9 +979,107 @@ h6 {
   }
 }
 
+//----------------------------------------------------------------------------------------------------------------------
+//    FAQ page styles start
+//----------------------------------------------------------------------------------------------------------------------
+
+.faq-welcome-section{
+  color: white;
+  padding: 250px 0 50px;
+  //background-color: red;
+  background: url("../img/home-ellipse.png") no-repeat  center, red;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+
+  h1{
+    font-size: 70px;
+    font-family: MetropolisBold,sans-serif;
+  }
+}
+
+.faq-content-section{
+  background-color: #ededed;
+  padding: 80px 0 100px;
 
 
 
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    a{
+      font-family: MetropolisBold, sans-serif;
+      color: #353535;
+      font-size: 15px;
+
+
+      img{
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .question{
+    width: 100%;
+    border-radius: 20px;
+    background-color: white;
+
+    .question-header{
+      width: 100%;
+      background-color: white;
+
+      .question-btn:after {
+        /* symbol for "opening" panels */
+        font-family: 'MetropolisExtraBold', sans-serif;  /* essential for enabling glyphicon */
+        content: "-";    /* adjust as needed, taken from bootstrap.css */
+        float: right;        /* adjust as needed */
+        //text-align: right;
+        color: #16cfe0;         /* adjust as needed */
+        font-size: 20px;
+      }
+
+      .question-btn.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "+";    /* adjust as needed, taken from bootstrap.css */
+      }
+
+
+      .question-btn{
+        transition: all ease 1s;
+
+        font-family: MetropolisSemiBold, sans-serif;
+        font-size: 18px;
+        outline: none;
+        padding: 30px 50px;
+        width: 100%;
+        border: 0;
+        text-align: left;
+        color: white;
+        background-color: black;
+      }
+
+      .question-btn.collapsed{
+        background-color: transparent;
+        color: #353535;
+      }
+    }
+
+
+    .question-body{
+      transition: all 0.9s ease !important;
+      padding: 50px;
+    }
+
+    .collapsing{
+      transition: all 0.9s ease;
+    }
+  }
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+//    FAQ page styles end
+//----------------------------------------------------------------------------------------------------------------------
 
 
 @import "media";
