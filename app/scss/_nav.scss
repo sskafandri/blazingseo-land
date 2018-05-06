@@ -1,0 +1,169 @@
+
+
+
+
+
+.top-menu {
+
+  margin-left: 10%;
+  width: 100%;
+
+  ul{
+
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr) 215px;
+
+    text-align: center;
+
+    margin: 0;
+
+    li{
+
+      //justify-self: stretch;
+      align-self: center;
+
+      //margin-right: 35px;
+
+      //display: inline-block;
+
+      a{
+        font-family: MetropolisSemiBold, sans-serif;
+        color: white;
+        position: relative;
+        z-index: 1;
+        font-size: 20px;
+
+        &,
+        &:after,
+        &:before {
+          transition: all .8s;
+
+        }
+
+        &:hover{
+          color: red;
+        }
+
+        &:after {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          margin: auto;
+          width: 100%;
+          height: 1px;
+          content: '.';
+          color: transparent;
+          background: white;
+          visibility: hidden;
+          opacity: 0;
+          z-index: -1;
+          padding: 10px;
+
+        }
+
+        &:hover:after {
+          opacity: 1;
+          visibility: visible;
+          height: 100%;
+        }
+      }
+
+      &:last-child{
+
+        button {
+          width: 100px;
+          //display: inline-block;
+
+          font-family: MetropolisExtraBold, sans-serif;
+        }
+
+        .login-btn{
+          margin-left: -7px;
+        }
+
+      }
+
+    }
+  }
+}
+
+
+@media (max-width: 991px) {
+
+  .top-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .9);
+    z-index: 50;
+    right: 0;
+    top: 0;
+    display: none;
+
+    //li {
+    //  &:nth-child(1) a {
+    //  + animation-duration(0.7 s);
+    //  }
+    //  &:nth-child(2) a {
+    //  + animation-duration(1.2 s);
+    //  }
+    //  &:nth-child(3) a {
+    //  + animation-duration(1.7 s);
+    //  }
+    //  &:nth-child(4) a {
+    //  + animation-duration(2.5 s);
+    //  }
+    //}
+    ul,
+    li {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul {
+      grid-template-columns:  1fr;
+
+      grid-row-gap: 20px;
+
+
+      margin-top: 160px;
+      text-align: center;
+
+
+      li{
+
+        &:last-child{
+
+
+          .login-btn{
+            margin-left: 0px;
+          }
+
+        }
+
+      }
+
+
+      li:hover {
+        background-color: rgba(255, 255, 255, 0.05);
+      }
+
+      a {
+        display: block;
+        color: #fff;
+        padding: 25px 0;
+        font-size: 20px;
+        //font-weight: 600;
+        opacity: 1;
+      }
+    }
+  }
+
+}
+
+

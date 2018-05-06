@@ -20,7 +20,7 @@
     <!--custom styles-->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body style="overflow-x:hidden;">
 
 <!--PRELOADER-->
 <div class="loader">
@@ -29,7 +29,21 @@
 <!--PRELOADER-->
 
 
+<!--Developer nav panel-->
+<!--<div class='panel'>-->
+    <!--<a href="#">Home</a>-->
+    <!--<a href="/affiliate.html">Affiliate </a>-->
+    <!--<a href="/pricing.html">pricing</a>-->
+    <!--<a href="/FAQ.html">FAQ page</a>-->
+
+
+<!--</div>-->
+<!--Developer nav panel-->
+
+
 <!--NAVIGATION START-->
+
+
 
 <nav id="top-navigation" class="top-navigation navbar navbar-expand-lg fixed-top">
 
@@ -37,12 +51,22 @@
         <a href="#" class="navbar-brand">
             <img src="img/logo.png" alt="blazing logo" class="img-responsive" style="width: 75px">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">-->
+            <!--<span class="navbar-toggler-icon"></span>-->
+        <!--</button>-->
+
+        <button class="toggle-menu">
+            <span id="sandwich">
+                <span class="sw-topper"></span>
+                <span class="sw-bottom"></span>
+                <span class="sw-footer"></span>
+            </span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+
+
+        <nav class="top-menu">
+            <ul class="menu-list">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -59,7 +83,7 @@
                     <a class="nav-link" href="#">Careers</a>
                 </li>
 
-                <li class="nav-item dropdown">
+                <li class="nav-item  ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         More
                     </a>
@@ -70,13 +94,53 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
+
+                <li>
+
+                    <button class="btn btn-light text-danger join-btn" type="submit">Join us</button>
+
+                    <button class="btn btn-outline-light login-btn" type="submit">Login</button>
+
+                </li>
             </ul>
-            <button class="btn btn-light my-2 my-sm-0 text-danger" type="submit">Join us</button>
+        </nav>
 
-            <button class="btn btn-outline-light my-2 my-sm-0 " type="submit">Login</button>
+        <!--<div class="collapse navbar-collapse" id="nav-menu">-->
+            <!--<ul class="navbar-nav ml-auto mt-2 mt-lg-0 menu-list">-->
+                <!--<li class="nav-item active">-->
+                    <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Features</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Pricing</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Contact</a>-->
+                <!--</li>-->
+                <!--<li class="nav-item">-->
+                    <!--<a class="nav-link" href="#">Careers</a>-->
+                <!--</li>-->
+
+                <!--<li class="nav-item dropdown">-->
+                    <!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+                        <!--More-->
+                    <!--</a>-->
+                    <!--<div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+                        <!--<a class="dropdown-item" href="#">Action</a>-->
+                        <!--<a class="dropdown-item" href="#">Another action</a>-->
+                        <!--<div class="dropdown-divider"></div>-->
+                        <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                    <!--</div>-->
+                <!--</li>-->
+            <!--</ul>-->
+            <!--<button class="btn btn-light my-2 my-sm-0 text-danger" type="submit">Join us</button>-->
+
+            <!--<button class="btn btn-outline-light my-2 my-sm-0 " type="submit">Login</button>-->
 
 
-        </div>
+        <!--</div>-->
     </div>
 </nav>
 <!--NAVIGATION END-->
@@ -121,54 +185,51 @@
 
 <!--benefits section start-->
 <section id="benefits" class="benefits-section">
+
+
     <div class="pl-5 pr-5 container-fluid text-center">
     <h3 class="section-title">From Unlimited Bandwidth to HTTP/HTTPS/SOCKS Support,<br> Our Proxies Do it all!</h3>
 
         <div class="row">
-            <div class="col-lg-4 col-xl-3 benefit-item">
+            <div class="col-md-6 col-lg-4 col-xl-3 benefit-item">
                 <img src="img/benefits/speed.png" alt="speed">
                 <h4 class="benefit-title">Speed</h4>
                 <p class="benefit-description">1 Gbps Unmetered Bandwidth. No more silly Limits, crank up the speed!</p>
             </div>
-            <div class="col-lg-4 col-xl-3 benefit-item">
+            <div class="col-md-6 col-lg-4 col-xl-3 benefit-item">
                 <img src="img/benefits/unlimited.png" alt="unlm">
                 <h4 class="benefit-title">Unlimited Bandwidth  & Threads</h4>
                 <p class="benefit-description">Truly unlimited and unmetered, our proxies have zero limits.</p>
             </div>
-            <div class="col-lg-4 col-xl-3 benefit-item">
+            <div class="col-md-6 col-lg-4 col-xl-3 benefit-item">
                 <img src="img/benefits/authentication.png" alt="auth">
                 <h4 class="benefit-title">Authentication</h4>
                 <p class="benefit-description">We offer IP Authoritazion and User:Pass authorization</p>
             </div>
-            <div class="col-lg-4 col-xl-3 benefit-item">
+            <div class="col-md-6 col-lg-4 col-xl-3 benefit-item">
                 <img src="img/benefits/delivery.png" alt="deliv">
-
                 <h4 class="benefit-title">Automatic & instant Delivery</h4>
                 <p class="benefit-description">We allow automatic proxy replacements once per month</p>
             </div>
-            <div class="col-lg-4 col-xl-3 benefit-item">
+            <div class="col-md-6 col-lg-4 col-xl-3 benefit-item">
                 <img src="img/benefits/affiliat.png" alt="affil">
-
                 <h4 class="benefit-title">Affiliate  System - 10%</h4>
                 <p class="benefit-description">That's 10% recurring commissions!</p>
             </div>
-            <div class="col-lg-4 col-xl-3 benefit-item">
+            <div class="col-md-6 col-lg-4 col-xl-3 benefit-item">
                 <img src="img/benefits/list.png" alt="list">
-
                 <h4 class="benefit-title">TONS of Subnets</h4>
                 <p class="benefit-description">We own 500+ Class C subnets, As well as 40 Class B, and 24 Clas</p>
             </div>
-            <div class="col-lg-4 col-xl-3 benefit-item">
+            <div class="col-md-6 col-lg-4 col-xl-3 benefit-item">
                 <img src="img/benefits/http.png" alt="http">
-
                 <h4 class="benefit-title">HTTP/HTTPS/SOCKS Supported!</h4>
                 <p class="benefit-description">Unlike most private proxy providers, we support all 3 protocols</p>
             </div>
-            <div class="col-lg-4 col-xl-3 benefit-item">
+            <div class="col-md-6 col-lg-4 col-xl-3 benefit-item">
                 <img src="img/benefits/algeria.png" alt="country">
-
                 <h4 class="benefit-title">Four Countries  To Choose From</h4>
-                <p class="benefit-description">We offer proxies from these 4 countries: USA, Germany, Brazil a</p>
+                <p class="benefit-description">We offer proxies from these 4 countries: USA, Germany, Brazil and South Africa</p>
             </div>
         </div>
     </div>
@@ -286,7 +347,7 @@
     <div class="container-fluid padding-box">
         <div class="row">
 
-            <div class="col-lg-3 offset-lg-4 col-xl-2 offset-xl-5 p-xl-0">
+            <div class="col-10 offset-1 col-sm-7 offset-sm-4 col-md-7 offset-md-4 order-2 col-lg-3 offset-lg-4 col-xl-2 offset-xl-5 p-xl-0">
                 <div class="item country-location">
                     <div class="item-header">
                         Location Preferences
@@ -300,7 +361,7 @@
                         <h6>Total proxies To Be Assigned</h6>
 
 
-                        <ul>
+                        <ul class="location-countries-list-pop">
                             <li>Mixed</li>
                             <li>Los Angeles</li>
                             <li>New York</li>
@@ -317,7 +378,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-4 offset-lg-1 col-xl-3 offset-xl-1">
+            <div class="offset-1 col-sm-10 offset-sm-1 col-md-10 offset-md-2 order-1 order-lg-2 col-lg-4 offset-lg-1 col-xl-3 offset-xl-1">
                 <h3 class="section-title">
                     Choose Your Proxy <br>  Locations From <br> 3 Countries
                 </h3>
@@ -327,7 +388,7 @@
                 <p>Our USA location currently has 19 cities to choose <br>  from including:</p>
 
 
-                <ul>
+                <ul class="location-countries-list">
                     <li><a href="">Los Angeles</a></li>
                     <li><a href="">New Your City</a></li>
                     <li><a href="">Dallas</a></li>
@@ -353,7 +414,7 @@
         <form action="">
             <div class="register">
                 <div class="field active">
-                    <input id="register" maxlength="21" type="text" /><label for="register"><span class="text-light">Enter your email address</span></label>
+                    <input id="register" maxlength="30" type="text" /><label for="register"><span class="text-light">Enter your email address</span></label>
                     <button class="">
                     <img src="img/logo-small.png" alt="">Get Blazing Proxies Now
                     </button>
@@ -381,26 +442,30 @@
         <ul class="ml-auto mr-auto">
             <li >
                 <a href="#">
-                    USA
-                    <img src="img/USA-flag.png" class="float-right" alt="usa">
+                    <span>USA</span>
+                    <img src="img/USA-flag.png" class="" alt="usa">
                 </a>
 
 
             </li>
             <li class="active">
                 <a href="#">
-                    German  <img src="img/GERMAN-flag.png" alt="german">
+                    <span>German</span>
+                      <img src="img/GERMAN-flag.png" alt="german">
                 </a>
 
             </li>
             <li><a href="#">
-                Brazil
+                <span>Brazil</span>
                 <img src="img/BRAZIL-flag.png" alt="brazil">
             </a>
 
             </li>
-            <li><a href="#">Sneaker</a>
+            <li><a href="#">
+                <span>Sneaker</span>
+
                 <img src="img/sneaker.png" class="" width="65px" alt="sneaker">
+            </a>
             </li>
         </ul>
     </div>
@@ -409,7 +474,7 @@
         <div class="row">
             <div class="col-lg-12 col-xl-10 offset-xl-1">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-12 col-sm-4 order-2 mb-5">
                         <div class="price">
                             <div class="price-body">
                                 <h5 class="price-title">
@@ -427,7 +492,7 @@
 
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-4 order-1 order-sm-2 mb-5">
                         <div class="price">
                             <div class="price-recommended text-uppercase">
                                 recommended
@@ -447,7 +512,7 @@
 
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-4 order-3 mb-5" >
                         <div class="price">
 
                             <div class="price-body">
@@ -481,7 +546,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-xl-4">
+            <div class="col-md-10 col-md-1 col-lg-5 col-xl-4">
                 <h3 class="section-title">
                     Real Support From a Full  Support Team
                 </h3>
@@ -493,7 +558,7 @@
                 </p>
             </div>
 
-            <div class="col-lg-5 offset-lg-1 col-xl-6 offset-xl-2 pt-5" style="background: url('img/support-bg.png') no-repeat center;" >
+            <div class="col-lg-5 offset-lg-1 col-xl-6 offset-xl-2 pt-5 contact-right-block" style="background: url('img/support-bg.png') no-repeat center;" >
                 <div class="wrapper" >
 
 
@@ -504,10 +569,10 @@
                                 Contact Us
                             </a>
                         </div>
-                        <div class="col-6 mt-5">
+                        <div class="col-6 mt-sm-5">
 
                             <div class="row">
-                                <div class="col-4 mr-4">
+                                <div class="col-12 mr-4 mb-2 mb-sm-0">
                                     <a class="d-block item text-center" style="color:#365a9e; font-size: 10px" href="#" target="_blank">
                                         <i class="fab fa-facebook " style="font-size: 36px"></i>
                                         Facebook
@@ -535,97 +600,99 @@
 
 <!--footer start-->
 <footer id="footer" class="footer-section">
-<div class="container">
-    <div class="row">
+    <div class="container">
+        <div class="row">
 
-        <div class="col-sm-3">
-            <ul>
-                <li >
-                    <a href="" class="menu-header">Pricing</a>
-                </li>
-                <li>
-                    <a href="">German Proxy</a>
-                </li>
-                <li>
-                    <a href=""> Us Proxy</a>
-                </li>
-                <li>
-                    <a href="">Brazil Proxy</a>
-                </li>
-                <li>
-                    <a href="">Sneaker Proxy</a>
-                </li>
-            </ul>
+            <div class="col-4 col-sm-4 col-md-3">
+                <ul>
+                    <li >
+                        <a href="" class="menu-header">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="">German Proxy</a>
+                    </li>
+                    <li>
+                        <a href=""> Us Proxy</a>
+                    </li>
+                    <li>
+                        <a href="">Brazil Proxy</a>
+                    </li>
+                    <li>
+                        <a href="">Sneaker Proxy</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 col-sm-4 col-md-3">
+                <ul>
+                    <li >
+                        <a href="" class="menu-header">Resources</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Resources
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            FAQ
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            API
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            Server Status
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4 col-sm-4 col-md-3">
+                <ul>
+                    <li>
+                        <a href="" class="menu-header">Company</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Company</a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            About Us</a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            Our Team</a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            News</a>
+
+                    </li>
+                    <li>
+                        <a href="">
+                            Logos & Banners</a>
+
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="col-sm-3">
-            <ul>
-                <li >
-                    <a href="" class="menu-header">Resources</a>
-                </li>
-                <li>
-                    <a href="">
-                        Resources
-                    </a>
+        <div class="row ">
+            <div class="copyright ml-auto mr-auto">
+                Copyright 2017 Blazing Proxies | All Rights Reserved
+            </div>
 
-                </li>
-                <li>
-                    <a href="">
-                        FAQ
-                    </a>
 
-                </li>
-                <li>
-                    <a href="">
-                        API
-                    </a>
-
-                </li>
-                <li>
-                    <a href="">
-                        Server Status
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm-3">
-            <ul>
-                <li>
-                    <a href="" class="menu-header">Company</a>
-                </li>
-                <li>
-                    <a href="">
-                        Company</a>
-
-                </li>
-                <li>
-                    <a href="">
-                        About Us</a>
-
-                </li>
-                <li>
-                    <a href="">
-                        Our Team</a>
-
-                </li>
-                <li>
-                    <a href="">
-                        News</a>
-
-                </li>
-                <li>
-                    <a href="">
-                        Logos & Banners</a>
-
-                </li>
-            </ul>
         </div>
     </div>
-    <div class="row ">
-        <div class="copyright ml-auto mr-auto">
-            Copyright 2017 Blazing Proxies | All Rights Reserved
-        </div>
-    </div>
-</div>
 </footer>
 <!--footer end-->
 
