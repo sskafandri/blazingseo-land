@@ -697,10 +697,20 @@ button {
           .pricing-section .price-nav ul li.active:after {
             border-top-color: #0152cc;
             border-width: 20px;
-            margin-left: -20px; }
+            margin-left: -20px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
           .pricing-section .price-nav ul li.active:before {
             border-width: 23px;
-            margin-left: -23px; }
+            margin-left: -23px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
         .pricing-section .price-nav ul li a {
           width: 100%;
           padding: 30px 50px;
@@ -877,9 +887,6 @@ button {
         margin-bottom: 20px; }
   .faq-content-section .grid-sizer {
     width: 100%; }
-
-.show {
-  display: block !important; }
 
 .question {
   width: 100%; }

@@ -834,12 +834,23 @@ button{
             border-top-color: #0152cc;
             border-width: 20px;
             margin-left: -20px;
+
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
           }
 
           &:before {
             //border-color: rgba(0, 0, 0, 0);
             border-width: 23px;
             margin-left: -23px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
           }
         }
 
@@ -1126,10 +1137,6 @@ button{
 
 }
 
-.show {
-  display: block !important;
-
-}
 
 .question{
   width: 100%;
