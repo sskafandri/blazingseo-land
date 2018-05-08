@@ -341,7 +341,22 @@ button {
   .benefits-section img {
     margin-bottom: 40px; }
   .benefits-section .benefit-item {
-    padding: 50px; }
+    padding: 50px;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+    transition: all 0.6s ease;
+    top: 0; }
+    .benefits-section .benefit-item:hover {
+      box-shadow: 0px 0px 12px 6px #a4a4a4;
+      position: relative;
+      top: -10px;
+      -webkit-transition: top 1s ease;
+      -moz-transition: top 1s ease;
+      -ms-transition: top 1s ease;
+      -o-transition: top 1s ease;
+      transition: top 1s ease; }
     .benefits-section .benefit-item .benefit-title {
       font-family: MetropolisBold, sans-serif; }
     .benefits-section .benefit-item i {
@@ -415,7 +430,14 @@ button {
           display: block;
           margin-top: 15px;
           color: #16cee0;
-          font-weight: 700; }
+          font-weight: 700;
+          -webkit-transition: all 0.7s ease;
+          -moz-transition: all 0.7s ease;
+          -ms-transition: all 0.7s ease;
+          -o-transition: all 0.7s ease;
+          transition: all 0.7s ease; }
+          .solution-section #accordion .card .card-body .learn-more-link:hover {
+            color: #5def0e; }
 
 .location-section {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0086c9+0,207cca+0,2989d8+50,229ed5+100 */
@@ -697,10 +719,20 @@ button {
           .pricing-section .price-nav ul li.active:after {
             border-top-color: #0152cc;
             border-width: 20px;
-            margin-left: -20px; }
+            margin-left: -20px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
           .pricing-section .price-nav ul li.active:before {
             border-width: 23px;
-            margin-left: -23px; }
+            margin-left: -23px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s; }
         .pricing-section .price-nav ul li a {
           width: 100%;
           padding: 30px 50px;
@@ -857,6 +889,8 @@ button {
 .faq-content-section {
   background-color: #ededed;
   padding: 80px 0 100px; }
+  .faq-content-section .show {
+    display: block !important; }
   .faq-content-section .questions-wrap {
     position: relative; }
     .faq-content-section .questions-wrap .filterDiv {
@@ -864,7 +898,7 @@ button {
       transition: display 1s !important; }
   .faq-content-section .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); }
+    grid-template-columns: 20% 20% 20% 20% 20%; }
     .faq-content-section .grid-container button {
       font-family: MetropolisBold, sans-serif;
       color: #353535;
@@ -873,13 +907,22 @@ button {
       border: 0;
       outline: none;
       cursor: pointer; }
+      .faq-content-section .grid-container button i {
+        font-size: 35px;
+        margin-bottom: 20px; }
       .faq-content-section .grid-container button img {
         margin-bottom: 20px; }
+      .faq-content-section .grid-container button:hover {
+        color: red; }
+      .faq-content-section .grid-container button.active {
+        color: red;
+        outline: none; }
+        .faq-content-section .grid-container button.active:hover {
+          color: #d50000 !important; }
+      .faq-content-section .grid-container button:focus {
+        outline: red; }
   .faq-content-section .grid-sizer {
     width: 100%; }
-
-.show {
-  display: block !important; }
 
 .question {
   width: 100%; }
@@ -901,9 +944,9 @@ button {
     background-color: #474747;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    -webkit-box-shadow: -1px 1px 6px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: -1px 1px 6px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: -1px 1px 6px 0px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3); }
     .question .question-btn span {
       margin-top: 5px;
       display: inline-block; }
@@ -929,14 +972,10 @@ button {
     color: #eee;
     /* adjust as needed */
     font-size: 20px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     text-align: center;
-    background: url("../img/faq/minus faq@2x.png") no-repeat center;
-    border: 1px solid white;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%; }
+    background: url("../img/faq/minus faq@2x.png") no-repeat center; }
   .question .question-btn.collapsed:after {
     /* symbol for "collapsed" panels */
     content: " ";
@@ -1376,15 +1415,17 @@ button {
     .location-section ul.location-countries-list li a {
       padding: 10px 10px;
       font-size: 12px; }
-  .join-section .register label {
-    font-size: 14px; }
-  .join-section .register .field input.active {
-    font-size: 14px; }
-  .join-section .register button {
-    font-size: 0;
-    width: 25%; }
-    .join-section .register button img {
-      margin-left: 16px; }
+  .join-section {
+    padding: 50px 0; }
+    .join-section .register label {
+      font-size: 14px; }
+    .join-section .register .field input.active {
+      font-size: 14px; }
+    .join-section .register button {
+      font-size: 0;
+      width: 25%; }
+      .join-section .register button img {
+        margin-left: 16px; }
   .pricing-section {
     padding: 50px 0; }
     .pricing-section .section-title {
@@ -1416,6 +1457,8 @@ button {
       font-size: 10px; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .top-navigation {
+    padding: 0; }
   .home-section .home-title {
     font-size: 55px; }
   .home-section .home-sub-title {
@@ -1510,9 +1553,25 @@ button {
   .footer-section {
     padding: 75px 0; }
     .footer-section .copyright {
-      margin-top: 20px; } }
+      margin-top: 20px; }
+  .faq-welcome-section {
+    padding: 150px 0 10px; }
+    .faq-welcome-section .section-title {
+      font-size: 30px; }
+  .faq-content-section {
+    padding: 50px 0 70px; }
+    .faq-content-section .grid-container button img {
+      width: 31%;
+      height: auto; }
+    .faq-content-section .grid-container button i {
+      font-size: 20px;
+      margin-bottom: 10px; }
+    .faq-content-section .grid-container button div {
+      font-size: 10px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .top-navigation {
+    padding: 0; }
   .home-section .home-title {
     font-size: 50px; }
   .home-section .home-sub-title {
@@ -1569,11 +1628,23 @@ button {
   .footer-section {
     padding: 75px 0; }
   .faq-welcome-section {
-    padding: 150px 0 50px; }
+    padding: 150px 0 25px; }
     .faq-welcome-section h1 {
-      font-size: 40px; } }
+      font-size: 40px; }
+  .faq-content-section {
+    padding: 50px 0 80px; }
+    .faq-content-section .grid-container button {
+      font-size: 11px; }
+    .faq-content-section .question .question-btn {
+      padding: 20px 30px; }
+      .faq-content-section .question .question-btn span {
+        margin-top: 8px; }
+    .faq-content-section .question .question-body .text {
+      padding: 30px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+  .top-navigation .nav-container ul li {
+    margin-right: 0 !important; }
   .top-navigation .nav-container {
     padding: 0 10px; }
     .top-navigation .nav-container ul li {
@@ -1691,16 +1762,26 @@ button {
       margin-bottom: 20px; }
     .footer-section .copyright {
       margin-top: 33px; }
-  .faq-welcome-section h1 {
-    font-size: 50px; }
-  .affiliate-welcome-section h1 {
-    font-size: 50px; } }
+  .faq-welcome-section {
+    padding: 150px 0 40px; }
+    .faq-welcome-section h1 {
+      font-size: 40px; }
+  .affiliate-welcome-section {
+    padding: 200px 0 50px; }
+    .affiliate-welcome-section h1 {
+      font-size: 40px; }
+  .affiliate-content-section .starter-banner .banner-left {
+    padding: 40px 30px 50px; }
+  .affiliate-content-section .starter-banner .banner-right {
+    padding: 35px 70px 0; }
+  .faq-subsection {
+    padding: 50px 0; } }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .top-navigation .nav-container {
     padding: 0 20px; }
   .home-section .padding-box {
-    padding: 150px 0; }
+    padding: 200px 0 305px; }
   .home-section .home-title {
     font-size: 60px; }
   .home-section .home-sub-title {
@@ -1709,9 +1790,10 @@ button {
     padding: 20px 45px;
     font-size: 15px; }
   .home-section .home-img {
-    position: relative;
-    max-width: 700px;
-    margin-top: 40px; }
+    position: absolute;
+    max-width: 500px;
+    margin-top: 70px;
+    left: 29%; }
   .compare-section {
     padding: 70px 100px; }
     .compare-section .container {
@@ -1783,10 +1865,20 @@ button {
     padding: 100px 10px; }
     .pricing-section ul li a {
       padding: 30px 40px; }
+    .pricing-section .price-nav ul li a {
+      font-size: 17px; }
   .footer-section {
     padding: 100px 0; }
     .footer-section ul li {
-      margin-bottom: 25px; } }
+      margin-bottom: 25px; }
+  .affiliate-welcome-section {
+    padding: 170px 0 50px; }
+    .affiliate-welcome-section h1 {
+      font-size: 50px; }
+  .faq-welcome-section {
+    padding: 200px 0 50px; }
+    .faq-welcome-section .section-title {
+      font-size: 50px; } }
 
 @media (min-width: 1400px) and (max-width: 1800px) {
   .top-navigation .nav-container {

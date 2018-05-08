@@ -34,27 +34,36 @@
 <!--PRELOADER-->
 
 <!--Developer nav panel-->
-<div class='panel'>
+<!-- <div class='panel '>
     <a href="/">Home</a>
     <a href="/affiliate.html">Affiliate </a>
     <a href="/pricing.html">pricing</a>
     <a href="/FAQ.html">FAQ page</a>
-</div>
+</div> -->
 <!--Developer nav panel-->
 
 <!--NAVIGATION START-->
 <nav id="top-navigation" class="top-navigation navbar navbar-expand-lg fixed-top">
 
     <div class="container-fluid nav-container">
+
+        <!--logo-->
         <a href="#" class="navbar-brand">
             <img src="img/logo.png" alt="blazing logo" class="img-responsive" style="width: 75px">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+        <!--sandwich-->
+        <button class="toggle-menu">
+            <span id="sandwich">
+                <span class="sw-topper"></span>
+                <span class="sw-bottom"></span>
+                <span class="sw-footer"></span>
+            </span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <!--menu-list-->
+        <nav class="top-menu">
+            <ul class="menu-list">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -71,7 +80,7 @@
                     <a class="nav-link" href="#">Careers</a>
                 </li>
 
-                <li class="nav-item dropdown">
+                <li class="nav-item  ">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         More
                     </a>
@@ -82,20 +91,23 @@
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
+
+                <li>
+
+                    <button class="btn btn-light text-danger join-btn" type="submit">Join us</button>
+
+                    <button class="btn btn-outline-light login-btn" type="submit">Login</button>
+
+                </li>
             </ul>
-            <button class="btn btn-light my-2 my-sm-0 text-danger" type="submit">Join us</button>
-
-            <button class="btn btn-outline-light my-2 my-sm-0 " type="submit">Login</button>
-
-
-        </div>
+        </nav>
     </div>
 </nav>
 <!--NAVIGATION END-->
 
 <!--faq welcome section start-->
 <section id="FAQ-welcome" class="faq-welcome-section">
-    <h1 class="text-center">Frequently Asked Questions</h1>
+    <h1 class="section-title text-center">Frequently Asked Questions</h1>
 </section>
 <!--faq welcome section end-->
 
@@ -106,17 +118,19 @@
 
             <button class="btn" onclick="filterSelection('billing')">
 
-                <img src="img/faq/billing.png" alt="billing">
+                <!-- <img src="img/faq/billing.png" alt="billing"> -->
+                <i class="fas fa-calculator"></i>
                 <div>Billing</div>
 
             </button>
             <button class="btn" onclick="filterSelection('auth')">
 
-                <img src="img/faq/Authorization.png" alt="auth">
+                <!-- <img src="img/faq/Authorization.png" alt="auth"> -->
+                <i class="fas fa-unlock-alt"></i>
                 <div>Authorization / Ports</div>
 
             </button>
-            <button class="btn active" onclick="filterSelection('all')">
+            <button class="btn" onclick="filterSelection('all')">
 
                 <img src="img/logo-support.png" width="30" alt="all">
                 <div>All FAQs</div></a>
@@ -124,13 +138,15 @@
             </button>
             <button class="btn" onclick="filterSelection('proxies')">
 
-                <img src="img/faq/Proxies.png" alt="proxies">
+                <!-- <img src="img/faq/Proxies.png" alt="proxies"> -->
+                <i class="fas fa-random"></i>
                 <div>Proxies</div>
 
             </button>
             <button class="btn" onclick="filterSelection('socks')">
 
-                <img src="img/faq/Socks.png" alt="socks">
+                <!-- <img src="img/faq/Socks.png" alt="socks"> -->
+                <i class="fas fa-server"></i>
                 <div>SOCKS</div>
 
             </button>
@@ -249,10 +265,10 @@
                                 Contact Us
                             </a>
                         </div>
-                        <div class="col-6 mt-5">
+                        <div class="col-6 mt-sm-5">
 
                             <div class="row">
-                                <div class="col-4 mr-4">
+                                <div class="col-12 col-sm-4 mr-4 mb-2 mb-sm-0">
                                     <a class="d-block item text-center" style="color:#365a9e; font-size: 10px" href="#" target="_blank">
                                         <i class="fab fa-facebook " style="font-size: 36px"></i>
                                         Facebook
@@ -274,17 +290,15 @@
             </div>
         </div>
     </div>
-
 </section>
 <!--support section end-->
-
 
 <!--footer start-->
 <footer id="footer" class="footer-section">
     <div class="container">
         <div class="row">
 
-            <div class="col-sm-3">
+            <div class="col-4 col-sm-4 col-md-3">
                 <ul>
                     <li >
                         <a href="" class="menu-header">Pricing</a>
@@ -303,7 +317,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-3">
+            <div class="col-4 col-sm-4 col-md-3">
                 <ul>
                     <li >
                         <a href="" class="menu-header">Resources</a>
@@ -333,35 +347,35 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-3">
+            <div class="col-4 col-sm-4 col-md-3">
                 <ul>
                     <li>
                         <a href="" class="menu-header">Company</a>
                     </li>
                     <li>
                         <a href="">
-                            Company</a>
-
+                            Company
+                        </a>
                     </li>
                     <li>
                         <a href="">
-                            About Us</a>
-
+                            About Us
+                        </a>
                     </li>
                     <li>
                         <a href="">
-                            Our Team</a>
-
+                            Our Team
+                        </a>
                     </li>
                     <li>
                         <a href="">
-                            News</a>
-
+                            News
+                        </a>
                     </li>
                     <li>
                         <a href="">
-                            Logos & Banners</a>
-
+                            Logos & Banners
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -370,10 +384,13 @@
             <div class="copyright ml-auto mr-auto">
                 Copyright 2017 Blazing Proxies | All Rights Reserved
             </div>
+
+
         </div>
     </div>
 </footer>
 <!--footer end-->
+
 
 
 
@@ -392,11 +409,10 @@
 <!--Bootstrap-->
 <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <!--Isotope-->
-<!--<script src="libs/isotope-layout/dist/isotope.pkgd.js"></script>-->
-<script src="js/faq-isotope/faq-isotop.js"></script>
 
 <!--Custom scripts-->
 <script src="js/common.js"></script>
+<script src="js/faq-isotope/faq-isotop.js"></script>
 
 
 
