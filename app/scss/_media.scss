@@ -4,6 +4,7 @@
 //----------------------------------------------------------------------------------------------------------------------
 @media (min-width: 320px) and (max-width: 575px) {
 
+	// homepage start   +++
 	.top-navigation{
 
 		padding: 0;
@@ -31,7 +32,7 @@
 			font-size: 16px;
 		}
 
-		.home-img{
+		.home-pop{
 			display: none;
 		}
 	}
@@ -39,7 +40,6 @@
 	.compare-section{
 		display: none;
 	}
-
 
 	.benefits-section {
 		padding: 50px 0;
@@ -225,7 +225,6 @@
 		}
 	}
 
-
 	.footer-section{
 		padding: 50px 0;
 		font-size: 13px;
@@ -236,6 +235,93 @@
 			font-size: 10px;
 		}
 	}
+	//homepage end      ---
+
+	//faq page start     +++
+	.faq-welcome-section{
+		padding: 200px 0 50px;
+
+
+		.section-title{
+			font-size: 31px;
+		}
+	}
+
+	.faq-content-section{
+		padding: 50px 0 50px;
+
+
+		.grid-container{
+			grid-template-columns: 1fr 1fr 1fr;
+			width: 100%;
+			grid-template-areas: "a b c"
+			                     "d b e";
+
+			margin-bottom: 20px;
+
+			button{
+				div{
+					display: none;
+				}
+
+
+				img{
+					width: 100%;
+				}
+			}
+
+
+			button:nth-child(1){
+				grid-area: a;
+			}
+			button:nth-child(2){
+				grid-area: d;
+			}
+			button:nth-child(3){
+				grid-area: b;
+			}
+			button:nth-child(4){
+				grid-area: c;
+			}
+			button:nth-child(5){
+				grid-area: e;
+			}
+		}
+
+
+		.question{
+
+			.question-btn{
+
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				padding: 20px 20px;
+
+				span{
+					margin-top: 10px;
+					font-size: 15px;
+				}
+			}
+
+			.question-btn.collapsed{
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+			}
+
+			.question-body{
+				.text{
+
+					padding: 20px;
+				}
+
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+		}
+
+	}
+	//faq page end       ---
 
 }
 
@@ -270,10 +356,33 @@
 		.home-proxies-btn{
 			font-size: 20px;
 		}
+		.home-pop{
+			.home-pop-body{
+				padding: 10px;
+				.pop-benefit{
+					grid-template-columns: 1fr 1fr;
+				}
+
+
+				.pop-table{
+					top: 20px;
+
+					ul{
+						li{
+							padding: 10px;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	.compare-section{
-		padding: 100px 0;
+		padding: 80px 0;
+
+		.container{
+			margin-top: 80px;
+		}
 	}
 
 	.benefits-section {
@@ -291,7 +400,7 @@
 		.benefit-item {
 			padding: 75px 50px;
 
-			border-bottom: 5px solid #eeee;
+			//border-bottom: 5px solid #eeee;
 			margin: 0 auto;
 
 			&:last-child{
@@ -299,7 +408,6 @@
 			}
 		}
 	}
-
 
 	.solution-section{
 		padding: 50px 0;
@@ -474,18 +582,49 @@
 			
 			button{
 				img{
-					width: 31%;
-					height: auto;
 				}
 
 				i{
-					font-size: 20px;
+					font-size: 25px;
 					margin-bottom: 10px;
 				}
 				
 				div{
 					font-size: 10px;
 				}
+			}
+		}
+
+		.question{
+
+
+
+			.question-btn{
+
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				padding: 20px 20px;
+
+				span{
+					margin-top: 10px;
+					font-size: 15px;
+				}
+			}
+
+			.question-btn.collapsed{
+				-webkit-border-radius: 10px;
+				-moz-border-radius: 10px;
+				border-radius: 10px;
+			}
+
+			.question-body{
+				.text{
+
+					padding: 20px;
+				}
+
+				border-bottom-left-radius: 10px;
+				border-bottom-right-radius: 10px;
 			}
 		}
 	}
@@ -521,6 +660,33 @@
 		.home-proxies-btn {
 			padding: 16px 55px;
 			font-size: 23px;
+		}
+
+		.home-pop{
+			.home-pop-body{
+				padding: 20px 20px;
+
+				.pop-table{
+					top: 35px;
+
+					ul{
+						margin-top: 10px;
+						li{
+							padding: 10px;
+						}
+					}
+
+
+				}
+			}
+
+
+		}
+	}
+
+	.compare-section{
+		.container{
+			margin-top: 20PX;
 		}
 	}
 
@@ -730,7 +896,7 @@
 
 	.home-section{
 		.padding-box{
-			padding: 170px 0 ;
+			padding: 170px 0  0;
 		}
 
 		.home-title{
@@ -743,19 +909,29 @@
 
 		.home-proxies-btn{
 			padding: 20px 50px;
-			font-size: 20PX;
+			font-size: 20px;
 			//margin-bottom: 50px;
 		}
 
-		.home-img{
-			margin-top: 100px;
-			max-width: 500px;
+		.home-pop{
+
+
+			.home-pop-body{
+
+				padding: 15px 25px 0;
+
+
+				.pop-table{
+					top: 10px;
+				}
+			}
 		}
 	}
 
 	.compare-section{
+		padding: 75px;
 		.container{
-			margin-top: 200px;
+			margin-top: 100px;
 		}
 	}
 
@@ -777,7 +953,7 @@
 
 			.benefit-title{
 				font-size: 20px;
-				letter-spacng: 0;
+				letter-spacing: 0;
 				margin-bottom: 10px;
 			}
 		}
@@ -924,7 +1100,7 @@
             a{
 
               font-size: 17px;
-              padding: 30px 0 0 20px;
+              padding: 30px 0 0 20px !important;
 
             }
           }
@@ -1002,9 +1178,11 @@
 
 
   }
+
 //----------------------------------------------------------------------------------------------------------------------
 //  992 - 1200     END
 //----------------------------------------------------------------------------------------------------------------------
+
 
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -1025,7 +1203,7 @@
 	.home-section {
 
 		.padding-box{
-			padding: 200px 0 305px;
+			padding: 200px 0 0px;
 		}
 
 		.home-title{

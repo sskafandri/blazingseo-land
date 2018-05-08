@@ -89,11 +89,8 @@ button{
     z-index: 2000;
 
   }
-  .navbar-collapse{
-    button:hover{
-      box-shadow: -2px 0 2px 1px white;
 
-    }
+  .navbar-collapse{
 
     a{
       font-family: MetropolisSemiBold, sans-serif;
@@ -140,11 +137,6 @@ button{
     }
   }
 
-  .navbar-nav{
-    li{
-      margin-right: 35px;
-    }
-  }
 }
 
 .top-nav-collapse {
@@ -202,10 +194,11 @@ button{
     //z-index: 10;
     position: absolute;
     content: ' ';
-    height: 105%;
+    height: 100%;
     width: 100%;
     background: url("../img/home-ellipse.png") no-repeat  center;
     background-size: cover;
+    bottom: 20%;
   }
 //url("../img/home-ellipse.png") no-repeat  center ,
   background: red;
@@ -213,7 +206,7 @@ button{
 //  background-size: cover;
   color: white;
   .padding-box{
-    padding: 255px 0;
+    padding: 255px 0 0;
   }
 
 
@@ -224,7 +217,7 @@ button{
 
   .home-sub-title{
     margin-bottom: 85px;
-    font-family: MetropolisRegular;
+    font-family: MetropolisRegular, sans-serif;
   }
   
   .home-proxies-btn{
@@ -251,10 +244,155 @@ button{
   }
 
   .home-img{
-    margin-top: 220px;
-    max-width: 1000px;
-    width: 100%;
-    height: auto;
+    //position: absolute;
+    //max-width: 1000px;
+    //
+    //left: 27%;
+    //top: 0;
+    //
+    //
+    ////width: 100%;
+    //
+    //height: auto;
+    //
+    ////margin-top: 60px;
+
+    position: relative;
+  }
+
+  .home-pop{
+
+    position: relative;
+    bottom: -80px;
+
+    width: 80%;
+    margin: 0 auto;
+    background-color: #1e1c3c;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    .home-pop-header{
+      text-align: left;
+      background-color: white;
+
+      padding: 15px 30px;
+
+      border-top-left-radius: 15px ;
+      border-top-right-radius: 15px ;
+
+      .indicator{
+        
+        display: inline-block;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+
+        background-color: black;
+
+        &-red{
+          background-color: #ff8a8b;
+
+          &:hover{
+            background-color: #ff3c44;
+          }
+        }
+
+        &-green{
+          background-color: #9bd811;
+        }
+
+        &-orange{
+          background-color: #fbaf5d;
+          
+        }
+      }
+    }
+
+    .home-pop-body{
+      padding: 20px 100px;
+
+      .title-ip{
+        color: #3AE5EB;
+        font-size: 30px;
+        margin-top: 20px;
+      }
+
+      .pop-benefit{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        //align-items: center;
+        justify-content: center;
+
+        li{
+          //text-align: left;
+          font-family: MetropolisSemiBold, sans-serif;
+
+          span{
+            font-size: 60px;
+            font-family: MetropolisExtraBold, sans-serif;
+            font-weight: bold;
+          }
+
+        }
+      }
+      
+      .pop-table{
+        background-color: #fff;
+        position: relative;
+        top: 80px;
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+        z-index: 2000;
+        //font-family: MetropolisSemiBold, sans-serif;
+
+
+
+        color: black;
+        //width: 75%;
+        margin: 0 auto;
+
+        padding: 30px;
+
+        display: grid;
+        grid-template-columns: 1fr;
+
+        ul{
+          display: grid;
+
+          grid-template-columns: 1fr 1fr 1fr;
+
+          li{
+            padding: 20px;
+          }
+
+          -webkit-transition: all 0.8s;
+          -moz-transition: all 0.8s;
+          -ms-transition: all 0.8s;
+          -o-transition: all 0.8s;
+          transition: all 0.8s;
+          
+          &:first-of-type{
+            background-color: #eee;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+          }
+          
+          &:hover{
+            background-color: #ddd;
+          }
+        }
+
+      }
+    }
   }
 }
 
@@ -267,7 +405,7 @@ button{
   //background-color: #16142b;
 
   .container{
-    margin-top: 270px;
+    margin-top: 160px;
   }
 
   .section-title{
@@ -1167,7 +1305,11 @@ button{
       }
       
       img{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+      }
+
+      div{
+        min-height: 30px;
       }
 
       &:hover{

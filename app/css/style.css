@@ -92,11 +92,11 @@
   transform: rotate(180deg); }
 
 .top-menu {
-  margin-left: 10%;
+  margin-left: 17%;
   width: 100%; }
   .top-menu ul {
     display: grid;
-    grid-template-columns: repeat(6, 1fr) 215px;
+    grid-template-columns: repeat(6, 1fr) 2fr;
     text-align: center;
     margin: 0; }
     .top-menu ul li {
@@ -227,8 +227,6 @@ button {
     border: 0;
     width: 80px;
     z-index: 2000; }
-  .top-navigation .navbar-collapse button:hover {
-    box-shadow: -2px 0 2px 1px white; }
   .top-navigation .navbar-collapse a {
     font-family: MetropolisSemiBold, sans-serif;
     color: white;
@@ -259,8 +257,6 @@ button {
       opacity: 1;
       visibility: visible;
       height: 100%; }
-  .top-navigation .navbar-nav li {
-    margin-right: 35px; }
 
 .top-nav-collapse {
   padding: 5px;
@@ -288,18 +284,19 @@ button {
   .home-section:before {
     position: absolute;
     content: ' ';
-    height: 105%;
+    height: 100%;
     width: 100%;
     background: url("../img/home-ellipse.png") no-repeat center;
-    background-size: cover; }
+    background-size: cover;
+    bottom: 20%; }
   .home-section .padding-box {
-    padding: 255px 0; }
+    padding: 255px 0 0; }
   .home-section .home-title {
     font-weight: bold;
     font-size: 80px; }
   .home-section .home-sub-title {
     margin-bottom: 85px;
-    font-family: MetropolisRegular; }
+    font-family: MetropolisRegular, sans-serif; }
   .home-section .home-proxies-btn {
     padding: 30px 70px;
     font-size: 30px;
@@ -317,10 +314,85 @@ button {
       -moz-box-shadow: 0px 1px 20px 0px white;
       box-shadow: 0px 1px 20px 0px white; }
   .home-section .home-img {
-    margin-top: 220px;
-    max-width: 1000px;
-    width: 100%;
-    height: auto; }
+    position: relative; }
+  .home-section .home-pop {
+    position: relative;
+    bottom: -80px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #1e1c3c;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px; }
+    .home-section .home-pop .home-pop-header {
+      text-align: left;
+      background-color: white;
+      padding: 15px 30px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px; }
+      .home-section .home-pop .home-pop-header .indicator {
+        display: inline-block;
+        margin-right: 10px;
+        width: 20px;
+        height: 20px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        background-color: black; }
+        .home-section .home-pop .home-pop-header .indicator-red {
+          background-color: #ff8a8b; }
+          .home-section .home-pop .home-pop-header .indicator-red:hover {
+            background-color: #ff3c44; }
+        .home-section .home-pop .home-pop-header .indicator-green {
+          background-color: #9bd811; }
+        .home-section .home-pop .home-pop-header .indicator-orange {
+          background-color: #fbaf5d; }
+    .home-section .home-pop .home-pop-body {
+      padding: 20px 100px; }
+      .home-section .home-pop .home-pop-body .title-ip {
+        color: #3AE5EB;
+        font-size: 30px;
+        margin-top: 20px; }
+      .home-section .home-pop .home-pop-body .pop-benefit {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center; }
+        .home-section .home-pop .home-pop-body .pop-benefit li {
+          font-family: MetropolisSemiBold, sans-serif; }
+          .home-section .home-pop .home-pop-body .pop-benefit li span {
+            font-size: 60px;
+            font-family: MetropolisExtraBold, sans-serif;
+            font-weight: bold; }
+      .home-section .home-pop .home-pop-body .pop-table {
+        background-color: #fff;
+        position: relative;
+        top: 80px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        z-index: 2000;
+        color: black;
+        margin: 0 auto;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr; }
+        .home-section .home-pop .home-pop-body .pop-table ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          -webkit-transition: all 0.8s;
+          -moz-transition: all 0.8s;
+          -ms-transition: all 0.8s;
+          -o-transition: all 0.8s;
+          transition: all 0.8s; }
+          .home-section .home-pop .home-pop-body .pop-table ul li {
+            padding: 20px; }
+          .home-section .home-pop .home-pop-body .pop-table ul:first-of-type {
+            background-color: #eee;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px; }
+          .home-section .home-pop .home-pop-body .pop-table ul:hover {
+            background-color: #ddd; }
 
 .compare-section {
   color: white;
@@ -328,7 +400,7 @@ button {
   background: url("../img/compare-bg.png") no-repeat center center;
   background-size: cover; }
   .compare-section .container {
-    margin-top: 270px; }
+    margin-top: 160px; }
   .compare-section .section-title {
     font-weight: bold; }
 
@@ -911,7 +983,9 @@ button {
         font-size: 35px;
         margin-bottom: 20px; }
       .faq-content-section .grid-container button img {
-        margin-bottom: 20px; }
+        margin-bottom: 10px; }
+      .faq-content-section .grid-container button div {
+        min-height: 30px; }
       .faq-content-section .grid-container button:hover {
         color: red; }
       .faq-content-section .grid-container button.active {
@@ -1360,7 +1434,7 @@ button {
   .home-section .home-proxies-btn {
     padding: 20px 25px;
     font-size: 16px; }
-  .home-section .home-img {
+  .home-section .home-pop {
     display: none; }
   .compare-section {
     display: none; }
@@ -1454,7 +1528,48 @@ button {
     font-size: 13px; }
     .footer-section .copyright {
       margin-top: 20px;
-      font-size: 10px; } }
+      font-size: 10px; }
+  .faq-welcome-section {
+    padding: 200px 0 50px; }
+    .faq-welcome-section .section-title {
+      font-size: 31px; }
+  .faq-content-section {
+    padding: 50px 0 50px; }
+    .faq-content-section .grid-container {
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%;
+      grid-template-areas: "a b c" "d b e";
+      margin-bottom: 20px; }
+      .faq-content-section .grid-container button div {
+        display: none; }
+      .faq-content-section .grid-container button img {
+        width: 100%; }
+      .faq-content-section .grid-container button:nth-child(1) {
+        grid-area: a; }
+      .faq-content-section .grid-container button:nth-child(2) {
+        grid-area: d; }
+      .faq-content-section .grid-container button:nth-child(3) {
+        grid-area: b; }
+      .faq-content-section .grid-container button:nth-child(4) {
+        grid-area: c; }
+      .faq-content-section .grid-container button:nth-child(5) {
+        grid-area: e; }
+    .faq-content-section .question .question-btn {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 20px 20px; }
+      .faq-content-section .question .question-btn span {
+        margin-top: 10px;
+        font-size: 15px; }
+    .faq-content-section .question .question-btn.collapsed {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+    .faq-content-section .question .question-body {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      .faq-content-section .question .question-body .text {
+        padding: 20px; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .top-navigation {
@@ -1465,8 +1580,18 @@ button {
     font-size: 20px; }
   .home-section .home-proxies-btn {
     font-size: 20px; }
+  .home-section .home-pop .home-pop-body {
+    padding: 10px; }
+    .home-section .home-pop .home-pop-body .pop-benefit {
+      grid-template-columns: 1fr 1fr; }
+    .home-section .home-pop .home-pop-body .pop-table {
+      top: 20px; }
+      .home-section .home-pop .home-pop-body .pop-table ul li {
+        padding: 10px; }
   .compare-section {
-    padding: 100px 0; }
+    padding: 80px 0; }
+    .compare-section .container {
+      margin-top: 80px; }
   .benefits-section {
     padding: 50px 0; }
     .benefits-section .section-title {
@@ -1476,7 +1601,6 @@ button {
       margin-bottom: 20px; }
     .benefits-section .benefit-item {
       padding: 75px 50px;
-      border-bottom: 5px solid #eeee;
       margin: 0 auto; }
       .benefits-section .benefit-item:last-child {
         border: 0; }
@@ -1560,14 +1684,27 @@ button {
       font-size: 30px; }
   .faq-content-section {
     padding: 50px 0 70px; }
-    .faq-content-section .grid-container button img {
-      width: 31%;
-      height: auto; }
     .faq-content-section .grid-container button i {
-      font-size: 20px;
+      font-size: 25px;
       margin-bottom: 10px; }
     .faq-content-section .grid-container button div {
-      font-size: 10px; } }
+      font-size: 10px; }
+    .faq-content-section .question .question-btn {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 20px 20px; }
+      .faq-content-section .question .question-btn span {
+        margin-top: 10px;
+        font-size: 15px; }
+    .faq-content-section .question .question-btn.collapsed {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+    .faq-content-section .question .question-body {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      .faq-content-section .question .question-body .text {
+        padding: 20px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .top-navigation {
@@ -1579,6 +1716,16 @@ button {
   .home-section .home-proxies-btn {
     padding: 16px 55px;
     font-size: 23px; }
+  .home-section .home-pop .home-pop-body {
+    padding: 20px 20px; }
+    .home-section .home-pop .home-pop-body .pop-table {
+      top: 35px; }
+      .home-section .home-pop .home-pop-body .pop-table ul {
+        margin-top: 10px; }
+        .home-section .home-pop .home-pop-body .pop-table ul li {
+          padding: 10px; }
+  .compare-section .container {
+    margin-top: 20PX; }
   .benefits-section {
     padding: 70px 0; }
     .benefits-section .section-title {
@@ -1654,19 +1801,22 @@ button {
   .top-navigation .top-menu ul li button {
     width: 85px; }
   .home-section .padding-box {
-    padding: 170px 0; }
+    padding: 170px 0  0; }
   .home-section .home-title {
     font-size: 55px; }
   .home-section .home-sub-title {
     font-size: 20px; }
   .home-section .home-proxies-btn {
     padding: 20px 50px;
-    font-size: 20PX; }
-  .home-section .home-img {
-    margin-top: 100px;
-    max-width: 500px; }
-  .compare-section .container {
-    margin-top: 200px; }
+    font-size: 20px; }
+  .home-section .home-pop .home-pop-body {
+    padding: 15px 25px 0; }
+    .home-section .home-pop .home-pop-body .pop-table {
+      top: 10px; }
+  .compare-section {
+    padding: 75px; }
+    .compare-section .container {
+      margin-top: 100px; }
   .benefits-section {
     padding: 100px 10px; }
     .benefits-section .section-title {
@@ -1678,7 +1828,7 @@ button {
         margin-bottom: 15px; }
       .benefits-section .benefit-item .benefit-title {
         font-size: 20px;
-        letter-spacng: 0;
+        letter-spacing: 0;
         margin-bottom: 10px; }
   .solution-section {
     padding: 60px 150px; }
@@ -1755,7 +1905,7 @@ button {
       margin-bottom: 50px; }
     .pricing-section ul li a {
       font-size: 17px;
-      padding: 30px 0 0 20px; }
+      padding: 30px 0 0 20px !important; }
   .footer-section {
     padding: 75px 0; }
     .footer-section ul li {
@@ -1781,7 +1931,7 @@ button {
   .top-navigation .nav-container {
     padding: 0 20px; }
   .home-section .padding-box {
-    padding: 200px 0 305px; }
+    padding: 200px 0 0px; }
   .home-section .home-title {
     font-size: 60px; }
   .home-section .home-sub-title {

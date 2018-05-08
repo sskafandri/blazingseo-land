@@ -1,18 +1,16 @@
 
 
 
-
-
 .top-menu {
 
-  margin-left: 10%;
+  margin-left: 17%;
   width: 100%;
 
   ul{
 
     display: grid;
 
-    grid-template-columns: repeat(6, 1fr) 215px;
+    grid-template-columns: repeat(6, 1fr) 2fr;
 
     text-align: center;
 
@@ -104,20 +102,7 @@
     top: 0;
     display: none;
 
-    //li {
-    //  &:nth-child(1) a {
-    //  + animation-duration(0.7 s);
-    //  }
-    //  &:nth-child(2) a {
-    //  + animation-duration(1.2 s);
-    //  }
-    //  &:nth-child(3) a {
-    //  + animation-duration(1.7 s);
-    //  }
-    //  &:nth-child(4) a {
-    //  + animation-duration(2.5 s);
-    //  }
-    //}
+
     ul,
     li {
       list-style-type: none;
