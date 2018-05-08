@@ -1593,11 +1593,6 @@ button {
     font-size: 20PX; }
   .home-section .home-img {
     margin-top: 100px;
-<<<<<<< HEAD
-    max-width: 450px; }
-  .compare-section .container {
-    margin-top: 200px; }
-=======
     max-width: 500px; }
   .compare-section .container {
     margin-top: 200px; }
@@ -1621,7 +1616,6 @@ button {
       margin-top: 0; }
     .solution-section .section-text {
       font-size: 17px; }
->>>>>>> 18cc76508ff0d0a3865e7a3157bc47ed373432d1
   .location-section:before {
     -webkit-background-size: 85%;
     background-size: 85%;
