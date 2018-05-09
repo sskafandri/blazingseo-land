@@ -1172,6 +1172,120 @@
 			font-size: 30px;
 		}
 	}
+
+
+	.pricing-section-content {
+		padding: 50px 20px;
+
+		.prices {
+			.price {
+				.price-body {
+					padding: 20px;
+
+					.price-title{
+						font-size: 20px;
+					}
+
+					.price-value{
+						font-size: 40px;
+					}
+					.select-container {
+						width: 90%;
+					}
+				}
+
+				.price-recommended {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+
+		.progress-form {
+			margin: 0;
+			padding-top: 30px;
+
+
+			.progressbar-container{
+
+				.progressbar-item{
+					span{
+						width: 80px;
+						padding: 20px;
+					}
+				}
+				.form-item{
+					padding: 0 20px;
+
+					h5{
+						font-size: 18px;
+					}
+
+					p{
+						font-size: 14px;
+					}
+
+					.quantity{
+						padding: 15px 10px;
+						font-size: 16px;
+
+						input{
+							margin-left: 5px;
+						}
+					}
+
+					.duration{
+						.duration-item{
+
+							.discount{
+								font-size: 11px;
+							}
+
+							.select-duration-container{
+								padding: 10px 10px 60px;
+
+								.select-text{
+									font-size: 40px !important;
+								}
+
+								.checkmark{
+									top: 77%;
+									left: 36%;
+								}
+							}
+						}
+					}
+
+					.total{
+						.left{
+
+							span{
+								font-size: 25px;
+
+							}
+							padding: 40px 20px;
+						}
+
+						.right{
+
+							span{
+								font-size: 30px;
+							}
+						}
+					}
+					.complete-order-btn{
+						font-size: 15px;
+
+						i{
+							margin-left: 0;
+						}
+					}
+				}
+			}
+
+		}
+
+	}
 	//pricing page end
 
   }
@@ -1498,10 +1612,10 @@
   	.faq-subsection{
   		padding: 50px 0;
   	}
-	//Affiliate page end             ----
+	//Affiliate page end             ---
 
 
-	//pricing page start
+	//pricing page start             +++
 	.pricing-welcome-section{
 
 		padding: 200px 0 40px;
@@ -1511,8 +1625,87 @@
 			font-size: 40px;
 		}
 	}
-	//pricing page end
-  }
+
+	.pricing-section-content{
+		padding: 50px 20px;
+
+		.prices{
+			.price{
+				.price-body{
+					.select-container{
+						width: 75%;
+					}
+				}
+
+				.price-recommended{
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.progress-form {
+			margin: 0;
+			padding-top: 30px;
+
+
+			.progressbar-container{
+				.form-item{
+					padding: 0 20px;
+
+					h5{
+						font-size: 20px;
+					}
+
+					p{
+						font-size: 14px;
+					}
+
+					.quantity{
+						padding: 15px 10px;
+						font-size: 13px;
+
+						input{
+							margin-left: 5px;
+						}
+					}
+
+					.duration{
+						.duration-item{
+
+							.discount{
+								font-size: 18px;
+							}
+
+							.select-duration-container{
+								padding: 10px 10px 60px;
+
+								.select-text{
+									font-size: 33px !important;
+								}
+
+								.checkmark{
+									top: 77%;
+									left: 36%;
+								}
+							}
+						}
+					}
+
+					.total{
+						.left{
+							padding: 40px 35px;
+						}
+					}
+					.complete-order-btn{
+						font-size: 15px;
+					}
+				}
+			}
+
+		}
+	}
+	//pricing page end              ---
+}
 
 //----------------------------------------------------------------------------------------------------------------------
 //  992 - 1200     END
@@ -1768,6 +1961,60 @@
 			font-size: 50px;
 		}
 	}
+
+	.pricing-section-content{
+
+
+		.progress-form{
+			margin: 0 40px;
+			padding-top: 30px;
+
+
+			.progressbar-container{
+				.form-item{
+					padding: 0 20px;
+
+					h5{
+						font-size: 20px;
+					}
+
+					p{
+						font-size: 14px;
+					}
+
+					.quantity{
+						padding: 15px 10px;
+						font-size: 13px;
+
+						input{
+							margin-left: 5px;
+						}
+					}
+
+					.duration{
+						.duration-item{
+
+							.select-duration-container{
+								padding: 10px 10px 45px;
+
+								.select-text{
+									font-size: 33px !important;
+								}
+
+								.checkmark{
+									top: 77%;
+									left: 36%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+
+
+	}
 	//pricing page end
 }
 //----------------------------------------------------------------------------------------------------------------------
@@ -1780,6 +2027,8 @@
 //  1400 - 1800     START
 //----------------------------------------------------------------------------------------------------------------------
 @media (min-width: 1400px) and (max-width: 1800px){
+
+	//homepage start                +++
 	.top-navigation{
 		.nav-container {
 			padding: 0 7%;
@@ -1915,6 +2164,83 @@
 	.pricing-section{
 		padding: 100px 50px;
 	}
+	//homepage end                 ---
+
+	//pricing page start           +++
+	.pricing-section-content{
+		.prices {
+			.price,
+			.price.recommended{
+				.price-footer{
+					margin: 0 auto;
+					width: 80%;
+				}
+			}
+
+
+
+		}
+	}
+
+	//pricing page start                     +++
+	.pricing-welcome-section{
+
+		padding: 200px 0 40px;
+
+		.section-title{
+
+			font-size: 50px;
+		}
+	}
+
+	.pricing-section-content{
+		.progress-form{
+			margin: 0 40px;
+			padding-top: 30px;
+
+			.progressbar-container{
+				.form-item{
+					padding: 0 20px;
+
+					h5{
+						font-size: 20px;
+					}
+
+					p{
+						font-size: 14px;
+					}
+
+					.quantity{
+						padding: 15px 10px;
+						font-size: 13px;
+
+						input{
+							margin-left: 5px;
+						}
+					}
+
+					.duration{
+						.duration-item{
+
+							.select-duration-container{
+								padding: 10px 10px 45px;
+
+								.select-text{
+									font-size: 33px !important;
+								}
+
+								.checkmark{
+									top: 77%;
+									left: 36%;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//pricing page end              ---
 }
 
 //----------------------------------------------------------------------------------------------------------------------

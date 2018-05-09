@@ -114,6 +114,10 @@
 <!--pricing section start-->
 <div class="pricing-section pricing-section-content" id="pricing">
 
+    <div class="step-title">
+        <h2>Step 1</h2>
+        <h4>Pick a proxy country</h4>
+    </div>
     <div class="price-nav container mt-5">
         <ul class="ml-auto mr-auto nav">
             <li >
@@ -145,6 +149,13 @@
             </li>
         </ul>
     </div>
+
+    <div class="step-title">
+        <h2>Step 2</h2>
+        <h4>Choose a proxy type</h4>
+    </div>
+
+
     <div class="prices container-fluid">
 
         <div class="row">
@@ -163,9 +174,10 @@
                                 <span class="price-value">30 $</span>
 
                                 <label class="select-container">
+                                    <input type="radio" name="pack" id="pack1">
+                                    <!--<span class="checkmark"></span>-->
+                                    <i class="fas fa-check-circle"></i>
                                     <span class="select-text">Select Pack</span>
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
                                 </label>
 
                                 <a href="#" class="trial-link">Start a trial now <i class="fas fa-chevron-circle-right"></i>
@@ -199,9 +211,10 @@
 
 
                                 <label class="select-container">
+                                    <input type="radio" name="pack" id="pack2">
+                                    <i class="fas fa-check-circle"></i>
                                     <span class="select-text">Select Pack</span>
-                                    <input type="checkbox" checked>
-                                    <span class="checkmark"></span>
+                                    <!--<span class="checkmark"></span>-->
                                 </label>
 
                                 <a href="#" class="trial-link">Start a trial now <i class="fas fa-chevron-circle-right"></i>
@@ -226,9 +239,10 @@
                                 <span class="price-value">30 $</span>
 
                                 <label class="select-container">
+                                    <input type="radio" name="pack" id="pack3">
+                                    <i class="fas fa-check-circle"></i>
+                                    <!--<span class="checkmark"></span>-->
                                     <span class="select-text">Select Pack</span>
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
                                 </label>
 
                                 <a href="#" class="trial-link">Start a trial now <i class="fas fa-chevron-circle-right"></i>
@@ -263,7 +277,11 @@
                        <div class="quantity">
                            Type how many proxies you need
 
-                           <input type="number" min="1" max="999999" step="1" value="1">
+
+
+                           <input id='quantity' type="number" min="1" max="999999" step="1" placeholder="#">
+
+
                        </div>
 
 
@@ -274,7 +292,7 @@
 
                        <div class="duration">
                             <div class="duration-item">
-                                <label class="select-container">
+                                <label class="select-duration-container">
                                     <span class="select-text">
                                         1
                                     </span>
@@ -283,12 +301,14 @@
                                     <span class="discount invisible">
                                        10% Off
                                    </span>
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
+                                    <input type="radio" name="duration">
+                                    <span class="checkmark">
+                                        <i class="fas fa-check"></i>
+                                    </span>
                                 </label>
                             </div>
                            <div class="duration-item">
-                               <label class="select-container">
+                               <label class="select-duration-container">
                                     <span class="select-text">
                                         3
                                     </span>
@@ -297,12 +317,14 @@
                                    <span class="discount">
                                        10% Off
                                    </span>
-                                   <input type="checkbox">
-                                   <span class="checkmark"></span>
+                                   <input type="radio" name="duration">
+                                   <span class="checkmark">
+                                       <i class="fas fa-check"></i>
+                                    </span>
                                </label>
                            </div>
                            <div class="duration-item">
-                               <label class="select-container">
+                               <label class="select-duration-container">
                                     <span class="select-text">
                                         6
                                     </span>
@@ -313,8 +335,11 @@
                                        10% Off
                                    </span>
 
-                                   <input type="checkbox">
-                                   <span class="checkmark"></span>
+                                   <input type="radio" name="duration">
+                                   <span class="checkmark">
+                                       <i class="fas fa-check"></i>
+                                   </span>
+
                                </label>
                            </div>
 
@@ -591,23 +616,18 @@
 
 <script>
 
-//    var selectBtns = document.getElementsByClassName("select-container");
-//    for (var i = 0; i < selectBtns.length; i++) {
-//        selectBtns[i].addEventListener("click", function(){
-//            // this.toggleClass('bg-red');
-//            // $(this).toggleClass('bg-red');
-//
-//            if( this.hasClass('bg-red')){
-//                this.removeClass('bg-red');
-//            } else {
-//                this.addClass('bg-red');
-//            }
-//        });
-//    }
 
-    $(".select-container").click(function(){
-        this.toggleClass("bg-red")
+    $('input:radio[name=pack]').change(function () {
+
+        $('input:radio[name=pack]').each(function( index ) {
+            $(this).parent().removeClass('pack-selected');
+
+        });
+
+        $(this).parent().addClass('pack-selected');
     });
+
+
 </script>
 
 
