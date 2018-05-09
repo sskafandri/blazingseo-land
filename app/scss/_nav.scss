@@ -18,12 +18,9 @@
 
     li{
 
-      //justify-self: stretch;
       align-self: center;
 
-      //margin-right: 35px;
 
-      //display: inline-block;
 
       a{
         font-family: MetropolisSemiBold, sans-serif;
@@ -73,9 +70,8 @@
       &:last-child{
 
         button {
-          width: 100px;
           //display: inline-block;
-
+          width: 45%;
           font-family: MetropolisExtraBold, sans-serif;
         }
 
@@ -89,6 +85,23 @@
   }
 }
 
+.top-nav-collapse {
+  padding: 5px;
+  background-color: #ff1719;
+  -webkit-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
+
+  // changing color of text and button when scrolling
+  a {
+    //color: black !important;
+  }
+
+  i {
+    //color: black;
+  }
+
+}
 
 @media (max-width: 991px) {
 
@@ -145,6 +158,29 @@
         font-size: 20px;
         //font-weight: 600;
         opacity: 1;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+  .top-navigation{
+
+    .top-menu{
+      margin-left: 12%;
+
+      ul{
+
+        li{
+
+
+          button{
+            font-size: 12px;
+            width: 45%;
+          }
+        }
       }
     }
   }

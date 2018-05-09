@@ -91,6 +91,55 @@
   top: 0;
   transform: rotate(180deg); }
 
+@media (min-width: 320px) and (max-width: 575px) {
+  .sw-topper {
+    top: -5px;
+    width: 30px;
+    height: 3px; }
+  .sw-bottom {
+    width: 30px;
+    height: 3px;
+    top: 3px; }
+  .sw-footer {
+    width: 30px;
+    height: 3px;
+    top: 11px;
+    background: #fff; }
+  #sandwich.active .sw-topper {
+    top: 8px; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .sw-topper {
+    top: -5px;
+    width: 30px;
+    height: 3px; }
+  .sw-bottom {
+    width: 30px;
+    height: 3px;
+    top: 3px; }
+  .sw-footer {
+    width: 30px;
+    height: 3px;
+    top: 11px;
+    background: #fff; }
+  #sandwich.active .sw-topper {
+    top: 8px; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .sw-topper {
+    top: -5px;
+    width: 40px;
+    height: 4px; }
+  .sw-bottom {
+    width: 40px;
+    height: 4px;
+    top: 4px; }
+  .sw-footer {
+    width: 40px;
+    height: 4px;
+    top: 13px;
+    background: #fff; } }
+
 .top-menu {
   margin-left: 17%;
   width: 100%; }
@@ -133,10 +182,17 @@
           visibility: visible;
           height: 100%; }
       .top-menu ul li:last-child button {
-        width: 100px;
+        width: 45%;
         font-family: MetropolisExtraBold, sans-serif; }
       .top-menu ul li:last-child .login-btn {
         margin-left: -7px; }
+
+.top-nav-collapse {
+  padding: 5px;
+  background-color: #ff1719;
+  -webkit-box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75); }
 
 @media (max-width: 991px) {
   .top-menu {
@@ -168,6 +224,13 @@
         padding: 25px 0;
         font-size: 20px;
         opacity: 1; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .top-navigation .top-menu {
+    margin-left: 12%; }
+    .top-navigation .top-menu ul li button {
+      font-size: 12px;
+      width: 45%; } }
 
 .panel {
   position: fixed;
@@ -227,43 +290,6 @@ button {
     border: 0;
     width: 80px;
     z-index: 2000; }
-  .top-navigation .navbar-collapse a {
-    font-family: MetropolisSemiBold, sans-serif;
-    color: white;
-    position: relative;
-    z-index: 1; }
-    .top-navigation .navbar-collapse a, .top-navigation .navbar-collapse a:after, .top-navigation .navbar-collapse a:before {
-      transition: all .8s; }
-    .top-navigation .navbar-collapse a:hover {
-      color: red; }
-    .top-navigation .navbar-collapse a:after {
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      margin: auto;
-      width: 100%;
-      height: 1px;
-      content: '.';
-      color: transparent;
-      background: white;
-      visibility: hidden;
-      opacity: 0;
-      z-index: -1;
-      padding: 10px; }
-    .top-navigation .navbar-collapse a:hover:after {
-      opacity: 1;
-      visibility: visible;
-      height: 100%; }
-
-.top-nav-collapse {
-  padding: 5px;
-  background-color: #ff1719;
-  -webkit-box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75); }
 
 @media (min-width: 767px) {
   .navbar {
@@ -313,8 +339,6 @@ button {
       -webkit-box-shadow: 0px 1px 20px 0px white;
       -moz-box-shadow: 0px 1px 20px 0px white;
       box-shadow: 0px 1px 20px 0px white; }
-  .home-section .home-img {
-    position: relative; }
   .home-section .home-pop {
     position: relative;
     bottom: -80px;
@@ -1510,6 +1534,7 @@ button {
     .pricing-section .price-nav {
       margin-bottom: 35px; }
       .pricing-section .price-nav ul {
+        text-align: center;
         grid-template-columns: 1fr;
         grid-row-gap: 20px; }
   .support-section .section-title {
@@ -1539,11 +1564,11 @@ button {
       grid-template-columns: 1fr 1fr 1fr;
       width: 100%;
       grid-template-areas: "a b c" "d b e";
-      margin-bottom: 20px; }
+      margin-bottom: 40px; }
       .faq-content-section .grid-container button div {
         display: none; }
       .faq-content-section .grid-container button img {
-        width: 100%; }
+        width: 60%; }
       .faq-content-section .grid-container button:nth-child(1) {
         grid-area: a; }
       .faq-content-section .grid-container button:nth-child(2) {
@@ -1557,10 +1582,14 @@ button {
     .faq-content-section .question .question-btn {
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
-      padding: 20px 20px; }
+      padding: 15px 10px; }
       .faq-content-section .question .question-btn span {
         margin-top: 10px;
-        font-size: 15px; }
+        font-size: 11px; }
+      .faq-content-section .question .question-btn:after {
+        width: 30px;
+        height: 30px;
+        background-size: 90%; }
     .faq-content-section .question .question-btn.collapsed {
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -1569,11 +1598,79 @@ button {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px; }
       .faq-content-section .question .question-body .text {
-        padding: 20px; } }
+        padding: 17px;
+        font-size: 12px; }
+  .affiliate-welcome-section {
+    padding: 150px 0 65px; }
+    .affiliate-welcome-section .section-title {
+      font-size: 30px; }
+  .affiliate-content-section .starter-banner .banner-left {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px; }
+    .affiliate-content-section .starter-banner .banner-left h4 {
+      font-size: 25px; }
+    .affiliate-content-section .starter-banner .banner-left ul {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%; }
+      .affiliate-content-section .starter-banner .banner-left ul li .price {
+        font-size: 40px; }
+      .affiliate-content-section .starter-banner .banner-left ul li .price-detail {
+        font-size: 13px;
+        font-weight: bold; }
+  .affiliate-content-section .starter-banner .banner-right {
+    padding: 10px 0 50px 10px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px; }
+    .affiliate-content-section .starter-banner .banner-right ul {
+      margin-bottom: 20px; }
+      .affiliate-content-section .starter-banner .banner-right ul li {
+        font-size: 11px; }
+        .affiliate-content-section .starter-banner .banner-right ul li img {
+          width: 25px;
+          margin-right: 5px; }
+    .affiliate-content-section .starter-banner .banner-right .sign-up-now {
+      padding: 10px 20px;
+      font-size: 15px; }
+  .faq-subsection {
+    padding: 20px 0; }
+    .faq-subsection .section-title {
+      font-size: 28px; }
+    .faq-subsection .section-subtitle {
+      font-size: 12px; }
+    .faq-subsection .question .question-btn {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 15px 10px; }
+      .faq-subsection .question .question-btn span {
+        margin-top: 10px;
+        font-size: 11px; }
+      .faq-subsection .question .question-btn:after {
+        width: 30px;
+        height: 30px;
+        background-size: 90%; }
+    .faq-subsection .question .question-btn.collapsed {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+    .faq-subsection .question .question-body {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      .faq-subsection .question .question-body .text {
+        padding: 17px;
+        font-size: 12px; }
+  .pricing-welcome-section {
+    padding: 150px 0 40px; }
+    .pricing-welcome-section .section-title {
+      font-size: 25px; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .top-navigation {
     padding: 0; }
+    .top-navigation .nav-container {
+      padding: 0 3%; }
   .home-section .home-title {
     font-size: 55px; }
   .home-section .home-sub-title {
@@ -1704,11 +1801,69 @@ button {
       border-bottom-left-radius: 10px;
       border-bottom-right-radius: 10px; }
       .faq-content-section .question .question-body .text {
-        padding: 20px; } }
+        padding: 20px; }
+  .affiliate-welcome-section {
+    padding: 150px 0 40px; }
+    .affiliate-welcome-section .section-title {
+      font-size: 35px; }
+  .affiliate-content-section .starter-banner .banner-left {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px; }
+    .affiliate-content-section .starter-banner .banner-left h4 {
+      font-size: 30px; }
+    .affiliate-content-section .starter-banner .banner-left ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      width: 100%; }
+      .affiliate-content-section .starter-banner .banner-left ul li .price {
+        font-size: 40px; }
+      .affiliate-content-section .starter-banner .banner-left ul li .price-detail {
+        font-size: 13px;
+        font-weight: bold; }
+  .affiliate-content-section .starter-banner .banner-right {
+    padding: 10px 0 50px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+    .affiliate-content-section .starter-banner .banner-right ul {
+      margin-bottom: 40px; }
+      .affiliate-content-section .starter-banner .banner-right ul li {
+        font-size: 15px; }
+        .affiliate-content-section .starter-banner .banner-right ul li img {
+          margin-right: 5px; }
+  .faq-subsection {
+    padding: 70px 0; }
+    .faq-subsection .section-title {
+      font-size: 33px; }
+    .faq-subsection .section-subtitle {
+      font-size: 17px; }
+    .faq-subsection .question .question-btn {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 20px 20px; }
+      .faq-subsection .question .question-btn span {
+        margin-top: 10px;
+        font-size: 17px; }
+    .faq-subsection .question .question-btn.collapsed {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px; }
+    .faq-subsection .question .question-body {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px; }
+      .faq-subsection .question .question-body .text {
+        padding: 20px; }
+  .pricing-welcome-section {
+    padding: 180px 0 40px; }
+    .pricing-welcome-section .section-title {
+      font-size: 41px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .top-navigation {
     padding: 0; }
+    .top-navigation .nav-container {
+      padding: 0 3%; }
   .home-section .home-title {
     font-size: 50px; }
   .home-section .home-sub-title {
@@ -1787,7 +1942,29 @@ button {
       .faq-content-section .question .question-btn span {
         margin-top: 8px; }
     .faq-content-section .question .question-body .text {
-      padding: 30px; } }
+      padding: 30px; }
+  .affiliate-welcome-section {
+    padding: 180px 0 50px; }
+    .affiliate-welcome-section .section-title {
+      font-size: 45px; }
+  .affiliate-content-section .starter-banner .banner-left {
+    padding: 30px; }
+    .affiliate-content-section .starter-banner .banner-left ul li .price {
+      font-size: 30px; }
+  .affiliate-content-section .starter-banner .banner-right {
+    padding: 30px; }
+    .affiliate-content-section .starter-banner .banner-right ul {
+      margin-bottom: 40px; }
+      .affiliate-content-section .starter-banner .banner-right ul li {
+        font-size: 12px; }
+  .faq-subsection {
+    padding: 75px 0; }
+    .faq-subsection .section-title {
+      font-size: 40px; }
+  .pricing-welcome-section {
+    padding: 200px 0 40px; }
+    .pricing-welcome-section .section-title {
+      font-size: 30px; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .top-navigation .nav-container ul li {
@@ -1798,8 +1975,6 @@ button {
       margin-right: 20px; }
   .top-navigation .top-menu ul li a {
     font-size: 15px; }
-  .top-navigation .top-menu ul li button {
-    width: 85px; }
   .home-section .padding-box {
     padding: 170px 0  0; }
   .home-section .home-title {
@@ -1925,7 +2100,11 @@ button {
   .affiliate-content-section .starter-banner .banner-right {
     padding: 35px 70px 0; }
   .faq-subsection {
-    padding: 50px 0; } }
+    padding: 50px 0; }
+  .pricing-welcome-section {
+    padding: 200px 0 40px; }
+    .pricing-welcome-section .section-title {
+      font-size: 40px; } }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .top-navigation .nav-container {
@@ -2028,6 +2207,10 @@ button {
   .faq-welcome-section {
     padding: 200px 0 50px; }
     .faq-welcome-section .section-title {
+      font-size: 50px; }
+  .pricing-welcome-section {
+    padding: 200px 0 40px; }
+    .pricing-welcome-section .section-title {
       font-size: 50px; } }
 
 @media (min-width: 1400px) and (max-width: 1800px) {

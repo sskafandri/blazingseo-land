@@ -2,15 +2,10 @@ $(document).ready(function() {
 
 
     $( ".price-nav ul li a" ).click(function() {
-        console.log( "You clicked a paragraph!" );
 
 
         $( ".price-nav ul li" ).each(function( index ) {
-
-            // if ($(this).hasClass('active')){
-                $(this).removeClass('active')
-
-            // }
+            $(this).removeClass('active')
         });
 
         $(this).parent().addClass("active");
