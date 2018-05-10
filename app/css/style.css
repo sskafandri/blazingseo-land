@@ -301,7 +301,8 @@
       text-align: center; }
       .top-menu ul li:last-child button {
         width: 50%;
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        padding: 10px 20px; }
       .top-menu ul li:last-child .login-btn {
         margin-left: 0px; }
       .top-menu ul li:hover {
@@ -309,7 +310,7 @@
       .top-menu ul a {
         display: block;
         color: #fff;
-        padding: 25px 0;
+        padding: 1rem 0;
         font-size: 20px;
         opacity: 1; } }
 
