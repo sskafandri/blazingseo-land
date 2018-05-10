@@ -421,9 +421,9 @@ button {
     -o-transition: all 0.7s;
     transition: all 0.7s; }
     .home-section .home-proxies-btn:hover {
-      -webkit-box-shadow: 0px 1px 20px 0px white;
-      -moz-box-shadow: 0px 1px 20px 0px white;
-      box-shadow: 0px 1px 20px 0px white; }
+      -webkit-box-shadow: 0px -2px 11px 3px #afacac;
+      -moz-box-shadow: 0px -2px 11px 3px #afacac;
+      box-shadow: 0px -2px 11px 3px #afacac; }
   .home-section .home-pop {
     position: relative;
     bottom: -80px;
@@ -457,11 +457,38 @@ button {
         .home-section .home-pop .home-pop-header .indicator-orange {
           background-color: #fbaf5d; }
     .home-section .home-pop .home-pop-body {
-      padding: 20px 100px; }
+      padding: 20px 100px;
+      /* The typing effect */
+      /* The typewriter cursor effect */ }
+      .home-section .home-pop .home-pop-body .wrap {
+        display: flex;
+        justify-content: center; }
       .home-section .home-pop .home-pop-body .title-ip {
         color: #3AE5EB;
         font-size: 30px;
-        margin-top: 20px; }
+        overflow: hidden;
+        /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid #3AE5EB;
+        /* The typwriter cursor */
+        white-space: nowrap;
+        /* Keeps the content on a single line */
+        margin: 40px auto;
+        /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .08em;
+        /* Adjust as needed */
+        animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite; }
+
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 100%; } }
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: #3AE5EB; } }
       .home-section .home-pop .home-pop-body .pop-benefit {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -479,7 +506,6 @@ button {
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
-        z-index: 2000;
         color: black;
         margin: 0 auto;
         padding: 30px;
@@ -917,7 +943,7 @@ button {
         .pricing-section .price-nav ul li a {
           width: 100%;
           padding: 30px 50px;
-          font-size: 20px;
+          font-size: 17px;
           color: #353535;
           line-height: 40px;
           font-family: MetropolisBold,sans-serif;
@@ -1930,7 +1956,7 @@ button {
     .benefits-section .section-title {
       font-size: 35px; }
     .benefits-section .benefit-item {
-      padding: 0 30px 40px; }
+      padding: 40px 30px 20px; }
     .benefits-section img {
       margin-bottom: 10px; }
   .solution-section {

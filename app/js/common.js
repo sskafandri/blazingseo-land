@@ -1,6 +1,12 @@
 $(document).ready(function() {
 
 
+    AOS.init({
+
+    });
+
+
+
     $( ".price-nav ul li a" ).click(function() {
 
 

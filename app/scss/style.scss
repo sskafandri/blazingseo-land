@@ -172,9 +172,9 @@ button{
     transition: all 0.7s;
 
     &:hover{
-      -webkit-box-shadow: 0px 1px 20px 0px white;
-      -moz-box-shadow: 0px 1px 20px 0px white;
-      box-shadow: 0px 1px 20px 0px white;
+      -webkit-box-shadow: 0px -2px 11px 3px #afacac;
+      -moz-box-shadow: 0px -2px 11px 3px #afacac;
+      box-shadow: 0px -2px 11px 3px #afacac;
     }
     
   }
@@ -236,10 +236,41 @@ button{
     .home-pop-body{
       padding: 20px 100px;
 
+      .wrap{
+        display: flex;
+        justify-content: center;
+      }
+
+
+      .typewriter{
+
+      }
+
       .title-ip{
         color: #3AE5EB;
         font-size: 30px;
-        margin-top: 20px;
+
+
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid #3AE5EB; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 40px auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .08em; /* Adjust as needed */
+        animation:
+                typing 3.5s steps(40, end),
+                blink-caret .75s step-end infinite;
+      }
+
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #3AE5EB; }
       }
 
       .pop-benefit{
@@ -270,13 +301,7 @@ button{
         -moz-border-radius: 10px;
         border-radius: 10px;
 
-        z-index: 2000;
-        //font-family: MetropolisSemiBold, sans-serif;
-
-
-
         color: black;
-        //width: 75%;
         margin: 0 auto;
 
         padding: 30px;
