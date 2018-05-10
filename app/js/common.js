@@ -25,11 +25,11 @@ $(document).ready(function() {
     });
 
     // MENU STAFF START
-    $(".menu-list li a").click(function () {
-        $(".top-menu").fadeOut(600);
-        $(".top-content").css("opacity", 1);
-        $("#sandwich").toggleClass("active");
-    });
+    // $(".menu-list li a").click(function () {
+    //     $(".top-menu").fadeOut(600);
+    //     $(".top-content").css("opacity", 1);
+    //     $("#sandwich").toggleClass("active");
+    // });
 
 
 

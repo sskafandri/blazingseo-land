@@ -233,6 +233,13 @@
     grid-template-columns: repeat(6, 1fr) 2fr;
     text-align: center;
     margin: 0; }
+    .top-menu ul li.dropdown .dropdown-menu a {
+      font-size: 18px;
+      padding: 10px 20px;
+      color: red !important;
+      font-family: MetropolisSemiBold, sans-serif; }
+      .top-menu ul li.dropdown .dropdown-menu a:hover {
+        color: #bb0000 !important; }
     .top-menu ul li {
       align-self: center; }
       .top-menu ul li a {
@@ -529,7 +536,8 @@ button {
             background-color: #eee;
             -webkit-border-radius: 10px;
             -moz-border-radius: 10px;
-            border-radius: 10px; }
+            border-radius: 10px;
+            font-weight: bold; }
           .home-section .home-pop .home-pop-body .pop-table ul:hover {
             background-color: #ddd; }
 

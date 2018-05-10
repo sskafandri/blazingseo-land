@@ -16,6 +16,25 @@
 
     margin: 0;
 
+    li.dropdown{
+
+
+      .dropdown-menu{
+
+        a{
+          font-size: 18px;
+          padding: 10px 20px;
+          color: red !important;
+          font-family: MetropolisSemiBold, sans-serif;
+
+          &:hover{
+            color: #bb0000 !important;
+          }
+        }
+      }
+    }
+
+
     li{
 
       align-self: center;
@@ -105,6 +124,10 @@
 
 @media (max-width: 991px) {
 
+}
+
+@media (max-width: 991px) {
+
   .top-menu {
     position: fixed;
     width: 100%;
@@ -114,6 +137,9 @@
     right: 0;
     top: 0;
     display: none;
+
+
+
 
 
     ul,
@@ -131,6 +157,7 @@
 
       margin-top: 10%;
       text-align: center;
+
 
 
       li{
