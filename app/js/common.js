@@ -61,16 +61,24 @@ $(document).ready(function() {
 
 
     // jQuery Resize Height START
-    // function heightDetect(){
-    //     $('.home-section').css("height", $(window).height());
-    // }
+    function setMenu(){
+        console.log("resiszing...")
 
-    // heightDetect();
+        if(    $(window).width() < 991 ){
+            $('.top-menu').css("height", $(window).height());
 
-    // $(window).resize(function(){
-    //     heightDetect();
-    // });
+        }
+    }
+
+    setMenu();
+
+    $(window).resize(function(){
+        setMenu();
+
+
+    });
     // jQuery Resize Height END
+    //
 
 
 
