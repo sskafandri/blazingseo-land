@@ -240,25 +240,6 @@
       font-family: MetropolisSemiBold, sans-serif; }
       .top-menu ul li.dropdown .dropdown-menu a:hover {
         color: #bb0000 !important; }
-    .top-menu ul li.menu-item-has-children {
-      position: relative; }
-      .top-menu ul li.menu-item-has-children:hover .sub-menu {
-        display: block; }
-        .top-menu ul li.menu-item-has-children:hover .sub-menu li:hover {
-          background-color: #eee; }
-      .top-menu ul li.menu-item-has-children .sub-menu {
-        display: none;
-        position: absolute;
-        color: red;
-        width: 100%;
-        background-color: #fff;
-        -webkit-transition: all 0.6s;
-        -moz-transition: all 0.6s;
-        -ms-transition: all 0.6s;
-        -o-transition: all 0.6s;
-        transition: all 0.6s; }
-        .top-menu ul li.menu-item-has-children .sub-menu a {
-          color: red; }
     .top-menu ul li {
       align-self: center; }
       .top-menu ul li a {

@@ -27,6 +27,8 @@
           color: red !important;
           font-family: MetropolisSemiBold, sans-serif;
 
+
+
           &:hover{
             color: #bb0000 !important;
           }
@@ -34,6 +36,46 @@
       }
     }
 
+    li.menu-item-has-children{
+      position: relative;
+
+      &:hover{
+        
+
+        .sub-menu{
+          display: block;
+          
+          li{
+
+            &:hover{
+
+
+              background-color: #eee;
+            }
+          }
+        }
+      }
+
+
+      .sub-menu{
+        display: none;
+        position: absolute;
+        color: red;
+        width: 100%;
+
+        background-color: #fff;
+
+        -webkit-transition: all 0.6s;
+        -moz-transition: all 0.6s;
+        -ms-transition: all 0.6s;
+        -o-transition: all 0.6s;
+        transition: all 0.6s;
+
+        a{
+          color: red;
+        }
+      }
+    }
 
     li{
 
@@ -41,7 +83,11 @@
 
 
 
+
+
       a{
+        display: block;
+        padding: .5rem 1rem;
         font-family: MetropolisSemiBold, sans-serif;
         color: white;
         position: relative;
