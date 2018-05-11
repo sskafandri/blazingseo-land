@@ -24,12 +24,8 @@ $(document).ready(function() {
         $("#sandwich").toggleClass("active");
     });
 
-    // MENU STAFF START
-    // $(".menu-list li a").click(function () {
-    //     $(".top-menu").fadeOut(600);
-    //     $(".top-content").css("opacity", 1);
-    //     $("#sandwich").toggleClass("active");
-    // });
+
+    $(window).scrollTop("10px");
 
 
 
@@ -46,7 +42,7 @@ $(document).ready(function() {
             $(".menu-list li a").addClass("fadeInUp animated");
         };
     })
-    // MENU STAFF END
+
 
 
     // jQuery to collapse the navbar on scroll
@@ -62,7 +58,6 @@ $(document).ready(function() {
 
     // jQuery Resize Height START
     function setMenu(){
-        console.log("resiszing...")
 
         if(    $(window).width() < 991 ){
             $('.top-menu').css("height", $(window).height());
