@@ -6,6 +6,42 @@
   margin-left: 17%;
   width: 100%;
 
+  // wordpress css current item class +++
+  .menu-list{
+
+    li{
+      a{
+        text-transform: capitalize;
+      }
+    }
+    li.current-menu-item{
+      background: rgba(255,255,255,.2);
+    }
+
+
+    .menu-item-has-children{
+
+      a {
+
+        i{
+          margin-left: 10px;
+        }
+      }
+      &::after{
+        //content: ' ';
+        //width: 10px;
+        //height: 10px;
+        //position: absolute;
+        //display: block;
+        //top: 50%;
+        //right: 0;
+
+
+      }
+    }
+  }
+  //---
+
   ul{
 
     display: grid;
