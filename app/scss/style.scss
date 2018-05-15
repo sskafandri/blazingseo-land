@@ -531,20 +531,30 @@ button{
 }
 
 .location-section {
+  background-color:  #229ed5;
+  //padding: 50px 0;
 
   .padding-box {
-    padding: 100px 0;
+    padding: 50px 0;
+
+    &:before {
+      content: ' ';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: url("../img/map-world-vector-bg.png") no-repeat center left, #229ed5;
+      //-webkit-background-size: cover;
+      //background-size: cover;
+    }
+
+
+    .padding-box-xxl{
+
+      padding: 50px 0;
+    }
   }
 
-  &:before {
-    content: ' ';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background: url("../img/map-world-vector-bg.png") no-repeat center left, #229ed5;
-    //-webkit-background-size: cover;
-    //background-size: cover;
-  }
+
   //padding: 150px 0;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0086c9+0,207cca+0,2989d8+50,229ed5+100 */
   //background:url("../img/Locations-bg.png") no-repeat ,#229ed5;
@@ -1297,14 +1307,15 @@ button{
   }
 
   .question-btn.collapsed{
-    background: rgba(237,237,237,1);
-    background: -moz-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,1)), color-stop(34%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
-    background: -ms-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(to right, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
+    background-color: #fff;
+    //background: rgba(237,237,237,1);
+    //background: -moz-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
+    //background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,1)), color-stop(34%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    //background: -webkit-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
+    //background: -o-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
+    //background: -ms-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
+    //background: linear-gradient(to right, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
+    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
 
     //background: rgba(255,255,255,1);
     //background: -moz-linear-gradient(left, rgba(255,255,255,1) 68%, rgba(237,237,237,1) 100%);

@@ -228,10 +228,20 @@
 .top-menu {
   margin-left: 17%;
   width: 100%; }
-  .top-menu .menu-list li a {
-    text-transform: capitalize; }
+  .top-menu .menu-list li {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
+    .top-menu .menu-list li a {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      text-transform: capitalize; }
   .top-menu .menu-list li.current-menu-item {
-    background: rgba(255, 255, 255, 0.2); }
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; }
   .top-menu .menu-list .menu-item-has-children a i {
     margin-left: 10px; }
   .top-menu ul {
@@ -255,6 +265,10 @@
       .top-menu ul li.menu-item-has-children .sub-menu {
         display: none;
         position: absolute;
+        top: 40px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
         color: red;
         width: 100%;
         background-color: #fff;
@@ -266,6 +280,9 @@
         .top-menu ul li.menu-item-has-children .sub-menu a {
           color: red; }
     .top-menu ul li {
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
       align-self: center; }
       .top-menu ul li a {
         display: block;
@@ -292,6 +309,9 @@
           content: '.';
           color: transparent;
           background: white;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
           visibility: hidden;
           opacity: 0;
           z-index: -1;
@@ -301,7 +321,8 @@
           visibility: visible;
           height: 100%; }
       .top-menu ul li:last-child button {
-        width: 45%;
+        width: 40%;
+        margin-left: 10px !important;
         font-family: MetropolisExtraBold, sans-serif; }
       .top-menu ul li:last-child .login-btn {
         margin-left: -7px; }
@@ -342,7 +363,7 @@
       margin-top: 15%;
       text-align: center; }
       .top-menu ul li:last-child button {
-        width: 50%;
+        width: 48%;
         margin-bottom: 20px;
         padding: 10px 20px; }
       .top-menu ul li:last-child .login-btn {
@@ -361,7 +382,7 @@
     margin-left: 12%; }
     .top-navigation .top-menu ul li button {
       font-size: 12px;
-      width: 45%; } }
+      width: 40%; } }
 
 .panel {
   position: fixed;
@@ -696,17 +717,20 @@ button {
             color: #5def0e; }
 
 .location-section {
+  background-color: #229ed5;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0086c9+0,207cca+0,2989d8+50,229ed5+100 */
   position: relative;
   color: white; }
   .location-section .padding-box {
-    padding: 100px 0; }
-  .location-section:before {
-    content: ' ';
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background: url("../img/map-world-vector-bg.png") no-repeat center left, #229ed5; }
+    padding: 50px 0; }
+    .location-section .padding-box:before {
+      content: ' ';
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: url("../img/map-world-vector-bg.png") no-repeat center left, #229ed5; }
+    .location-section .padding-box .padding-box-xxl {
+      padding: 50px 0; }
   .location-section img {
     position: absolute;
     top: 0;
@@ -1180,14 +1204,7 @@ button {
     .question .question-btn:hover {
       background-color: #626262; }
   .question .question-btn.collapsed {
-    background: #ededed;
-    background: -moz-linear-gradient(left, #ededed 0%, white 34%, white 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, #ededed), color-stop(34%, white), color-stop(100%, white));
-    background: -webkit-linear-gradient(left, #ededed 0%, white 34%, white 100%);
-    background: -o-linear-gradient(left, #ededed 0%, white 34%, white 100%);
-    background: -ms-linear-gradient(left, #ededed 0%, white 34%, white 100%);
-    background: linear-gradient(to right, #ededed 0%, white 34%, white 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
+    background-color: #fff;
     color: #353535;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -2551,3 +2568,8 @@ button {
         .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container .checkmark {
           top: 77%;
           left: 36%; } }
+
+@media (min-width: 2500px) {
+  .container-fluid {
+    max-width: 1800px;
+    padding: 0 !important; } }

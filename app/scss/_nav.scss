@@ -1,6 +1,7 @@
 
 
 
+
 .top-menu {
 
   margin-left: 17%;
@@ -10,12 +11,22 @@
   .menu-list{
 
     li{
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
       a{
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
         text-transform: capitalize;
       }
     }
+
     li.current-menu-item{
       background: rgba(255,255,255,.2);
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
     }
 
 
@@ -96,6 +107,12 @@
       .sub-menu{
         display: none;
         position: absolute;
+
+        top: 40px;
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
         color: red;
         width: 100%;
 
@@ -114,6 +131,10 @@
     }
 
     li{
+
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
 
       align-self: center;
 
@@ -154,6 +175,9 @@
           content: '.';
           color: transparent;
           background: white;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
           visibility: hidden;
           opacity: 0;
           z-index: -1;
@@ -172,7 +196,8 @@
 
         button {
           //display: inline-block;
-          width: 45%;
+          width: 40%;
+          margin-left: 10px !important;
           font-family: MetropolisExtraBold, sans-serif;
         }
 
@@ -263,7 +288,7 @@
         &:last-child{
 
           button{
-            width: 50%;
+            width: 48%;
             margin-bottom: 20px;
             padding: 10px 20px;
           }
@@ -308,7 +333,7 @@
 
           button{
             font-size: 12px;
-            width: 45%;
+            width: 40%;
           }
         }
       }
