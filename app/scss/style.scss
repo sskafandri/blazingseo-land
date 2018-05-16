@@ -1718,9 +1718,56 @@ button{
 
             border-radius: 10px;
             border:0;
+
           }
 
+          .input-tooltip{
+            z-index: 1000;
+            visibility: hidden;
+            opacity: 0;
 
+            position: absolute;
+
+            width: 75%;
+
+            right: 0;
+            top: 130%;
+
+            background-color: #0001ff;
+            padding: 15px;
+
+            color: white;
+            font-family: MetropolisSemiBold, sans-serif;
+            font-size: 15px ;
+            text-align: left;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+
+            transition: all 0.5s;
+
+            a{
+              color: whitesmoke;
+              text-decoration: underline;
+              font-family: MetropolisBold, sans-serif;
+            }
+
+            &:after {
+              bottom: 100%;
+              left: 80%;
+              border: solid transparent;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              border-color: rgba(136, 183, 213, 0);
+              border-bottom-color: #0001ff;
+              border-width: 21px;
+              margin-left: -21px;
+            }
+
+          }
 
 
 
@@ -1867,7 +1914,7 @@ button{
 
             color: white;
             font-size: 20px;
-            span{
+            span.total-money{
               display: block;
               font-size: 40px;
             }

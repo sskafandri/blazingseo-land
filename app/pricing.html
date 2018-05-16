@@ -22,8 +22,6 @@
     <!--custom styles-->
     <link rel="stylesheet" href="css/style.css">
 
-
-
 </head>
 <body>
 
@@ -177,10 +175,10 @@
                                     Starting at
                                 </p>
 
-                                <span class="price-value">30 $</span>
+                                <span class="price-value"><span>1.00</span> $</span>
 
                                 <label class="select-container">
-                                    <input type="radio" name="pack" id="pack1">
+                                    <input type="radio" name="pack" id="pack1" value="1">
                                     <!--<span class="checkmark"></span>-->
                                     <i class="fas fa-check-circle"></i>
                                     <span class="select-text">Select Pack</span>
@@ -213,11 +211,11 @@
                                     Starting at
                                 </p>
 
-                                <span class="price-value">30 $</span>
+                                <span class="price-value"><span>1.50</span> $</span>
 
 
-                                <label class="select-container">
-                                    <input type="radio" name="pack" id="pack2">
+                                <label class="select-container pack-selected">
+                                    <input type="radio" name="pack" id="pack2" value="1.5" checked>
                                     <i class="fas fa-check-circle"></i>
                                     <span class="select-text">Select Pack</span>
                                     <!--<span class="checkmark"></span>-->
@@ -242,10 +240,10 @@
                                     Starting at
                                 </p>
 
-                                <span class="price-value">30 $</span>
+                                <span class="price-value"><span>2.00</span> $</span>
 
                                 <label class="select-container">
-                                    <input type="radio" name="pack" id="pack3">
+                                    <input type="radio" name="pack" id="pack3" value="2">
                                     <i class="fas fa-check-circle"></i>
                                     <!--<span class="checkmark"></span>-->
                                     <span class="select-text">Select Pack</span>
@@ -288,9 +286,12 @@
 
 
 
-                           <input id='quantity' type="number" min="1" max="999999" step="1" placeholder="#">
+                           <input id='quantity-input' name='proxy-quantity' type="number" min="1" max="999999" step="1" value="1"
+                                  placeholder="#" >
 
-
+                           <div class="input-tooltip">
+                               You may purchase this amount automatically, but if you wish to talk to a sales representative about your needs, please email <a href="mailto:support@blazingseollc.com">support@blazingseollc.com</a> and we'll get right back to you!
+                           </div>
                        </div>
 
 
@@ -310,7 +311,7 @@
                                     <span class="discount invisible">
                                        10% Off
                                    </span>
-                                    <input type="radio" name="duration">
+                                    <input type="radio" name="duration" class="duration-1" value="1" checked>
                                     <span class="checkmark">
                                         <i class="fas fa-check"></i>
                                     </span>
@@ -326,7 +327,7 @@
                                    <span class="discount">
                                        10% Off
                                    </span>
-                                   <input type="radio" name="duration">
+                                   <input type="radio" name="duration" class="duration-3" value="3">
                                    <span class="checkmark">
                                        <i class="fas fa-check"></i>
                                     </span>
@@ -344,7 +345,7 @@
                                        10% Off
                                    </span>
 
-                                   <input type="radio" name="duration">
+                                   <input type="radio" name="duration" class="duration-6" value="6">
                                    <span class="checkmark">
                                        <i class="fas fa-check"></i>
                                    </span>
@@ -361,13 +362,13 @@
 
                        <div class="total">
                            <div class="left">
-                               <span class="total-proxies">42</span> Proxies
+                               <span class="total-proxies">1</span> Proxies
                                <br>
                                <span class="total-month">1</span> Month
                            </div>
                            <div class="right">
 
-                               <span class="total-money">16$</span>
+                               <span class="total-money"><span>0</span>$</span>
                                Total
                            </div>
                        </div>
@@ -624,10 +625,17 @@
 <script src="libs/respond/dest/respond.min.js"></script>
 <![endif]-->
 
+
+<script src="libs/sugar/release/sugar.min.js"></script>
 <!--jQuery -->
 <script src="libs/jquery/dist/jquery.min.js"></script>
+
+<script src="libs/jquerymy/jquerymy.min.js"></script>
+
 <!--Preloader-->
 <script src="js/preloader/preloader.js"></script>
+
+<!--<script src="libs/popper.js/dist/popper.min.js"></script>-->
 <!--Bootstrap-->
 <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 <!--<script src="js/faq-isotope/faq-isotop.js"></script>-->
@@ -649,8 +657,73 @@
         });
 
         $(this).parent().addClass('pack-selected');
+
+        refreshTotalPrice();
     });
 
+
+
+
+    $("#quantity-input").on('keyup change click ', function () {
+
+        $('.total-proxies').html(this.value);
+
+
+        if(this.value > 1000) {
+
+
+            // // $("#quantity-input").tooltip();
+            // alert("hello")
+            $('.input-tooltip').css('opacity', '1');
+            $('.input-tooltip').css('visibility', 'visible');
+
+        } else {
+
+            // $('.input-tooltip').css('display', 'none');
+            $('.input-tooltip').css('opacity', '0');
+            $('.input-tooltip').css('visibility', 'hidden');
+
+        }
+
+        $("#quantity-input").focusout(function () {
+
+            $('.input-tooltip').css('opacity', '0');
+            $('.input-tooltip').css('visibility', 'hidden');
+        })
+
+
+        refreshTotalPrice();
+    });
+
+
+    $('input[type=radio][name=duration]').change(function() {
+        if (this.value == 1) {
+            $('.total-month').html(this.value);
+        }
+        else if (this.value == 3) {
+            $('.total-month').html(this.value);
+        } else {
+            $('.total-month').html(this.value);
+        }
+
+
+        refreshTotalPrice();
+    });
+
+
+
+
+
+    refreshTotalPrice();
+
+    function refreshTotalPrice() {
+        var total = 0;
+
+        total = $("input:radio[name=pack]:checked").val() * $('#quantity-input').val() * $('.total-month').html();
+
+        $(".total-money span").html(total);
+
+    }
 
 </script>
 

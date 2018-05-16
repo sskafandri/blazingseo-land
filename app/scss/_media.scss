@@ -1269,7 +1269,8 @@
 
 		.progress-form {
 			margin: 0;
-			padding-top: 30px;
+			padding-top: 0px;
+			margin-bottom: 50px;
 
 
 			.progressbar-container{
@@ -1288,15 +1289,30 @@
 					}
 
 					p{
-						font-size: 14px;
+						font-size: 10px;
 					}
 
 					.quantity{
 						padding: 15px 10px;
-						font-size: 16px;
+						font-size: 14px;
 
 						input{
 							margin-left: 5px;
+						}
+
+						.input-tooltip{
+
+
+							width: 150%;
+							left: 0px;
+
+							font-size: 12px;
+
+							&:after{
+								left: 35%;
+							}
+
+
 						}
 					}
 
@@ -1334,7 +1350,7 @@
 
 						.right{
 
-							span{
+							span.total-money{
 								font-size: 30px;
 							}
 						}
@@ -1733,6 +1749,15 @@
 						input{
 							margin-left: 5px;
 						}
+
+						.input-tooltip{
+
+
+							width: 100%;
+							font-size: 11px;
+
+
+						}
 					}
 
 					.duration{
@@ -2055,6 +2080,16 @@
 						input{
 							margin-left: 5px;
 						}
+
+						.input-tooltip{
+
+
+							width: 100%;
+							font-size: 12px;
+
+
+						}
+
 					}
 
 					.duration{

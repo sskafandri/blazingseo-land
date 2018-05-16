@@ -11,6 +11,8 @@
     "aos": "^2.2.0",
     "html5shiv": "^3.7.3",
     "respond": "^1.4.2",
-    "page-scroll-to-id": "^1.5.8"
+    "page-scroll-to-id": "^1.5.8",
+    "popper.js": "^1.14.3",
+    "jquerymy": "^1.2.14"
   }
 }
