@@ -4,6 +4,7 @@
 
 .top-menu {
 
+
   margin-left: 17%;
   width: 100%;
 
@@ -15,6 +16,9 @@
       -moz-border-radius: 10px;
       border-radius: 10px;
       a{
+
+        letter-spacing: -0.9px;
+
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
@@ -324,7 +328,7 @@
   .top-navigation{
 
     .top-menu{
-      margin-left: 12%;
+      margin-left: 0%;
 
       ul{
 
@@ -342,4 +346,24 @@
 
 }
 
+
+
+@media (min-width: 1200px) and (max-width: 1500px){
+  .top-navigation{
+
+    .top-menu{
+      margin-left: 8%;
+      ul{
+
+        li{
+
+          a{
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+
+}
 

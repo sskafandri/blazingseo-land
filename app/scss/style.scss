@@ -9,6 +9,9 @@
 
 $lightGrey: rgba(248, 248, 248, 0.95);
 
+$header-size: 70px;
+$subheader-size: 35px;
+
 
 
 //------------------------------------------------
@@ -99,6 +102,7 @@ button{
 // media query for scrolling
 @media (min-width: 767px) {
   .navbar {
+    z-index: 10000;
 
     height: 75px;
 
@@ -149,12 +153,16 @@ button{
 
   .home-title{
     font-weight: bold;
-    font-size: 80px;
+    font-size: 70px;
+    letter-spacing: -0.9px;
+
   }
 
   .home-sub-title{
     margin-bottom: 85px;
     font-family: MetropolisRegular, sans-serif;
+    letter-spacing: -0.9px;
+
   }
   
   .home-proxies-btn{
@@ -357,6 +365,8 @@ button{
   }
 
   .section-title{
+    font-size: 36px;
+    letter-spacing: -0.9px;
     font-weight: bold;
   }
 
@@ -366,24 +376,32 @@ button{
   padding: 100px 200px;
 
   .section-title{
-    font-size: 35px;
+    font-size: 36px;
+    letter-spacing: -0.9px;
+
     font-weight: bold;
     margin-bottom: 90px;
   }
 
   img{
+    width: 25%;
     margin-bottom: 40px;
   }
 
   .benefit-item{
-    padding: 50px;
+    padding: 80px;
     -webkit-transition: all 0.6s ease;
        -moz-transition: all 0.6s ease;
         -ms-transition: all 0.6s ease;
          -o-transition: all 0.6s ease;
             transition: all 0.6s ease;
-        top: 0;
-    
+    top: 0;
+
+    .benefit-title{
+      font-family: MetropolisBold, sans-serif;
+      letter-spacing: -0.9px;
+    }
+
 
     &:hover{
 
@@ -399,14 +417,9 @@ button{
              -o-transition: top 1s ease;
                 transition: top 1s ease;
 
-      item{
-       
-      }
     }
 
-    .benefit-title{
-      font-family: MetropolisBold, sans-serif;
-    }
+
 
     i{
       color: red;
@@ -425,7 +438,9 @@ button{
     font-family: MetropolisBold, sans-serif;
     margin-top: 50px;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 45px;
+    letter-spacing: -0.9px;
+
   }
 
   .section-text{
@@ -542,7 +557,7 @@ button{
       height: 100%;
       width: 100%;
       position: absolute;
-      background: url("../img/map-world-vector-bg.png") no-repeat center left, #229ed5;
+      background: url("../img/map-world-vector-bg.png") no-repeat 25% center, #229ed5;
       //-webkit-background-size: cover;
       //background-size: cover;
     }
@@ -688,6 +703,8 @@ button{
   .section-title {
     font-family: MetropolisBold, sans-serif;
     font-size: 45px;
+    letter-spacing: -0.9px;
+
   }
 
   p {
@@ -745,6 +762,8 @@ button{
 
   .section-title{
     font-family: MetropolisSemiBold, sans-serif;
+    font-size: 30px;
+    letter-spacing: -.9px;
   }
 
 
@@ -868,10 +887,11 @@ button{
 }
 
 .pricing-section{
-  padding: 150px 100px;
+  padding: 100px 0px;
 
   .section-title{
-    font-size: 40px;
+    font-size: 45px;
+    letter-spacing: -0.9px;
   }
   
   .btn-try-free{
@@ -1034,7 +1054,7 @@ button{
 
       .price-value{
         display: block;
-        font-size: 50px;
+        font-size: 40px;
         font-family: MetropolisSemiBold,sans-serif;
       }
 
@@ -1179,14 +1199,14 @@ button{
 .faq-welcome-section{
   color: white;
   padding: 250px 0 50px;
-  //background-color: red;
   background: url("../img/home-ellipse.png") no-repeat  center, red;
   -webkit-background-size: cover;
   background-size: cover;
 
 
   h1{
-    font-size: 70px;
+    font-size: 50px;
+    letter-spacing: -.9px ;
     font-family: MetropolisBold,sans-serif;
   }
 }
@@ -1301,31 +1321,11 @@ button{
     background-color: #474747;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    //-webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3);
-    //-moz-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3);
-    //box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.3);
+
   }
 
   .question-btn.collapsed{
     background-color: #fff;
-    //background: rgba(237,237,237,1);
-    //background: -moz-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
-    //background: -webkit-gradient(left top, right top, color-stop(0%, rgba(237,237,237,1)), color-stop(34%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)));
-    //background: -webkit-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
-    //background: -o-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
-    //background: -ms-linear-gradient(left, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
-    //background: linear-gradient(to right, rgba(237,237,237,1) 0%, rgba(255,255,255,1) 34%, rgba(255,255,255,1) 100%);
-    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#ffffff', GradientType=1 );
-
-    //background: rgba(255,255,255,1);
-    //background: -moz-linear-gradient(left, rgba(255,255,255,1) 68%, rgba(237,237,237,1) 100%);
-    //background: -webkit-gradient(left top, right top, color-stop(68%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1)));
-    //background: -webkit-linear-gradient(left, rgba(255,255,255,1) 68%, rgba(237,237,237,1) 100%);
-    //background: -o-linear-gradient(left, rgba(255,255,255,1) 68%, rgba(237,237,237,1) 100%);
-    //background: -ms-linear-gradient(left, rgba(255,255,255,1) 68%, rgba(237,237,237,1) 100%);
-    //background: linear-gradient(to right, rgba(255,255,255,1) 68%, rgba(237,237,237,1) 100%);
-    //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
-
     &:hover{
       background-color: #ddd;
     }
@@ -1399,8 +1399,10 @@ button{
 
 
   h1{
-    font-size: 70px;
+    font-size: 50px;
     font-family: MetropolisBold,sans-serif;
+    letter-spacing: -0.9px;
+
   }
 }
 
@@ -1512,7 +1514,8 @@ button{
 
   .section-title{
     font-family: MetropolisBold, sans-serif;
-    font-size: 40px;
+    font-size: 45px;
+    letter-spacing: -.9px;
     color: #353535;
     margin-bottom: 20px;
   }
@@ -1567,8 +1570,9 @@ button{
 
 
   h1{
-    font-size: 60px;
+    font-size: 50px;
     font-family: MetropolisBold,sans-serif;
+    letter-spacing: -.9px;
   }
 }
 
@@ -1954,6 +1958,11 @@ button{
             background-color: #b51719;
           }
 
+        }
+
+
+        &:last-child{
+          width: 100%
         }
       }
     }

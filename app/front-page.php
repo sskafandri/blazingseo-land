@@ -1,99 +1,9 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BlazingSEO</title>
-
-    <!--reset css-->
-    <link rel="stylesheet" href="libs/reset-css/reset.css">
-
-    <!--bootstrap-->
-    <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
-
-    <!--font-awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-    <!--animate on scroll-->
-    <!--<link rel="stylesheet" href="libs/aos/dist/aos.css">-->
-
-    <!--custom styles-->
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body style="overflow-x:hidden;">
-
-<!--PRELOADER-->
-<div class="loader">
-    <div class="loader-inner"></div>
-</div>
-<!--PRELOADER-->
-<!--NAVIGATION START-->
-<nav id="top-navigation" class="top-navigation navbar navbar-expand-lg fixed-top">
-
-    <div class="container-fluid nav-container">
-
-        <!--logo-->
-        <a href="#" class="navbar-brand">
-            <img src="img/logo.png" alt="blazing logo" class="img-responsive" style="width: 75px">
-        </a>
-
-        <!--sandwich-->
-        <button class="toggle-menu">
-            <span id="sandwich">
-                <span class="sw-topper"></span>
-                <span class="sw-bottom"></span>
-                <span class="sw-footer"></span>
-            </span>
-        </button>
-
-        <!--menu-list-->
-        <nav class="top-menu">
-            <ul class="menu-list">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Careers</a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        More
-                         <i class="fas fa-caret-down"></i>
 
 
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
+<?php get_header();?>
 
-                <li>
 
-                    <button class="btn btn-light text-danger join-btn" type="submit">Join us</button>
 
-                    <button class="btn btn-outline-light login-btn" type="submit">Login</button>
-
-                </li>
-            </ul>
-        </nav>
-    </div>
-</nav>
-<!--NAVIGATION END-->
 
 <!--home section start-->
 <section id="home" class="home-section" >
@@ -101,24 +11,24 @@
         <div class="row">
             <div class="col-lg-12 col-xl-12">
 
-                 <h1 class="home-title"
-                     data-aos="zoom-in" data-aos-delay="800" data-aos-duration="1200">
-                     Private Proxies with Power
-                 </h1>
-                 <h3 class="home-sub-title text-uppercase"
-                     data-aos="fade-right" data-aos-delay="1500" data-aos-duration="1500">
+                <h1 class="home-title"
+                    data-aos="zoom-in" data-aos-delay="600" data-aos-duration="1200">
+                    Private Proxies with Power
+                </h1>
+                <h3 class="home-sub-title text-uppercase"
+                    data-aos="fade-right" data-aos-delay="1300" data-aos-duration="1500">
 
-                     Unlimited threads and bandwidth
+                    Unlimited threads and bandwidth
 
-                 </h3>
-                 <a href="#" class="home-proxies-btn btn-light text-danger"
-                     data-aos="zoom-in-left" data-aos-delay="2000" data-aos-duration="1500">
+                </h3>
+                <a href="#" class="home-proxies-btn btn-light text-danger"
+                   data-aos="zoom-in-left" data-aos-delay="1700" data-aos-duration="1500">
 
-                      Get Blazing Proxies Now
-                 </a>
+                    Get Blazing Proxies Now
+                </a>
             </div>
             <!--<div class="col-lg-12 col-xl-12">-->
-              <!--<div class="" ><img src="img/pop.png" alt="home" class="home-img"></div>-->
+            <!--<div class="" ><img src="img/pop.png" alt="home" class="home-img"></div>-->
             <!--</div>-->
 
 
@@ -137,51 +47,51 @@
                         </div>
                     </div>
                     <ul class="pop-benefit">
-                        <li data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
+                        <li data-aos="fade-up" data-aos-delay="1300" data-aos-duration="1000">
                             <span>1</span><br>
                             Gbps Network line
                         </li>
-                        <li data-aos="fade-up" data-aos-delay="1700" data-aos-duration="1000">
+                        <li data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1000">
                             <span>&#8734;</span><br>
                             Unmetered <br>Bandwidth
                         </li>
-                        <li  data-aos="fade-up" data-aos-delay="1900" data-aos-duration="1000">
+                        <li  data-aos="fade-up" data-aos-delay="1700" data-aos-duration="1000">
                             <span>&#8734;</span><br>
                             Unlimited <br>Threads
                         </li>
-                        <li  data-aos="fade-up" data-aos-delay="2100" data-aos-duration="1000">
+                        <li  data-aos="fade-up" data-aos-delay="1900" data-aos-duration="1000">
                             <span>-</span><br>
                             No Throtting
                         </li>
                     </ul>
 
-                   <ul class="pop-table" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500">
-                       <ul>
-                          <li>Type</li>
-                          <li>Ip</li>
-                          <li>Updated</li>
-                       </ul>
-                       <ul>
-                           <li>US-Semi 3</li>
-                           <li>14.153.162.144</li>
-                           <li>2018-01-10 01:01:11</li>
-                       </ul>
-                       <ul>
-                           <li>US-Semi 3</li>
-                           <li>14.153.162.144</li>
-                           <li>2018-01-10 01:01:11</li>
-                       </ul>
-                       <ul>
-                           <li>US-Semi 3</li>
-                           <li>14.153.162.144</li>
-                           <li>2018-01-10 01:01:11</li>
-                       </ul>
+                    <ul class="pop-table" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+                        <ul>
+                            <li>Type</li>
+                            <li>Ip</li>
+                            <li>Updated</li>
+                        </ul>
+                        <ul>
+                            <li>US-Semi 3</li>
+                            <li>14.153.162.144</li>
+                            <li>2018-01-10 01:01:11</li>
+                        </ul>
+                        <ul>
+                            <li>US-Semi 3</li>
+                            <li>14.153.162.144</li>
+                            <li>2018-01-10 01:01:11</li>
+                        </ul>
+                        <ul>
+                            <li>US-Semi 3</li>
+                            <li>14.153.162.144</li>
+                            <li>2018-01-10 01:01:11</li>
+                        </ul>
 
-                   </ul>
+                    </ul>
                 </div>
             </div>
         </div>
-    
+
     </div>
 </section>
 <!--home section end-->
@@ -189,25 +99,23 @@
 <!--compare section start-->
 <section id="compare" class="compare-section">
 
-    <div class="container text-center">
+    <div class=" container text-center">
 
         <h2 class="section-title" data-aos="zoom-in" data-aos-duration="1000">How do We Compare?</h2>
 
 
         <div class="row">
             <div class="col-12">
-                 <img src="img/compare2.png" alt="compare" class="img-responsive" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                <img src="<?php echo get_stylesheet_directory_uri();?>/img/compare2.png" alt="compare" class="img-responsive" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
             </div>
         </div>
 
-
-
-     </div>
+    </div>
 </section>
 <!--compare section end-->
 
 <!--benefits section start-->
-<section id="benefits" class="benefits-section">
+<section id="features" class="benefits-section">
 
 
     <div class="pl-5 pr-5 container-fluid text-center">
@@ -218,49 +126,65 @@
         <div class="row">
             <div class="col-md-6 col-lg-4 col-xl-3 benefit-item"
                  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <img src="img/benefits/speed2x.png" alt="speed">
+
+                <img src="<?php echo get_stylesheet_directory_uri();?>/img/benefits/speed.png" alt="speed">
+
                 <h4 class="benefit-title">Speed</h4>
                 <p class="benefit-description">1 Gbps Unmetered Bandwidth. No more silly Limits, crank up the speed!</p>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 benefit-item"
                  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <img src="img/benefits/unlimited2x.png" alt="unlm">
+
+                <img src="<?php echo get_stylesheet_directory_uri();?>/img/benefits/unlimited.png" alt="unlm">
+
                 <h4 class="benefit-title">Unlimited Bandwidth  & Threads</h4>
                 <p class="benefit-description">Truly unlimited and unmetered, our proxies have zero limits.</p>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 benefit-item"
                  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <img src="img/benefits/authentication2x.png" alt="auth">
+
+                <img src="<?php echo get_stylesheet_directory_uri();?>/img/benefits/authentication.png" alt="auth">
+
                 <h4 class="benefit-title">Authentication</h4>
                 <p class="benefit-description">We offer IP Authoritazion and User:Pass authorization</p>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 benefit-item"
                  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <img src="img/benefits/delivery2x.png" alt="deliv">
+
+                <img src="<?php echo get_stylesheet_directory_uri();?>/img/benefits/delivery.png" alt="deliv">
+
                 <h4 class="benefit-title">Automatic & instant Delivery</h4>
                 <p class="benefit-description">We allow automatic proxy replacements once per month</p>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 benefit-item"
                  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <img src="img/benefits/affiliat2x.png" alt="affil">
+
+                <img src="<?php echo get_stylesheet_directory_uri();?>/img/benefits/affiliat.png" alt="affil">
+
                 <h4 class="benefit-title">Affiliate  System - 10%</h4>
                 <p class="benefit-description">That's 10% recurring commissions!</p>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 benefit-item"
                  data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
-                <img src="img/benefits/list2x.png" alt="list">
+
+                <img src="<?php echo get_stylesheet_directory_uri();?>/img/benefits/list.png" alt="list">
+
                 <h4 class="benefit-title">TONS of Subnets</h4>
                 <p class="benefit-description">We own 500+ Class C subnets, As well as 40 Class B, and 24 Clas</p>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 benefit-item"
                  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <img src="img/benefits/http2x.png" alt="http">
+
+                <img src="<?php echo get_stylesheet_directory_uri();?>/img/benefits/http.png" alt="http">
+
                 <h4 class="benefit-title">HTTP/HTTPS/SOCKS Supported!</h4>
                 <p class="benefit-description">Unlike most private proxy providers, we support all 3 protocols</p>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 benefit-item"
                  data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
-                <img src="img/benefits/algeria2x.png" alt="country">
+
+                <img src="<?php echo get_stylesheet_directory_uri();?>/img/benefits/algeria.png" alt="country">
+
                 <h4 class="benefit-title">Four Countries  To Choose From</h4>
                 <p class="benefit-description">We offer proxies from these 4 countries: USA, Germany, Brazil and South Africa</p>
             </div>
@@ -274,7 +198,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-6 mr-auto ml-auto" >
+            <div class="col mr-auto ml-auto" >
                 <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">
                     Customized Solutions
                 </h2>
@@ -282,16 +206,22 @@
                     Blazing SEO is proud to announce our latest product offering: Clean, Virgin, C Blocks!</p>
 
             </div>
-            <div class="col-12 col-lg-6 ml-auto mr-auto">
+            <div class="col ml-auto mr-auto">
 
                 <div id="accordion">
+
+
                     <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="0">
                         <div class="card-header" id="headingOne">
                             <h5 class="mb-0">
 
                                 <button class="grid btn accordion-toggle" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <img src="img/solutions/icon1.png" alt="" class="mr-3">
-                                    <span>Full C Class Subnet</span>
+                                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/solutions/icon1.png" alt="" class="mr-3">
+                                    <span>
+                                        <?php echo get_post(66)-> post_title ;?>
+
+
+                                    </span>
                                     <!--<span class="arrow">-</span>-->
                                 </button>
 
@@ -301,30 +231,48 @@
 
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
                             <div class="card-body">
-                                This means those of you who are having problems with your current IPs (Sneaker purchasing customers, Ticket customers, Google Scraping, Facebook).
-                                <a href="" class="learn-more-link">
+                                <?php
+                                $post_id = 66;
+                                $queried_post = get_post($post_id);
+                                $content = $queried_post->post_content;
+                                $content = apply_filters('the_content', $content);
+                                $content = str_replace(']]>', ']]&gt;', $content);
+                                echo $content;
+                                ?>
+                                <a href=" <?php echo get_post_custom_values('learn-more', 66)[0]; ?>" class="learn-more-link">
                                     Learn more <i class="fas fa-arrow-right ml-3"></i>
                                 </a>
                             </div>
 
                         </div>
                     </div>
+
+
                     <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                         <div class="card-header" id="headingTwo">
                             <h5 class="mb-0">
                                 <button class="btn collapsed accordion-toggle" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <img src="img/solutions/icon2.png" alt="" class="mr-3">
-                                    <span>Virgin IPs</span>
+                                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/solutions/icon2.png" alt="" class="mr-3">
+                                    <span>
+                                        <?php echo get_post(69)-> post_title ;?>
+
+                                    </span>
 
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                <?php
+                                $post_id = 69;
+                                $queried_post = get_post($post_id);
+                                $content = $queried_post->post_content;
+                                $content = apply_filters('the_content', $content);
+                                $content = str_replace(']]>', ']]&gt;', $content);
+                                echo $content;
+                                ?>
 
-
-                                <a href="" class="learn-more-link">
+                                <a href="<?php echo get_post_custom_values('learn-more', 69)[0]; ?>" class="learn-more-link">
                                     Learn more <i class="fas fa-arrow-right ml-3"></i>
                                 </a>
                             </div>
@@ -334,15 +282,24 @@
                         <div class="card-header" id="headingThree">
                             <h5 class="mb-0">
                                 <button class="btn collapsed accordion-toggle" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <img src="img/solutions/icon3.png" alt="" class="mr-3">
-                                    <span>Multiple ASN Setup</span>
+                                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/solutions/icon3.png" alt="" class="mr-3">
+                                    <span>
+                                        <?php echo get_post(71)-> post_title ;?>
+                                    </span>
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                <a href="" class="learn-more-link">
+                                <?php
+                                $post_id = 71;
+                                $queried_post = get_post($post_id);
+                                $content = $queried_post->post_content;
+                                $content = apply_filters('the_content', $content);
+                                $content = str_replace(']]>', ']]&gt;', $content);
+                                echo $content;
+                                ?>
+                                <a href="<?php echo get_post_custom_values('learn-more', 71)[0]; ?>" class="learn-more-link">
                                     Learn more <i class="fas fa-arrow-right ml-3"></i>
                                 </a>
                             </div>
@@ -352,17 +309,24 @@
                         <div class="card-header" id="headingFour">
                             <h5 class="mb-0">
                                 <button class="btn  collapsed accordion-toggle" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                                    <img src="img/solutions/icon4.png" alt="" class="mr-3">
-                                    <span>Different datacenter location</span>
-
-
+                                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/solutions/icon4.png" alt="" class="mr-3">
+                                    <span>
+                                        <?php echo get_post(73)-> post_title ;?>
+                                    </span>
                                 </button>
                             </h5>
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                             <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                <a href="" class="learn-more-link">
+                                <?php
+                                $post_id = 73;
+                                $queried_post = get_post($post_id);
+                                $content = $queried_post->post_content;
+                                $content = apply_filters('the_content', $content);
+                                $content = str_replace(']]>', ']]&gt;', $content);
+                                echo $content;
+                                ?>
+                                <a href="<?php echo get_post_custom_values('learn-more', 73)[0]; ?>" class="learn-more-link">
                                     Learn more <i class="fas fa-arrow-right ml-3"></i>
                                 </a>
                             </div>
@@ -455,7 +419,7 @@
                 <div class="field active" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
                     <input id="register" maxlength="30" type="text" /><label for="register"><span class="text-light">Enter your email address</span></label>
                     <button class="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
-                    <img src="img/logo-small.png" alt="">Get Blazing Proxies Now
+                        <img src="<?php echo get_stylesheet_directory_uri();?>/img/logo-small.png" alt="">Get Blazing Proxies Now
                     </button>
                 </div>
             </div>
@@ -482,28 +446,28 @@
             <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
                 <a href="#usa-tab" data-toggle="tab">
                     <span>USA</span>
-                    <img src="img/USA-flag.png" class="" alt="usa">
+                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/USA-flag.png" class="" alt="usa">
                 </a>
             </li>
             <li class="active" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
                 <a href="#german-tab" data-toggle="tab">
                     <span>German</span>
-                      <img src="img/GERMAN-flag.png" alt="german">
+                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/GERMAN-flag.png" alt="german">
                 </a>
 
             </li>
             <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="800">
                 <a href="#brazil-tab" data-toggle="tab">
-                <span>Brazil</span>
-                <img src="img/BRAZIL-flag.png" alt="brazil">
-            </a>
+                    <span>Brazil</span>
+                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/BRAZIL-flag.png" alt="brazil">
+                </a>
 
             </li>
             <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1100">
                 <a href="#" data-toggle="tab">
-                <span>Sneaker</span>
+                    <span>Sneaker</span>
 
-                <img src="img/sneaker.png" class="" width="65px" alt="sneaker">
+                    <img src="<?php echo get_stylesheet_directory_uri();?>/img/sneaker.png" class="" width="65px" alt="sneaker">
                 </a>
             </li>
         </ul>
@@ -523,7 +487,9 @@
                                     Starting at
                                 </p>
 
-                                <span class="price-value">1 $</span>
+                                <span class="price-value">
+                                    <?php echo get_theme_mod('usa-semi-dedicated-monthly-price');?> $
+                                </span>
 
                                 <button class="btn learn-more-link">Learn more</button>
 
@@ -539,13 +505,15 @@
 
 
                             <h5 class="price-title">
-                                Semi-dedicated
+                                Dedicated
                             </h5>
                             <p class="price-sub-title">
                                 Starting at
                             </p>
 
-                            <span class="price-value">1 $</span>
+                            <span class="price-value">
+                                    <?php echo get_theme_mod('usa-dedicated-monthly-price');?> $
+                            </span>
 
                             <button class="btn learn-more-link">Learn more</button>
 
@@ -556,13 +524,16 @@
 
                             <div class="price-body">
                                 <h5 class="price-title">
-                                    Semi-dedicated
+                                    Rotating
                                 </h5>
                                 <p class="price-sub-title">
                                     Starting at
                                 </p>
 
-                                <span class="price-value">1 $</span>
+                                <span class="price-value">
+
+                                    <?php echo get_theme_mod('usa-rotating-monthly-price');?> $
+                                </span>
 
                                 <button class="btn learn-more-link">Learn more</button>
                             </div>
@@ -588,7 +559,10 @@
                                     Starting at
                                 </p>
 
-                                <span class="price-value">2 $</span>
+                                <span class="price-value">
+                                    <?php echo get_theme_mod('german-semi-dedicated-monthly-price');?>
+                                    $
+                                </span>
 
                                 <button class="btn learn-more-link">Learn more</button>
 
@@ -604,13 +578,15 @@
 
 
                             <h5 class="price-title">
-                                Semi-dedicated
+                                Dedicated
                             </h5>
                             <p class="price-sub-title">
                                 Starting at
                             </p>
 
-                            <span class="price-value">2 $</span>
+                            <span class="price-value">
+                                    <?php echo get_theme_mod('german-dedicated-monthly-price');?> $
+                            </span>
 
                             <button class="btn learn-more-link">Learn more</button>
 
@@ -621,13 +597,15 @@
 
                             <div class="price-body">
                                 <h5 class="price-title">
-                                    Semi-dedicated
+                                    Rotating
                                 </h5>
                                 <p class="price-sub-title">
                                     Starting at
                                 </p>
 
-                                <span class="price-value">2 $</span>
+                                <span class="price-value">
+                                    <?php echo get_theme_mod('german-rotating-monthly-price');?> $
+                                </span>
 
                                 <button class="btn learn-more-link">Learn more</button>
                             </div>
@@ -653,7 +631,10 @@
                                     Starting at
                                 </p>
 
-                                <span class="price-value">3 $</span>
+                                <span class="price-value">
+                                    <?php echo get_theme_mod('brazil-semi-dedicated-monthly-price');?> $
+
+                                </span>
 
                                 <button class="btn learn-more-link">Learn more</button>
 
@@ -669,13 +650,18 @@
 
 
                             <h5 class="price-title">
-                                Semi-dedicated
+                                Dedicated
                             </h5>
                             <p class="price-sub-title">
                                 Starting at
                             </p>
 
-                            <span class="price-value">3 $</span>
+                            <span class="price-value">
+
+                                <?php echo get_theme_mod('brazil-dedicated-monthly-price');?> $
+
+
+                            </span>
 
                             <button class="btn learn-more-link">Learn more</button>
 
@@ -686,13 +672,17 @@
 
                             <div class="price-body">
                                 <h5 class="price-title">
-                                    Semi-dedicated
+                                    Rotating
                                 </h5>
                                 <p class="price-sub-title">
                                     Starting at
                                 </p>
 
-                                <span class="price-value">3 $</span>
+                                <span class="price-value">
+
+                                    <?php echo get_theme_mod('brazil-rotating-monthly-price');?> $
+
+                                </span>
 
                                 <button class="btn learn-more-link">Learn more</button>
                             </div>
@@ -710,193 +700,9 @@
 </div>
 <!--pricing section end-->
 
-<!--support section start-->
-<section id="support" class="support-section">
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-10 col-md-1 col-lg-5 col-xl-4">
-                <h3 class="section-title" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
-                    Real Support From a Full  Support Team
-                </h3>
-
-                <p class="section-text" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1200">
-                    All customer support is handled by me (Neil) and my support team. Availiable
-                    24 / 7 - 365. They are experienced, certified, and trained to guarantee that you
-                    will be asking the right person for help immedietly via email.
-                </p>
-            </div>
-
-            <div class="col-lg-5 offset-lg-1 col-xl-6 offset-xl-2 pt-5 contact-right-block" style="background: url('img/support-bg.png') no-repeat center;" >
-                <div class="wrapper" >
-
-
-                    <div class="row mt-5">
-                        <div class="col-6 ">
-                            <a class="d-block item-big text-center " href="#" target="_blank"
-                                data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1200">
-                                <img src="img/logo-support.png" class="d-block mb-3 img-responsive" alt="">
-                                Contact Us
-                            </a>
-                        </div>
-                        <div class="col-6 mt-sm-5">
-
-                            <div class="row">
-                                <div class="col-12 col-sm-4 mr-4 mb-2 mb-sm-0">
-                                    <a class="d-block item text-center" style="color:#365a9e; font-size: 10px" href="#" target="_blank"
-                                       data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1200">
-                                        <i class="fab fa-facebook " style="font-size: 36px"></i>
-                                        Facebook
-                                    </a>
-                                </div>
-                                <div class="col-4 ">
-                                    <a class="d-block item text-center" style="color:#00aef3; font-size: 10px" href="#" target="_blank"
-                                       data-aos="flip-right" data-aos-delay="1500" data-aos-duration="1200">
-                                        <i class="fab fa-twitter" style="font-size: 36px"></i>
-                                        Twitter
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-<!--support section end-->
-
-<!--footer start-->
-<footer id="footer" class="footer-section">
-    <div class="container">
-        <div class="row">
-
-            <div class="col-4 col-sm-4 col-md-3"
-                data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
-                <ul>
-                    <li >
-                        <a href="" class="menu-header">Pricing</a>
-                    </li>
-                    <li>
-                        <a href="">German Proxy</a>
-                    </li>
-                    <li>
-                        <a href=""> Us Proxy</a>
-                    </li>
-                    <li>
-                        <a href="">Brazil Proxy</a>
-                    </li>
-                    <li>
-                        <a href="">Sneaker Proxy</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-4 col-sm-4 col-md-3"
-                 data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1200">
-                <ul>
-                    <li >
-                        <a href="" class="menu-header">Resources</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Resources
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="">
-                            FAQ
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="">
-                            API
-                        </a>
-
-                    </li>
-                    <li>
-                        <a href="">
-                            Server Status
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-4 col-sm-4 col-md-3"
-                 data-aos="fade-up" data-aos-delay="1500" data-aos-duration="1200">
-                <ul>
-                    <li>
-                        <a href="" class="menu-header">Company</a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Company
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            About Us
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Our Team
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            News
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            Logos & Banners
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="row ">
-            <div class="copyright ml-auto mr-auto">
-                Copyright 2017 Blazing Proxies | All Rights Reserved
-            </div>
-
-
-        </div>
-    </div>
-</footer>
-<!--footer end-->
-
-
-
-<!--[if lt IE 9]>
-<script src="libs/html5shiv/dist/html5shiv.min.js"></script>
-<script src="libs/html5shiv/dist/html5shiv-printshiv.min.js"></script>
-<script src="libs/respond/dest/respond.min.js"></script>
-<![endif]-->
-
-
-<!--jQuery -->
-<script src="libs/jquery/dist/jquery.min.js"></script>
-
-<!--Preloader-->
-<script src="js/preloader/preloader.js"></script>
-
-<!--Bootstrap-->
-<script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!--animate on scroll-->
-<!--<script src="libs/aos/dist/aos.js"></script>-->
-
-<!--Custom scripts-->
-<script src="js/common.js"></script>
+<?php the_content(); ?>
 
 
 
 
-</body>
-</html>
+<?php get_footer();?>
