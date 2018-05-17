@@ -1164,7 +1164,8 @@ button {
   .faq-content-section .show {
     display: block !important; }
   .faq-content-section .questions-wrap {
-    position: relative; }
+    position: relative;
+    padding: 0 15px; }
     .faq-content-section .questions-wrap .filterDiv {
       display: none;
       transition: display 1s !important; }
@@ -1291,14 +1292,14 @@ button {
       .affiliate-content-section .starter-banner .banner-left ul li {
         margin-bottom: 25px; }
         .affiliate-content-section .starter-banner .banner-left ul li .price {
-          font-size: 40px;
+          font-size: 30px;
           font-family: MetropolisSemiBold, sans-serif; }
         .affiliate-content-section .starter-banner .banner-left ul li .price-detail {
           font-size: 15px;
           font-family: MetropolisRegular, sans-serif; }
     .affiliate-content-section .starter-banner .banner-right {
       background-color: white;
-      padding: 65px 120px 0;
+      padding: 65px 120px;
       border-bottom-right-radius: 20px;
       border-top-right-radius: 20px; }
       .affiliate-content-section .starter-banner .banner-right ul {
@@ -1743,7 +1744,7 @@ button {
         grid-row-gap: 20px; }
   .support-section .section-title {
     margin-top: 50px;
-    font-size: 27px; }
+    font-size: 25px; }
   .support-section .section-text {
     font-size: 13px;
     margin-bottom: 50px; }
@@ -1760,9 +1761,9 @@ button {
       margin-top: 20px;
       font-size: 10px; }
   .faq-welcome-section {
-    padding: 200px 0 50px; }
+    padding: 150px 0 20px; }
     .faq-welcome-section .section-title {
-      font-size: 31px; }
+      font-size: 30px; }
   .faq-content-section {
     padding: 50px 0 50px; }
     .faq-content-section .grid-container {
@@ -2035,13 +2036,13 @@ button {
     border-radius: 10px;
     margin-bottom: 10px; }
     .affiliate-content-section .starter-banner .banner-left h4 {
-      font-size: 30px; }
+      font-size: 20px; }
     .affiliate-content-section .starter-banner .banner-left ul {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       width: 100%; }
       .affiliate-content-section .starter-banner .banner-left ul li .price {
-        font-size: 40px; }
+        font-size: 30px; }
       .affiliate-content-section .starter-banner .banner-left ul li .price-detail {
         font-size: 13px;
         font-weight: bold; }

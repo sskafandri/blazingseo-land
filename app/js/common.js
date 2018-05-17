@@ -125,4 +125,4 @@ $form.on('click', 'button.active', function(e) {
         $this.removeClass('full active');
         $this.html('OK');
     }, 1200);
-})
+});

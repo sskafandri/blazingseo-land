@@ -1220,6 +1220,7 @@ button{
 
   .questions-wrap{
     position: relative;
+    padding: 0 15px;
 
     .filterDiv{
       display: none;
@@ -1439,7 +1440,7 @@ button{
           margin-bottom: 25px;
 
           .price{
-            font-size: 40px;
+            font-size: 30px;
             font-family: MetropolisSemiBold, sans-serif;
           }
           .price-detail{
@@ -1454,7 +1455,7 @@ button{
 
     .banner-right{
       background-color: white;
-      padding: 65px 120px 0;
+      padding: 65px 120px;
 
       border-bottom-right-radius: 20px;
       border-top-right-radius: 20px;
