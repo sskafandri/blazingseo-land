@@ -628,7 +628,6 @@ button {
     font-weight: bold;
     margin-bottom: 90px; }
   .benefits-section img {
-    width: 25%;
     margin-bottom: 40px; }
   .benefits-section .benefit-item {
     padding: 80px;
@@ -1892,7 +1891,7 @@ button {
     .top-navigation .nav-container {
       padding: 0 3%; }
   .home-section .home-title {
-    font-size: 55px; }
+    font-size: 40px; }
   .home-section .home-sub-title {
     font-size: 20px; }
   .home-section .home-proxies-btn {
@@ -1909,6 +1908,8 @@ button {
     padding: 80px 0; }
     .compare-section .container {
       margin-top: 80px; }
+    .compare-section .section-title {
+      font-size: 35px; }
   .benefits-section {
     padding: 50px 0; }
     .benefits-section .section-title {
@@ -1917,24 +1918,26 @@ button {
     .benefits-section img {
       margin-bottom: 20px; }
     .benefits-section .benefit-item {
-      padding: 75px 50px;
+      padding: 50px 100px;
       margin: 0 auto; }
       .benefits-section .benefit-item:last-child {
         border: 0; }
   .solution-section {
     padding: 50px 0; }
     .solution-section .section-title {
-      font-size: 40px; }
+      font-size: 35px; }
     .solution-section .section-text {
       font-weight: 300;
       font-size: 19px;
       margin-bottom: 70px; }
+  .location-section .padding-box .padding-box-xxl {
+    padding: 0; }
   .location-section .padding-box:before {
     -webkit-background-size: 1038%;
     background-size: 108%;
     background-position: -100px 65%; }
   .location-section .padding-box .section-title {
-    font-size: 40px; }
+    font-size: 35px; }
   .join-section {
     margin-top: 40px;
     padding: 50px 0; }
@@ -2272,7 +2275,7 @@ button {
   .home-section .padding-box {
     padding: 170px 0  0; }
   .home-section .home-title {
-    font-size: 55px; }
+    font-size: 50px; }
   .home-section .home-sub-title {
     font-size: 20px; }
   .home-section .home-proxies-btn {
@@ -2286,10 +2289,12 @@ button {
     padding: 75px; }
     .compare-section .container {
       margin-top: 100px; }
+    .compare-section .section-title {
+      font-size: 30px; }
   .benefits-section {
     padding: 100px 10px; }
     .benefits-section .section-title {
-      font-size: 25px;
+      font-size: 30px;
       margin-bottom: 30px; }
     .benefits-section .benefit-item {
       padding: 20px; }
@@ -2302,8 +2307,8 @@ button {
   .solution-section {
     padding: 60px 150px; }
     .solution-section .section-title {
-      font-size: 40px;
-      margin-top: 0; }
+      font-size: 35px;
+      margin-top: 30px; }
     .solution-section .section-text {
       font-size: 17px; }
   .location-section .padding-box:before {
@@ -2361,10 +2366,10 @@ button {
         padding: 5px 19px;
         margin-right: 0px; }
   .join-section {
-    padding: 75px 0; }
+    padding: 100px 0; }
   .pricing-section {
     padding: 75px 50px; }
-    .pricing-section .section-title {
+    .pricing-section .section-title40px {
       font-size: 30px;
       margin-bottom: 20px; }
     .pricing-section .btn-try-free {
