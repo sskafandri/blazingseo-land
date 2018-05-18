@@ -7,7 +7,7 @@
   right: 0;
   top: 0;
   width: 100%;
-  z-index: 9999; }
+  z-index: 10000000; }
   .loader .loader-inner {
     background-image: url("../img/preloader.gif");
     background-size: cover;
@@ -619,6 +619,26 @@ button {
     font-size: 36px;
     letter-spacing: -0.9px;
     font-weight: bold; }
+  .compare-section .lined {
+    position: relative; }
+    .compare-section .lined::before {
+      animation: mymove 3s infinite;
+      content: " ";
+      width: 100%;
+      height: 100%;
+      opacity: 50%;
+      background: url("../img/line.png") center no-repeat;
+      position: absolute;
+      -webkit-background-size: 50%;
+      background-size: 50%; }
+
+@keyframes mymove {
+  0% {
+    opacity: 0; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 .benefits-section {
   padding: 100px 200px; }
@@ -1020,7 +1040,8 @@ button {
             border-width: 23px;
             margin-left: -23px; }
   .pricing-section .prices {
-    margin-top: 30px; }
+    margin-top: 30px;
+    position: relative; }
     .pricing-section .prices .price {
       min-height: 300px;
       text-align: center;
@@ -1343,6 +1364,9 @@ button {
     font-size: 20px;
     color: #7e7e7e;
     letter-spacing: 0; }
+  .faq-subsection .container .row {
+    padding-left: 10px;
+    padding-right: 10px; }
 
 .see-more-link {
   display: block;
@@ -1612,6 +1636,22 @@ button {
 
 .red-bg {
   background-color: red; }
+
+.contact-content-section {
+  padding: 100px 0; }
+  .contact-content-section h2 {
+    font-family: MetropolisBold, sans-serif;
+    font-size: 30px;
+    letter-spacing: -0.9px; }
+  .contact-content-section form {
+    width: 100%;
+    font-family: MetropolisSemiBold, sans-serif; }
+    .contact-content-section form input,
+    .contact-content-section form label, .contact-content-section form textarea {
+      width: 100%;
+      border: 0; }
+    .contact-content-section form input {
+      border-bottom: 5px solid #eee; }
 
 .page-not-found-content {
   padding: 100px 0;
@@ -2679,5 +2719,7 @@ button {
   .container-fluid {
     max-width: 1800px;
     padding: 0 !important; }
+  .home-section:before {
+    background-size: 25%; }
   .location-section .padding-box:before {
     background-position: 0% center; } }

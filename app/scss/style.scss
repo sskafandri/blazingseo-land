@@ -370,6 +370,36 @@ button{
     font-weight: bold;
   }
 
+  .lined{
+    position: relative;
+
+    &::before{
+      @keyframes mymove {
+        0%{
+          opacity: 0;
+
+        }
+
+        50%{
+          opacity: 1;
+        }
+        100%{
+          opacity: 0;
+        }
+      }
+
+      animation: mymove 3s infinite;
+      content: " ";
+      width: 100%;
+      height: 100%;
+      opacity: 50%;
+      background: url("../img/line.png") center no-repeat;
+      position: absolute;
+      -webkit-background-size: 50%;
+      background-size: 50%;
+    }
+  }
+
 }
 
 .benefits-section{
@@ -1001,6 +1031,17 @@ button{
 
   .prices{
     margin-top: 30px;
+    position: relative;
+
+    //&:before{
+    //  content: ' ';
+    //  z-index: 1000;
+    //  display: block;
+    //  position: absolute;
+    //  width: 100%;
+    //  height: 100%;
+    //  background-color: transparent;
+    //}
 
     .price{
       min-height: 300px;
@@ -1527,6 +1568,14 @@ button{
     letter-spacing: 0;
   }
 
+  .container{
+
+    .row{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
 
 
 }
@@ -1977,6 +2026,44 @@ button{
 //----------------------------------------------------------------------------------------------------------------------
 //    Pricing page styles end
 //----------------------------------------------------------------------------------------------------------------------
+
+
+//----------------------------------------------------------------------------------------------------------------------
+//    Contact page styles start
+//----------------------------------------------------------------------------------------------------------------------
+.contact-content-section{
+
+  padding: 100px 0;
+
+  h2{
+    font-family: MetropolisBold, sans-serif;
+    font-size: 30px;
+    letter-spacing: -0.9px;
+  }
+
+  form{
+    width: 100%;
+
+    font-family: MetropolisSemiBold, sans-serif;
+    //color: #040505;
+
+
+    input,
+    label, textarea{
+      width: 100%;
+      border: 0;
+    }
+
+    input{
+      border-bottom: 5px solid #eee;
+    }
+  }
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+//    Contact page styles end
+//----------------------------------------------------------------------------------------------------------------------
+
 
 
 

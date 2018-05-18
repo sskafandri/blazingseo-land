@@ -129,27 +129,25 @@
                     <span>USA</span>
                     <img src="img/USA-flag.png" class="" alt="usa">
                 </a>
-
-
             </li>
             <li class="active" >
                 <a href="#german-tab" data-toggle="tab">
                     <span>German</span>
                     <img src="img/GERMAN-flag.png" alt="german">
                 </a>
+            </li>
+            <li>
+                <a href="#brazil-tab" data-toggle="tab">
+                    <span>Brazil</span>
+                    <img src="img/BRAZIL-flag.png" alt="brazil">
+                </a>
 
             </li>
-            <li><a href="#brazil-tab" data-toggle="tab">
-                <span>Brazil</span>
-                <img src="img/BRAZIL-flag.png" alt="brazil">
-            </a>
-
-            </li>
-            <li><a href="#" data-toggle="tab">
-                <span>Sneaker</span>
-
-                <img src="img/sneaker.png" class="" width="65px" alt="sneaker">
-            </a>
+            <li>
+                <a href="#" data-toggle="tab">
+                    <span>Sneaker</span>
+                    <img src="img/sneaker.png" class="" width="65px" alt="sneaker">
+                </a>
             </li>
         </ul>
     </div>
@@ -160,12 +158,13 @@
     </div>
 
 
-    <div class="prices container-fluid">
+    <div class="prices tab-content container-fluid">
 
-        <div class="row">
+
+        <div id="usa-tab" class="tab-pane fade row">
             <div class="col-lg-12 col-xl-10 offset-xl-1">
                 <div class="row">
-                    <div class="col-12 mb-5 order-2 order-md-1 col-md-4">
+                    <div data-aos="flip-left" data-aos-duration="1500" class="col-10 offset-1 col-sm-4 offset-sm-0 order-2 mb-5">
                         <div class="price">
                             <div class="price-body">
                                 <h5 class="price-title">
@@ -197,7 +196,7 @@
 
                         </div>
                     </div>
-                    <div class="col-12 mb-5 order-md-2 order-1 col-md-4">
+                    <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300" class="col-10 offset-1 col-sm-4 offset-sm-0 order-1 order-sm-2 mb-5">
                         <div class="price recommended">
                             <div class="price-recommended text-uppercase">
                                 recommended
@@ -230,7 +229,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 mb-5 order-3 col-md-4">
+                    <div data-aos="flip-right" data-aos-duration="1500" class="col-10 offset-1 col-sm-4 offset-sm-0 order-3 mb-5" >
                         <div class="price">
                             <div class="price-body">
                                 <h5 class="price-title">
@@ -265,6 +264,211 @@
             </div>
         </div>
 
+        <div id="german-tab" class="tab-pane fade active show row">
+            <div class="col-lg-12 col-xl-10 offset-xl-1">
+                <div class="row">
+                    <div data-aos="flip-left" data-aos-duration="1500" class="col-10 offset-1 col-sm-4 offset-sm-0 order-2 mb-5">
+                        <div class="price">
+                            <div class="price-body">
+                                <h5 class="price-title">
+                                    Semi-dedicated
+                                </h5>
+                                <p class="price-sub-title">
+                                    Starting at
+                                </p>
+
+                                <span class="price-value"><span>2.50</span> $</span>
+
+                                <label class="select-container">
+                                    <input type="radio" name="pack" id="pack4" value="2.5">
+                                    <!--<span class="checkmark"></span>-->
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="select-text">Select Pack</span>
+                                </label>
+
+                                <a href="#" class="trial-link">Start a trial now <i class="fas fa-chevron-circle-right"></i>
+
+                                </a>
+                            </div>
+
+                            <div class="price-footer">
+                                Semi-dedicated proxies are shared between 3 users.
+                                This means the other 2 users could. Do not use this
+                                option for social media accounts.
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300"  class="col-10 offset-1 col-sm-4 offset-sm-0 order-1 order-sm-2 mb-5">
+                        <div class="price recommended">
+                            <div class="price-recommended text-uppercase">
+                                recommended
+                            </div>
+
+                            <div class="price-body">
+                                <h5 class="price-title">
+                                    Dedicated
+                                </h5>
+                                <p class="price-sub-title">
+                                    Starting at
+                                </p>
+
+                                <span class="price-value"><span>3.00</span> $</span>
+
+
+                                <label class="select-container pack-selected">
+                                    <input type="radio" name="pack" id="pack5" value="3" checked>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="select-text">Select Pack</span>
+                                    <!--<span class="checkmark"></span>-->
+                                </label>
+
+                                <a href="#" class="trial-link">Start a trial now <i class="fas fa-chevron-circle-right"></i>
+
+                                </a>
+                            </div>
+                            <div class="price-footer">
+                                Dedicated proxies are used by ONLY you. No other user will have access to these IPs, so this option is best suited for needs such as social media accounts.
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="flip-right" data-aos-duration="1500"  class="col-10 offset-1 col-sm-4 offset-sm-0 order-3 mb-5" >
+                        <div class="price">
+                            <div class="price-body">
+                                <h5 class="price-title">
+                                    Rotating
+                                </h5>
+                                <p class="price-sub-title">
+                                    Starting at
+                                </p>
+
+                                <span class="price-value"><span>3.50</span> $</span>
+
+                                <label class="select-container">
+                                    <input type="radio" name="pack" id="pack6" value="3.5">
+                                    <i class="fas fa-check-circle"></i>
+                                    <!--<span class="checkmark"></span>-->
+                                    <span class="select-text">Select Pack</span>
+                                </label>
+
+                                <a href="#" class="trial-link">Start a trial now <i class="fas fa-chevron-circle-right"></i>
+
+                                </a>
+                            </div>
+
+                            <div class="price-footer">
+                                Rotating proxies give you a single IP and multiple ports. Upon connecting to one of the ports, your traffic will be automatically routed to a proxy IP.
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="brazil-tab" class="tab-pane fade row">
+            <div class="col-lg-12 col-xl-10 offset-xl-1">
+                <div class="row">
+                    <div data-aos="flip-left" data-aos-duration="1500" class="col-10 offset-1 col-sm-4 offset-sm-0 order-2 mb-5">
+                        <div class="price">
+                            <div class="price-body">
+                                <h5 class="price-title">
+                                    Semi-dedicated
+                                </h5>
+                                <p class="price-sub-title">
+                                    Starting at
+                                </p>
+
+                                <span class="price-value"><span>4.00</span> $</span>
+
+                                <label class="select-container">
+                                    <input type="radio" name="pack" id="pack7" value="4">
+                                    <!--<span class="checkmark"></span>-->
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="select-text">Select Pack</span>
+                                </label>
+
+                                <a href="#" class="trial-link">Start a trial now <i class="fas fa-chevron-circle-right"></i>
+
+                                </a>
+                            </div>
+
+                            <div class="price-footer">
+                                Semi-dedicated proxies are shared between 3 users.
+                                This means the other 2 users could. Do not use this
+                                option for social media accounts.
+                            </div>
+
+                        </div>
+                    </div>
+                    <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300" class="col-10 offset-1 col-sm-4 offset-sm-0 order-1 order-sm-2 mb-5">
+                        <div class="price recommended">
+                            <div class="price-recommended text-uppercase">
+                                recommended
+                            </div>
+
+                            <div class="price-body">
+                                <h5 class="price-title">
+                                    Dedicated
+                                </h5>
+                                <p class="price-sub-title">
+                                    Starting at
+                                </p>
+
+                                <span class="price-value"><span>4.50</span> $</span>
+
+
+                                <label class="select-container pack-selected">
+                                    <input type="radio" name="pack" id="pack8" value="4.5" checked>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="select-text">Select Pack</span>
+                                    <!--<span class="checkmark"></span>-->
+                                </label>
+
+                                <a href="#" class="trial-link">Start a trial now <i class="fas fa-chevron-circle-right"></i>
+
+                                </a>
+                            </div>
+                            <div class="price-footer">
+                                Dedicated proxies are used by ONLY you. No other user will have access to these IPs, so this option is best suited for needs such as social media accounts.
+                            </div>
+                        </div>
+                    </div>
+                    <div  data-aos="flip-right" data-aos-duration="1500"  class="col-10 offset-1 col-sm-4 offset-sm-0 order-3 mb-5" >
+                        <div class="price">
+                            <div class="price-body">
+                                <h5 class="price-title">
+                                    Rotating
+                                </h5>
+                                <p class="price-sub-title">
+                                    Starting at
+                                </p>
+
+                                <span class="price-value"><span>5.00</span> $</span>
+
+                                <label class="select-container">
+                                    <input type="radio" name="pack" id="pack9" value="5">
+                                    <i class="fas fa-check-circle"></i>
+                                    <!--<span class="checkmark"></span>-->
+                                    <span class="select-text">Select Pack</span>
+                                </label>
+
+                                <a href="#" class="trial-link">Start a trial now <i class="fas fa-chevron-circle-right"></i>
+
+                                </a>
+                            </div>
+
+                            <div class="price-footer">
+                                Rotating proxies give you a single IP and multiple ports. Upon connecting to one of the ports, your traffic will be automatically routed to a proxy IP.
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 
         <div class="row progress-form mt-md-5 text-center">

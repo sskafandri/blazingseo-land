@@ -2440,6 +2440,14 @@
 	padding: 0 !important;
 }
 
+
+	.home-section{
+		&:before{
+
+			background-size: 25%;
+		}
+	}
+
 	.location-section{
 		.padding-box:before{
 			background-position: 0% center;
