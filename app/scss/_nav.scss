@@ -1,7 +1,11 @@
-
+@import "core/var";
 
 
 .top-navigation{
+
+  .navbar-brand{
+    margin-top: 20px;
+  }
 
 
   background-color: #0c3067;
@@ -95,7 +99,7 @@
         a{
           font-size: 18px;
           padding: 10px 20px;
-          color: red !important;
+          color: $main-red !important;
           font-family: MetropolisSemiBold, sans-serif;
 
 
@@ -137,7 +141,7 @@
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
-        color: red;
+        color: $main-red;
         width: 100%;
 
         background-color: #fff;
@@ -149,7 +153,7 @@
         transition: all 0.6s;
 
         a{
-          color: red;
+          color: $main-red;
         }
       }
     }
@@ -183,7 +187,7 @@
         }
 
         &:hover{
-          color: red;
+          color: $main-red;
         }
 
         &:after {
@@ -237,7 +241,7 @@
 
 .top-nav-collapse {
   padding: 5px;
-  background-color: #ff1719;
+  background-color: $main-red;
   -webkit-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
   box-shadow: 0px 10px 35px -6px rgba(0,0,0,0.75);
@@ -276,14 +280,15 @@
 @media (max-width: 991px) {
 
   .top-menu {
-    //position: fixed;
+    position: fixed;
     width: 100%;
     height: 100%;
-    //background-color: rgba(0, 0, 0, .9);
+    background-color: rgba(0, 0, 0, .9);
     z-index: 50;
     right: 0;
     top: 0;
     display: none;
+
 
 
 

@@ -1,5 +1,6 @@
 @import "preloader/preloader";
 @import "core/fonts";
+@import "core/var";
 @import "burger-menu/sandwich";
 
 @import "core/checkbox-pack";
@@ -8,6 +9,8 @@
 
 
 $lightGrey: rgba(248, 248, 248, 0.95);
+//$main-red: #f0282a;
+$main-blue: #0c3067;
 
 $header-size: 70px;
 $subheader-size: 35px;
@@ -39,7 +42,7 @@ $subheader-size: 35px;
     transition: all 0.9s;
 
     &:hover{
-      background-color: #cc0023;
+      background-color: #cc00home23;
     }
   }
 }
@@ -132,9 +135,11 @@ button{
 }
 
 .home-section{
-  background: #0c3067;
-  background: #FE181A;
+  background: $main-blue;
+  background: $main-red;
+  background: url("../img/base.png") no-repeat, $main-red;
   color: white;
+  position: relative;
 
   &:before {
     //z-index: 10;
@@ -144,17 +149,17 @@ button{
     width: 100%;
     background: url("../img/home-ellipse.png") no-repeat  center;
     background-size: 100%;
-    bottom: -10%;
+    bottom: 0%;
   }
 
   .padding-box{
-    padding: 255px 0 0;
+    padding: 200px 0 0;
   }
 
 
   .home-title{
     font-weight: bold;
-    font-size: 65px;
+    font-size: 60px;
     letter-spacing: -0.9px;
 
   }
@@ -163,12 +168,13 @@ button{
     margin-bottom: 85px;
     font-family: MetropolisRegular, sans-serif;
     letter-spacing: -0.9px;
+    font-size: 25px;
 
   }
   
   .home-proxies-btn{
-    padding: 30px 70px;
-    font-size: 30px;
+    padding: 25px 60px;
+    font-size: 25px;
     font-weight: bold;
 
     -webkit-border-radius: 50px;
@@ -404,10 +410,10 @@ button{
 }
 
 .benefits-section{
-  padding: 100px 200px;
+  padding: 100px 333px;
 
   .section-title{
-    font-size: 36px;
+    font-size: 30px;
     letter-spacing: -0.9px;
 
     font-weight: bold;
@@ -452,7 +458,7 @@ button{
 
 
     i{
-      color: red;
+      color: #FE181A;
       font-size: 60px;
       margin-bottom: 20px;
     }
@@ -464,11 +470,15 @@ button{
   color: white;
   background-color: #211f35;
 
+  .padding-box{
+    padding: 0 10%;
+  }
+
   .section-title{
     font-family: MetropolisBold, sans-serif;
     margin-top: 50px;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
     letter-spacing: -0.9px;
 
   }
@@ -732,7 +742,7 @@ button{
 
   .section-title {
     font-family: MetropolisBold, sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     letter-spacing: -0.9px;
 
   }
@@ -768,11 +778,11 @@ button{
 
         &:hover{
           color: white;
-          background-color: red;
+          background-color: $main-red;
         }
 
         &.btn-more {
-          background-color: red;
+          background-color: $main-red;
           color: white;
 
           &:hover{
@@ -863,7 +873,7 @@ button{
       border-radius: 35px;
       font-size: 20px;
       font-weight: bold;
-      color: red;
+      color: $main-red;
       transition:
               width .3s ease,
               background .3s ease,
@@ -892,7 +902,7 @@ button{
       padding-left: 20px;
 
         font-size: 20px;
-        font-family: "MetropolisRegular";
+        font-family: "MetropolisRegular", sans-serif;
         color: rgb( 255, 255, 255 );
 
 
@@ -920,12 +930,12 @@ button{
   padding: 100px 0px;
 
   .section-title{
-    font-size: 45px;
+    font-size: 40px;
     letter-spacing: -0.9px;
   }
   
   .btn-try-free{
-    background-color: #ff1315;
+    background-color: $main-red;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
@@ -1102,7 +1112,7 @@ button{
       .learn-more-link{
         font-family: MetropolisBold, sans-serif;
         padding: 5px 20px;
-        background-color: #ff1315;
+        background-color: $main-red;
         color: white;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -1149,7 +1159,7 @@ button{
 
     background-color: white;
 
-    color: red;
+    color: $main-red;
     font-family: MetropolisExtraBold, sans-serif;
 
     -webkit-border-radius:17px;
@@ -1240,7 +1250,7 @@ button{
 .faq-welcome-section{
   color: white;
   padding: 250px 0 50px;
-  background: url("../img/home-ellipse.png") no-repeat  center, red;
+  background: url("../img/home-ellipse.png") no-repeat  center, $main-red;
   -webkit-background-size: cover;
   background-size: cover;
 
@@ -1434,7 +1444,6 @@ button{
 .affiliate-welcome-section{
   color: white;
   padding: 250px 0 50px;
-  //background-color: red;
   background: url("../img/home-ellipse.png") no-repeat  center, url("../img/affiliate/welcome-bg.png") no-repeat center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -1459,7 +1468,7 @@ button{
 
     .banner-left{
       color: white;
-      background-color: #ff191c;
+      background-color: $main-red;
       padding: 50px 40px 50px;
 
       border-bottom-left-radius: 20px;
@@ -1522,7 +1531,7 @@ button{
         text-align: center;
 
         padding: 20px 40px;
-        background-color: #ff1315;
+        background-color: $main-red;
 
         color: white;
         font-size: 20px;
@@ -1614,7 +1623,7 @@ button{
   color: white;
   padding: 250px 0 50px;
   //background-color: red;
-  background: url("../img/home-ellipse.png") no-repeat  center, red;
+  background: url("../img/home-ellipse.png") no-repeat  center, #FE181A;
   -webkit-background-size: cover;
   background-size: cover;
 
@@ -1663,7 +1672,7 @@ button{
 
           margin-top: 50px;
 
-          color: red;
+          color: $main-red;
           font-family: MetropolisBold, sans-serif;
         }
       }
@@ -1714,7 +1723,7 @@ button{
           display: inline-block;
 
           font-size: 30px;
-          background-color: red;
+          background-color: $main-red;
           color: white;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
@@ -1726,7 +1735,7 @@ button{
           content: '';
           width: 100%;
           height: 10px;
-          background: red;
+          background: $main-red;
           position: absolute;
           left: -50%;
           top: 45%;
@@ -1891,19 +1900,19 @@ button{
 
               &:hover{
                 input ~ .checkmark {
-                  background-color: #ccc;
+                  background-color:#D61C24;
                 }
               }
 
               input:checked ~ .checkmark {
-                background-color: red;
+                background-color: $main-red;
 
                 color: white;
                 border: 0;
               }
 
               input:checked  {
-                background-color: red;
+                background-color: $main-red;
               }
 
 
@@ -1980,7 +1989,7 @@ button{
           margin-top: 20px;
           width: 100%;
 
-          background-color: #ff191c;
+          background-color: $main-red;
           color: white;
           font-family: MetropolisBold, sans-serif;
 
@@ -2115,6 +2124,103 @@ button{
 //    404 page styles end
 //----------------------------------------------------------------------------------------------------------------------
 
+.virgin-welcome-section{
+  padding: 200px 0 50px;
+  background-color: $main-red;
+}
 
+.virgin-content-section{
+  padding: 100px 0;
+
+  .section-title{
+    font-family: MetropolisExtraBold, sans-serif;
+    font-size: 35px;
+    letter-spacing: -0.9px;
+  }
+
+  .virgin-benefit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+
+    .virgin-benefit-item{
+      padding: 40px 20px;
+      position: relative;
+      text-align: center;
+
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      top: 0;
+
+      .benefit-title{
+        font-family: MetropolisBold, sans-serif;
+        letter-spacing: -0.9px;
+      }
+
+
+      &:hover{
+
+        z-index: 1200;
+
+
+        box-shadow: 0px 0px 12px 6px #a4a4a4;
+        position: relative;
+        top: -10px;
+        -webkit-transition: top 1s ease;
+        -moz-transition: top 1s ease;
+        -ms-transition: top 1s ease;
+        -o-transition: top 1s ease;
+        transition: top 1s ease;
+
+      }
+      i{
+        color: $main-red;
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+
+      h5{
+
+
+        text-align: center;
+      }
+      
+      p{
+        //text-align: left;
+      }
+    }
+
+
+  }
+
+  .virgin-pricing{
+    text-align: center;
+    margin-top: 40px;
+    h2{
+      display: block;
+      width: 100%;
+    }
+
+    .virgin-pricing-location{
+      font-size: 30px;
+      font-family: MetropolisSemiBold, sans-serif;
+      letter-spacing: -0.9px;
+
+
+    }
+
+    h2.virgin-pricing-prices{
+
+      font-family: MetropolisRegular, sans-serif;
+      text-align: center;
+      font-size: 18px;
+      line-height: 46px;
+    }
+  }
+}
 
 @import "media";

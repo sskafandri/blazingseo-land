@@ -2247,6 +2247,10 @@
 		.section-title {
 			font-size: 28px;
 		}
+
+		.benefit-item{
+			padding: 50px;
+		}
 	}
 
 	.location-section{
@@ -2432,7 +2436,25 @@
 //----------------------------------------------------------------------------------------------------------------------
 //  1400 - 1800     END
 //----------------------------------------------------------------------------------------------------------------------
+@media (min-width: 1800px) {
+.solution-section{
+	.padding-box{
+		padding: 0 12%;
+	}
+}
 
+	.benefits-section{
+
+		padding: 80px 200px;
+
+		.benefit-item{
+			padding: 50px;
+		}
+	}
+
+
+
+}
 
 @media (min-width: 2500px) {
 .container-fluid{
@@ -2445,6 +2467,13 @@
 		&:before{
 
 			background-size: 25%;
+		}
+	}
+
+	.benefits-section{
+
+		.benefit-item{
+			padding: 80px;
 		}
 	}
 

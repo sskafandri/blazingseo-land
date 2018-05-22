@@ -169,7 +169,7 @@
 .select-container.pack-selected {
   color: white;
   font-family: MetropolisExtraBold, sans-serif;
-  background-color: red; }
+  background-color: #f0282a; }
 
 /* Hide the browser's default radio button */
 .select-container input {
@@ -193,7 +193,8 @@
   border-radius: 50%; }
 
 .select-container:hover {
-  background-color: #c0c0c0; }
+  background-color: #c61719;
+  color: white; }
 
 /* On mouse-over, add a grey background color */
 .select-container:hover input ~ .checkmark {
@@ -227,6 +228,8 @@
 
 .top-navigation {
   background-color: #0c3067; }
+  .top-navigation .navbar-brand {
+    margin-top: 20px; }
 
 @media (min-width: 991px) {
   .top-navigation .nav-container {
@@ -262,7 +265,7 @@
     .top-menu ul li.dropdown .dropdown-menu a {
       font-size: 18px;
       padding: 10px 20px;
-      color: red !important;
+      color: #f0282a !important;
       font-family: MetropolisSemiBold, sans-serif; }
       .top-menu ul li.dropdown .dropdown-menu a:hover {
         color: #bb0000 !important; }
@@ -279,7 +282,7 @@
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
-        color: red;
+        color: #f0282a;
         width: 100%;
         background-color: #fff;
         -webkit-transition: all 0.6s;
@@ -288,7 +291,7 @@
         -o-transition: all 0.6s;
         transition: all 0.6s; }
         .top-menu ul li.menu-item-has-children .sub-menu a {
-          color: red; }
+          color: #f0282a; }
     .top-menu ul li {
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -305,7 +308,7 @@
         .top-menu ul li a, .top-menu ul li a:after, .top-menu ul li a:before {
           transition: all .8s; }
         .top-menu ul li a:hover {
-          color: red; }
+          color: #f0282a; }
         .top-menu ul li a:after {
           display: block;
           position: absolute;
@@ -339,7 +342,7 @@
 
 .top-nav-collapse {
   padding: 5px;
-  background-color: #ff1719;
+  background-color: #f0282a;
   -webkit-box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75); }
@@ -354,8 +357,10 @@
 
 @media (max-width: 991px) {
   .top-menu {
+    position: fixed;
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: 50;
     right: 0;
     top: 0;
@@ -419,7 +424,7 @@
     -o-transition: all 0.9s;
     transition: all 0.9s; }
     .panel a:hover {
-      background-color: #cc0023; }
+      background-color: #cc00home23; }
 
 body {
   font-family: 'MetropolisRegular',Roboto, sans-serif;
@@ -474,8 +479,10 @@ button {
 
 .home-section {
   background: #0c3067;
-  background: #FE181A;
-  color: white; }
+  background: #f0282a;
+  background: url("../img/base.png") no-repeat, #f0282a;
+  color: white;
+  position: relative; }
   .home-section:before {
     position: absolute;
     content: ' ';
@@ -483,20 +490,21 @@ button {
     width: 100%;
     background: url("../img/home-ellipse.png") no-repeat center;
     background-size: 100%;
-    bottom: -10%; }
+    bottom: 0%; }
   .home-section .padding-box {
-    padding: 255px 0 0; }
+    padding: 200px 0 0; }
   .home-section .home-title {
     font-weight: bold;
-    font-size: 65px;
+    font-size: 60px;
     letter-spacing: -0.9px; }
   .home-section .home-sub-title {
     margin-bottom: 85px;
     font-family: MetropolisRegular, sans-serif;
-    letter-spacing: -0.9px; }
+    letter-spacing: -0.9px;
+    font-size: 25px; }
   .home-section .home-proxies-btn {
-    padding: 30px 70px;
-    font-size: 30px;
+    padding: 25px 60px;
+    font-size: 25px;
     font-weight: bold;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -649,9 +657,9 @@ button {
     opacity: 0; } }
 
 .benefits-section {
-  padding: 100px 200px; }
+  padding: 100px 333px; }
   .benefits-section .section-title {
-    font-size: 36px;
+    font-size: 30px;
     letter-spacing: -0.9px;
     font-weight: bold;
     margin-bottom: 90px; }
@@ -679,7 +687,7 @@ button {
       -o-transition: top 1s ease;
       transition: top 1s ease; }
     .benefits-section .benefit-item i {
-      color: red;
+      color: #FE181A;
       font-size: 60px;
       margin-bottom: 20px; }
 
@@ -687,11 +695,13 @@ button {
   padding: 100px 200px;
   color: white;
   background-color: #211f35; }
+  .solution-section .padding-box {
+    padding: 0 10%; }
   .solution-section .section-title {
     font-family: MetropolisBold, sans-serif;
     margin-top: 50px;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 40px;
     letter-spacing: -0.9px; }
   .solution-section .section-text {
     font-weight: 300;
@@ -863,7 +873,7 @@ button {
         font-size: 10px; }
   .location-section .section-title {
     font-family: MetropolisBold, sans-serif;
-    font-size: 45px;
+    font-size: 40px;
     letter-spacing: -0.9px; }
   .location-section p {
     font-size: 16px;
@@ -890,9 +900,9 @@ button {
         transition: all 0.5s; }
         .location-section ul li a:hover {
           color: white;
-          background-color: red; }
+          background-color: #f0282a; }
         .location-section ul li a.btn-more {
-          background-color: red;
+          background-color: #f0282a;
           color: white; }
           .location-section ul li a.btn-more:hover {
             background-color: #b80000; }
@@ -950,7 +960,7 @@ button {
       border-radius: 35px;
       font-size: 20px;
       font-weight: bold;
-      color: red;
+      color: #f0282a;
       transition: width .3s ease, background .3s ease, opacity .3s ease;
       pointer-events: none; }
       .join-section .field button.active {
@@ -969,7 +979,7 @@ button {
     .join-section .field label {
       padding-left: 20px;
       font-size: 20px;
-      font-family: "MetropolisRegular";
+      font-family: "MetropolisRegular", sans-serif;
       color: white;
       position: absolute;
       color: white;
@@ -985,10 +995,10 @@ button {
 .pricing-section {
   padding: 100px 0px; }
   .pricing-section .section-title {
-    font-size: 45px;
+    font-size: 40px;
     letter-spacing: -0.9px; }
   .pricing-section .btn-try-free {
-    background-color: #ff1315;
+    background-color: #f0282a;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
@@ -1090,7 +1100,7 @@ button {
       .pricing-section .prices .price .learn-more-link {
         font-family: MetropolisBold, sans-serif;
         padding: 5px 20px;
-        background-color: #ff1315;
+        background-color: #f0282a;
         color: white;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -1120,7 +1130,7 @@ button {
     width: 111px;
     padding: 15px;
     background-color: white;
-    color: red;
+    color: #f0282a;
     font-family: MetropolisExtraBold, sans-serif;
     -webkit-border-radius: 17px;
     -moz-border-radius: 17px;
@@ -1179,7 +1189,7 @@ button {
 .faq-welcome-section {
   color: white;
   padding: 250px 0 50px;
-  background: url("../img/home-ellipse.png") no-repeat center, red;
+  background: url("../img/home-ellipse.png") no-repeat center, #f0282a;
   -webkit-background-size: cover;
   background-size: cover; }
   .faq-welcome-section h1 {
@@ -1308,7 +1318,7 @@ button {
     top: -35px; }
     .affiliate-content-section .starter-banner .banner-left {
       color: white;
-      background-color: #ff191c;
+      background-color: #f0282a;
       padding: 50px 40px 50px;
       border-bottom-left-radius: 20px;
       border-top-left-radius: 20px; }
@@ -1343,7 +1353,7 @@ button {
       .affiliate-content-section .starter-banner .banner-right .sign-up-now {
         text-align: center;
         padding: 20px 40px;
-        background-color: #ff1315;
+        background-color: #f0282a;
         color: white;
         font-size: 20px;
         font-family: MetropolisBold, sans-serif;
@@ -1397,7 +1407,7 @@ button {
 .pricing-welcome-section {
   color: white;
   padding: 250px 0 50px;
-  background: url("../img/home-ellipse.png") no-repeat center, red;
+  background: url("../img/home-ellipse.png") no-repeat center, #FE181A;
   -webkit-background-size: cover;
   background-size: cover; }
   .pricing-welcome-section h1 {
@@ -1426,7 +1436,7 @@ button {
       .pricing-section-content .prices .price .price-body a.trial-link,
       .pricing-section-content .prices .price.recommended .price-body a.trial-link {
         margin-top: 50px;
-        color: red;
+        color: #f0282a;
         font-family: MetropolisBold, sans-serif; }
     .pricing-section-content .prices .price .price-footer,
     .pricing-section-content .prices .price.recommended .price-footer {
@@ -1458,7 +1468,7 @@ button {
           padding: 30px;
           display: inline-block;
           font-size: 30px;
-          background-color: red;
+          background-color: #f0282a;
           color: white;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
@@ -1467,7 +1477,7 @@ button {
           content: '';
           width: 100%;
           height: 10px;
-          background: red;
+          background: #f0282a;
           position: absolute;
           left: -50%;
           top: 45%;
@@ -1563,13 +1573,13 @@ button {
             position: absolute;
             opacity: 0; }
           .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container:hover input ~ .checkmark {
-            background-color: #ccc; }
+            background-color: #D61C24; }
           .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container input:checked ~ .checkmark {
-            background-color: red;
+            background-color: #f0282a;
             color: white;
             border: 0; }
           .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container input:checked {
-            background-color: red; }
+            background-color: #f0282a; }
           .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container .checkmark {
             position: absolute;
             top: 142px;
@@ -1619,7 +1629,7 @@ button {
       .pricing-section-content .progress-form .progressbar-container .form-item .complete-order-btn {
         margin-top: 20px;
         width: 100%;
-        background-color: #ff191c;
+        background-color: #f0282a;
         color: white;
         font-family: MetropolisBold, sans-serif;
         border: 0;
@@ -1683,6 +1693,65 @@ button {
       transition: all 0.8s; }
       .page-not-found-content ul li a:hover {
         text-decoration: underline; }
+
+.virgin-welcome-section {
+  padding: 200px 0 50px;
+  background-color: #f0282a; }
+
+.virgin-content-section {
+  padding: 100px 0; }
+  .virgin-content-section .section-title {
+    font-family: MetropolisExtraBold, sans-serif;
+    font-size: 35px;
+    letter-spacing: -0.9px; }
+  .virgin-content-section .virgin-benefit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; }
+    .virgin-content-section .virgin-benefit .virgin-benefit-item {
+      padding: 40px 20px;
+      position: relative;
+      text-align: center;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      top: 0; }
+      .virgin-content-section .virgin-benefit .virgin-benefit-item .benefit-title {
+        font-family: MetropolisBold, sans-serif;
+        letter-spacing: -0.9px; }
+      .virgin-content-section .virgin-benefit .virgin-benefit-item:hover {
+        z-index: 1200;
+        box-shadow: 0px 0px 12px 6px #a4a4a4;
+        position: relative;
+        top: -10px;
+        -webkit-transition: top 1s ease;
+        -moz-transition: top 1s ease;
+        -ms-transition: top 1s ease;
+        -o-transition: top 1s ease;
+        transition: top 1s ease; }
+      .virgin-content-section .virgin-benefit .virgin-benefit-item i {
+        color: #f0282a;
+        font-size: 40px;
+        margin-bottom: 15px; }
+      .virgin-content-section .virgin-benefit .virgin-benefit-item h5 {
+        text-align: center; }
+  .virgin-content-section .virgin-pricing {
+    text-align: center;
+    margin-top: 40px; }
+    .virgin-content-section .virgin-pricing h2 {
+      display: block;
+      width: 100%; }
+    .virgin-content-section .virgin-pricing .virgin-pricing-location {
+      font-size: 30px;
+      font-family: MetropolisSemiBold, sans-serif;
+      letter-spacing: -0.9px; }
+    .virgin-content-section .virgin-pricing h2.virgin-pricing-prices {
+      font-family: MetropolisRegular, sans-serif;
+      text-align: center;
+      font-size: 18px;
+      line-height: 46px; }
 
 @media (min-width: 320px) and (max-width: 575px) {
   .top-navigation {
@@ -2641,6 +2710,8 @@ button {
     padding: 100px 0; }
     .benefits-section .section-title {
       font-size: 28px; }
+    .benefits-section .benefit-item {
+      padding: 50px; }
   .location-section .padding-box:before {
     background-position-x: -166px; }
   .location-section .country-location {
@@ -2723,11 +2794,21 @@ button {
           top: 77%;
           left: 36%; } }
 
+@media (min-width: 1800px) {
+  .solution-section .padding-box {
+    padding: 0 12%; }
+  .benefits-section {
+    padding: 80px 200px; }
+    .benefits-section .benefit-item {
+      padding: 50px; } }
+
 @media (min-width: 2500px) {
   .container-fluid {
     max-width: 1800px;
     padding: 0 !important; }
   .home-section:before {
     background-size: 25%; }
+  .benefits-section .benefit-item {
+    padding: 80px; }
   .location-section .padding-box:before {
     background-position: 0% center; } }

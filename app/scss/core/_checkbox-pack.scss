@@ -1,3 +1,6 @@
+
+@import "var";
+
 /* Customize the label (the container) */
 .select-container {
   display: block;
@@ -34,7 +37,7 @@
 
   color: white;
   font-family: MetropolisExtraBold, sans-serif;
-  background-color: red;
+  background-color: $main-red;
 }
 
 /* Hide the browser's default radio button */
@@ -62,7 +65,8 @@
 }
 
 .select-container:hover{
-  background-color: #c0c0c0;
+  background-color: #c61719;
+  color: white;
 
 }
 
