@@ -132,7 +132,8 @@ button{
 }
 
 .home-section{
-  background: red;
+  background: #0c3067;
+  background: #FE181A;
   color: white;
 
   &:before {
@@ -142,8 +143,8 @@ button{
     height: 100%;
     width: 100%;
     background: url("../img/home-ellipse.png") no-repeat  center;
-    background-size: cover;
-    bottom: 20%;
+    background-size: 100%;
+    bottom: -10%;
   }
 
   .padding-box{
@@ -153,7 +154,7 @@ button{
 
   .home-title{
     font-weight: bold;
-    font-size: 70px;
+    font-size: 65px;
     letter-spacing: -0.9px;
 
   }

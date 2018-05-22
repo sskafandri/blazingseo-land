@@ -1,11 +1,31 @@
 
 
 
+.top-navigation{
+
+
+  background-color: #0c3067;
+}
+
+@media (min-width: 991px) {
+
+  .top-navigation {
+
+    .nav-container {
+      padding: 0 20%;
+    }
+
+    .top-menu{
+      margin-left: 10%;
+    }
+  }
+}
+
 
 .top-menu {
 
 
-  margin-left: 17%;
+  margin-left: 0%;
   width: 100%;
 
   // wordpress css current item class +++
@@ -256,10 +276,10 @@
 @media (max-width: 991px) {
 
   .top-menu {
-    position: fixed;
+    //position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .9);
+    //background-color: rgba(0, 0, 0, .9);
     z-index: 50;
     right: 0;
     top: 0;
@@ -352,7 +372,7 @@
   .top-navigation{
 
     .top-menu{
-      margin-left: 8%;
+      margin-left: 0%;
       ul{
 
         li{
