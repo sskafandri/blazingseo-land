@@ -440,11 +440,40 @@
 
 
                 <ul class="location-countries-list" data-aos="fade-up" data-aos-delay="700" data-aos-duration="1000">
-                    <li><a href="">Los Angeles</a></li>
-                    <li><a href="">New Your City</a></li>
-                    <li><a href="">Dallas</a></li>
-                    <li><a href="">Buffalo</a></li>
-                    <li><a href="" class="btn-more">14+ More</a></li>
+                    <li><a href="#locations" onclick="cities_location_popup()">Los Angeles</a></li>
+                    <li><a href="#locations">New Your City</a></li>
+                    <li><a href="#locations">Dallas</a></li>
+                    <li><a href="#locations">Buffalo</a></li>
+                    <li>
+                        <button class="btn-more" onclick="cities_location_popup()" >
+                            14+ More
+
+                            <span class="cities-popup" id="cities-popup" data-aos="fadeUp" data-aos-duration="1200">
+                                <ul>
+
+
+                                    <li>Chicago	</li>
+                                    <li>Atlanta</li>
+                                    <li>Seattle</li>
+
+                                    <li>San Jose</li>
+                                    <li>Anchorage</li>
+                                    <li>Honolulu</li>
+
+                                    <li>Miami</li>
+                                    <li>Phoenix</li>
+                                    <li>Omaha</li>
+
+                                    <li>Salem</li>
+                                    <li>San Francisco</li>
+                                    <li>Denver</li>
+
+                                    <li>Des Moines</li>
+                                </ul>
+                            </span>
+
+                        </button>
+                    </li>
                 </ul>
 
             </div>
@@ -462,10 +491,10 @@
 
     <div class="container ">
 
-        <form action="">
+        <form action="/mail.php" method="get" >
             <div class="register">
                 <div class="field active" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
-                    <input id="register" maxlength="30" type="text" /><label for="register"><span class="text-light">Enter your email address</span></label>
+                    <input id="register" name="visitor-email" maxlength="30" type="text" /><label for="register"><span class="text-light">Enter your email address</span></label>
                     <button class="" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
                     <img src="img/logo-small.png" alt="">Get Blazing Proxies Now
                     </button>
@@ -512,7 +541,7 @@
 
             </li>
             <li data-aos="fade-up" data-aos-duration="1200" data-aos-delay="1100">
-                <a href="#" data-toggle="tab">
+                <a href="#sneaker-tab" data-toggle="tab">
                 <span>Sneaker</span>
 
                 <img src="img/sneaker.png" class="" width="65px" alt="sneaker">
@@ -520,7 +549,7 @@
             </li>
         </ul>
     </div>
-    <div class="prices  container-fluid">
+    <div class="prices container-fluid">
 
         <div id="usa-tab" class="tab-pane fade row">
             <div class="col-lg-12 col-xl-10 offset-xl-1">
@@ -537,7 +566,7 @@
 
                                 <span class="price-value">1 $</span>
 
-                                <button class="btn learn-more-link">Learn more</button>
+                                <button class="btn learn-more-link" onclick="location.href='https://blazingseollc.com/proxy/pricing/'">Learn more</button>
 
                             </div>
 
@@ -717,6 +746,33 @@
             </div>
         </div>
 
+        <div id="sneaker-tab" class="sneaker-tab row tab-pane fade row">
+
+            <div class="col-lg-12 col-xl-10 offset-xl-1">
+                <div class="row">
+                    <div data-aos="flip-left" data-aos-duration="1500" class="col-10 offset-1 col-sm-4 offset-sm-0 order-2 mb-5">
+                        <div class="price">
+                            <div class="price-body">
+                                <h5 class="price-title">
+                                    Semi-dedicated
+                                </h5>
+                                <p class="price-sub-title">
+                                    Starting at
+                                </p>
+
+                                <span class="price-value">3 $</span>
+
+                                <button class="btn learn-more-link">Learn more</button>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </div>
 
 </div>
@@ -906,6 +962,16 @@
 
 <!--Custom scripts-->
 <script src="js/common.js"></script>
+
+
+<script>
+    // When the user clicks on div, open the popup
+    function cities_location_popup(e) {
+        var popup = document.getElementById("cities-popup");
+        popup.classList.toggle("cities-popup-show");
+        // e.preventDefault();
+    }
+</script>
 
 
 

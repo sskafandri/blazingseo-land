@@ -19,7 +19,7 @@
 		}
 
 		.home-title{
-			font-size: 40px;
+			font-size: 33px;
 		}
 
 		.home-sub-title{
@@ -48,13 +48,33 @@
 		.container{
 			margin-top: 0;
 		}
+
+
+		.lined{
+
+			div{
+				padding: 40px;
+			}
+
+			&::before{
+				content: "";
+				position: absolute;
+				width: 165%;
+				height: 200%;
+				top: -50%;
+				left: -28%;
+				background: url("../img/line.png") center no-repeat;
+				-webkit-transform: rotate(90deg);
+				transform: rotate(90deg);
+			}
+		}
 	}
 
 	.benefits-section {
 		padding: 50px 0;
 
 		.section-title {
-			font-size: 24px;
+			font-size: 20px;
 			margin-bottom: 0;
 		}
 
@@ -169,6 +189,49 @@
 					padding: 10px 10px;
 					font-size: 12px;
 				}
+
+				button{
+
+					.cities-popup{
+						width: 300%;
+						padding: 8px 0;
+						top: 100%;
+						left: 0;
+						margin-top: 20px;
+
+
+						ul{
+
+							width: 100%;
+							margin-top: 0;
+							padding: 10px;
+							li{
+
+								padding: 3px 10px;
+								font-size: 14px;
+
+								margin-right: 5px;
+								-webkit-border-radius: 15px;
+								-moz-border-radius: 15px;
+								border-radius: 15px;
+								border: 0;
+							}
+						}
+
+						&::after{
+							left: 20%;
+
+						}
+					}
+
+
+					.cities-popup-show{
+						visibility: visible;
+						//-webkit-animation: fadeIn 1s;
+						//animation: fadeIn 1s;
+					}
+				}
+
 			}
 		}
 	}
@@ -550,6 +613,51 @@
 
 	}
 	//404 end
+
+
+	//virgin ips page start
+	.pricing-welcome-section .section-title {
+		font-size: 35px;
+	}
+
+	.virgin-content-section{
+		padding: 40px 0;
+
+		.section-title{
+			font-size: 25px;
+		}
+
+		h5{
+			font-size: 14px;
+		}
+
+		.virgin-pricing{
+			margin-top: 0;
+
+			.virgin-pricing-location{
+				font-size: 20px;
+
+			}
+
+			h2.virgin-pricing-prices{
+				font-size: 15px;
+				line-height: 40px;
+			}
+		}
+
+
+		.virgin-benefit{
+
+			grid-template-columns: 1fr;
+
+			.virgin-benefit-item{
+				margin: 15px;
+				padding: 20px 20px;
+
+			}
+		}
+	}
+	//virgin ips page end
 
 }
 
@@ -1005,6 +1113,16 @@
 		}
 	}
 	//pricing page end
+
+
+	//virgin ips page start
+
+	.virgin-content-section{
+		.virgin-benefit{
+			grid-template-columns: 1fr;
+		}
+	}
+	//virgin ips page end
 }
 //----------------------------------------------------------------------------------------------------------------------
 //  576 - 767     END
@@ -1114,6 +1232,29 @@
 				-webkit-background-size: 100%;
 				background-size: 100%;
 				background-position: -100px 70%;
+			}
+		}
+
+		ul{
+
+			li{
+
+				button{
+
+
+					.cities-popup{
+
+						ul{
+							padding: 5px;
+
+							li{
+								margin-top: 5px;
+								font-size: 10px;
+							}
+						}
+					}
+
+				}
 			}
 		}
 
@@ -1560,7 +1701,7 @@
 	}
 
 	.solution-section{
-		padding: 60px 150px;
+		padding: 60px 0px;
 
       .section-title{
 
@@ -1663,7 +1804,7 @@
 		}
 
 		ul{
-			width: 100%;
+			width: 70%;
 
 			li{
 				margin-top: 10px;
@@ -1672,6 +1813,23 @@
 					font-size: 11px;
 					padding: 5px 19px;
 					margin-right: 0px;
+				}
+
+				button{
+					font-size: 11px;
+					padding: 3px 15px;
+
+					.cities-popup{
+
+						ul{
+							padding: 5px;
+
+							li{
+								margin-top: 5px;
+								font-size: 10px;
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1894,7 +2052,7 @@
 	.home-section {
 
 		.padding-box{
-			padding: 200px 0 0px;
+			padding: 150px 0 0px;
 		}
 
 		.home-title{
@@ -1924,7 +2082,7 @@
 		padding: 70px 100px;
 
 		.container{
-			margin-top: 200px;
+			margin-top: 150px;
 		}
 	}
 
@@ -1943,6 +2101,7 @@
 	}
 
 	.solution-section{
+		padding: 100px 0;
 
 		.section-title{
 			font-size: 40px;
@@ -1963,16 +2122,19 @@
 
 	.location-section{
 
-
-
 		.padding-box{
+
 			&:before {
 				background-position: -160px center;
 			}
 		}
 
+		.padding-box-xxl{
+			padding: 25px 0;
+		}
 
-      .country-location {
+
+      	.country-location {
 
 
         -webkit-border-radius: 10px;
@@ -2041,7 +2203,7 @@
       }
 
 
-      .section-title{
+      	.section-title{
 			font-size: 30px
 		}
 
@@ -2060,12 +2222,30 @@
 					padding: 5px 19px;
 					margin-right: 0px;
 				}
+
+				button{
+					font-size: 11px;
+					padding: 3px 15px;
+
+
+					.cities-popup{
+
+						ul{
+							padding: 5px;
+
+							li{
+								margin-top: 5px;
+								font-size: 10px;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
 
 	.pricing-section {
-		padding: 100px 10px;
+		padding: 50px 10px;
 
 		.section-title{
 			font-size: 40px;
@@ -2081,6 +2261,7 @@
 		}
 
 		.price-nav{
+			margin-top: 0;
 			ul{
 				
 				li{
@@ -2089,6 +2270,10 @@
 					}
 				}
 			}
+		}
+
+		.prices{
+			margin-top: 0;
 		}
 	}
 
@@ -2104,20 +2289,27 @@
 
 	//affiliate page start
 	.affiliate-welcome-section{
+		padding: 150px 0 50px ;
+
 		h1{
-			font-size: 50px;
+			font-size: 40px;
 		}
 
-		padding: 170px 0 50px ;
+
+
+	}
+
+	.faq-subsection{
+		padding: 50px 0;
 	}
 	//affiliate page end
 	
 	//faq page start
 	.faq-welcome-section{
-		padding: 200px 0 50px;
+		padding: 150px 0 30px;
 		
 		.section-title{
-			font-size: 50px;
+			font-size: 40px;
 		}
 	}
 	//faq page end
@@ -2125,20 +2317,30 @@
 	//pricing page start
 	.pricing-welcome-section{
 
-		padding: 200px 0 40px;
+		padding: 150px 0 40px;
 
 		.section-title{
 
-			font-size: 50px;
+			font-size: 40px;
 		}
 	}
 
 	.pricing-section-content{
+		.price-nav{
+			margin-bottom: 50px;
+		}
+
+		.select-container{
+			font-size: 15px;
+			.select-text{
+				font-size: 15px;
+			}
+		}
 
 
 		.progress-form{
 			margin: 0 40px;
-			padding-top: 30px;
+			padding-top: 0;
 
 
 			.progressbar-container{
@@ -2457,10 +2659,10 @@
 }
 
 @media (min-width: 2500px) {
-.container-fluid{
-	max-width: 1800px;
-	padding: 0 !important;
-}
+	.container-fluid{
+		max-width: 1800px;
+		padding: 0 !important;
+	}
 
 
 	.home-section{

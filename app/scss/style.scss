@@ -107,7 +107,7 @@ button{
   .navbar {
     z-index: 10000;
 
-    height: 75px;
+    height: 100px;
 
     -webkit-transition: all .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: all .5s ease-in-out, padding .5s ease-in-out;
@@ -379,6 +379,7 @@ button{
 
   .lined{
     position: relative;
+    overflow: hidden;
 
     &::before{
       @keyframes mymove {
@@ -404,6 +405,9 @@ button{
       position: absolute;
       -webkit-background-size: 50%;
       background-size: 50%;
+
+
+
     }
   }
 
@@ -587,7 +591,8 @@ button{
 
 .location-section {
   background-color:  #229ed5;
-  //padding: 50px 0;
+  position: relative;
+  color: white;
 
   .padding-box {
     padding: 50px 0;
@@ -609,15 +614,15 @@ button{
     }
   }
 
+  .location-countries-list{
 
-  //padding: 150px 0;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0086c9+0,207cca+0,2989d8+50,229ed5+100 */
-  //background:url("../img/Locations-bg.png") no-repeat ,#229ed5;
-  //-webkit-background-size: cover;
-  //background-size: 77%;
-  position: relative;
-  //overflow: hidden;
-  color: white;
+
+    .btn-more{
+      position: relative;
+
+    }
+  }
+
 
   img {
     position: absolute;
@@ -759,7 +764,9 @@ button{
       display: inline-block;
       margin-top: 20px;
 
-      a {
+
+      a,
+      button{
         color: black;
         font-family: MetropolisSemiBold, sans-serif;
         background-color: white;
@@ -769,6 +776,7 @@ button{
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
         border-radius: 15px;
+        border: 0;
 
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
@@ -791,8 +799,94 @@ button{
         }
       }
 
+
+      button{
+        outline: none;
+        padding: 6px 15px;
+        font-size: 15px;
+
+        position: relative;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+
+
+
+
+        .cities-popup{
+          visibility: hidden;
+          width: 300%;
+          background-color: $main-red;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 8px 0;
+          position: absolute;
+          z-index: 10;
+              top: 120%;
+          right: 9%;
+          margin-top: 20px;
+
+
+          ul{
+
+            width: 100%;
+            margin-top: 0;
+            padding: 10px;
+            li{
+
+              font-family: MetropolisSemiBold, sans-serif;
+              background-color: white;
+              color: black;
+              padding: 3px 10px;
+              font-size: 14px;
+
+              margin-right: 5px;
+              -webkit-border-radius: 15px;
+              -moz-border-radius: 15px;
+              border-radius: 15px;
+              border: 0;
+            }
+          }
+
+          &::after{
+              content: "";
+              position: absolute;
+              top: -25px;
+              left: 83%;
+              border-width: 13px;
+              border-style: solid;
+              border-color: transparent transparent $main-red transparent;
+
+          }
+        }
+
+
+        .cities-popup-show{
+          visibility: visible;
+          //-webkit-animation: fadeIn 1s;
+          //animation: fadeIn 1s;
+        }
+      }
+
+
+
+
     }
   }
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
 }
 
 .join-section{
@@ -1221,7 +1315,7 @@ button{
 
     }
 
-    a.menu-header{
+    span.menu-header{
       font-family: MetropolisExtraBold, sans-serif;
       color: white;
 
@@ -1653,6 +1747,10 @@ button{
   }
 
   .prices{
+
+    .tab-pane{
+      display: none ;
+    }
 
     .price,
     .price.recommended{
@@ -2221,6 +2319,26 @@ button{
       line-height: 46px;
     }
   }
+}
+
+//careers page start              +++
+
+.careers-welcome-section{
+  padding: 150px 0 30px;
+}
+.careers-content-section{
+  padding: 100px 0;
+}
+
+.wrap{
+  margin-top: 40px;
+}
+//careers page end              ---
+
+
+
+.show{
+  display: block !important;
 }
 
 @import "media";

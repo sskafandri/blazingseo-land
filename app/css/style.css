@@ -255,6 +255,8 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px; }
+  .top-menu .menu-list li.current-menu-item:nth-child(2) {
+    background-color: transparent; }
   .top-menu .menu-list .menu-item-has-children a i {
     margin-left: 10px; }
   .top-menu ul {
@@ -353,14 +355,16 @@
     margin-top: 20% !important; }
     .top-menu ul li a {
       font-size: 15px;
-      padding: 10px 0; } }
+      padding: 10px 0; }
+    .top-menu ul li.menu-item-has-children .sub-menu {
+      margin-top: 0 !important; } }
 
 @media (max-width: 991px) {
   .top-menu {
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.95);
     z-index: 50;
     right: 0;
     top: 0;
@@ -375,6 +379,26 @@
       grid-row-gap: 20px;
       margin-top: 15%;
       text-align: center; }
+      .top-menu ul li.menu-item-has-children > a {
+        display: none; }
+      .top-menu ul li.menu-item-has-children .sub-menu {
+        margin-top: 0 !important;
+        display: block;
+        position: unset;
+        background-color: transparent; }
+        .top-menu ul li.menu-item-has-children .sub-menu li {
+          margin-bottom: 12px;
+          -webkit-transition: all 0.8s;
+          -moz-transition: all 0.8s;
+          -ms-transition: all 0.8s;
+          -o-transition: all 0.8s;
+          transition: all 0.8s; }
+          .top-menu ul li.menu-item-has-children .sub-menu li:hover {
+            background-color: transparent; }
+            .top-menu ul li.menu-item-has-children .sub-menu li:hover a {
+              color: #f0282a; }
+          .top-menu ul li.menu-item-has-children .sub-menu li a {
+            color: white; }
       .top-menu ul li:last-child button {
         width: 48%;
         margin-bottom: 20px;
@@ -466,7 +490,7 @@ button {
 @media (min-width: 767px) {
   .navbar {
     z-index: 10000;
-    height: 75px;
+    height: 100px;
     -webkit-transition: all .5s ease-in-out, padding .5s ease-in-out;
     -moz-transition: all .5s ease-in-out, padding .5s ease-in-out;
     transition: all .5s ease-in-out, padding .5s ease-in-out; } }
@@ -636,7 +660,8 @@ button {
     letter-spacing: -0.9px;
     font-weight: bold; }
   .compare-section .lined {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .compare-section .lined::before {
       animation: mymove 3s infinite;
       content: " ";
@@ -771,7 +796,6 @@ button {
 
 .location-section {
   background-color: #229ed5;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0086c9+0,207cca+0,2989d8+50,229ed5+100 */
   position: relative;
   color: white; }
   .location-section .padding-box {
@@ -784,6 +808,8 @@ button {
       background: url("../img/map-world-vector-bg.png") no-repeat 25% center, #229ed5; }
     .location-section .padding-box .padding-box-xxl {
       padding: 50px 0; }
+  .location-section .location-countries-list .btn-more {
+    position: relative; }
   .location-section img {
     position: absolute;
     top: 0;
@@ -884,7 +910,8 @@ button {
     .location-section ul li {
       display: inline-block;
       margin-top: 20px; }
-      .location-section ul li a {
+      .location-section ul li a,
+      .location-section ul li button {
         color: black;
         font-family: MetropolisSemiBold, sans-serif;
         background-color: white;
@@ -893,19 +920,84 @@ button {
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
         border-radius: 15px;
+        border: 0;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;
         -o-transition: all 0.5s;
         transition: all 0.5s; }
-        .location-section ul li a:hover {
+        .location-section ul li a:hover,
+        .location-section ul li button:hover {
           color: white;
           background-color: #f0282a; }
-        .location-section ul li a.btn-more {
+        .location-section ul li a.btn-more,
+        .location-section ul li button.btn-more {
           background-color: #f0282a;
           color: white; }
-          .location-section ul li a.btn-more:hover {
+          .location-section ul li a.btn-more:hover,
+          .location-section ul li button.btn-more:hover {
             background-color: #b80000; }
+      .location-section ul li button {
+        outline: none;
+        padding: 6px 15px;
+        font-size: 15px;
+        position: relative;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none; }
+        .location-section ul li button .cities-popup {
+          visibility: hidden;
+          width: 300%;
+          background-color: #f0282a;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 8px 0;
+          position: absolute;
+          z-index: 10;
+          top: 120%;
+          right: 9%;
+          margin-top: 20px; }
+          .location-section ul li button .cities-popup ul {
+            width: 100%;
+            margin-top: 0;
+            padding: 10px; }
+            .location-section ul li button .cities-popup ul li {
+              font-family: MetropolisSemiBold, sans-serif;
+              background-color: white;
+              color: black;
+              padding: 3px 10px;
+              font-size: 14px;
+              margin-right: 5px;
+              -webkit-border-radius: 15px;
+              -moz-border-radius: 15px;
+              border-radius: 15px;
+              border: 0; }
+          .location-section ul li button .cities-popup::after {
+            content: "";
+            position: absolute;
+            top: -25px;
+            left: 83%;
+            border-width: 13px;
+            border-style: solid;
+            border-color: transparent transparent #f0282a transparent; }
+        .location-section ul li button .cities-popup-show {
+          visibility: visible; }
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .join-section {
   padding: 100px 0px;
@@ -1174,7 +1266,7 @@ button {
   .footer-section ul a {
     color: #5e89cc;
     font-family: MetropolisRegular, sans-serif; }
-  .footer-section ul a.menu-header {
+  .footer-section ul span.menu-header {
     font-family: MetropolisExtraBold, sans-serif;
     color: white; }
   .footer-section ul li {
@@ -1424,6 +1516,8 @@ button {
       font-family: MetropolisExtraBold, sans-serif; }
     .pricing-section-content .step-title h4 {
       color: #5a5a5a; }
+  .pricing-section-content .prices .tab-pane {
+    display: none; }
   .pricing-section-content .prices .price,
   .pricing-section-content .prices .price.recommended {
     min-height: 470px; }
@@ -1753,6 +1847,18 @@ button {
       font-size: 18px;
       line-height: 46px; }
 
+.careers-welcome-section {
+  padding: 150px 0 30px; }
+
+.careers-content-section {
+  padding: 100px 0; }
+
+.wrap {
+  margin-top: 40px; }
+
+.show {
+  display: block !important; }
+
 @media (min-width: 320px) and (max-width: 575px) {
   .top-navigation {
     padding: 0; }
@@ -1761,7 +1867,7 @@ button {
   .home-section .padding-box {
     padding: 100px 0; }
   .home-section .home-title {
-    font-size: 40px; }
+    font-size: 33px; }
   .home-section .home-sub-title {
     font-size: 17px;
     letter-spacing: 0; }
@@ -1776,10 +1882,22 @@ button {
       font-size: 24px; }
     .compare-section .container {
       margin-top: 0; }
+    .compare-section .lined div {
+      padding: 40px; }
+    .compare-section .lined::before {
+      content: "";
+      position: absolute;
+      width: 165%;
+      height: 200%;
+      top: -50%;
+      left: -28%;
+      background: url("../img/line.png") center no-repeat;
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
   .benefits-section {
     padding: 50px 0; }
     .benefits-section .section-title {
-      font-size: 24px;
+      font-size: 20px;
       margin-bottom: 0; }
     .benefits-section img {
       margin-bottom: 20px; }
@@ -1832,6 +1950,28 @@ button {
     .location-section ul.location-countries-list li a {
       padding: 10px 10px;
       font-size: 12px; }
+    .location-section ul.location-countries-list li button .cities-popup {
+      width: 300%;
+      padding: 8px 0;
+      top: 100%;
+      left: 0;
+      margin-top: 20px; }
+      .location-section ul.location-countries-list li button .cities-popup ul {
+        width: 100%;
+        margin-top: 0;
+        padding: 10px; }
+        .location-section ul.location-countries-list li button .cities-popup ul li {
+          padding: 3px 10px;
+          font-size: 14px;
+          margin-right: 5px;
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
+          border-radius: 15px;
+          border: 0; }
+      .location-section ul.location-countries-list li button .cities-popup::after {
+        left: 20%; }
+    .location-section ul.location-countries-list li button .cities-popup-show {
+      visibility: visible; }
   .join-section {
     padding: 50px 0;
     margin-top: 50px; }
@@ -2001,7 +2141,27 @@ button {
   .page-not-found-content h2 {
     font-size: 18px; }
     .page-not-found-content h2 span {
-      font-size: 10rem; } }
+      font-size: 10rem; }
+  .pricing-welcome-section .section-title {
+    font-size: 35px; }
+  .virgin-content-section {
+    padding: 40px 0; }
+    .virgin-content-section .section-title {
+      font-size: 25px; }
+    .virgin-content-section h5 {
+      font-size: 14px; }
+    .virgin-content-section .virgin-pricing {
+      margin-top: 0; }
+      .virgin-content-section .virgin-pricing .virgin-pricing-location {
+        font-size: 20px; }
+      .virgin-content-section .virgin-pricing h2.virgin-pricing-prices {
+        font-size: 15px;
+        line-height: 40px; }
+    .virgin-content-section .virgin-benefit {
+      grid-template-columns: 1fr; }
+      .virgin-content-section .virgin-benefit .virgin-benefit-item {
+        margin: 15px;
+        padding: 20px 20px; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .top-navigation {
@@ -2207,7 +2367,9 @@ button {
       grid-template-columns: 1fr;
       grid-row-gap: 40px; }
       .pricing-section-content .progress-form .progressbar-container .progressbar-item {
-        display: none; } }
+        display: none; }
+  .virgin-content-section .virgin-benefit {
+    grid-template-columns: 1fr; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .top-navigation {
@@ -2253,6 +2415,11 @@ button {
       -webkit-background-size: 100%;
       background-size: 100%;
       background-position: -100px 70%; }
+  .location-section ul li button .cities-popup ul {
+    padding: 5px; }
+    .location-section ul li button .cities-popup ul li {
+      margin-top: 5px;
+      font-size: 10px; }
   .pricing-section {
     padding: 70px 20px; }
     .pricing-section .section-title {
@@ -2423,7 +2590,7 @@ button {
         letter-spacing: 0;
         margin-bottom: 10px; }
   .solution-section {
-    padding: 60px 150px; }
+    padding: 60px 0px; }
     .solution-section .section-title {
       font-size: 35px;
       margin-top: 30px; }
@@ -2476,13 +2643,21 @@ button {
   .location-section p {
     font-size: 12px; }
   .location-section ul {
-    width: 100%; }
+    width: 70%; }
     .location-section ul li {
       margin-top: 10px; }
       .location-section ul li a {
         font-size: 11px;
         padding: 5px 19px;
         margin-right: 0px; }
+      .location-section ul li button {
+        font-size: 11px;
+        padding: 3px 15px; }
+        .location-section ul li button .cities-popup ul {
+          padding: 5px; }
+          .location-section ul li button .cities-popup ul li {
+            margin-top: 5px;
+            font-size: 10px; }
   .join-section {
     padding: 100px 0; }
   .pricing-section {
@@ -2563,7 +2738,7 @@ button {
   .top-navigation .nav-container {
     padding: 0 20px; }
   .home-section .padding-box {
-    padding: 200px 0 0px; }
+    padding: 150px 0 0px; }
   .home-section .home-title {
     font-size: 55px; }
   .home-section .home-sub-title {
@@ -2579,21 +2754,25 @@ button {
   .compare-section {
     padding: 70px 100px; }
     .compare-section .container {
-      margin-top: 200px; }
+      margin-top: 150px; }
   .benefits-section {
     padding: 75px 0px; }
     .benefits-section .section-title {
       font-size: 30px; }
     .benefits-section .benefit-item {
       padding: 15px; }
-  .solution-section .section-title {
-    font-size: 40px; }
-  .solution-section .section-text {
-    font-size: 17px; }
-  .solution-section .card-header .accordion-toggle:after {
-    font-size: 15px; }
+  .solution-section {
+    padding: 100px 0; }
+    .solution-section .section-title {
+      font-size: 40px; }
+    .solution-section .section-text {
+      font-size: 17px; }
+    .solution-section .card-header .accordion-toggle:after {
+      font-size: 15px; }
   .location-section .padding-box:before {
     background-position: -160px center; }
+  .location-section .padding-box-xxl {
+    padding: 25px 0; }
   .location-section .country-location {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -2643,33 +2822,53 @@ button {
         font-size: 11px;
         padding: 5px 19px;
         margin-right: 0px; }
+      .location-section ul li button {
+        font-size: 11px;
+        padding: 3px 15px; }
+        .location-section ul li button .cities-popup ul {
+          padding: 5px; }
+          .location-section ul li button .cities-popup ul li {
+            margin-top: 5px;
+            font-size: 10px; }
   .pricing-section {
-    padding: 100px 10px; }
+    padding: 50px 10px; }
     .pricing-section .section-title {
       font-size: 40px; }
     .pricing-section ul li a {
       padding: 30px 40px; }
-    .pricing-section .price-nav ul li a {
-      font-size: 17px; }
+    .pricing-section .price-nav {
+      margin-top: 0; }
+      .pricing-section .price-nav ul li a {
+        font-size: 17px; }
+    .pricing-section .prices {
+      margin-top: 0; }
   .footer-section {
     padding: 100px 0; }
     .footer-section ul li {
       margin-bottom: 25px; }
   .affiliate-welcome-section {
-    padding: 170px 0 50px; }
+    padding: 150px 0 50px; }
     .affiliate-welcome-section h1 {
-      font-size: 50px; }
+      font-size: 40px; }
+  .faq-subsection {
+    padding: 50px 0; }
   .faq-welcome-section {
-    padding: 200px 0 50px; }
+    padding: 150px 0 30px; }
     .faq-welcome-section .section-title {
-      font-size: 50px; }
+      font-size: 40px; }
   .pricing-welcome-section {
-    padding: 200px 0 40px; }
+    padding: 150px 0 40px; }
     .pricing-welcome-section .section-title {
-      font-size: 50px; }
+      font-size: 40px; }
+  .pricing-section-content .price-nav {
+    margin-bottom: 50px; }
+  .pricing-section-content .select-container {
+    font-size: 15px; }
+    .pricing-section-content .select-container .select-text {
+      font-size: 15px; }
   .pricing-section-content .progress-form {
     margin: 0 40px;
-    padding-top: 30px; }
+    padding-top: 0; }
     .pricing-section-content .progress-form .progressbar-container .form-item {
       padding: 0 20px; }
       .pricing-section-content .progress-form .progressbar-container .form-item h5 {
