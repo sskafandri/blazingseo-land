@@ -169,7 +169,7 @@
 .select-container.pack-selected {
   color: white;
   font-family: MetropolisExtraBold, sans-serif;
-  background-color: #f0282a; }
+  background-color: #a80000; }
 
 /* Hide the browser's default radio button */
 .select-container input {
@@ -267,7 +267,7 @@
     .top-menu ul li.dropdown .dropdown-menu a {
       font-size: 18px;
       padding: 10px 20px;
-      color: #f0282a !important;
+      color: #a80000 !important;
       font-family: MetropolisSemiBold, sans-serif; }
       .top-menu ul li.dropdown .dropdown-menu a:hover {
         color: #bb0000 !important; }
@@ -284,7 +284,7 @@
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
-        color: #f0282a;
+        color: #a80000;
         width: 100%;
         background-color: #fff;
         -webkit-transition: all 0.6s;
@@ -293,7 +293,7 @@
         -o-transition: all 0.6s;
         transition: all 0.6s; }
         .top-menu ul li.menu-item-has-children .sub-menu a {
-          color: #f0282a; }
+          color: #a80000; }
     .top-menu ul li {
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -310,7 +310,7 @@
         .top-menu ul li a, .top-menu ul li a:after, .top-menu ul li a:before {
           transition: all .8s; }
         .top-menu ul li a:hover {
-          color: #f0282a; }
+          color: #a80000; }
         .top-menu ul li a:after {
           display: block;
           position: absolute;
@@ -344,7 +344,7 @@
 
 .top-nav-collapse {
   padding: 5px;
-  background-color: #f0282a;
+  background-color: #a80000;
   -webkit-box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 35px -6px rgba(0, 0, 0, 0.75); }
@@ -396,7 +396,7 @@
           .top-menu ul li.menu-item-has-children .sub-menu li:hover {
             background-color: transparent; }
             .top-menu ul li.menu-item-has-children .sub-menu li:hover a {
-              color: #f0282a; }
+              color: #a80000; }
           .top-menu ul li.menu-item-has-children .sub-menu li a {
             color: white; }
       .top-menu ul li:last-child button {
@@ -503,8 +503,8 @@ button {
 
 .home-section {
   background: #0c3067;
-  background: #f0282a;
-  background: url("../img/base.png") no-repeat, #f0282a;
+  background: #a80000;
+  background: url("../img/base.png") no-repeat, #a80000;
   color: white;
   position: relative; }
   .home-section:before {
@@ -929,10 +929,10 @@ button {
         .location-section ul li a:hover,
         .location-section ul li button:hover {
           color: white;
-          background-color: #f0282a; }
+          background-color: #a80000; }
         .location-section ul li a.btn-more,
         .location-section ul li button.btn-more {
-          background-color: #f0282a;
+          background-color: #a80000;
           color: white; }
           .location-section ul li a.btn-more:hover,
           .location-section ul li button.btn-more:hover {
@@ -950,7 +950,7 @@ button {
         .location-section ul li button .cities-popup {
           visibility: hidden;
           width: 300%;
-          background-color: #f0282a;
+          background-color: #a80000;
           color: #fff;
           text-align: center;
           border-radius: 6px;
@@ -982,7 +982,7 @@ button {
             left: 83%;
             border-width: 13px;
             border-style: solid;
-            border-color: transparent transparent #f0282a transparent; }
+            border-color: transparent transparent #a80000 transparent; }
         .location-section ul li button .cities-popup-show {
           visibility: visible; }
 
@@ -1020,7 +1020,7 @@ button {
     position: relative; }
     .join-section .field input {
       outline: none;
-      width: 100%;
+      width: 55%;
       border-radius: 35px;
       height: 70px;
       border: 0;
@@ -1052,9 +1052,8 @@ button {
       border-radius: 35px;
       font-size: 20px;
       font-weight: bold;
-      color: #f0282a;
-      transition: width .3s ease, background .3s ease, opacity .3s ease;
-      pointer-events: none; }
+      color: #a80000;
+      transition: width .3s ease, background .3s ease, opacity .3s ease; }
       .join-section .field button.active {
         font-weight: bold;
         background: white;
@@ -1090,7 +1089,7 @@ button {
     font-size: 40px;
     letter-spacing: -0.9px; }
   .pricing-section .btn-try-free {
-    background-color: #f0282a;
+    background-color: #a80000;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
     border-radius: 30px;
@@ -1192,7 +1191,7 @@ button {
       .pricing-section .prices .price .learn-more-link {
         font-family: MetropolisBold, sans-serif;
         padding: 5px 20px;
-        background-color: #f0282a;
+        background-color: #a80000;
         color: white;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -1222,7 +1221,7 @@ button {
     width: 111px;
     padding: 15px;
     background-color: white;
-    color: #f0282a;
+    color: #a80000;
     font-family: MetropolisExtraBold, sans-serif;
     -webkit-border-radius: 17px;
     -moz-border-radius: 17px;
@@ -1281,7 +1280,7 @@ button {
 .faq-welcome-section {
   color: white;
   padding: 250px 0 50px;
-  background: url("../img/home-ellipse.png") no-repeat center, #f0282a;
+  background: url("../img/home-ellipse.png") no-repeat center, #a80000;
   -webkit-background-size: cover;
   background-size: cover; }
   .faq-welcome-section h1 {
@@ -1410,7 +1409,7 @@ button {
     top: -35px; }
     .affiliate-content-section .starter-banner .banner-left {
       color: white;
-      background-color: #f0282a;
+      background-color: #a80000;
       padding: 50px 40px 50px;
       border-bottom-left-radius: 20px;
       border-top-left-radius: 20px; }
@@ -1445,7 +1444,7 @@ button {
       .affiliate-content-section .starter-banner .banner-right .sign-up-now {
         text-align: center;
         padding: 20px 40px;
-        background-color: #f0282a;
+        background-color: #a80000;
         color: white;
         font-size: 20px;
         font-family: MetropolisBold, sans-serif;
@@ -1463,6 +1462,8 @@ button {
 .faq-subsection {
   background-color: #ededed;
   padding: 100px 0; }
+  .faq-subsection .question-btn span {
+    width: 80%; }
   .faq-subsection .section-title {
     font-family: MetropolisBold, sans-serif;
     font-size: 45px;
@@ -1530,7 +1531,7 @@ button {
       .pricing-section-content .prices .price .price-body a.trial-link,
       .pricing-section-content .prices .price.recommended .price-body a.trial-link {
         margin-top: 50px;
-        color: #f0282a;
+        color: #a80000;
         font-family: MetropolisBold, sans-serif; }
     .pricing-section-content .prices .price .price-footer,
     .pricing-section-content .prices .price.recommended .price-footer {
@@ -1562,7 +1563,7 @@ button {
           padding: 30px;
           display: inline-block;
           font-size: 30px;
-          background-color: #f0282a;
+          background-color: #a80000;
           color: white;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
@@ -1571,7 +1572,7 @@ button {
           content: '';
           width: 100%;
           height: 10px;
-          background: #f0282a;
+          background: #a80000;
           position: absolute;
           left: -50%;
           top: 45%;
@@ -1669,11 +1670,11 @@ button {
           .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container:hover input ~ .checkmark {
             background-color: #D61C24; }
           .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container input:checked ~ .checkmark {
-            background-color: #f0282a;
+            background-color: #a80000;
             color: white;
             border: 0; }
           .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container input:checked {
-            background-color: #f0282a; }
+            background-color: #a80000; }
           .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container .checkmark {
             position: absolute;
             top: 142px;
@@ -1723,7 +1724,7 @@ button {
       .pricing-section-content .progress-form .progressbar-container .form-item .complete-order-btn {
         margin-top: 20px;
         width: 100%;
-        background-color: #f0282a;
+        background-color: #a80000;
         color: white;
         font-family: MetropolisBold, sans-serif;
         border: 0;
@@ -1790,7 +1791,7 @@ button {
 
 .virgin-welcome-section {
   padding: 200px 0 50px;
-  background-color: #f0282a; }
+  background-color: #a80000; }
 
 .virgin-content-section {
   padding: 100px 0; }
@@ -1826,7 +1827,7 @@ button {
         -o-transition: top 1s ease;
         transition: top 1s ease; }
       .virgin-content-section .virgin-benefit .virgin-benefit-item i {
-        color: #f0282a;
+        color: #a80000;
         font-size: 40px;
         margin-bottom: 15px; }
       .virgin-content-section .virgin-benefit .virgin-benefit-item h5 {
@@ -1855,6 +1856,246 @@ button {
 
 .wrap {
   margin-top: 40px; }
+
+.vpn-welcome-section {
+  background: #a80000;
+  padding: 200px 0 80px;
+  position: relative; }
+  .vpn-welcome-section:before {
+    position: absolute;
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    background: url("../img/home-ellipse.png") no-repeat center;
+    background-size: 100%;
+    bottom: 0%; }
+  .vpn-welcome-section .vpn-welcome-title {
+    color: white;
+    font-size: 63px;
+    font-family: MetropolisExtraBold, sans-serif; }
+  .vpn-welcome-section .vpn-welcome-btn {
+    background-color: white;
+    color: red;
+    font-size: 20px;
+    font-family: MetropolisSemiBold, sans-serif;
+    padding: 20px 40px;
+    margin: 30px auto;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px; }
+
+.vpn-sub-welcome-section {
+  padding: 50px 0; }
+  .vpn-sub-welcome-section .section-title {
+    font-size: 30px;
+    margin: 20px auto 40px;
+    font-family: MetropolisBold, sans-serif; }
+  .vpn-sub-welcome-section p {
+    font-family: MetropolisRegular, sans-serif;
+    font-size: 20px; }
+
+.vpn-features-section {
+  background-color: #211f35;
+  padding: 100px 0;
+  color: white; }
+  .vpn-features-section .section-title {
+    font-size: 50px;
+    margin-left: 300px;
+    text-align: center;
+    font-family: MetropolisBold, sans-serif; }
+  .vpn-features-section .vpn-feature {
+    position: relative;
+    margin: 50px 0;
+    padding: 50px;
+    bottom: 0;
+    border: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .vpn-features-section .vpn-feature:hover {
+      bottom: 10px; }
+  .vpn-features-section .circle {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    padding: 50% 0;
+    border-radius: 50%;
+    line-height: 10px;
+    background: #a80000;
+    color: white;
+    font-family: MetropolisBold;
+    font-size: 70px;
+    text-align: center; }
+  .vpn-features-section .vpn-feature-title {
+    font-size: 30px;
+    font-family: MetropolisBold, sans-serif; }
+  .vpn-features-section .vpn-feature-text {
+    font-size: 20px;
+    font-family: MetropolisRegular, sans-serif; }
+
+.vpn-why-choose-section {
+  padding: 50px 0; }
+  .vpn-why-choose-section .section-title {
+    text-align: center;
+    font-family: MetropolisBold, sans-serif;
+    font-size: 35px; }
+  .vpn-why-choose-section .choose-benefit {
+    padding: 20px; }
+
+.vpn-get-started-section {
+  padding: 100px 0;
+  background-color: #229ed5;
+  color: white; }
+  .vpn-get-started-section .section-title {
+    font-size: 50px;
+    font-family: MetropolisBold, sans-serif; }
+  .vpn-get-started-section .section-text {
+    padding: 0 70px;
+    font-size: 20px;
+    font-family: MetropolisRegular, sans-serif; }
+  .vpn-get-started-section .vpn-btn-get-started {
+    margin-top: 50px;
+    padding: 20px 70px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: MetropolisSemiBold, sans-serif;
+    background-color: #fff;
+    color: #a80000;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .vpn-get-started-section .vpn-btn-get-started:hover {
+      background-color: #eeeeee; }
+
+.windows-vps-content-section {
+  padding: 100px 0; }
+
+.windows-vps-features-section {
+  padding: 100px 0;
+  background-color: #ededed; }
+  .windows-vps-features-section .section-title {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    font-family: MetropolisExtraBold;
+    margin-bottom: 50px; }
+  .windows-vps-features-section .windows-vps-benefits-container {
+    display: grid;
+    text-align: center;
+    margin-top: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px; }
+    .windows-vps-features-section .windows-vps-benefits-container .windows-vps-benefit-item {
+      position: relative;
+      top: 0;
+      padding: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      -webkit-transition: all 0.6s;
+      -moz-transition: all 0.6s;
+      -ms-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s; }
+      .windows-vps-features-section .windows-vps-benefits-container .windows-vps-benefit-item i {
+        font-size: 50px;
+        margin-bottom: 20px; }
+      .windows-vps-features-section .windows-vps-benefits-container .windows-vps-benefit-item:hover {
+        top: -10px; }
+      .windows-vps-features-section .windows-vps-benefits-container .windows-vps-benefit-item:nth-child(2n) {
+        color: white;
+        background-color: #141526; }
+
+.windows-vps-pricing-section {
+  padding: 100px 0; }
+  .windows-vps-pricing-section .pricing-nav-tabs {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px; }
+    .windows-vps-pricing-section .pricing-nav-tabs a {
+      width: 49%;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+      font-family: MetropolisSemiBold, sans-serif;
+      font-size: 25px;
+      color: white;
+      background-color: #a80000;
+      padding: 20px 0; }
+      .windows-vps-pricing-section .pricing-nav-tabs a:last-child {
+        background-color: #0c3067;
+        margin-left: 5px; }
+    .windows-vps-pricing-section .pricing-nav-tabs a.active {
+      -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.5); }
+
+.dedicated-server-welcome-section {
+  padding: 200px 0 50px; }
+
+.dedicated-server-content-section {
+  padding: 100px 0; }
+
+.dedicated-server-benefit-section {
+  padding: 100px 0;
+  background-color: #f2f2f2;
+  text-align: center; }
+  .dedicated-server-benefit-section .benefits-container {
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr; }
+    .dedicated-server-benefit-section .benefits-container .benefit-item {
+      padding: 30px;
+      position: relative;
+      top: 0;
+      -webkit-transition: all 0.7s;
+      -moz-transition: all 0.7s;
+      -ms-transition: all 0.7s;
+      -o-transition: all 0.7s;
+      transition: all 0.7s; }
+      .dedicated-server-benefit-section .benefits-container .benefit-item i {
+        font-size: 60px;
+        color: #a80000;
+        margin-bottom: 25px; }
+      .dedicated-server-benefit-section .benefits-container .benefit-item:hover {
+        top: -10px; }
+
+.dedicated-server-pricing-section {
+  padding: 80px 0;
+  text-align: center; }
+  .dedicated-server-pricing-section .section-title {
+    font-size: 35px;
+    font-family: MetropolisSemiBold, sans-serif;
+    margin-bottom: 50px; }
+  .dedicated-server-pricing-section .dedicated-pricing-btn {
+    background-color: #0c3067;
+    color: white;
+    padding: 20px 50px;
+    margin-top: 50px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s; }
+    .dedicated-server-pricing-section .dedicated-pricing-btn i {
+      margin-right: 5px; }
+    .dedicated-server-pricing-section .dedicated-pricing-btn:hover {
+      background-color: #0b2345; }
+  .dedicated-server-pricing-section .red-text {
+    margin-top: 20px;
+    color: #a80000; }
 
 .show {
   display: block !important; }
@@ -2161,7 +2402,67 @@ button {
       grid-template-columns: 1fr; }
       .virgin-content-section .virgin-benefit .virgin-benefit-item {
         margin: 15px;
-        padding: 20px 20px; } }
+        padding: 20px 20px; }
+  .vpn-welcome-section .vpn-welcome-title {
+    font-size: 50px; }
+  .vpn-sub-welcome-section {
+    padding: 100px; }
+  .vpn-features-section {
+    padding: 100px 0; }
+    .vpn-features-section .section-title {
+      font-size: 40px;
+      margin: 0; }
+    .vpn-features-section .circle {
+      font-size: 40px; }
+    .vpn-features-section .vpn-feature {
+      padding: 15px; }
+  .vpn-why-choose-section {
+    padding: 50px 20px; }
+    .vpn-why-choose-section .section-title {
+      font-size: 30px; }
+    .vpn-why-choose-section .choose-benefit-title {
+      font-size: 20px; }
+  .vpn-get-started-section {
+    padding: 50px 30px; }
+    .vpn-get-started-section .section-title {
+      font-size: 35px; }
+    .vpn-get-started-section .section-text {
+      padding: 0;
+      margin-top: 50px;
+      font-size: 15px; }
+    .vpn-get-started-section .vpn-btn-get-started {
+      font-size: 16px; }
+  .windows-vps-content-section {
+    padding: 50px 15px; }
+    .windows-vps-content-section .section-title {
+      font-size: 25px; }
+  .windows-vps-features-section {
+    padding: 50px 15px; }
+    .windows-vps-features-section .section-title {
+      font-size: 25px; }
+    .windows-vps-features-section .windows-vps-benefits-container {
+      grid-template-columns: 1fr; }
+  .windows-vps-pricing-section .pricing-nav-tabs a {
+    font-size: 20px; }
+  .dedicated-server-content-section {
+    padding: 80px 15px; }
+    .dedicated-server-content-section .section-title {
+      font-size: 22px; }
+  .dedicated-server-benefit-section {
+    padding: 80px 15px; }
+    .dedicated-server-benefit-section .section-title {
+      font-size: 28px; }
+    .dedicated-server-benefit-section .benefits-container {
+      grid-template-columns: 1fr; }
+      .dedicated-server-benefit-section .benefits-container .benefit-item {
+        padding: 30px 0; }
+  .dedicated-server-pricing-section {
+    padding: 80px 15px; }
+    .dedicated-server-pricing-section .section-title {
+      font-size: 20px; }
+    .dedicated-server-pricing-section .dedicated-pricing-btn {
+      font-size: 15px;
+      padding: 10px 10px; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .top-navigation {
@@ -2369,7 +2670,50 @@ button {
       .pricing-section-content .progress-form .progressbar-container .progressbar-item {
         display: none; }
   .virgin-content-section .virgin-benefit {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .vpn-welcome-section .vpn-welcome-title {
+    font-size: 50px; }
+  .vpn-sub-welcome-section {
+    padding: 100px; }
+  .vpn-features-section {
+    padding: 100px 0; }
+    .vpn-features-section .section-title {
+      font-size: 40px;
+      margin: 0; }
+    .vpn-features-section .circle {
+      font-size: 40px; }
+  .vpn-why-choose-section {
+    padding: 100px 50px; }
+    .vpn-why-choose-section .choose-benefit-title {
+      font-size: 20px; }
+  .vpn-get-started-section .section-title {
+    font-size: 40px; }
+  .vpn-get-started-section .section-text {
+    padding: 0;
+    margin-top: 50px; }
+  .windows-vps-content-section {
+    padding: 50px 15px; }
+    .windows-vps-content-section .section-title {
+      font-size: 25px; }
+  .windows-vps-features-section {
+    padding: 50px 15px; }
+    .windows-vps-features-section .section-title {
+      font-size: 25px; }
+    .windows-vps-features-section .windows-vps-benefits-container {
+      grid-template-columns: 1fr; }
+  .windows-vps-pricing-section .pricing-nav-tabs a {
+    font-size: 20px; }
+  .dedicated-server-benefit-section {
+    padding: 80px 15px; }
+    .dedicated-server-benefit-section .benefits-container {
+      grid-template-columns: 1fr; }
+  .dedicated-server-pricing-section {
+    padding: 80px 15px; }
+    .dedicated-server-pricing-section .section-title {
+      font-size: 30px; }
+    .dedicated-server-pricing-section .dedicated-pricing-btn {
+      font-size: 20px;
+      padding: 15px 20px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .top-navigation {
@@ -2546,7 +2890,42 @@ button {
         .pricing-section-content .progress-form .progressbar-container .form-item .complete-order-btn {
           font-size: 15px; }
           .pricing-section-content .progress-form .progressbar-container .form-item .complete-order-btn i {
-            margin-left: 0; } }
+            margin-left: 0; }
+  .vpn-welcome-section .vpn-welcome-title {
+    font-size: 67px; }
+  .vpn-sub-welcome-section {
+    padding: 100px; }
+  .vpn-features-section {
+    padding: 100px 0; }
+    .vpn-features-section .section-title {
+      font-size: 45px;
+      margin: 0; }
+    .vpn-features-section .circle {
+      font-size: 40px; }
+  .vpn-why-choose-section {
+    padding: 100px 50px; }
+    .vpn-why-choose-section .choose-benefit-title {
+      font-size: 20px; }
+  .windows-vps-content-section {
+    padding: 50px 15px; }
+    .windows-vps-content-section .section-title {
+      font-size: 25px; }
+  .windows-vps-features-section {
+    padding: 50px 15px; }
+    .windows-vps-features-section .section-title {
+      font-size: 25px; }
+    .windows-vps-features-section .windows-vps-benefits-container {
+      grid-template-columns: 1fr 1fr; }
+      .windows-vps-features-section .windows-vps-benefits-container .windows-vps-benefit-item:nth-child(2n) {
+        color: black;
+        background-color: transparent; }
+      .windows-vps-features-section .windows-vps-benefits-container .windows-vps-benefit-item:nth-child(1), .windows-vps-features-section .windows-vps-benefits-container .windows-vps-benefit-item:nth-child(4), .windows-vps-features-section .windows-vps-benefits-container .windows-vps-benefit-item:nth-child(5) {
+        color: white;
+        background-color: #141526; }
+  .windows-vps-pricing-section .pricing-nav-tabs a {
+    font-size: 20px; }
+  .dedicated-server-benefit-section .benefits-container {
+    grid-template-columns: 1fr 1fr; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .top-navigation .nav-container ul li {
@@ -2732,7 +3111,20 @@ button {
         .pricing-section-content .progress-form .progressbar-container .form-item .total .left {
           padding: 40px 35px; }
         .pricing-section-content .progress-form .progressbar-container .form-item .complete-order-btn {
-          font-size: 15px; } }
+          font-size: 15px; }
+  .vpn-welcome-section .vpn-welcome-title {
+    font-size: 50px; }
+  .vpn-sub-welcome-section {
+    padding: 100px; }
+  .vpn-features-section {
+    padding: 100px 0; }
+    .vpn-features-section .section-title {
+      font-size: 40px;
+      margin-left: 250px; }
+    .vpn-features-section .circle {
+      font-size: 50px; }
+  .vpn-why-choose-section {
+    padding: 100px 50px; } }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .top-navigation .nav-container {
@@ -2889,7 +3281,18 @@ button {
           font-size: 33px !important; }
         .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container .checkmark {
           top: 77%;
-          left: 36%; } }
+          left: 36%; }
+  .vpn-welcome-section .vpn-welcome-title {
+    font-size: 50px; }
+  .vpn-sub-welcome-section {
+    padding: 100px; }
+  .vpn-features-section {
+    padding: 100px 0; }
+    .vpn-features-section .section-title {
+      font-size: 50px;
+      margin-left: 300px; }
+  .vpn-why-choose-section {
+    padding: 100px 50px; } }
 
 @media (min-width: 1400px) and (max-width: 1800px) {
   .top-navigation .nav-container {
@@ -2991,7 +3394,9 @@ button {
           font-size: 33px !important; }
         .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container .checkmark {
           top: 77%;
-          left: 36%; } }
+          left: 36%; }
+  .vpn-welcome-section .vpn-welcome-title {
+    font-size: 60px; } }
 
 @media (min-width: 1800px) {
   .solution-section .padding-box {

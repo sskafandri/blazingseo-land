@@ -615,7 +615,7 @@
 	//404 end
 
 
-	//virgin ips page start
+	//virgin ips page start                        +++
 	.pricing-welcome-section .section-title {
 		font-size: 35px;
 	}
@@ -657,8 +657,143 @@
 			}
 		}
 	}
-	//virgin ips page end
+	//virgin ips page end                         ---
 
+
+	//vpn page start                              +++
+	.vpn-welcome-section{
+		.vpn-welcome-title{
+			font-size: 50px;
+
+		}
+	}
+
+	.vpn-sub-welcome-section{
+		padding: 100px ;
+	}
+
+	.vpn-features-section{
+		padding: 100px 0;
+		.section-title{
+			font-size: 40px;
+			margin: 0;
+		}
+
+		.circle{
+			font-size: 40px;
+		}
+
+		.vpn-feature{
+			padding: 15px;
+		}
+	}
+
+	.vpn-why-choose-section{
+		padding: 50px 20px;
+
+		.section-title{
+			font-size: 30px;
+		}
+
+		.choose-benefit-title{
+			font-size: 20px;
+		}
+	}
+
+	.vpn-get-started-section{
+		padding: 50px 30px;
+		.section-title{
+			font-size: 35px;
+		}
+
+		.section-text{
+			padding: 0;
+			margin-top: 50px;
+			font-size: 15px;
+		}
+
+		.vpn-btn-get-started{
+			font-size: 16px;
+		}
+	}
+	//vpn page end                                ---
+
+
+    //windows vps page start                      +++
+
+    .windows-vps-content-section{
+      padding: 50px 15px;
+      .section-title{
+        font-size: 25px;
+      }
+    }
+
+    .windows-vps-features-section{
+      padding: 50px 15px;
+
+      .section-title{
+        font-size: 25px;
+        //font-family: MetropolisSemiBold, sans-serif;
+      }
+
+      .windows-vps-benefits-container{
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .windows-vps-pricing-section{
+      .pricing-nav-tabs{
+        a{
+          font-size: 20px;
+        }
+      }
+    }
+    //windows vps page end                        ---
+
+  //dedicated server page start              +++
+
+  .dedicated-server-content-section{
+
+    padding: 80px 15px ;
+
+    .section-title{
+      font-size: 22px;
+    }
+  }
+
+  .dedicated-server-benefit-section{
+
+
+    padding: 80px 15px;
+
+
+    .section-title{
+      font-size: 28px;
+    }
+
+    .benefits-container{
+      grid-template-columns: 1fr ;
+
+      .benefit-item{
+        padding: 30px 0;
+      }
+    }
+  }
+
+  .dedicated-server-pricing-section{
+    padding: 80px 15px ;
+
+    .section-title{
+      font-size: 20px;
+    }
+
+    .dedicated-pricing-btn{
+      font-size: 15px;
+      padding: 10px 10px;
+    }
+
+  }
+  //dedicated server page end                ---
 }
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -1116,13 +1251,114 @@
 
 
 	//virgin ips page start
-
 	.virgin-content-section{
 		.virgin-benefit{
 			grid-template-columns: 1fr;
 		}
 	}
 	//virgin ips page end
+
+
+	//vpn page start       +++
+	.vpn-welcome-section{
+		.vpn-welcome-title{
+			font-size: 50px;
+
+		}
+	}
+
+	.vpn-sub-welcome-section{
+		padding: 100px ;
+	}
+
+	.vpn-features-section{
+		padding: 100px 0;
+		.section-title{
+			font-size: 40px;
+			margin: 0;
+		}
+
+		.circle{
+			font-size: 40px;
+		}
+	}
+
+	.vpn-why-choose-section{
+		padding: 100px 50px;
+
+		.choose-benefit-title{
+			font-size: 20px;
+		}
+	}
+
+	.vpn-get-started-section{
+		.section-title{
+			font-size: 40px;
+		}
+
+		.section-text{
+			padding: 0;
+			margin-top: 50px;
+		}
+	}
+	//vpn page end                  ---
+
+    //windows vps page start                      +++
+
+    .windows-vps-content-section{
+      padding: 50px 15px;
+      .section-title{
+        font-size: 25px;
+      }
+    }
+
+    .windows-vps-features-section{
+      padding: 50px 15px;
+
+      .section-title{
+        font-size: 25px;
+        //font-family: MetropolisSemiBold, sans-serif;
+      }
+
+      .windows-vps-benefits-container{
+        grid-template-columns: 1fr ;
+      }
+    }
+
+    .windows-vps-pricing-section{
+      .pricing-nav-tabs{
+        a{
+          font-size: 20px;
+        }
+      }
+    }
+    //windows vps page end                        ---
+
+  //dedicated server page start              +++
+  .dedicated-server-benefit-section{
+    padding: 80px 15px;
+    .benefits-container{
+      grid-template-columns: 1fr ;
+    }
+  }
+
+
+  .dedicated-server-pricing-section{
+    padding: 80px 15px ;
+
+    .section-title{
+      font-size: 30px;
+    }
+
+    .dedicated-pricing-btn{
+      font-size: 20px;
+      padding: 15px 20px;
+    }
+
+  }
+  //dedicated server page end                ---
+
+
 }
 //----------------------------------------------------------------------------------------------------------------------
 //  576 - 767     END
@@ -1574,7 +1810,99 @@
 	}
 	//pricing page end
 
+	//vpn page start       +++
+	.vpn-welcome-section{
+		.vpn-welcome-title{
+			font-size: 67px;
+
+		}
+	}
+
+	.vpn-sub-welcome-section{
+		padding: 100px ;
+	}
+
+
+
+	.vpn-features-section{
+		padding: 100px 0;
+		.section-title{
+			font-size: 45px;
+			margin: 0;
+		}
+
+		.circle{
+			font-size: 40px;
+		}
+	}
+
+
+	.vpn-why-choose-section{
+		padding: 100px 50px;
+
+		.choose-benefit-title{
+			font-size: 20px;
+		}
+	}
+	//vpn page end                  ---
+
+
+  //windows vps page start                      +++
+
+  .windows-vps-content-section{
+    padding: 50px 15px;
+    .section-title{
+      font-size: 25px;
+    }
   }
+
+  .windows-vps-features-section{
+    padding: 50px 15px;
+
+    .section-title{
+      font-size: 25px;
+      //font-family: MetropolisSemiBold, sans-serif;
+    }
+
+    .windows-vps-benefits-container{
+      grid-template-columns: 1fr 1fr;
+
+      .windows-vps-benefit-item {
+
+        &:nth-child(2n){
+          color: black;
+          background-color: transparent;
+        }
+
+        &:nth-child(1),
+        &:nth-child(4),
+        &:nth-child(5){
+          color: white;
+          background-color: #141526;
+        }
+      }
+    }
+  }
+
+  .windows-vps-pricing-section{
+    .pricing-nav-tabs{
+      a{
+        font-size: 20px;
+      }
+    }
+  }
+  //windows vps page end                        ---
+
+  //dedicated server page start              +++
+  .dedicated-server-benefit-section{
+    .benefits-container{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  //dedicated server page end                ---
+
+
+}
 //----------------------------------------------------------------------------------------------------------------------
 //  768 - 991     END
 //----------------------------------------------------------------------------------------------------------------------
@@ -2026,6 +2354,39 @@
 		}
 	}
 	//pricing page end              ---
+
+
+	//vpn page start       +++
+	.vpn-welcome-section{
+		.vpn-welcome-title{
+			font-size: 50px;
+
+		}
+	}
+
+	.vpn-sub-welcome-section{
+		padding: 100px ;
+	}
+
+
+
+	.vpn-features-section{
+		padding: 100px 0;
+		.section-title{
+			font-size: 40px;
+			margin-left: 250px;
+		}
+
+		.circle{
+			font-size: 50px;
+		}
+	}
+
+
+	.vpn-why-choose-section{
+		padding: 100px 50px;
+	}
+	//vpn page end                  ---
 }
 
 //----------------------------------------------------------------------------------------------------------------------
@@ -2399,6 +2760,33 @@
 
 	}
 	//pricing page end
+
+
+	//vpn page start       +++
+	.vpn-welcome-section{
+		.vpn-welcome-title{
+			font-size: 50px;
+
+		}
+	}
+
+	.vpn-sub-welcome-section{
+		padding: 100px ;
+	}
+
+	.vpn-features-section{
+		padding: 100px 0;
+		.section-title{
+			font-size: 50px;
+			margin-left: 300px;
+		}
+	}
+
+
+	.vpn-why-choose-section{
+		padding: 100px 50px;
+	}
+	//vpn page end                  ---
 }
 //----------------------------------------------------------------------------------------------------------------------
 //  1200 - 1400     END
@@ -2633,6 +3021,16 @@
 		}
 	}
 	//pricing page end              ---
+
+	//vpn page start                +++
+
+	.vpn-welcome-section{
+		.vpn-welcome-title{
+			font-size: 60px;
+
+		}
+	}
+	//vpn page end                  ---
 }
 
 //----------------------------------------------------------------------------------------------------------------------

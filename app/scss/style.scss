@@ -923,7 +923,7 @@ button{
     position: relative;
     input {
       outline: none;
-      width: 100%;
+      width: 55%;
       border-radius: 35px;
       height: 70px;
       border: 0;
@@ -972,7 +972,6 @@ button{
               width .3s ease,
               background .3s ease,
               opacity .3s ease;
-      pointer-events: none;
       &.active {
 
         font-weight: bold;
@@ -1657,6 +1656,12 @@ button{
 
   padding: 100px 0 ;
 
+  .question-btn{
+    span{
+      width: 80%;
+    }
+  }
+
   .section-title{
     font-family: MetropolisBold, sans-serif;
     font-size: 45px;
@@ -2334,6 +2339,382 @@ button{
   margin-top: 40px;
 }
 //careers page end              ---
+
+
+// vpn page start            +++
+
+
+.vpn-welcome-section{
+  background: $main-red;
+  padding: 200px 0 80px;
+  position: relative;
+
+
+  &:before {
+    //z-index: 10;
+    position: absolute;
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    background: url("../img/home-ellipse.png") no-repeat  center;
+    background-size: 100%;
+    bottom: 0%;
+  }
+
+  .vpn-welcome-title{
+    color: white;
+    font-size: 63px;
+    font-family: MetropolisExtraBold, sans-serif;
+  }
+
+  .vpn-welcome-btn{
+    background-color: white;
+    color: red;
+    font-size: 20px;
+    font-family: MetropolisSemiBold, sans-serif;
+    padding: 20px 40px;
+    margin: 30px auto;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+  }
+
+
+}
+
+.vpn-sub-welcome-section{
+  padding: 50px 0;
+
+  .section-title{
+    font-size: 30px;
+
+    margin: 20px auto 40px;
+    font-family: MetropolisBold, sans-serif;
+  }
+
+  p{
+    font-family: MetropolisRegular, sans-serif;
+    font-size: 20px;
+  }
+}
+
+
+.vpn-features-section{
+  background-color: #211f35;
+  padding: 100px 0;
+  color: white;
+
+  .section-title{
+    font-size: 50px;
+    margin-left: 300px;
+
+    text-align: center;
+    font-family: MetropolisBold, sans-serif;
+  }
+
+  .vpn-feature{
+    position: relative;
+    margin: 50px 0;
+    padding: 50px ;
+    bottom: 0;
+
+    border: 0;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    &:hover{
+      bottom: 10px ;
+    }
+  }
+
+  .circle {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    padding: 50% 0;
+    border-radius: 50%;
+    line-height: 10px;
+
+    background: $main-red;
+    color: white;
+    font-family: MetropolisBold;
+    font-size: 70px;
+    text-align: center;
+  }
+
+  .vpn-feature-title{
+    font-size: 30px;
+    font-family: MetropolisBold, sans-serif;
+  }
+
+  .vpn-feature-text{
+    font-size: 20px;
+    font-family: MetropolisRegular, sans-serif;
+  }
+
+}
+
+.vpn-why-choose-section{
+  padding: 50px 0;
+
+  .section-title{
+    text-align: center;
+    font-family: MetropolisBold, sans-serif;
+    font-size: 35px;
+  }
+
+  .choose-benefit{
+    padding: 20px;
+  }
+}
+
+.vpn-get-started-section{
+  padding: 100px 0;
+  background-color: #229ed5;
+  color: white;
+
+  .section-title{
+    font-size: 50px;
+    font-family: MetropolisBold, sans-serif;
+  }
+
+  .section-text{
+    padding: 0 70px;
+    font-size: 20px;
+    font-family: MetropolisRegular, sans-serif;
+  }
+
+  .vpn-btn-get-started{
+    margin-top: 50px;
+
+    padding: 20px 70px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: MetropolisSemiBold, sans-serif;
+
+    background-color: #fff;
+    color: $main-red;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    &:hover{
+      background-color: #eeeeee;
+    }
+
+  }
+}
+
+// vpn page end               ---
+
+
+
+//Windows vps page start          +++
+.windows-vps-content-section{
+  padding:100px 0;
+
+
+
+}
+
+.windows-vps-features-section{
+  padding: 100px 0;
+
+  background-color: #ededed;
+
+
+  .section-title{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    font-family: MetropolisExtraBold;
+    margin-bottom: 50px;
+  }
+  .windows-vps-benefits-container{
+    display: grid;
+    text-align: center;
+    margin-top: 30px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+
+    .windows-vps-benefit-item{
+      position: relative;
+      top: 0;
+      padding: 20px;
+
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      border-radius: 20px;
+      -webkit-transition: all 0.6s;
+      -moz-transition: all 0.6s;
+      -ms-transition: all 0.6s;
+      -o-transition: all 0.6s;
+      transition: all 0.6s;
+      i {
+        font-size: 50px ;
+        margin-bottom: 20px;
+      }
+
+      &:hover{
+        top: -10px;
+
+      }
+      
+      &:nth-child(2n){
+        color: white;
+        background-color: #141526;
+      }
+
+    }
+  }
+}
+
+.windows-vps-pricing-section{
+  padding: 100px 0;
+
+  .pricing-nav-tabs{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
+    a{
+
+      width: 49%;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      border-radius: 10px;
+
+      font-family: MetropolisSemiBold, sans-serif;
+      font-size: 25px;
+      color: white;
+      background-color: $main-red;
+      padding: 20px 0;
+
+
+      &:last-child{
+        background-color: $main-blue;
+        margin-left: 5px;
+      }
+    }
+
+    a.active{
+      -webkit-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+//Windows vps page end            ---
+
+
+//Dedicated Server page start              +++
+
+.dedicated-server-welcome-section{
+  padding: 200px 0 50px;
+}
+.dedicated-server-content-section{
+  padding: 100px 0;
+  //text-align: center;
+
+}
+.dedicated-server-benefit-section{
+  padding: 100px 0;
+  background-color: #f2f2f2;
+  text-align: center;
+
+
+  .benefits-container{
+    display: grid;
+    margin-top: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .benefit-item{
+
+      padding: 30px;
+      position: relative;
+      top: 0;
+
+      -webkit-transition: all 0.7s;
+      -moz-transition: all 0.7s;
+      -ms-transition: all 0.7s;
+      -o-transition: all 0.7s;
+      transition: all 0.7s;
+
+
+      i{
+        font-size: 60px;
+        color: $main-red;
+        margin-bottom: 25px;
+      }
+
+      .benefit-title{
+
+
+      }
+
+      .benefit-text{
+
+      }
+
+      &:hover{
+        top:-10px;
+      }
+    }
+  }
+}
+
+.dedicated-server-pricing-section{
+  padding: 80px 0;
+  text-align: center;
+
+
+  .section-title{
+    font-size: 35px;
+    font-family: MetropolisSemiBold, sans-serif;
+    margin-bottom: 50px;
+  }
+
+  .dedicated-pricing-btn{
+    background-color: $main-blue;
+    color: white;
+    padding: 20px 50px;
+    margin-top: 50px;
+
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    font-size: 20px;
+
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    transition: all 0.8s;
+    i{
+      margin-right: 5px;
+    }
+
+
+    &:hover{
+      background-color: #0b2345;
+    }
+  }
+
+  .red-text{
+    margin-top: 20px;
+    color: $main-red;
+  }
+}
+//Dedicated Server page end                ---
 
 
 
