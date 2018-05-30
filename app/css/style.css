@@ -427,29 +427,6 @@
     .top-navigation .top-menu ul li a {
       font-size: 17px; } }
 
-.panel {
-  position: fixed;
-  bottom: 0;
-  right: 10px;
-  padding: 20px;
-  width: auto;
-  height: auto;
-  z-index: 1000; }
-  .panel a {
-    padding: 20px 100px;
-    background-color: #ff0026;
-    border-radius: 10px;
-    border: 1px solid #eeeeee;
-    font-family: MetropolisExtraBold, sans-serif;
-    color: white;
-    -webkit-transition: all 0.9s;
-    -moz-transition: all 0.9s;
-    -ms-transition: all 0.9s;
-    -o-transition: all 0.9s;
-    transition: all 0.9s; }
-    .panel a:hover {
-      background-color: #cc00home23; }
-
 body {
   font-family: 'MetropolisRegular',Roboto, sans-serif;
   margin: 0; }
@@ -504,7 +481,6 @@ button {
 .home-section {
   background: #0c3067;
   background: #a80000;
-  background: url("../img/base.png") no-repeat, #a80000;
   color: white;
   position: relative; }
   .home-section:before {
@@ -516,16 +492,15 @@ button {
     background-size: 100%;
     bottom: 0%; }
   .home-section .padding-box {
-    padding: 200px 0 0; }
+    padding: 100px 0 0; }
   .home-section .home-title {
     font-weight: bold;
-    font-size: 60px;
-    letter-spacing: -0.9px; }
+    font-size: 42px; }
   .home-section .home-sub-title {
     margin-bottom: 85px;
     font-family: MetropolisRegular, sans-serif;
     letter-spacing: -0.9px;
-    font-size: 25px; }
+    font-size: 20px; }
   .home-section .home-proxies-btn {
     padding: 25px 60px;
     font-size: 25px;
@@ -949,17 +924,23 @@ button {
         user-select: none; }
         .location-section ul li button .cities-popup {
           visibility: hidden;
+          opacity: 0;
           width: 300%;
           background-color: #a80000;
           color: #fff;
           text-align: center;
-          border-radius: 6px;
+          border-radius: 10px;
           padding: 8px 0;
           position: absolute;
           z-index: 10;
           top: 120%;
           right: 9%;
-          margin-top: 20px; }
+          margin-top: 20px;
+          -webkit-transition: all 0.6s;
+          -moz-transition: all 0.6s;
+          -ms-transition: all 0.6s;
+          -o-transition: all 0.6s;
+          transition: all 0.6s; }
           .location-section ul li button .cities-popup ul {
             width: 100%;
             margin-top: 0;
@@ -970,11 +951,20 @@ button {
               color: black;
               padding: 3px 10px;
               font-size: 14px;
-              margin-right: 5px;
+              margin-top: 5px;
+              margin-right: 3px;
               -webkit-border-radius: 15px;
               -moz-border-radius: 15px;
-              border-radius: 15px;
-              border: 0; }
+              border-radius: 5px;
+              border: 0;
+              -webkit-transition: all 0.5s;
+              -moz-transition: all 0.5s;
+              -ms-transition: all 0.5s;
+              -o-transition: all 0.5s;
+              transition: all 0.5s; }
+              .location-section ul li button .cities-popup ul li:hover {
+                background-color: red;
+                color: white; }
           .location-section ul li button .cities-popup::after {
             content: "";
             position: absolute;
@@ -984,6 +974,7 @@ button {
             border-style: solid;
             border-color: transparent transparent #a80000 transparent; }
         .location-section ul li button .cities-popup-show {
+          opacity: 1;
           visibility: visible; }
 
 /* Add animation (fade in the popup) */
@@ -1279,12 +1270,12 @@ button {
 
 .faq-welcome-section {
   color: white;
-  padding: 250px 0 50px;
+  padding: 100px 0 125px;
   background: url("../img/home-ellipse.png") no-repeat center, #a80000;
   -webkit-background-size: cover;
   background-size: cover; }
   .faq-welcome-section h1 {
-    font-size: 50px;
+    font-size: 42px;
     letter-spacing: -.9px;
     font-family: MetropolisBold,sans-serif; }
 
@@ -1393,12 +1384,12 @@ button {
 
 .affiliate-welcome-section {
   color: white;
-  padding: 250px 0 50px;
+  padding: 100px 0 125px;
   background: url("../img/home-ellipse.png") no-repeat center, url("../img/affiliate/welcome-bg.png") no-repeat center;
   -webkit-background-size: cover;
   background-size: cover; }
   .affiliate-welcome-section h1 {
-    font-size: 50px;
+    font-size: 42px;
     font-family: MetropolisBold,sans-serif;
     letter-spacing: -0.9px; }
 
@@ -1466,7 +1457,7 @@ button {
     width: 80%; }
   .faq-subsection .section-title {
     font-family: MetropolisBold, sans-serif;
-    font-size: 45px;
+    font-size: 42px;
     letter-spacing: -.9px;
     color: #353535;
     margin-bottom: 20px; }
@@ -1499,12 +1490,12 @@ button {
 
 .pricing-welcome-section {
   color: white;
-  padding: 250px 0 50px;
+  padding: 100px 0 125px;
   background: url("../img/home-ellipse.png") no-repeat center, #FE181A;
   -webkit-background-size: cover;
   background-size: cover; }
   .pricing-welcome-section h1 {
-    font-size: 50px;
+    font-size: 42px;
     font-family: MetropolisBold,sans-serif;
     letter-spacing: -.9px; }
 
@@ -1790,14 +1781,14 @@ button {
         text-decoration: underline; }
 
 .virgin-welcome-section {
-  padding: 200px 0 50px;
+  padding: 100px 0 125px;
   background-color: #a80000; }
 
 .virgin-content-section {
   padding: 100px 0; }
   .virgin-content-section .section-title {
-    font-family: MetropolisExtraBold, sans-serif;
-    font-size: 35px;
+    font-family: MetropolisBold, sans-serif;
+    font-size: 25px;
     letter-spacing: -0.9px; }
   .virgin-content-section .virgin-benefit {
     display: grid;
@@ -1849,7 +1840,7 @@ button {
       line-height: 46px; }
 
 .careers-welcome-section {
-  padding: 150px 0 30px; }
+  padding: 100px 0 125px; }
 
 .careers-content-section {
   padding: 100px 0; }
@@ -1859,7 +1850,7 @@ button {
 
 .vpn-welcome-section {
   background: #a80000;
-  padding: 200px 0 80px;
+  padding: 100px 0 125px;
   position: relative; }
   .vpn-welcome-section:before {
     position: absolute;
@@ -1871,7 +1862,7 @@ button {
     bottom: 0%; }
   .vpn-welcome-section .vpn-welcome-title {
     color: white;
-    font-size: 63px;
+    font-size: 45px;
     font-family: MetropolisExtraBold, sans-serif; }
   .vpn-welcome-section .vpn-welcome-btn {
     background-color: white;
@@ -2039,7 +2030,7 @@ button {
       box-shadow: 0 5px 20px 0px rgba(0, 0, 0, 0.5); }
 
 .dedicated-server-welcome-section {
-  padding: 200px 0 50px; }
+  padding: 100px 0 125px; }
 
 .dedicated-server-content-section {
   padding: 100px 0; }
@@ -2096,6 +2087,72 @@ button {
   .dedicated-server-pricing-section .red-text {
     margin-top: 20px;
     color: #a80000; }
+
+.blog-content-section {
+  padding: 100px 0; }
+  .blog-content-section .post {
+    padding: 20px 0; }
+    .blog-content-section .post:first-child {
+      margin-top: 0;
+      padding-top: 0; }
+    .blog-content-section .post .post-blog-title {
+      color: black;
+      font-family: MetropolisSemiBold, sans-serif;
+      font-size: 25px;
+      -webkit-transition: color 0.7s;
+      -moz-transition: color 0.7s;
+      -ms-transition: color 0.7s;
+      -o-transition: color 0.7s;
+      transition: color 0.7s; }
+      .blog-content-section .post .post-blog-title:hover, .blog-content-section .post .post-blog-title:active {
+        color: #a80000; }
+    .blog-content-section .post img {
+      float: left;
+      margin: 0 30px 15px 0; }
+  .blog-content-section .blog-sidebar-left {
+    border-left: 4px solid #EEE; }
+    .blog-content-section .blog-sidebar-left h4 {
+      font-family: MetropolisSemiBold, sans-serif;
+      font-size: 20px;
+      margin-bottom: 20px;
+      letter-spacing: 1px; }
+    .blog-content-section .blog-sidebar-left p {
+      font-size: 15px;
+      font-family: MetropolisRegular, sans-serif; }
+    .blog-content-section .blog-sidebar-left .blog-see-pricing-btn {
+      background-color: #a80000;
+      color: white;
+      font-family: MetropolisBold, sans-serif;
+      font-size: 15px;
+      padding: 10px 15px;
+      margin-bottom: 30px;
+      -webkit-transition: all 0.7s;
+      -moz-transition: all 0.7s;
+      -ms-transition: all 0.7s;
+      -o-transition: all 0.7s;
+      transition: all 0.7s; }
+      .blog-content-section .blog-sidebar-left .blog-see-pricing-btn:hover {
+        background-color: #8b0000; }
+    .blog-content-section .blog-sidebar-left ul li {
+      margin-bottom: 5px; }
+      .blog-content-section .blog-sidebar-left ul li:first-child {
+        display: none; }
+      .blog-content-section .blog-sidebar-left ul li a {
+        display: inline-block;
+        color: #000;
+        font-size: 14px;
+        padding: 5px 0;
+        border-bottom: 2px solid #eeeeee;
+        -webkit-transition: all 0.7s;
+        -moz-transition: all 0.7s;
+        -ms-transition: all 0.7s;
+        -o-transition: all 0.7s;
+        transition: all 0.7s; }
+        .blog-content-section .blog-sidebar-left ul li a:hover {
+          color: #a80000; }
+
+.welcome-section-padding {
+  padding: 100px 0 125px; }
 
 .show {
   display: block !important; }
@@ -2470,7 +2527,7 @@ button {
     .top-navigation .nav-container {
       padding: 0 3%; }
   .home-section .home-title {
-    font-size: 40px; }
+    font-size: 30px; }
   .home-section .home-sub-title {
     font-size: 20px; }
   .home-section .home-proxies-btn {
@@ -2578,10 +2635,8 @@ button {
     padding: 75px 0; }
     .footer-section .copyright {
       margin-top: 20px; }
-  .faq-welcome-section {
-    padding: 150px 0 10px; }
-    .faq-welcome-section .section-title {
-      font-size: 30px; }
+  .faq-welcome-section .section-title {
+    font-size: 30px; }
   .faq-content-section {
     padding: 50px 0 70px; }
     .faq-content-section .grid-container button i {
@@ -2605,10 +2660,8 @@ button {
       border-bottom-right-radius: 10px; }
       .faq-content-section .question .question-body .text {
         padding: 20px; }
-  .affiliate-welcome-section {
-    padding: 150px 0 40px; }
-    .affiliate-welcome-section .section-title {
-      font-size: 35px; }
+  .affiliate-welcome-section .section-title {
+    font-size: 35px; }
   .affiliate-content-section .starter-banner .banner-left {
     padding: 10px;
     border-radius: 10px;
@@ -2657,10 +2710,8 @@ button {
       border-bottom-right-radius: 10px; }
       .faq-subsection .question .question-body .text {
         padding: 20px; }
-  .pricing-welcome-section {
-    padding: 180px 0 40px; }
-    .pricing-welcome-section .section-title {
-      font-size: 41px; }
+  .pricing-welcome-section .section-title {
+    font-size: 41px; }
   .pricing-section-content .progress-form {
     margin: 0;
     padding: 0; }
@@ -2672,7 +2723,7 @@ button {
   .virgin-content-section .virgin-benefit {
     grid-template-columns: 1fr; }
   .vpn-welcome-section .vpn-welcome-title {
-    font-size: 50px; }
+    font-size: 42px; }
   .vpn-sub-welcome-section {
     padding: 100px; }
   .vpn-features-section {
@@ -2721,7 +2772,7 @@ button {
     .top-navigation .nav-container {
       padding: 0 3%; }
   .home-section .home-title {
-    font-size: 45px; }
+    font-size: 42px; }
   .home-section .home-sub-title {
     font-size: 22px; }
   .home-section .home-proxies-btn {
@@ -2800,10 +2851,8 @@ button {
     margin-top: 0; }
   .footer-section {
     padding: 75px 0; }
-  .faq-welcome-section {
-    padding: 150px 0 25px; }
-    .faq-welcome-section h1 {
-      font-size: 40px; }
+  .faq-welcome-section h1 {
+    font-size: 40px; }
   .faq-content-section {
     padding: 50px 0 80px; }
     .faq-content-section .grid-container button {
@@ -2814,10 +2863,8 @@ button {
         margin-top: 8px; }
     .faq-content-section .question .question-body .text {
       padding: 30px; }
-  .affiliate-welcome-section {
-    padding: 180px 0 50px; }
-    .affiliate-welcome-section .section-title {
-      font-size: 45px; }
+  .affiliate-welcome-section .section-title {
+    font-size: 42px; }
   .affiliate-content-section .starter-banner .banner-left {
     padding: 30px; }
     .affiliate-content-section .starter-banner .banner-left ul li .price {
@@ -2832,10 +2879,8 @@ button {
     padding: 75px 0; }
     .faq-subsection .section-title {
       font-size: 40px; }
-  .pricing-welcome-section {
-    padding: 200px 0 40px; }
-    .pricing-welcome-section .section-title {
-      font-size: 30px; }
+  .pricing-welcome-section .section-title {
+    font-size: 30px; }
   .pricing-section-content {
     padding: 50px 20px; }
     .pricing-section-content .prices .price .price-body {
@@ -2892,7 +2937,7 @@ button {
           .pricing-section-content .progress-form .progressbar-container .form-item .complete-order-btn i {
             margin-left: 0; }
   .vpn-welcome-section .vpn-welcome-title {
-    font-size: 67px; }
+    font-size: 42px; }
   .vpn-sub-welcome-section {
     padding: 100px; }
   .vpn-features-section {
@@ -2937,9 +2982,9 @@ button {
   .top-navigation .top-menu ul li a {
     font-size: 15px; }
   .home-section .padding-box {
-    padding: 170px 0  0; }
+    padding: 100px 0  0; }
   .home-section .home-title {
-    font-size: 45px; }
+    font-size: 42px; }
   .home-section .home-sub-title {
     font-size: 20px; }
   .home-section .home-proxies-btn {
@@ -3058,24 +3103,18 @@ button {
       margin-bottom: 20px; }
     .footer-section .copyright {
       margin-top: 33px; }
-  .faq-welcome-section {
-    padding: 150px 0 40px; }
-    .faq-welcome-section h1 {
-      font-size: 40px; }
-  .affiliate-welcome-section {
-    padding: 200px 0 50px; }
-    .affiliate-welcome-section h1 {
-      font-size: 40px; }
+  .faq-welcome-section h1 {
+    font-size: 40px; }
+  .affiliate-welcome-section h1 {
+    font-size: 40px; }
   .affiliate-content-section .starter-banner .banner-left {
     padding: 40px 30px 50px; }
   .affiliate-content-section .starter-banner .banner-right {
     padding: 35px 70px 0; }
   .faq-subsection {
     padding: 50px 0; }
-  .pricing-welcome-section {
-    padding: 200px 0 40px; }
-    .pricing-welcome-section .section-title {
-      font-size: 40px; }
+  .pricing-welcome-section .section-title {
+    font-size: 40px; }
   .pricing-section-content {
     padding: 50px 20px; }
     .pricing-section-content .prices .price .price-body .select-container {
@@ -3113,7 +3152,7 @@ button {
         .pricing-section-content .progress-form .progressbar-container .form-item .complete-order-btn {
           font-size: 15px; }
   .vpn-welcome-section .vpn-welcome-title {
-    font-size: 50px; }
+    font-size: 42px; }
   .vpn-sub-welcome-section {
     padding: 100px; }
   .vpn-features-section {
@@ -3130,9 +3169,9 @@ button {
   .top-navigation .nav-container {
     padding: 0 20px; }
   .home-section .padding-box {
-    padding: 150px 0 0px; }
+    padding: 100px 0 0px; }
   .home-section .home-title {
-    font-size: 55px; }
+    font-size: 42px; }
   .home-section .home-sub-title {
     font-size: 20px; }
   .home-section .home-proxies-btn {
@@ -3238,20 +3277,14 @@ button {
     padding: 100px 0; }
     .footer-section ul li {
       margin-bottom: 25px; }
-  .affiliate-welcome-section {
-    padding: 150px 0 50px; }
-    .affiliate-welcome-section h1 {
-      font-size: 40px; }
+  .affiliate-welcome-section h1 {
+    font-size: 40px; }
   .faq-subsection {
     padding: 50px 0; }
-  .faq-welcome-section {
-    padding: 150px 0 30px; }
-    .faq-welcome-section .section-title {
-      font-size: 40px; }
-  .pricing-welcome-section {
-    padding: 150px 0 40px; }
-    .pricing-welcome-section .section-title {
-      font-size: 40px; }
+  .faq-welcome-section .section-title {
+    font-size: 40px; }
+  .pricing-welcome-section .section-title {
+    font-size: 40px; }
   .pricing-section-content .price-nav {
     margin-bottom: 50px; }
   .pricing-section-content .select-container {
@@ -3283,7 +3316,7 @@ button {
           top: 77%;
           left: 36%; }
   .vpn-welcome-section .vpn-welcome-title {
-    font-size: 50px; }
+    font-size: 42px; }
   .vpn-sub-welcome-section {
     padding: 100px; }
   .vpn-features-section {
@@ -3298,7 +3331,7 @@ button {
   .top-navigation .nav-container {
     padding: 0 7%; }
   .home-section .home-title {
-    font-size: 55px; }
+    font-size: 42px; }
   .home-section .home-sub-title {
     font-size: 20px; }
   .home-section .home-proxies-btn {
@@ -3370,10 +3403,8 @@ button {
   .pricing-section-content .prices .price.recommended .price-footer {
     margin: 0 auto;
     width: 80%; }
-  .pricing-welcome-section {
-    padding: 200px 0 40px; }
-    .pricing-welcome-section .section-title {
-      font-size: 50px; }
+  .pricing-welcome-section .section-title {
+    font-size: 50px; }
   .pricing-section-content .progress-form {
     margin: 0 40px;
     padding-top: 30px; }
@@ -3396,7 +3427,7 @@ button {
           top: 77%;
           left: 36%; }
   .vpn-welcome-section .vpn-welcome-title {
-    font-size: 60px; } }
+    font-size: 42px; } }
 
 @media (min-width: 1800px) {
   .solution-section .padding-box {

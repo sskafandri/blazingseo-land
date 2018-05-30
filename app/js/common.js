@@ -60,7 +60,14 @@ $(document).ready(function() {
     function setMenu(){
 
         if(    $(window).width() < 991 ){
-            $('.top-menu').css("height", $(window).height());
+            $('.top-menu').addClass('menu-height');
+            $('.menu-height').css("height", $(window).height());
+
+        }
+
+        if(    $(window).width() > 991 ){
+            $('.top-menu').removeClass('menu-height');
+            $('.menu-height').css("height", $(window).height());
 
         }
     }
