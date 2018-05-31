@@ -443,7 +443,8 @@ h6 {
 
 a,
 button {
-  text-decoration: none; }
+  text-decoration: none;
+  outline: none; }
   a:hover,
   button:hover {
     text-decoration: none; }
@@ -502,8 +503,8 @@ button {
     letter-spacing: -0.9px;
     font-size: 20px; }
   .home-section .home-proxies-btn {
-    padding: 25px 60px;
-    font-size: 25px;
+    padding: 25px 55px;
+    font-size: 20px;
     font-weight: bold;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
@@ -553,7 +554,7 @@ button {
       padding: 20px 100px;
       /* The typing effect */
       /* The typewriter cursor effect */ }
-      .home-section .home-pop .home-pop-body .wrap {
+      .home-section .home-pop .home-pop-body .content-wrap {
         display: flex;
         justify-content: center; }
       .home-section .home-pop .home-pop-body .title-ip {
@@ -1549,21 +1550,30 @@ button {
         position: relative;
         width: 100%; }
         .pricing-section-content .progress-form .progressbar-container .progressbar-item span {
+          transition: all 0.5s;
           font-family: MetropolisBold, sans-serif;
           width: 100px;
           padding: 30px;
           display: inline-block;
           font-size: 30px;
-          background-color: #a80000;
-          color: white;
+          background-color: #d6d8db;
+          color: black;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%; }
+        .pricing-section-content .progress-form .progressbar-container .progressbar-item span.filled {
+          color: white;
+          background-color: #a80000; }
         .pricing-section-content .progress-form .progressbar-container .progressbar-item:after {
+          -webkit-transition: all 0.7s;
+          -moz-transition: all 0.7s;
+          -ms-transition: all 0.7s;
+          -o-transition: all 0.7s;
+          transition: all 0.7s;
           content: '';
           width: 100%;
           height: 10px;
-          background: #a80000;
+          background: #d6d8db;
           position: absolute;
           left: -50%;
           top: 45%;
@@ -1572,7 +1582,10 @@ button {
         .pricing-section-content .progress-form .progressbar-container .progressbar-item:first-child:after {
           /*connector not needed before the first step*/
           content: none; }
+      .pricing-section-content .progress-form .progressbar-container .progressbar-item.filled:after {
+        background: #a80000; }
       .pricing-section-content .progress-form .progressbar-container .form-item h5 {
+        font-family: MetropolisBold, sans-serif;
         font-size: 27px; }
       .pricing-section-content .progress-form .progressbar-container .form-item .quantity {
         position: relative;
@@ -1583,6 +1596,7 @@ button {
         font-family: MetropolisSemiBold, sans-serif;
         border-radius: 10px; }
         .pricing-section-content .progress-form .progressbar-container .form-item .quantity input {
+          width: 100px;
           outline: none;
           margin-left: 20px;
           height: 50px;
@@ -1970,14 +1984,14 @@ button {
   padding: 100px 0; }
 
 .windows-vps-features-section {
-  padding: 100px 0;
+  padding: 80px 0;
   background-color: #ededed; }
   .windows-vps-features-section .section-title {
     text-transform: capitalize;
     text-align: center;
-    font-size: 40px;
-    font-family: MetropolisExtraBold;
-    margin-bottom: 50px; }
+    font-size: 35px;
+    font-family: MetropolisBold, sans-serif;
+    margin-bottom: 60px; }
   .windows-vps-features-section .windows-vps-benefits-container {
     display: grid;
     text-align: center;
@@ -2109,17 +2123,18 @@ button {
     .blog-content-section .post img {
       float: left;
       margin: 0 30px 15px 0; }
-  .blog-content-section .blog-sidebar-left {
-    border-left: 4px solid #EEE; }
-    .blog-content-section .blog-sidebar-left h4 {
+  .blog-content-section .blog-sidebar-left .blog-sidebar-wrapper {
+    padding: 15px;
+    border: 4px solid #EEE; }
+    .blog-content-section .blog-sidebar-left .blog-sidebar-wrapper h4 {
       font-family: MetropolisSemiBold, sans-serif;
       font-size: 20px;
       margin-bottom: 20px;
       letter-spacing: 1px; }
-    .blog-content-section .blog-sidebar-left p {
+    .blog-content-section .blog-sidebar-left .blog-sidebar-wrapper p {
       font-size: 15px;
       font-family: MetropolisRegular, sans-serif; }
-    .blog-content-section .blog-sidebar-left .blog-see-pricing-btn {
+    .blog-content-section .blog-sidebar-left .blog-sidebar-wrapper .blog-see-pricing-btn {
       background-color: #a80000;
       color: white;
       font-family: MetropolisBold, sans-serif;
@@ -2131,25 +2146,46 @@ button {
       -ms-transition: all 0.7s;
       -o-transition: all 0.7s;
       transition: all 0.7s; }
-      .blog-content-section .blog-sidebar-left .blog-see-pricing-btn:hover {
+      .blog-content-section .blog-sidebar-left .blog-sidebar-wrapper .blog-see-pricing-btn:hover {
         background-color: #8b0000; }
-    .blog-content-section .blog-sidebar-left ul li {
-      margin-bottom: 5px; }
-      .blog-content-section .blog-sidebar-left ul li:first-child {
+    .blog-content-section .blog-sidebar-left .blog-sidebar-wrapper ul li {
+      margin-bottom: 5px;
+      border-bottom: 2px solid #eeeeee; }
+      .blog-content-section .blog-sidebar-left .blog-sidebar-wrapper ul li:last-of-type {
+        border-bottom: none; }
+      .blog-content-section .blog-sidebar-left .blog-sidebar-wrapper ul li:first-child {
         display: none; }
-      .blog-content-section .blog-sidebar-left ul li a {
+      .blog-content-section .blog-sidebar-left .blog-sidebar-wrapper ul li a {
         display: inline-block;
+        outline: none;
         color: #000;
         font-size: 14px;
         padding: 5px 0;
-        border-bottom: 2px solid #eeeeee;
         -webkit-transition: all 0.7s;
         -moz-transition: all 0.7s;
         -ms-transition: all 0.7s;
         -o-transition: all 0.7s;
         transition: all 0.7s; }
-        .blog-content-section .blog-sidebar-left ul li a:hover {
+        .blog-content-section .blog-sidebar-left .blog-sidebar-wrapper ul li a:hover {
           color: #a80000; }
+
+.f-extrabold {
+  font-family: Raleway,sans-serif !important;
+  font-weight: 700 !important; }
+
+.f-bold {
+  font-family: Raleway, sans-serif !important;
+  font-weight: 700;
+  letter-spacing: 1px !important; }
+
+.f-semibold {
+  font-family: Raleway, sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px !important; }
+
+.f-regular {
+  font-family: Raleway, sans-serif, sans-serif !important;
+  font-weight: 400 !important; }
 
 .welcome-section-padding {
   padding: 100px 0 125px; }

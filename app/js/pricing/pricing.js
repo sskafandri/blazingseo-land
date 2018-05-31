@@ -37,15 +37,3 @@ $("#pro-form input").keyup(function() {
 
 });
 
-$(document).ready(function() {
-
-    var url = window.location.href.split( '/' );
-
-    alert(url[ url.length - 1 ]);
-
-    if (url[ url.length - 1 ] == '#us-dedicated'){
-        $('a[href="#us-tab"]').click();
-    }
-
-
-});

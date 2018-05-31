@@ -567,7 +567,7 @@
 
 
 
-                           <input id='quantity-input' name='proxy-quantity' type="number" min="1" max="999999" step="1" value="1"
+                           <input id='quantity-input' name='proxy-quantity' type="number" min="1" max="999999" step="1"
                                   placeholder="#" >
 
                            <div class="input-tooltip">
@@ -592,7 +592,7 @@
                                     <span class="discount invisible">
                                        10% Off
                                    </span>
-                                    <input type="radio" name="duration" class="duration-1" value="1" checked>
+                                    <input type="radio" name="duration" class="duration-1" value="1">
                                     <span class="checkmark">
                                         <i class="fas fa-check"></i>
                                     </span>
@@ -950,7 +950,30 @@
         $('.total-proxies').html(this.value);
 
 
-        if(this.value > 1000) {
+        if(this.value == 0){
+            $('.progressbar-item span').removeClass("filled");
+            $('.progressbar-container .progressbar-item:nth-child(2)').removeClass("filled");
+            $('.progressbar-container .progressbar-item:nth-child(3)').removeClass("filled");
+
+            $('.duration-item input').prop('checked', false);
+
+            refreshTotalPrice();
+
+        }
+
+
+        if(this.value != 0){
+            $('.progressbar-container .progressbar-item:nth-child(2)').addClass("filled");
+        }
+
+
+        if($('input[name=proxy-quantity]')){
+            $('.progressbar-item:first span').addClass("filled");
+        } else {
+
+        }
+
+        if(this.value >= 500) {
 
 
             // // $("#quantity-input").tooltip();
@@ -968,6 +991,12 @@
 
         $("#quantity-input").focusout(function () {
 
+            if($("#quantity-input").val() ==0 ){
+
+                $('.progressbar-item:first span').removeClass("filled");
+            }
+
+
             $('.input-tooltip').css('opacity', '0');
             $('.input-tooltip').css('visibility', 'hidden');
         })
@@ -977,7 +1006,30 @@
     });
 
 
+
+
     $('input[type=radio][name=duration]').change(function() {
+
+        if($("#quantity-input").val() == 0){
+            $('.progressbar-item span').removeClass("filled");
+            $('.progressbar-container .progressbar-item').removeClass("filled");
+
+
+            $('#quantity-input').focus();
+
+            $('.duration-item input').prop('checked', false);
+
+            refreshTotalPrice();
+            $('.progressbar-item:first span').addClass("filled");
+            return;
+        }
+
+
+        $('.progressbar-container .progressbar-item:nth-child(2) span').addClass('filled');
+        $('.progressbar-container .progressbar-item:nth-child(3)').addClass('filled');
+
+
+
         if (this.value == 1) {
             $('.total-month').html(this.value);
         }
@@ -988,7 +1040,6 @@
         }
 
 
-        refreshTotalPrice();
     });
 
 
@@ -1000,11 +1051,19 @@
     function refreshTotalPrice() {
         var total = 0;
 
+        var proxyType = $("input:radio[name=pack]:checked").val();
+        var quantity = $('#quantity-input').val() | 0;
+        var duration = $('.total-month').html();
+
+        total = proxyType * quantity * duration;
+
         total = $("input:radio[name=pack]:checked").val() * $('#quantity-input').val() * $('.total-month').html();
 
         $(".total-money span").html(total);
 
     }
+
+
 
 </script>
 

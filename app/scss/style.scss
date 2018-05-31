@@ -18,10 +18,6 @@ $subheader-size: 35px;
 
 
 
-
-
-
-
 body {
   font-family: 'MetropolisRegular',Roboto, sans-serif;
   margin: 0;
@@ -41,6 +37,7 @@ h6 {
 a,
 button{
   text-decoration: none;
+  outline: none;
 
   &:hover{
     text-decoration: none;
@@ -145,8 +142,8 @@ button{
   }
   
   .home-proxies-btn{
-    padding: 25px 60px;
-    font-size: 25px;
+    padding: 25px 55px;
+    font-size: 20px;
     font-weight: bold;
 
     -webkit-border-radius: 50px;
@@ -224,15 +221,12 @@ button{
     .home-pop-body{
       padding: 20px 100px;
 
-      .wrap{
+      .content-wrap{
         display: flex;
         justify-content: center;
       }
 
 
-      .typewriter{
-
-      }
 
       .title-ip{
         color: #3AE5EB;
@@ -813,6 +807,7 @@ button{
             width: 100%;
             margin-top: 0;
             padding: 10px;
+
             li{
 
               font-family: MetropolisSemiBold, sans-serif;
@@ -833,7 +828,7 @@ button{
               -ms-transition: all 0.5s;
               -o-transition: all 0.5s;
               transition: all 0.5s;
-              
+
               &:hover{
                 background-color: red;
                 color: white;
@@ -1809,7 +1804,10 @@ button{
       .progressbar-item{
         position: relative;
         width: 100%;
+
         span{
+
+          transition: all 0.5s;
           font-family: MetropolisBold, sans-serif;
 
           width: 100px;
@@ -1817,24 +1815,37 @@ button{
           display: inline-block;
 
           font-size: 30px;
-          background-color: $main-red;
-          color: white;
+          background-color: #d6d8db;
+          color: black;
           -webkit-border-radius: 50%;
           -moz-border-radius: 50%;
           border-radius: 50%;
         }
 
+        span.filled{
+          color: white;
+          background-color: $main-red;
+        }
+
 
         &:after {
+
+          -webkit-transition: all 0.7s;
+          -moz-transition: all 0.7s;
+          -ms-transition: all 0.7s;
+          -o-transition: all 0.7s;
+          transition: all 0.7s;
+
           content: '';
           width: 100%;
           height: 10px;
-          background: $main-red;
+          background: #d6d8db;
           position: absolute;
           left: -50%;
           top: 45%;
           z-index: -1; /*put it behind the numbers*/
         }
+
         &:first-child:after {
           /*connector not needed before the first step*/
           content: none;
@@ -1842,10 +1853,18 @@ button{
       }
 
 
+      .progressbar-item.filled{
+        &:after{
+          background: $main-red;
+        }
+      }
+
 
       .form-item{
 
         h5{
+
+          font-family: MetropolisBold, sans-serif;
           font-size: 27px;
         }
 
@@ -1866,6 +1885,7 @@ button{
 
           input{
 
+            width: 100px;
             outline: none;
             margin-left: 20px;
             height: 50px;
@@ -2518,7 +2538,7 @@ button{
 }
 
 .windows-vps-features-section{
-  padding: 100px 0;
+  padding: 80px 0;
 
   background-color: #ededed;
 
@@ -2526,10 +2546,12 @@ button{
   .section-title{
     text-transform: capitalize;
     text-align: center;
-    font-size: 40px;
-    font-family: MetropolisExtraBold;
-    margin-bottom: 50px;
+    font-size: 35px;
+    font-family: MetropolisBold, sans-serif;
+    margin-bottom: 60px;
   }
+
+
   .windows-vps-benefits-container{
     display: grid;
     text-align: center;
@@ -2747,76 +2769,114 @@ button{
 
   .blog-sidebar-left{
 
-   border-left: 4px solid #EEE;
 
-    h4{
-      font-family: MetropolisSemiBold, sans-serif;
-      font-size: 20px;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-    }
-
-    p{
-      font-size: 15px;
-      font-family: MetropolisRegular, sans-serif;
-    }
-    
-    .blog-see-pricing-btn{
-
-      background-color: $main-red;
-      color: white;
-      font-family: MetropolisBold, sans-serif;
-      font-size: 15px;
-      padding: 10px 15px;
-
-      margin-bottom: 30px;
-
-      -webkit-transition: all 0.7s;
-      -moz-transition: all 0.7s;
-      -ms-transition: all 0.7s;
-      -o-transition: all 0.7s;
-      transition: all 0.7s;
-
-      &:hover{
-        background-color: #8b0000;
+    .blog-sidebar-wrapper{
+      padding: 15px;
+      border: 4px solid #EEE;
+      h4{
+        font-family: MetropolisSemiBold, sans-serif;
+        font-size: 20px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
       }
-    }
 
-    ul{
+      p{
+        font-size: 15px;
+        font-family: MetropolisRegular, sans-serif;
+      }
 
-      li{
-        margin-bottom: 5px;
+      .blog-see-pricing-btn{
 
-        &:first-child{
-          display: none;
+        background-color: $main-red;
+        color: white;
+        font-family: MetropolisBold, sans-serif;
+        font-size: 15px;
+        padding: 10px 15px;
+
+        margin-bottom: 30px;
+
+        -webkit-transition: all 0.7s;
+        -moz-transition: all 0.7s;
+        -ms-transition: all 0.7s;
+        -o-transition: all 0.7s;
+        transition: all 0.7s;
+
+        &:hover{
+          background-color: #8b0000;
         }
+      }
+
+      ul{
+
+        li{
+          margin-bottom: 5px;
 
 
-
-        a{
-          display: inline-block;
-
-          color: #000;
-          font-size: 14px;
-          padding: 5px 0;
           border-bottom: 2px solid #eeeeee;
 
-          -webkit-transition: all 0.7s;
-          -moz-transition: all 0.7s;
-          -ms-transition: all 0.7s;
-          -o-transition: all 0.7s;
-          transition: all 0.7s;
+          &:last-of-type{
+            border-bottom: none;
+          }
+          &:first-child{
+            display: none;
+          }
 
-          &:hover{
-            color: $main-red;
+
+
+          a{
+            display: inline-block;
+            outline: none;
+
+            color: #000;
+            font-size: 14px;
+            padding: 5px 0;
+
+
+            -webkit-transition: all 0.7s;
+            -moz-transition: all 0.7s;
+            -ms-transition: all 0.7s;
+            -o-transition: all 0.7s;
+            transition: all 0.7s;
+
+
+            &:hover{
+              color: $main-red;
+            }
           }
         }
       }
     }
+
+
   }
 
 }
 
+.f-extrabold{
+  font-family: Raleway,sans-serif !important;
+  font-weight: 700 !important;
+
+}
+
+.f-bold{
+  font-family: Raleway, sans-serif !important;
+  font-weight: 700;
+  letter-spacing: 1px !important;
+}
+
+.f-semibold{
+  font-family: Raleway, sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px !important;
+
+
+}
+
+.f-regular{
+  font-family: Raleway, sans-serif, sans-serif !important;
+  font-weight: 400 !important;
+
+}
 //Blog page             ---
 
 

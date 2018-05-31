@@ -6,6 +6,29 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync').create();
 
+var changed = require('gulp-changed');
+var imagemin = require('gulp-imagemin');
+var cssnano = require('gulp-cssnano');
+
+gulp.task('useref', function(){
+    return gulp.src('app/*.html')
+        .pipe(useref())
+        .pipe(gulpIf('*.js', uglify()))
+        // Minifies only if it's a CSS file
+        .pipe(gulpIf('*.css', cssnano()))
+        .pipe(gulp.dest('dist'))
+});
+
+gulp.task('imagemin', function() {
+    var imgSrc = 'app/img/*.+(png|jpg|gif)',
+        imgDst = 'build/img';
+
+    gulp.src(imgSrc)
+        .pipe(changed(imgDst))
+        .pipe(imagemin({progressive: true}))
+        .pipe(gulp.dest(imgDst));
+});
+
 
 
 gulp.task('sass', function () {
