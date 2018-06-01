@@ -209,11 +209,19 @@ button{
 
         &-green{
           background-color: #9bd811;
+
+
+          &:hover{
+            background-color: #84ba11;
+          }
         }
 
         &-orange{
           background-color: #fbaf5d;
-          
+
+          &:hover{
+            background-color: #eda036;
+          }
         }
       }
     }
@@ -743,6 +751,11 @@ button{
         -moz-border-radius: 15px;
         border-radius: 15px;
         border: 0;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
 
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;

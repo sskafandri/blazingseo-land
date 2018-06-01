@@ -548,8 +548,12 @@ button {
             background-color: #ff3c44; }
         .home-section .home-pop .home-pop-header .indicator-green {
           background-color: #9bd811; }
+          .home-section .home-pop .home-pop-header .indicator-green:hover {
+            background-color: #84ba11; }
         .home-section .home-pop .home-pop-header .indicator-orange {
           background-color: #fbaf5d; }
+          .home-section .home-pop .home-pop-header .indicator-orange:hover {
+            background-color: #eda036; }
     .home-section .home-pop .home-pop-body {
       padding: 20px 100px;
       /* The typing effect */
@@ -897,6 +901,10 @@ button {
         -moz-border-radius: 15px;
         border-radius: 15px;
         border: 0;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
         -webkit-transition: all 0.5s;
         -moz-transition: all 0.5s;
         -ms-transition: all 0.5s;
@@ -2201,9 +2209,9 @@ button {
   .home-section .padding-box {
     padding: 100px 0; }
   .home-section .home-title {
-    font-size: 33px; }
+    font-size: 30px; }
   .home-section .home-sub-title {
-    font-size: 17px;
+    font-size: 15px;
     letter-spacing: 0; }
   .home-section .home-proxies-btn {
     padding: 20px 25px;
@@ -2213,7 +2221,7 @@ button {
   .compare-section {
     padding: 100px 0; }
     .compare-section .section-title {
-      font-size: 24px; }
+      font-size: 25px; }
     .compare-section .container {
       margin-top: 0; }
     .compare-section .lined div {
@@ -2323,7 +2331,7 @@ button {
   .pricing-section {
     padding: 50px 0; }
     .pricing-section .section-title {
-      font-size: 24px;
+      font-size: 25px;
       margin-bottom: 10px; }
     .pricing-section .btn-try-free {
       padding: 12px 31px; }
@@ -2581,11 +2589,11 @@ button {
     .compare-section .container {
       margin-top: 80px; }
     .compare-section .section-title {
-      font-size: 35px; }
+      font-size: 25px; }
   .benefits-section {
     padding: 50px 0; }
     .benefits-section .section-title {
-      font-size: 30px;
+      font-size: 25px;
       margin-bottom: 0; }
     .benefits-section img {
       margin-bottom: 20px; }
@@ -2823,11 +2831,13 @@ button {
         .home-section .home-pop .home-pop-body .pop-table ul li {
           padding: 10px; }
   .compare-section .container {
-    margin-top: 20PX; }
+    margin-top: 40px; }
+  .compare-section .section-title {
+    font-size: 26px; }
   .benefits-section {
     padding: 70px 0; }
     .benefits-section .section-title {
-      font-size: 30px; }
+      font-size: 25px; }
     .benefits-section .benefit-item {
       padding: 40px 30px 20px; }
     .benefits-section img {
