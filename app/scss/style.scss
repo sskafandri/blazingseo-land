@@ -126,11 +126,11 @@ button{
 
 
   .home-title{
-    font-weight: bold;
     font-size: 42px;
     //letter-spacing: -0.9px;
 
     //font-family: Raleway, sans-serif;
+    font-family: MetropolisBold, sans-serif;
   }
 
   .home-sub-title{
@@ -347,8 +347,7 @@ button{
 
   .section-title{
     font-size: 36px;
-    letter-spacing: -0.9px;
-    font-weight: bold;
+    font-family: MetropolisSemiBold, sans-serif;
   }
 
   .lined{
@@ -392,29 +391,30 @@ button{
 
   .section-title{
     font-size: 30px;
-    letter-spacing: -0.9px;
-
-    font-weight: bold;
     margin-bottom: 90px;
+    font-family: MetropolisSemiBold, sans-serif;
   }
 
   img{
     margin-bottom: 40px;
   }
 
+  .benefit-title{
+    font-family: MetropolisSemiBold, sans-serif;
+    //letter-spacing: -0.9px;
+  }
+
+
   .benefit-item{
+    z-index: 1;
     padding: 80px;
-    -webkit-transition: all 0.6s ease;
-       -moz-transition: all 0.6s ease;
-        -ms-transition: all 0.6s ease;
-         -o-transition: all 0.6s ease;
-            transition: all 0.6s ease;
+    -webkit-transition: top 1s ease;
+    -moz-transition: top 1s ease;
+    -ms-transition: top 1s ease;
+    -o-transition: top 1s ease;
+    transition: top 1s ease;
     top: 0;
 
-    .benefit-title{
-      font-family: MetropolisBold, sans-serif;
-      letter-spacing: -0.9px;
-    }
 
 
     &:hover{
@@ -453,9 +453,8 @@ button{
   }
 
   .section-title{
-    font-family: MetropolisBold, sans-serif;
+    font-family: MetropolisSemiBold, sans-serif;
     margin-top: 50px;
-    font-weight: bold;
     font-size: 40px;
     letter-spacing: -0.9px;
 
@@ -720,7 +719,7 @@ button{
   }
 
   .section-title {
-    font-family: MetropolisBold, sans-serif;
+    font-family: MetropolisSemiBold, sans-serif;
     font-size: 40px;
     letter-spacing: -0.9px;
 
@@ -737,6 +736,8 @@ button{
     li {
       display: inline-block;
       margin-top: 20px;
+
+
 
 
       a,
@@ -889,7 +890,7 @@ button{
 }
 
 .join-section{
-  padding: 100px 0px;
+  padding: 120px 0px 95px;
   color: white;
   background-color: #005abb;
 
@@ -1019,13 +1020,14 @@ button{
 }
 
 .pricing-section{
-  padding: 100px 0px;
+  padding: 75px 0px;
 
   .section-title{
     font-size: 40px;
     letter-spacing: -0.9px;
+    font-family: MetropolisSemiBold, sans-serif;
   }
-  
+
   .btn-try-free{
     background-color: $main-red;
     -webkit-border-radius: 30px;
@@ -1173,7 +1175,7 @@ button{
         border-top-right-radius: 20px;
         padding: 10px 0;
         color: white;
-        font-family: MetropolisExtraBold, sans-serif;
+        font-family: MetropolisBold, sans-serif;
         background-color: blue;
         margin-bottom: 20px;
 
@@ -1229,10 +1231,11 @@ button{
 .support-section{
   background-color: #064097;
   color: white;
+  padding: 10px;
 
   .section-title{
     margin-top: 100px;
-    font-family: MetropolisBlack, sans-serif;
+    font-family: MetropolisBold, sans-serif;
     font-size: 30px;
   }
 
@@ -1727,7 +1730,7 @@ button{
 
 
   h1{
-    font-size: 42px;
+    font-size: 40px;
     font-family: MetropolisBold,sans-serif;
     letter-spacing: -.9px;
   }
@@ -1801,6 +1804,7 @@ button{
   }
 
   .progress-form{
+
     margin: 0 200px;
     padding-top: 70px;
 
@@ -2866,19 +2870,22 @@ button{
 }
 
 .f-extrabold{
-  font-family: Raleway,sans-serif !important;
+  //font-family: Raleway,sans-serif !important;
+  font-family: FuturaMedium,sans-serif !important;
   font-weight: 700 !important;
 
 }
 
 .f-bold{
-  font-family: Raleway, sans-serif !important;
-  font-weight: 700;
+  //font-family: Raleway, sans-serif !important;
+  font-family: FuturaMedium, sans-serif !important;
+  font-weight: 700 !important;
   letter-spacing: 1px !important;
 }
 
 .f-semibold{
-  font-family: Raleway, sans-serif !important;
+  //font-family: Raleway, sans-serif !important;
+  font-family: FuturaMedium, sans-serif !important;
   font-weight: 500 !important;
   letter-spacing: 1px !important;
 
@@ -2886,9 +2893,9 @@ button{
 }
 
 .f-regular{
-  font-family: Raleway, sans-serif, sans-serif !important;
+  //font-family: Raleway, sans-serif, sans-serif !important;
+  font-family: FuturaMedium, sans-serif, sans-serif !important;
   font-weight: 400 !important;
-
 }
 //Blog page             ---
 
@@ -2899,6 +2906,54 @@ button{
 
 .show{
   display: block !important;
+}
+
+.modal-complete-order{
+  //display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+  background-color:rgba(0,0,0, .3);
+  display: flex;
+
+
+  .complete-order-last{
+    margin: 10% auto;
+    width: 50%;
+    padding: 30px;
+
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+    background-color: white;
+
+    .row{
+      margin-top: 10px;
+
+      background-color: red;
+
+      display: flex;
+      flex-direction: column;
+      .col-3{
+        align-content: center;
+        vertical-align: middle;
+        justify-content: center;
+
+        h5{
+          //margin-top: 20px;
+        }
+      }
+    }
+  }
+
+
+}
+
+.modal-complete-order.show-modal{
+  //display: block;
+
 }
 
 @import "media";

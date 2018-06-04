@@ -31,6 +31,55 @@
 </div>
 <!--PRELOADER-->
 
+<!--<div class="modal-complete-order">-->
+
+    <!--<div class="complete-order-last text-center">-->
+        <!--<h4>Order Info</h4>-->
+
+        <!--<div class="row">-->
+
+            <!--<div class="col-3">-->
+                <!--<h5>Country</h5>-->
+            <!--</div>-->
+            <!--<div class="col-9">-->
+
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="row">-->
+
+            <!--<div class="col-3">-->
+                <!--<h5>Type</h5>-->
+            <!--</div>-->
+            <!--<div class="col-9">-->
+
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="row">-->
+
+            <!--<div class="col-3">-->
+                <!--<h5>Amount</h5>-->
+            <!--</div>-->
+            <!--<div class="col-9">-->
+
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="row">-->
+
+            <!--<div class="col-3">-->
+                <!--<h5>Duration</h5>-->
+            <!--</div>-->
+            <!--<div class="col-9">-->
+
+            <!--</div>-->
+        <!--</div>-->
+
+    <!--</div>-->
+
+<!--</div>-->
+
 <!--Developer nav panel-->
 <!--<div class='panel'>-->
     <!--<a href="/">Home</a>-->
@@ -115,6 +164,7 @@
 </section>
 <!--pricing welcome section end-->
 
+<form action="http://google.com/" method="GET" >
 <!--pricing section start-->
 <div class="pricing-section pricing-section-content" id="pricing">
 
@@ -125,28 +175,35 @@
     <div class="price-nav container mt-5">
         <ul class="ml-auto mr-auto nav">
             <li >
-                <a href="#usa-tab" data-toggle="tab">
+                <a href="#usa-tab" data-toggle="tab" onclick="$(this).find('input').attr('checked', true);">
                     <span>USA</span>
                     <img src="img/USA-flag.png" class="" alt="usa">
+                    <input type="radio" name="country" value="us" style="visibility: hidden" checked>
                 </a>
             </li>
             <li class="active" >
-                <a href="#german-tab" data-toggle="tab">
+                <a href="#german-tab" data-toggle="tab" onclick="$(this).find('input').attr('checked', true);">
                     <span>German</span>
                     <img src="img/GERMAN-flag.png" alt="german">
+                    <input type="radio" name="country" value="de" style="visibility: hidden">
+
                 </a>
             </li>
             <li>
-                <a href="#brazil-tab" data-toggle="tab">
+                <a href="#brazil-tab" data-toggle="tab" onclick="$(this).find('input').attr('checked', true);">
                     <span>Brazil</span>
                     <img src="img/BRAZIL-flag.png" alt="brazil">
+                    <input type="radio" name="country" value="br" style="visibility: hidden">
+
                 </a>
 
             </li>
             <li>
-                <a href="#sneaker-tab" data-toggle="tab">
+                <a href="#sneaker-tab" data-toggle="tab" onclick="$(this).find('input').attr('checked', true);">
                     <span>Sneaker</span>
                     <img src="img/sneaker.png" class="" width="65px" alt="sneaker">
+                    <input type="radio" name="country" value="sneaker" style="visibility: hidden">
+
                 </a>
             </li>
         </ul>
@@ -592,7 +649,7 @@
                                     <span class="discount invisible">
                                        10% Off
                                    </span>
-                                    <input type="radio" name="duration" class="duration-1" value="1">
+                                    <input type="radio" name="duration" class="duration-1" value="1" data-discount="1">
                                     <span class="checkmark">
                                         <i class="fas fa-check"></i>
                                     </span>
@@ -608,7 +665,7 @@
                                    <span class="discount">
                                        10% Off
                                    </span>
-                                   <input type="radio" name="duration" class="duration-3" value="3">
+                                   <input type="radio" name="duration" class="duration-3" value="3" data-discount="0.9">
                                    <span class="checkmark">
                                        <i class="fas fa-check"></i>
                                     </span>
@@ -626,7 +683,7 @@
                                        10% Off
                                    </span>
 
-                                   <input type="radio" name="duration" class="duration-6" value="6">
+                                   <input type="radio" name="duration" class="duration-6" value="6" data-discount="0.9">
                                    <span class="checkmark">
                                        <i class="fas fa-check"></i>
                                    </span>
@@ -657,6 +714,8 @@
                        <button class="complete-order-btn" type="submit">Complete Order Now <i class="fas fa-arrow-circle-right"></i>
 
                        </button>
+
+
                    </div>
                </div>
 
@@ -667,6 +726,8 @@
 
 </div>
 <!--pricing section end-->
+</form>
+
 
 <!--faq subsection start-->
 <section id="faq-subsection" class="faq-subsection">
@@ -945,6 +1006,8 @@
 
 
 
+
+
     $("#quantity-input").on('keyup change click ', function () {
 
         $('.total-proxies').html(this.value);
@@ -1032,11 +1095,17 @@
 
         if (this.value == 1) {
             $('.total-month').html(this.value);
+            refreshTotalPrice();
+
         }
         else if (this.value == 3) {
             $('.total-month').html(this.value);
+            refreshTotalPrice();
+
         } else {
             $('.total-month').html(this.value);
+            refreshTotalPrice();
+
         }
 
 
@@ -1054,10 +1123,16 @@
         var proxyType = $("input:radio[name=pack]:checked").val();
         var quantity = $('#quantity-input').val() | 0;
         var duration = $('.total-month').html();
+        var discount = $("input:radio[name=duration]:checked").data('discount') ;
+        // alert(discount);
 
-        total = proxyType * quantity * duration;
 
-        total = $("input:radio[name=pack]:checked").val() * $('#quantity-input').val() * $('.total-month').html();
+
+
+
+        total = (proxyType * quantity * duration) * discount ;
+
+        // total = $("input:radio[name=pack]:checked").val() * $('#quantity-input').val() * $('.total-month').html() * discount;
 
         $(".total-money span").html(total);
 
