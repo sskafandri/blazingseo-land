@@ -58,6 +58,42 @@
   font-family: FuturaLight;
   src: url("../fonts/futura/FuturaLight.ttf") format("truetype"); }
 
+@font-face {
+  font-family: MetropolisRegular;
+  src: url("../fonts/metropolis/Metropolis-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisExtraBold;
+  src: url("../fonts/metropolis/Metropolis-ExtraBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../fonts/metropolis/Metropolis-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisSemiBold;
+  src: url("../fonts/metropolis/Metropolis-SemiBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisBlack;
+  src: url("../fonts/metropolis/Metropolis-Black.otf") format("opentype"); }
+
+@font-face {
+  font-family: Futur;
+  src: url("../fonts/futura/futur.ttf") format("truetype"); }
+
+@font-face {
+  font-family: FuturaMedium;
+  src: url("../fonts/futura/FuturaMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: FuturaBold;
+  src: url("../fonts/futura/FuturaBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: FuturaLight;
+  src: url("../fonts/futura/FuturaLight.ttf") format("truetype"); }
+
 .sw-topper {
   position: relative;
   top: -5px;
@@ -156,6 +192,42 @@
     top: 13px;
     background: #fff; } }
 
+@font-face {
+  font-family: MetropolisRegular;
+  src: url("../fonts/metropolis/Metropolis-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisExtraBold;
+  src: url("../fonts/metropolis/Metropolis-ExtraBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../fonts/metropolis/Metropolis-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisSemiBold;
+  src: url("../fonts/metropolis/Metropolis-SemiBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisBlack;
+  src: url("../fonts/metropolis/Metropolis-Black.otf") format("opentype"); }
+
+@font-face {
+  font-family: Futur;
+  src: url("../fonts/futura/futur.ttf") format("truetype"); }
+
+@font-face {
+  font-family: FuturaMedium;
+  src: url("../fonts/futura/FuturaMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: FuturaBold;
+  src: url("../fonts/futura/FuturaBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: FuturaLight;
+  src: url("../fonts/futura/FuturaLight.ttf") format("truetype"); }
+
 /* Customize the label (the container) */
 .select-container {
   display: block;
@@ -184,7 +256,7 @@
 
 .select-container.pack-selected {
   color: white;
-  font-family: MetropolisExtraBold, sans-serif;
+  font-family: MetropolisBold, sans-serif;
   background-color: #a80000; }
 
 /* Hide the browser's default radio button */
@@ -241,6 +313,42 @@
   height: 8px;
   border-radius: 50%;
   background: white; }
+
+@font-face {
+  font-family: MetropolisRegular;
+  src: url("../fonts/metropolis/Metropolis-Regular.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisExtraBold;
+  src: url("../fonts/metropolis/Metropolis-ExtraBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisBold;
+  src: url("../fonts/metropolis/Metropolis-Bold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisSemiBold;
+  src: url("../fonts/metropolis/Metropolis-SemiBold.otf") format("opentype"); }
+
+@font-face {
+  font-family: MetropolisBlack;
+  src: url("../fonts/metropolis/Metropolis-Black.otf") format("opentype"); }
+
+@font-face {
+  font-family: Futur;
+  src: url("../fonts/futura/futur.ttf") format("truetype"); }
+
+@font-face {
+  font-family: FuturaMedium;
+  src: url("../fonts/futura/FuturaMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: FuturaBold;
+  src: url("../fonts/futura/FuturaBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: FuturaLight;
+  src: url("../fonts/futura/FuturaLight.ttf") format("truetype"); }
 
 .top-navigation {
   background-color: #0c3067; }
@@ -354,7 +462,7 @@
       .top-menu ul li:last-child button {
         width: 40%;
         margin-left: 10px !important;
-        font-family: MetropolisExtraBold, sans-serif; }
+        font-family: MetropolisBold, sans-serif; }
       .top-menu ul li:last-child .login-btn {
         margin-left: -7px; }
 
@@ -444,7 +552,7 @@
       font-size: 17px; } }
 
 body {
-  font-family: 'MetropolisRegular',Roboto, sans-serif;
+  font-family: MetropolisRegular, sans-serif;
   margin: 0; }
 
 h1,
@@ -454,7 +562,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  font-family: 'MetropolisExtraBold',Roboto ,Helvetica, Arial, sans-serif;
+  font-family: MetropolisBold, sans-serif;
   letter-spacing: 1px; }
 
 a,
@@ -742,10 +850,10 @@ button {
       margin-bottom: 10px;
       border: 0; }
       .solution-section #accordion .card .card-header button {
-        font-family: MetropolisRegular, sans-serif; }
+        font-family: MetropolisSemiBold, sans-serif; }
       .solution-section #accordion .card .card-header .accordion-toggle:after {
         /* symbol for "opening" panels */
-        font-family: 'MetropolisExtraBold', sans-serif;
+        font-family: MetropolisExtraBold, sans-serif;
         /* essential for enabling glyphicon */
         content: "-";
         /* adjust as needed, taken from bootstrap.css */
@@ -874,7 +982,7 @@ button {
       font-family: MetropolisBold, sans-serif; }
       .location-section .country-location .item-footer button {
         height: auto;
-        cursor: pointer;
+        cursor: default;
         color: white;
         outline: none;
         font-size: 10px;
@@ -1053,6 +1161,7 @@ button {
         font-size: 23px; }
     .join-section .field input,
     .join-section .field button {
+      outline: none;
       position: absolute;
       height: 70px;
       cursor: pointer; }
@@ -1083,7 +1192,7 @@ button {
     .join-section .field label {
       padding-left: 20px;
       font-size: 20px;
-      font-family: "MetropolisRegular", sans-serif;
+      font-family: MetropolisRegular, sans-serif;
       color: white;
       position: absolute;
       color: white;
@@ -1134,7 +1243,7 @@ button {
           font-size: 17px;
           color: #353535;
           line-height: 40px;
-          font-family: MetropolisBold,sans-serif; }
+          font-family: MetropolisBold, sans-serif; }
           .pricing-section .price-nav ul li a img {
             float: right;
             margin-right: 15px; }
@@ -1201,7 +1310,7 @@ button {
       .pricing-section .prices .price .price-value {
         display: block;
         font-size: 40px;
-        font-family: MetropolisSemiBold,sans-serif; }
+        font-family: MetropolisSemiBold, sans-serif; }
       .pricing-section .prices .price .learn-more-link {
         font-family: MetropolisBold, sans-serif;
         padding: 5px 20px;
@@ -1301,7 +1410,7 @@ button {
   .faq-welcome-section h1 {
     font-size: 42px;
     letter-spacing: -.9px;
-    font-family: MetropolisBold,sans-serif; }
+    font-family: MetropolisBold, sans-serif; }
 
 .faq-content-section {
   background-color: #ededed;
@@ -1366,6 +1475,7 @@ button {
     border-top-right-radius: 20px; }
     .question .question-btn span {
       margin-top: 5px;
+      width: 87%;
       display: inline-block; }
     .question .question-btn:hover {
       background-color: #626262; }
@@ -1403,18 +1513,19 @@ button {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px; }
     .question .question-body .text {
+      overflow-x: overlay;
       padding: 50px;
       line-height: 2; }
 
 .affiliate-welcome-section {
   color: white;
   padding: 100px 0 125px;
-  background: url("../img/home-ellipse.png") no-repeat center, url("../img/affiliate/welcome-bg.png") no-repeat center;
+  background: url("../img/home-ellipse.png") no-repeat center, #4cb953;
   -webkit-background-size: cover;
   background-size: cover; }
   .affiliate-welcome-section h1 {
     font-size: 42px;
-    font-family: MetropolisBold,sans-serif;
+    font-family: MetropolisBold, sans-serif;
     letter-spacing: -0.9px; }
 
 .affiliate-content-section {
@@ -1478,9 +1589,9 @@ button {
   background-color: #ededed;
   padding: 100px 0; }
   .faq-subsection .question-btn span {
-    width: 80%; }
+    width: 87%; }
   .faq-subsection .section-title {
-    font-family: MetropolisBold, sans-serif;
+    font-family: MetropolisSemiBold, sans-serif;
     font-size: 42px;
     letter-spacing: -.9px;
     color: #353535;
@@ -1520,18 +1631,11 @@ button {
   background-size: cover; }
   .pricing-welcome-section h1 {
     font-size: 40px;
-    font-family: MetropolisBold,sans-serif;
+    font-family: MetropolisBold, sans-serif;
     letter-spacing: -.9px; }
 
 .pricing-section-content {
   padding: 60px 100px; }
-  .pricing-section-content .step-title {
-    text-align: center; }
-    .pricing-section-content .step-title h2 {
-      font-size: 40px;
-      font-family: MetropolisExtraBold, sans-serif; }
-    .pricing-section-content .step-title h4 {
-      color: #5a5a5a; }
   .pricing-section-content .prices .tab-pane {
     display: none; }
   .pricing-section-content .prices .price,
@@ -1624,7 +1728,7 @@ button {
           margin-left: 20px;
           height: 50px;
           text-align: center;
-          font-family: MetropolisExtraBold, sans-serif;
+          font-family: MetropolisBold, sans-serif;
           border-radius: 10px;
           border: 0; }
         .pricing-section-content .progress-form .progressbar-container .form-item .quantity .input-tooltip {
@@ -1822,7 +1926,7 @@ button {
   background-color: #a80000; }
 
 .virgin-content-section {
-  padding: 100px 0; }
+  padding: 75px 0; }
   .virgin-content-section .section-title {
     font-family: MetropolisBold, sans-serif;
     font-size: 25px;
@@ -2241,6 +2345,10 @@ button {
         vertical-align: middle;
         justify-content: center; }
 
+.fixed-burger-btn {
+  position: fixed;
+  right: 0; }
+
 @media (min-width: 320px) and (max-width: 575px) {
   .top-navigation {
     padding: 0; }
@@ -2314,9 +2422,9 @@ button {
   .location-section .section-title {
     font-size: 27px; }
   .location-section p {
-    font-size: 10px; }
+    font-size: 12px; }
   .location-section ul.location-countries-list-pop {
-    width: 100%;
+    width: 80%;
     margin-left: 25px !important; }
     .location-section ul.location-countries-list-pop li:first-child:before {
       left: -47px !important; }
@@ -2328,7 +2436,7 @@ button {
       grid-row: 2;
       padding: 10px	!important; }
   .location-section ul.location-countries-list {
-    width: 100%; }
+    width: 70%; }
     .location-section ul.location-countries-list li a {
       padding: 10px 10px;
       font-size: 12px; }
@@ -2357,6 +2465,8 @@ button {
   .join-section {
     padding: 50px 0;
     margin-top: 50px; }
+    .join-section .field input {
+      width: 90%; }
     .join-section .section-title {
       font-size: 20px; }
     .join-section .register label {
@@ -2429,8 +2539,8 @@ button {
       border-top-right-radius: 10px;
       padding: 15px 10px; }
       .faq-content-section .question .question-btn span {
-        margin-top: 10px;
-        font-size: 11px; }
+        margin-top: 8px;
+        font-size: 13px; }
       .faq-content-section .question .question-btn:after {
         width: 30px;
         height: 30px;
@@ -2454,13 +2564,13 @@ button {
     border-radius: 10px;
     margin-bottom: 20px; }
     .affiliate-content-section .starter-banner .banner-left h4 {
-      font-size: 25px; }
+      font-size: 20px; }
     .affiliate-content-section .starter-banner .banner-left ul {
       display: grid;
       grid-template-columns: 1fr;
       width: 100%; }
       .affiliate-content-section .starter-banner .banner-left ul li .price {
-        font-size: 40px; }
+        font-size: 30px; }
       .affiliate-content-section .starter-banner .banner-left ul li .price-detail {
         font-size: 13px;
         font-weight: bold; }
@@ -2472,7 +2582,7 @@ button {
     .affiliate-content-section .starter-banner .banner-right ul {
       margin-bottom: 20px; }
       .affiliate-content-section .starter-banner .banner-right ul li {
-        font-size: 11px; }
+        font-size: 12px; }
         .affiliate-content-section .starter-banner .banner-right ul li img {
           width: 25px;
           margin-right: 5px; }
@@ -2490,8 +2600,8 @@ button {
       border-top-right-radius: 10px;
       padding: 15px 10px; }
       .faq-subsection .question .question-btn span {
-        margin-top: 10px;
-        font-size: 11px; }
+        margin-top: 8px;
+        font-size: 13px; }
       .faq-subsection .question .question-btn:after {
         width: 30px;
         height: 30px;
@@ -2509,7 +2619,7 @@ button {
   .pricing-welcome-section {
     padding: 150px 0 40px; }
     .pricing-welcome-section .section-title {
-      font-size: 25px; }
+      font-size: 30px; }
   .pricing-section-content .progress-form {
     margin: 0;
     padding: 0; }
@@ -2518,6 +2628,10 @@ button {
       grid-row-gap: 40px; }
       .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container .checkmark {
         top: 170px; }
+      .pricing-section-content .progress-form .progressbar-container .form-item .total .left {
+        padding: 40px 0; }
+      .pricing-section-content .progress-form .progressbar-container .form-item .total .right span.total-money {
+        font-size: 30px; }
       .pricing-section-content .progress-form .progressbar-container .progressbar-item {
         display: none; }
   .pricing-section-content .prices .price .price-body .select-container {
@@ -2526,8 +2640,6 @@ button {
     font-size: 18px; }
     .page-not-found-content h2 span {
       font-size: 10rem; }
-  .pricing-welcome-section .section-title {
-    font-size: 35px; }
   .virgin-content-section {
     padding: 40px 0; }
     .virgin-content-section .section-title {
@@ -3435,6 +3547,8 @@ button {
       font-size: 28px; }
     .benefits-section .benefit-item {
       padding: 50px; }
+  .solution-section {
+    padding: 100px 150px; }
   .location-section .padding-box:before {
     background-position-x: -166px; }
   .location-section .country-location {

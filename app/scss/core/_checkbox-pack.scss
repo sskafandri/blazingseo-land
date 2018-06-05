@@ -21,7 +21,7 @@
   border-radius: 10px;
 
   .select-text{
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $semi-bold-font;
     font-size: 20px;
   }
 
@@ -36,7 +36,7 @@
 .select-container.pack-selected{
 
   color: white;
-  font-family: MetropolisExtraBold, sans-serif;
+  font-family: $bold-font;
   background-color: $main-red;
 }
 

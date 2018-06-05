@@ -104,7 +104,7 @@
           font-size: 18px;
           padding: 10px 20px;
           color: $main-red !important;
-          font-family: MetropolisSemiBold, sans-serif;
+          font-family: $semi-bold-font;
 
 
 
@@ -175,7 +175,7 @@
       a{
         display: block;
         padding: .5rem 1rem;
-        font-family: MetropolisSemiBold, sans-serif;
+        font-family: $semi-bold-font;
         color: white;
         position: relative;
         z-index: 1;
@@ -228,7 +228,7 @@
           //display: inline-block;
           width: 40%;
           margin-left: 10px !important;
-          font-family: MetropolisExtraBold, sans-serif;
+          font-family: $bold-font;
         }
 
         .login-btn{

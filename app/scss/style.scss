@@ -18,8 +18,9 @@ $subheader-size: 35px;
 
 
 
+
 body {
-  font-family: 'MetropolisRegular',Roboto, sans-serif;
+  font-family: $regular-font;
   margin: 0;
 }
 
@@ -30,7 +31,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 35px;
-  font-family:  'MetropolisExtraBold',Roboto ,Helvetica, Arial, sans-serif;
+  font-family:  $main-section-title-font;
   letter-spacing: 1px;
 }
 
@@ -57,7 +58,7 @@ button{
   }
 
   .toggle-menu{
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $semi-bold-font;
     outline: none;
     background-color: transparent;
     border:0;
@@ -130,12 +131,12 @@ button{
     //letter-spacing: -0.9px;
 
     //font-family: Raleway, sans-serif;
-    font-family: MetropolisBold, sans-serif;
+    font-family: $main-section-title-font;
   }
 
   .home-sub-title{
     margin-bottom: 85px;
-    font-family: MetropolisRegular, sans-serif;
+    font-family: $regular-font;
     letter-spacing: -0.9px;
     font-size: 20px;
 
@@ -271,11 +272,11 @@ button{
 
         li{
           //text-align: left;
-          font-family: MetropolisSemiBold, sans-serif;
+          font-family: $semi-bold-font;
 
           span{
             font-size: 60px;
-            font-family: MetropolisExtraBold, sans-serif;
+            font-family: $extra-bold-font;
             font-weight: bold;
           }
 
@@ -347,7 +348,7 @@ button{
 
   .section-title{
     font-size: 36px;
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $section-title-font
   }
 
   .lined{
@@ -392,7 +393,7 @@ button{
   .section-title{
     font-size: 30px;
     margin-bottom: 90px;
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $section-title-font;
   }
 
   img{
@@ -400,7 +401,7 @@ button{
   }
 
   .benefit-title{
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $semi-bold-font;
     //letter-spacing: -0.9px;
   }
 
@@ -453,7 +454,7 @@ button{
   }
 
   .section-title{
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $section-title-font;
     margin-top: 50px;
     font-size: 40px;
     letter-spacing: -0.9px;
@@ -478,22 +479,23 @@ button{
   }
 
   #accordion{
-    font-family: MetropolisRegular, sans-serif;
+    font-family: $regular-font;
     .card{
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       border-radius: 10px;
+
       margin-bottom: 10px;
       border: 0;
 
       .card-header{
         button{
-          font-family: MetropolisRegular, sans-serif;
+          font-family: $semi-bold-font;
         }
 
         .accordion-toggle:after {
           /* symbol for "opening" panels */
-          font-family: 'MetropolisExtraBold', sans-serif;  /* essential for enabling glyphicon */
+          font-family: $extra-bold-font;  /* essential for enabling glyphicon */
           content: "-";    /* adjust as needed, taken from bootstrap.css */
           //float: right;        /* adjust as needed */
           //text-align: right;
@@ -617,7 +619,7 @@ button{
     .item-header {
       color: white;
       font-size: 20px;
-      font-family: MetropolisExtraBold, sans-serif;
+      font-family: $extra-bold-font;
       padding: 10px 25px;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
@@ -626,7 +628,7 @@ button{
     }
 
     .item-sub-header {
-      font-family: MetropolisBold, sans-serif;
+      font-family: $bold-font;
       padding: 10px 25px;
       background-color: #56a902;
       color: white;
@@ -639,7 +641,7 @@ button{
       padding-bottom: 0;
 
       h5 {
-        font-family: MetropolisBold, sans-serif;
+        font-family: $bold-font;
         margin-bottom: 10px;
         font-size: 15px;
         letter-spacing: 0;
@@ -647,7 +649,7 @@ button{
       }
 
       h6 {
-        font-family: MetropolisRegular, sans-serif;
+        font-family: $regular-font;
         font-size: 12px;
         letter-spacing: 0px;
         color: #4a4a4a;
@@ -677,7 +679,7 @@ button{
             top: -7px;
             left: -57px;
 
-            font-family: MetropolisBold, sans-serif;
+            font-family: $bold-font;
             background-color: #56a902;
 
             -webkit-border-radius: 50%;
@@ -692,11 +694,11 @@ button{
       padding: 25px;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      font-family: MetropolisBold, sans-serif;
+      font-family: $bold-font;
 
       button {
         height: auto;
-        cursor: pointer;
+        cursor: default;
         color: white;
         outline: none;
         font-size: 10px;
@@ -719,7 +721,7 @@ button{
   }
 
   .section-title {
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $section-title-font;
     font-size: 40px;
     letter-spacing: -0.9px;
 
@@ -727,7 +729,7 @@ button{
 
   p {
     font-size: 16px;
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $semi-bold-font;
   }
 
   ul {
@@ -743,7 +745,7 @@ button{
       a,
       button{
         color: black;
-        font-family: MetropolisSemiBold, sans-serif;
+        font-family: $semi-bold-font;
         background-color: white;
         padding: 10px 30px;
 
@@ -824,7 +826,7 @@ button{
 
             li{
 
-              font-family: MetropolisSemiBold, sans-serif;
+              font-family: $semi-bold-font;
               background-color: white;
               color: black;
               padding: 3px 10px;
@@ -895,7 +897,7 @@ button{
   background-color: #005abb;
 
   .section-title{
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $section-title-font;
     font-size: 30px;
     letter-spacing: -.9px;
   }
@@ -952,6 +954,7 @@ button{
     }
     input,
     button {
+      outline: none;
       position: absolute;
       height: 70px;
       cursor: pointer;
@@ -995,7 +998,7 @@ button{
       padding-left: 20px;
 
         font-size: 20px;
-        font-family: "MetropolisRegular", sans-serif;
+        font-family: $regular-font;
         color: rgb( 255, 255, 255 );
 
 
@@ -1025,7 +1028,7 @@ button{
   .section-title{
     font-size: 40px;
     letter-spacing: -0.9px;
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $section-title-font;
   }
 
   .btn-try-free{
@@ -1034,7 +1037,7 @@ button{
     -moz-border-radius: 30px;
     border-radius: 30px;
     color: white;
-    font-family: MetropolisBold, sans-serif;
+    font-family: $bold-font;
     font-size: 18px;
     padding: 20px 40px;
     margin: 30px 0;
@@ -1063,7 +1066,6 @@ button{
         position: relative;
 
 
-
         a{
           display: block;
           width: 100%;
@@ -1071,10 +1073,7 @@ button{
           font-size: 17px;
           color: #353535;
           line-height: 40px;
-          font-family: MetropolisBold,sans-serif;
-
-
-
+          font-family: $bold-font;
 
           img{
             float: right;
@@ -1138,16 +1137,6 @@ button{
     margin-top: 30px;
     position: relative;
 
-    //&:before{
-    //  content: ' ';
-    //  z-index: 1000;
-    //  display: block;
-    //  position: absolute;
-    //  width: 100%;
-    //  height: 100%;
-    //  background-color: transparent;
-    //}
-
     .price{
       min-height: 300px;
       text-align: center;
@@ -1175,11 +1164,9 @@ button{
         border-top-right-radius: 20px;
         padding: 10px 0;
         color: white;
-        font-family: MetropolisBold, sans-serif;
+        font-family: $bold-font;
         background-color: blue;
         margin-bottom: 20px;
-
-
       }
 
       .price-body{
@@ -1188,23 +1175,23 @@ button{
 
       .price-title{
         color: #565656;
-        font-family: MetropolisExtraBold, sans-serif;
+        font-family: $extra-bold-font;
         margin-bottom: 10px;
       }
 
       .price-sub-title{
         color: #b4b5b6;
-        font-family: MetropolisBold, sans-serif;
+        font-family: $bold-font;
       }
 
       .price-value{
         display: block;
         font-size: 40px;
-        font-family: MetropolisSemiBold,sans-serif;
+        font-family: $semi-bold-font;
       }
 
       .learn-more-link{
-        font-family: MetropolisBold, sans-serif;
+        font-family: $bold-font;
         padding: 5px 20px;
         background-color: $main-red;
         color: white;
@@ -1235,12 +1222,12 @@ button{
 
   .section-title{
     margin-top: 100px;
-    font-family: MetropolisBold, sans-serif;
+    font-family: $bold-font;
     font-size: 30px;
   }
 
   .section-text{
-    font-family: MetropolisRegular, sans-serif;
+    font-family: $regular-font;
     font-size: 18px;
     margin-bottom: 100px;
   }
@@ -1255,7 +1242,7 @@ button{
     background-color: white;
 
     color: $main-red;
-    font-family: MetropolisExtraBold, sans-serif;
+    font-family:$extra-bold-font;
 
     -webkit-border-radius:17px;
     -moz-border-radius:17px;
@@ -1275,7 +1262,8 @@ button{
   }
 
   .item{
-    background-color: white;font-family: MetropolisExtraBold, sans-serif;
+    background-color: white;
+    font-family: $extra-bold-font;
     font-size: 14px;
     margin-top: 50px;
     width: 85px;
@@ -1306,18 +1294,18 @@ button{
   padding: 150px 0;
   background-color: #0b3068;
   color: #5e89cc;
-  font-family: MetropolisRegular, sans-serif;
+  font-family: $regular-font;
 
 
   ul{
     a{
       color: #5e89cc;
-      font-family: MetropolisRegular, sans-serif;
+      font-family: $regular-font;
 
     }
 
     span.menu-header{
-      font-family: MetropolisExtraBold, sans-serif;
+      font-family: $extra-bold-font;
       color: white;
 
 
@@ -1332,7 +1320,7 @@ button{
   }
 
   .copyright{
-    font-family: MetropolisRegular, sans-serif;
+    font-family: $regular-font;
     margin-top: 70px;
     color: white;
   }
@@ -1353,7 +1341,7 @@ button{
   h1{
     font-size: 42px;
     letter-spacing: -.9px ;
-    font-family: MetropolisBold,sans-serif;
+    font-family: $main-section-title-font;
   }
 }
 
@@ -1385,7 +1373,7 @@ button{
 
     
     button{
-      font-family: MetropolisBold, sans-serif;
+      font-family: $bold-font;
       color: #353535;
       font-size: 15px;
       background-color: transparent;
@@ -1443,6 +1431,7 @@ button{
 
     span{
       margin-top: 5px;
+      width: 87%;
       display: inline-block;
     }
     
@@ -1460,7 +1449,7 @@ button{
     -o-transition: all 1s ease;
     transition: all 1s ease;
 
-    font-family: MetropolisSemiBold, sans-serif;
+    font-family: $semi-bold-font;
     font-size: 18px;
     outline: none;
     border: 0;
@@ -1521,6 +1510,8 @@ button{
     border-bottom-right-radius: 20px;
 
     .text{
+
+      overflow-x: overlay;
       padding: 50px;
       line-height: 2;
 
@@ -1539,14 +1530,15 @@ button{
 .affiliate-welcome-section{
   color: white;
   padding: 100px 0 125px;
-  background: url("../img/home-ellipse.png") no-repeat  center, url("../img/affiliate/welcome-bg.png") no-repeat center;
+  //background: url("../img/home-ellipse.png") no-repeat  center, url("../img/affiliate/welcome-bg.png") no-repeat center;
+  background: url("../img/home-ellipse.png") no-repeat  center, #4cb953;
   -webkit-background-size: cover;
   background-size: cover;
 
 
   h1{
     font-size: 42px;
-    font-family: MetropolisBold,sans-serif;
+    font-family: $main-section-title-font;
     letter-spacing: -0.9px;
 
   }
@@ -1575,7 +1567,7 @@ button{
         margin-bottom: 20px;
       }
       h4{
-        font-family: MetropolisBold, sans-serif;
+        font-family: $bold-font;
         font-size: 14px;
         letter-spacing: 0;
       }
@@ -1587,11 +1579,11 @@ button{
 
           .price{
             font-size: 30px;
-            font-family: MetropolisSemiBold, sans-serif;
+            font-family: $semi-bold-font;
           }
           .price-detail{
             font-size: 15px;
-            font-family: MetropolisRegular, sans-serif;
+            font-family: $regular-font;
           }
         }
       }
@@ -1612,7 +1604,7 @@ button{
         margin-bottom: 60px;
 
         li{
-          font-family: MetropolisBold, sans-serif;
+          font-family: $bold-font;
           font-size: 17px;
           padding: 10px;
 
@@ -1630,7 +1622,7 @@ button{
 
         color: white;
         font-size: 20px;
-        font-family: MetropolisBold, sans-serif;
+        font-family: $bold-font;
 
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -1660,12 +1652,12 @@ button{
 
   .question-btn{
     span{
-      width: 80%;
+      width: 87%;
     }
   }
 
   .section-title{
-    font-family: MetropolisBold, sans-serif;
+    font-family: $section-title-font;
     font-size: 42px;
     letter-spacing: -.9px;
     color: #353535;
@@ -1673,7 +1665,7 @@ button{
   }
 
   .section-subtitle{
-    font-family: MetropolisRegular, sans-serif;
+    font-family: $regular-font;
     font-size: 20px;
     color: #7e7e7e;
     letter-spacing: 0;
@@ -1701,7 +1693,7 @@ button{
 
   font-size: 18px;
   color: #0152cc;
-  font-family: MetropolisSemiBold, sans-serif;
+  font-family: $semi-bold-font;
 
   -webkit-transition: all 0.7s;
   -moz-transition: all 0.7s;
@@ -1731,7 +1723,7 @@ button{
 
   h1{
     font-size: 40px;
-    font-family: MetropolisBold,sans-serif;
+    font-family: $main-section-title-font;
     letter-spacing: -.9px;
   }
 }
@@ -1740,18 +1732,6 @@ button{
   padding: 60px 100px;
 
 
-  .step-title{
-    text-align: center;
-    h2{
-
-      font-size: 40px;
-      font-family: MetropolisExtraBold, sans-serif;
-    }
-
-    h4{
-      color: #5a5a5a;
-    }
-  }
 
   .prices{
 
@@ -1778,7 +1758,7 @@ button{
           margin-top: 50px;
 
           color: $main-red;
-          font-family: MetropolisBold, sans-serif;
+          font-family: $bold-font
         }
       }
 
@@ -1790,7 +1770,7 @@ button{
         padding: 30px 0;
         text-align: left;
 
-        font-family: MetropolisRegular, sans-serif;
+        font-family: $regular-font;
 
         font-size: 15px ;
       }
@@ -1825,7 +1805,7 @@ button{
         span{
 
           transition: all 0.5s;
-          font-family: MetropolisBold, sans-serif;
+          font-family: $bold-font;
 
           width: 100px;
           padding: 30px;
@@ -1881,7 +1861,7 @@ button{
 
         h5{
 
-          font-family: MetropolisBold, sans-serif;
+          font-family:  $bold-font;
           font-size: 27px;
         }
 
@@ -1892,7 +1872,7 @@ button{
           font-size: 17px;
           color: white;
 
-          font-family: MetropolisSemiBold, sans-serif;
+          font-family: $semi-bold-font;
 
 
           border-radius: 10px;
@@ -1908,7 +1888,7 @@ button{
             height: 50px;
             text-align: center;
 
-            font-family: MetropolisExtraBold, sans-serif;
+            font-family: $bold-font;
 
             border-radius: 10px;
             border:0;
@@ -1931,7 +1911,7 @@ button{
             padding: 15px;
 
             color: white;
-            font-family: MetropolisSemiBold, sans-serif;
+            font-family: $semi-bold-font;
             font-size: 15px ;
             text-align: left;
             -webkit-border-radius: 10px;
@@ -1943,7 +1923,7 @@ button{
             a{
               color: whitesmoke;
               text-decoration: underline;
-              font-family: MetropolisBold, sans-serif;
+              font-family: $bold-font;
             }
 
             &:after {
@@ -2016,7 +1996,7 @@ button{
 
               font-size: 14px;
 
-              font-family: MetropolisBold, sans-serif;
+              font-family: $bold-font;
               border-radius: 10px;
 
               -webkit-user-select: none;
@@ -2069,7 +2049,7 @@ button{
               margin-top: 13px;
               padding: 2px 5px;
               font-size: 15px;
-              font-family: MetropolisExtraBold, sans-serif;
+              font-family: $extra-bold-font;
               background-color: #0152cc;
               color: white;
               -webkit-border-radius: 2px;
@@ -2085,7 +2065,7 @@ button{
           grid-template-columns: 1fr 1fr;
           background-color: blue;
           border-radius: 15px;
-          font-family: MetropolisSemiBold, sans-serif;
+          font-family: $semi-bold-font;
 
           .left{
             padding: 40px 70px;
@@ -2122,7 +2102,7 @@ button{
 
           background-color: $main-red;
           color: white;
-          font-family: MetropolisBold, sans-serif;
+          font-family: $bold-font;
 
           border: 0;
           padding: 20px 0;
@@ -2261,10 +2241,10 @@ button{
 }
 
 .virgin-content-section{
-  padding: 100px 0;
+  padding: 75px 0;
 
   .section-title{
-    font-family: MetropolisBold, sans-serif;
+    font-family: $bold-font;
     font-size: 25px;
     letter-spacing: -0.9px;
   }
@@ -2288,7 +2268,7 @@ button{
       top: 0;
 
       .benefit-title{
-        font-family: MetropolisBold, sans-serif;
+        font-family: $bold-font;
         letter-spacing: -0.9px;
       }
 
@@ -2338,7 +2318,7 @@ button{
 
     .virgin-pricing-location{
       font-size: 30px;
-      font-family: MetropolisSemiBold, sans-serif;
+      font-family: $semi-bold-font;
       letter-spacing: -0.9px;
 
 
@@ -2346,7 +2326,7 @@ button{
 
     h2.virgin-pricing-prices{
 
-      font-family: MetropolisRegular, sans-serif;
+      font-family: $regular-font;
       text-align: center;
       font-size: 18px;
       line-height: 46px;
@@ -2951,9 +2931,9 @@ button{
 
 }
 
-.modal-complete-order.show-modal{
-  //display: block;
-
+.fixed-burger-btn{
+  position: fixed;
+  right: 0;
 }
 
 @import "media";

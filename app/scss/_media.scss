@@ -4,6 +4,7 @@
 //----------------------------------------------------------------------------------------------------------------------
 @media (min-width: 320px) and (max-width: 575px) {
 
+
 	// homepage start   			+++
 	.top-navigation{
 
@@ -152,12 +153,12 @@
 		}
 
 		p{
-			font-size: 10px;
+			font-size: 12px;
 		}
 
 
 		ul.location-countries-list-pop{
-			width: 100%;
+			width: 80%;
 			margin-left: 25px !important;
 
 			li:first-child:before {
@@ -180,7 +181,7 @@
 			}
 		}
 		ul.location-countries-list{
-			width: 100%;
+			width: 70%;
 
 
 			li{
@@ -239,6 +240,14 @@
 	.join-section{
 		padding: 50px 0;
 		margin-top: 50px;
+
+		 .field {
+
+			 input{
+				 width: 90%;
+			 }
+		 }
+
 
 		.section-title{
 			font-size: 20px;
@@ -391,8 +400,8 @@
 				padding: 15px 10px;
 
 				span{
-					margin-top: 10px;
-					font-size: 11px;
+					margin-top: 8px;
+					font-size: 13px;
 				}
 
 
@@ -445,7 +454,7 @@
 				margin-bottom: 20px;
 
 				h4{
-					font-size: 25px;
+					font-size: 20px;
 				}
 
 				ul{
@@ -456,7 +465,7 @@
 					li{
 
 						.price{
-							font-size: 40px;
+							font-size: 30px;
 						}
 
 						.price-detail{
@@ -479,7 +488,7 @@
 				ul{
 					margin-bottom: 20px;
 					li{
-						font-size: 11px;
+						font-size: 12px;
 
 						img{
 							width: 25px;
@@ -518,8 +527,8 @@
 				padding: 15px 10px;
 
 				span{
-					margin-top: 10px;
-					font-size: 11px;
+					margin-top: 8px;
+					font-size: 13px;
 				}
 
 
@@ -557,7 +566,7 @@
 
 		.section-title{
 
-			font-size: 25px;
+			font-size: 30px;
 		}
 	}
 
@@ -571,6 +580,9 @@
 			.progressbar-container {
 
 				.form-item{
+
+
+
 					.duration{
 
 						.duration-item{
@@ -578,6 +590,17 @@
 								.checkmark{
 									top: 170px;
 								}
+							}
+						}
+					}
+
+					.total{
+						.left{
+							padding: 40px 0;
+						}
+						.right{
+							span.total-money{
+								font-size: 30px;
 							}
 						}
 					}
@@ -627,9 +650,6 @@
 
 
 	//virgin ips page start                        +++
-	.pricing-welcome-section .section-title {
-		font-size: 35px;
-	}
 
 	.virgin-content-section{
 		padding: 40px 0;
@@ -744,7 +764,6 @@
 
       .section-title{
         font-size: 25px;
-        //font-family: MetropolisSemiBold, sans-serif;
       }
 
       .windows-vps-benefits-container{
@@ -1327,7 +1346,6 @@
 
 	  .section-title{
 		font-size: 25px;
-		//font-family: MetropolisSemiBold, sans-serif;
 	  }
 
 	  .windows-vps-benefits-container{
@@ -1872,7 +1890,6 @@
 
     .section-title{
       font-size: 25px;
-      //font-family: MetropolisSemiBold, sans-serif;
     }
 
     .windows-vps-benefits-container{
@@ -2842,6 +2859,10 @@
 		.benefit-item{
 			padding: 50px;
 		}
+	}
+
+	.solution-section{
+		padding: 100px 150px;
 	}
 
 	.location-section{
