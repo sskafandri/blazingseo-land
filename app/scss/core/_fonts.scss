@@ -24,7 +24,24 @@
   src: url("../fonts/metropolis/Metropolis-Black.otf") format("opentype");
 }
 
-
+@font-face {
+  font-family:'Raleway';
+  src:url('../fonts/raleway_300.woff') format('woff');
+  font-weight:300;
+  font-style:normal;
+}
+@font-face {
+  font-family:'RalewaySemiBold';
+  src:url('../fonts/raleway_500.woff') format('woff');
+  font-weight:500;
+  font-style:normal;
+}
+@font-face {
+  font-family:'RalewayBold';
+  src:url('../fonts/raleway_700.woff') format('woff');
+  font-weight:bold;
+  font-style:normal;
+}
 
 
 //FUTURA

@@ -264,7 +264,7 @@
   .top-menu {
 
     ul{
-      grid-row-gap: 15px;
+      grid-row-gap: 0px !important;
       margin-top: 20% !important;
       li{
 
@@ -279,12 +279,15 @@
 
         .sub-menu{
           margin-top: 0 !important;
+          line-height: 20px !important;
         }
       }
     }
   }
 
 }
+
+
 
 @media (max-width: 991px) {
 
