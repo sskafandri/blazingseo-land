@@ -651,6 +651,68 @@
 
 	//virgin ips page start                        +++
 
+
+
+	.virgin-benefit-section{
+
+		.section-title{
+			font-size: 25px;
+		}
+
+
+		h5{
+			font-size: 14px;
+		}
+
+		.virgin-benefit{
+
+			grid-template-columns: 1fr;
+
+			.virgin-benefit-item{
+				margin: 15px;
+				padding: 20px 20px;
+
+			}
+		}
+
+	}
+
+	.virgin-pricing-section{
+
+		padding: 40px 0;
+
+		.virgin-pricing{
+			margin-top: 0;
+
+			.virgin-pricing-location{
+				font-size: 20px;
+
+			}
+
+			h2.virgin-pricing-prices{
+				font-size: 15px;
+				line-height: 40px;
+			}
+		}
+
+
+	}
+
+	.virgin-contact-section{
+		margin-top: 0;
+		padding: 30px;
+
+		h2{
+			font-size: 20px;
+		}
+
+		a.contact-virgin{
+			padding: 10px 20px;
+			font-size: 1.5rem;
+		}
+	}
+
+
 	.virgin-content-section{
 		padding: 40px 0;
 
@@ -677,16 +739,6 @@
 		}
 
 
-		.virgin-benefit{
-
-			grid-template-columns: 1fr;
-
-			.virgin-benefit-item{
-				margin: 15px;
-				padding: 20px 20px;
-
-			}
-		}
 	}
 	//virgin ips page end                         ---
 
@@ -1285,7 +1337,7 @@
 
 
 	//virgin ips page start
-	.virgin-content-section{
+	.virgin-benefit-section{
 		.virgin-benefit{
 			grid-template-columns: 1fr;
 		}

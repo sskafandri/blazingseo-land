@@ -460,10 +460,14 @@
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px; }
-  .top-menu .menu-list li.current-menu-item:nth-child(2) {
+  .top-menu .menu-list li.current-menu-item:nth-child(2),
+  .top-menu .menu-list li.current-menu-item:nth-child(3) {
     background-color: transparent; }
-  .top-menu .menu-list .menu-item-has-children a i {
-    margin-left: 10px; }
+  .top-menu .menu-list .menu-item-has-children {
+    margin-top: 10px;
+    padding-bottom: 10px; }
+    .top-menu .menu-list .menu-item-has-children a i {
+      margin-left: 10px; }
   .top-menu ul {
     display: grid;
     grid-template-columns: repeat(6, 1fr) 2fr;
@@ -480,12 +484,32 @@
       position: relative; }
       .top-menu ul li.menu-item-has-children:hover .sub-menu {
         display: block; }
+        .top-menu ul li.menu-item-has-children:hover .sub-menu:after, .top-menu ul li.menu-item-has-children:hover .sub-menu .arrow_box:before {
+          bottom: 100%;
+          left: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none; }
+        .top-menu ul li.menu-item-has-children:hover .sub-menu:after {
+          border-color: rgba(136, 183, 213, 0);
+          border-bottom-color: white;
+          border-width: 10px;
+          margin-left: -10px; }
+        .top-menu ul li.menu-item-has-children:hover .sub-menu:before {
+          border-color: rgba(194, 225, 245, 0);
+          border-bottom-color: #c2e1f5;
+          border-width: 36px;
+          margin-left: -36px; }
         .top-menu ul li.menu-item-has-children:hover .sub-menu li:hover {
           background-color: #eee; }
       .top-menu ul li.menu-item-has-children .sub-menu {
+        padding: 5px;
         display: none;
         position: absolute;
-        top: 40px;
+        top: 55px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         border-radius: 10px;
@@ -566,6 +590,8 @@
       line-height: 20px !important; } }
 
 @media (max-width: 991px) {
+  .contact-top {
+    display: none; }
   .top-menu {
     position: fixed;
     width: 100%;
@@ -1342,7 +1368,7 @@ button {
     margin-bottom: 100px; }
     .pricing-section .price-nav ul {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-column-gap: 20px; }
       .pricing-section .price-nav ul li {
         background-color: #f4f5f7;
@@ -1359,8 +1385,10 @@ button {
           line-height: 40px;
           font-family: MetropolisBold, sans-serif; }
           .pricing-section .price-nav ul li a img {
-            float: right;
-            margin-right: 15px; }
+            float: right; }
+          .pricing-section .price-nav ul li a input {
+            height: 0;
+            position: absolute; }
         .pricing-section .price-nav ul li:hover {
           background-color: #0155d9; }
           .pricing-section .price-nav ul li:hover a {
@@ -1729,7 +1757,7 @@ button {
           font-family: MetropolisRegular, sans-serif; }
     .affiliate-content-section .starter-banner .banner-right {
       background-color: white;
-      padding: 65px 120px;
+      padding: 45px 67px;
       border-bottom-right-radius: 20px;
       border-top-right-radius: 20px; }
       .affiliate-content-section .starter-banner .banner-right ul {
@@ -1915,6 +1943,51 @@ button {
           font-family: MetropolisBold, sans-serif;
           border-radius: 10px;
           border: 0; }
+        .pricing-section-content .progress-form .progressbar-container .form-item .quantity .min-quantity-tooltip {
+          background-color: #a80000;
+          background: #a80000;
+          /* Old browsers */
+          background: -moz-linear-gradient(left, #d80000 0%, #a80000 80%, #a80000 100%);
+          /* FF3.6-15 */
+          background: -webkit-linear-gradient(left, #d80000 0%, #a80000 80%, #a80000 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: linear-gradient(to right, #d80000 0%, #a80000 80%, #a80000 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d80000', endColorstr='#a80000',GradientType=1 );
+          /* IE6-9 */
+          z-index: 1000;
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          width: 75%;
+          right: 0;
+          top: 130%;
+          padding: 15px;
+          color: white;
+          font-family: MetropolisSemiBold, sans-serif;
+          font-size: 15px;
+          text-align: left;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          transition: all 0.5s; }
+          .pricing-section-content .progress-form .progressbar-container .form-item .quantity .min-quantity-tooltip a {
+            color: whitesmoke;
+            text-decoration: underline;
+            font-family: MetropolisBold, sans-serif; }
+          .pricing-section-content .progress-form .progressbar-container .form-item .quantity .min-quantity-tooltip:after {
+            bottom: 100%;
+            left: 80%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(136, 183, 213, 0);
+            border-bottom-color: #a80000;
+            border-width: 21px;
+            margin-left: -21px; }
         .pricing-section-content .progress-form .progressbar-container .form-item .quantity .input-tooltip {
           z-index: 1000;
           visibility: hidden;
@@ -2137,6 +2210,77 @@ button {
   padding: 100px 0 125px;
   background-color: #a80000; }
 
+.virgin-info-section {
+  padding: 75px 0;
+  background-color: #fff; }
+  .virgin-info-section .section-title {
+    font-family: MetropolisBold, sans-serif;
+    font-size: 25px;
+    letter-spacing: -0.9px; }
+
+.virgin-benefit-section {
+  padding: 50px 0;
+  background-color: #f7f7f7; }
+  .virgin-benefit-section .section-title {
+    font-family: MetropolisBold, sans-serif;
+    font-size: 25px;
+    letter-spacing: -0.9px; }
+  .virgin-benefit-section .virgin-benefit {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; }
+    .virgin-benefit-section .virgin-benefit .virgin-benefit-item {
+      padding: 40px 20px;
+      position: relative;
+      text-align: center;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      top: 0; }
+      .virgin-benefit-section .virgin-benefit .virgin-benefit-item .benefit-title {
+        font-family: MetropolisBold, sans-serif;
+        letter-spacing: -0.9px; }
+      .virgin-benefit-section .virgin-benefit .virgin-benefit-item:hover {
+        z-index: 1200;
+        box-shadow: 0px 0px 12px 6px #a4a4a4;
+        position: relative;
+        top: -10px;
+        -webkit-transition: top 1s ease;
+        -moz-transition: top 1s ease;
+        -ms-transition: top 1s ease;
+        -o-transition: top 1s ease;
+        transition: top 1s ease; }
+      .virgin-benefit-section .virgin-benefit .virgin-benefit-item i {
+        color: #a80000;
+        font-size: 40px;
+        margin-bottom: 15px; }
+      .virgin-benefit-section .virgin-benefit .virgin-benefit-item h5 {
+        text-align: center; }
+
+.virgin-pricing-section {
+  padding: 50px 0; }
+  .virgin-pricing-section .section-title {
+    font-family: MetropolisBold, sans-serif;
+    font-size: 25px;
+    letter-spacing: -0.9px; }
+  .virgin-pricing-section .virgin-pricing {
+    text-align: center;
+    margin-top: 40px; }
+    .virgin-pricing-section .virgin-pricing h2 {
+      display: block;
+      width: 100%; }
+    .virgin-pricing-section .virgin-pricing .virgin-pricing-location {
+      font-size: 30px;
+      font-family: MetropolisSemiBold, sans-serif;
+      letter-spacing: -0.9px; }
+    .virgin-pricing-section .virgin-pricing h2.virgin-pricing-prices {
+      font-family: MetropolisRegular, sans-serif;
+      text-align: center;
+      font-size: 18px;
+      line-height: 46px; }
+
 .virgin-content-section {
   padding: 75px 0; }
   .virgin-content-section .section-title {
@@ -2191,6 +2335,28 @@ button {
       text-align: center;
       font-size: 18px;
       line-height: 46px; }
+
+.virgin-contact-section {
+  padding: 90px 0 95px; }
+  .virgin-contact-section h2 {
+    font-family: MetropolisSemiBold, sans-serif; }
+  .virgin-contact-section .contact-virgin {
+    margin-top: 50px;
+    font-family: MetropolisSemiBold, sans-serif;
+    font-size: 2rem;
+    color: #a80000 !important;
+    background-color: white;
+    padding: 20px 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: background-color 0.7s;
+    -moz-transition: background-color 0.7s;
+    -ms-transition: background-color 0.7s;
+    -o-transition: background-color 0.7s;
+    transition: background-color 0.7s; }
+    .virgin-contact-section .contact-virgin:hover {
+      background-color: #ddd; }
 
 .careers-welcome-section {
   padding: 100px 0 125px; }
@@ -2562,6 +2728,17 @@ button {
   right: 0;
   top: 30px; }
 
+.contact-top {
+  padding: 10px 16% 5px;
+  background-color: #a80000;
+  color: white;
+  font-family: MetropolisSemiBold, sans-serif; }
+  .contact-top a {
+    font-family: MetropolisBold, sans-serif;
+    color: white; }
+    .contact-top a:hover {
+      text-decoration: underline; }
+
 @media (min-width: 320px) and (max-width: 575px) {
   .top-navigation {
     padding: 0; }
@@ -2853,6 +3030,32 @@ button {
     font-size: 18px; }
     .page-not-found-content h2 span {
       font-size: 10rem; }
+  .virgin-benefit-section .section-title {
+    font-size: 25px; }
+  .virgin-benefit-section h5 {
+    font-size: 14px; }
+  .virgin-benefit-section .virgin-benefit {
+    grid-template-columns: 1fr; }
+    .virgin-benefit-section .virgin-benefit .virgin-benefit-item {
+      margin: 15px;
+      padding: 20px 20px; }
+  .virgin-pricing-section {
+    padding: 40px 0; }
+    .virgin-pricing-section .virgin-pricing {
+      margin-top: 0; }
+      .virgin-pricing-section .virgin-pricing .virgin-pricing-location {
+        font-size: 20px; }
+      .virgin-pricing-section .virgin-pricing h2.virgin-pricing-prices {
+        font-size: 15px;
+        line-height: 40px; }
+  .virgin-contact-section {
+    margin-top: 0;
+    padding: 30px; }
+    .virgin-contact-section h2 {
+      font-size: 20px; }
+    .virgin-contact-section a.contact-virgin {
+      padding: 10px 20px;
+      font-size: 1.5rem; }
   .virgin-content-section {
     padding: 40px 0; }
     .virgin-content-section .section-title {
@@ -2866,11 +3069,6 @@ button {
       .virgin-content-section .virgin-pricing h2.virgin-pricing-prices {
         font-size: 15px;
         line-height: 40px; }
-    .virgin-content-section .virgin-benefit {
-      grid-template-columns: 1fr; }
-      .virgin-content-section .virgin-benefit .virgin-benefit-item {
-        margin: 15px;
-        padding: 20px 20px; }
   .vpn-welcome-section .vpn-welcome-title {
     font-size: 50px; }
   .vpn-sub-welcome-section {
@@ -3133,7 +3331,7 @@ button {
       grid-row-gap: 40px; }
       .pricing-section-content .progress-form .progressbar-container .progressbar-item {
         display: none; }
-  .virgin-content-section .virgin-benefit {
+  .virgin-benefit-section .virgin-benefit {
     grid-template-columns: 1fr; }
   .vpn-welcome-section .vpn-welcome-title {
     font-size: 42px; }

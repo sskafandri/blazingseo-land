@@ -1082,7 +1082,7 @@ button{
 
     ul{
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-column-gap: 20px;
 
 
@@ -1106,7 +1106,12 @@ button{
 
           img{
             float: right;
-            margin-right: 15px;
+            //margin-right: 10px;
+          }
+
+          input{
+            height: 0;
+            position: absolute;
           }
         }
 
@@ -1672,7 +1677,8 @@ button{
 
     .banner-right{
       background-color: white;
-      padding: 65px 120px;
+      padding: 45px 67px;
+
 
       border-bottom-right-radius: 20px;
       border-top-right-radius: 20px;
@@ -1981,6 +1987,60 @@ button{
 
           }
 
+          .min-quantity-tooltip{
+            background-color: $main-red;
+            //background-color: $main-red;
+            background: $main-red; /* Old browsers */
+            background: -moz-linear-gradient(left, rgba(216,0,0,1) 0%,rgba(168,0,0,1) 80%, rgba(168,0,0,1) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, rgba(216,0,0,1) 0%,rgba(168,0,0,1) 80%,rgba(168,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, rgba(216,0,0,1) 0%,rgba(168,0,0,1) 80%,rgba(168,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d80000', endColorstr='#a80000',GradientType=1 ); /* IE6-9 */
+
+            z-index: 1000;
+            visibility: hidden;
+            opacity: 0;
+
+            position: absolute;
+
+            width: 75%;
+
+            right: 0;
+            top: 130%;
+
+            padding: 15px;
+
+            color: white;
+            font-family: $semi-bold-font;
+            font-size: 15px ;
+            text-align: left;
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+
+            transition: all 0.5s;
+
+            a{
+              color: whitesmoke;
+              text-decoration: underline;
+              font-family: $bold-font;
+            }
+
+            &:after {
+              bottom: 100%;
+              left: 80%;
+              border: solid transparent;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none;
+              border-color: rgba(136, 183, 213, 0);
+              border-bottom-color: $main-red;
+              border-width: 21px;
+              margin-left: -21px;
+            }
+          }
+
           .input-tooltip{
             z-index: 1000;
             visibility: hidden;
@@ -2198,6 +2258,7 @@ button{
           background: -webkit-linear-gradient(left, rgba(216,0,0,1) 0%,rgba(168,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
           background: linear-gradient(to right, rgba(216,0,0,1) 0%,rgba(168,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
           filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d80000', endColorstr='#a80000',GradientType=1 ); /* IE6-9 */
+
           color: white;
           font-family: $bold-font;
 
@@ -2336,10 +2397,135 @@ button{
 //    404 page styles end
 //----------------------------------------------------------------------------------------------------------------------
 
+
+//----------------------------------------------------------------------------------------------------------------------
+//    Virgin IPs page styles start
+//----------------------------------------------------------------------------------------------------------------------
+
+
 .virgin-welcome-section{
   padding: 100px 0 125px;
   background-color: $main-red;
 }
+
+.virgin-info-section{
+
+  padding: 75px 0;
+
+  background-color: #fff;
+
+  .section-title{
+    font-family: $bold-font;
+    font-size: 25px;
+    letter-spacing: -0.9px;
+  }
+}
+
+.virgin-benefit-section{
+  padding: 50px 0;
+  background-color: #f7f7f7;
+  
+  .section-title{
+    font-family: $bold-font;
+    font-size: 25px;
+    letter-spacing: -0.9px;
+  }
+
+  .virgin-benefit{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+
+
+    .virgin-benefit-item{
+      padding: 40px 20px;
+      position: relative;
+      text-align: center;
+
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      transition: all 0.6s ease;
+      top: 0;
+
+      .benefit-title{
+        font-family: $bold-font;
+        letter-spacing: -0.9px;
+      }
+
+
+      &:hover{
+
+        z-index: 1200;
+
+
+        box-shadow: 0px 0px 12px 6px #a4a4a4;
+        position: relative;
+        top: -10px;
+        -webkit-transition: top 1s ease;
+        -moz-transition: top 1s ease;
+        -ms-transition: top 1s ease;
+        -o-transition: top 1s ease;
+        transition: top 1s ease;
+
+      }
+      i{
+        color: $main-red;
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+
+      h5{
+
+
+        text-align: center;
+      }
+
+      p{
+        //text-align: left;
+      }
+    }
+
+
+  }
+}
+
+.virgin-pricing-section{
+  padding: 50px 0;
+
+  .section-title{
+    font-family: $bold-font;
+    font-size: 25px;
+    letter-spacing: -0.9px;
+  }
+
+  .virgin-pricing{
+    text-align: center;
+    margin-top: 40px;
+    h2{
+      display: block;
+      width: 100%;
+    }
+
+    .virgin-pricing-location{
+      font-size: 30px;
+      font-family: $semi-bold-font;
+      letter-spacing: -0.9px;
+
+
+    }
+
+    h2.virgin-pricing-prices{
+
+      font-family: $regular-font;
+      text-align: center;
+      font-size: 18px;
+      line-height: 46px;
+    }
+  }
+}
+
 
 .virgin-content-section{
   padding: 75px 0;
@@ -2434,6 +2620,45 @@ button{
     }
   }
 }
+
+.virgin-contact-section{
+  padding: 90px 0 95px;
+
+  h2{
+    font-family: $semi-bold-font;
+  }
+
+  .contact-virgin{
+    margin-top: 50px;
+    font-family:$semi-bold-font;
+    font-size: 2rem;
+    color: $main-red !important;
+
+    background-color: white;
+    padding: 20px 50px;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    -webkit-transition: background-color 0.7s;
+    -moz-transition: background-color 0.7s;
+    -ms-transition: background-color 0.7s;
+    -o-transition: background-color 0.7s;
+    transition: background-color 0.7s;
+    
+    
+    &:hover{
+      background-color: #ddd;
+    }
+  }
+}
+
+
+//----------------------------------------------------------------------------------------------------------------------
+//    Virgin IPs page styles end
+//----------------------------------------------------------------------------------------------------------------------
+
 
 //careers page start              +++
 
@@ -3038,4 +3263,22 @@ button{
   top: 30px;
 }
 
+
+.contact-top{
+  padding: 10px 16% 5px;
+  background-color: #a80000;
+  color: white;
+
+  font-family: $semi-bold-font;
+  
+  a{
+    font-family: $bold-font;
+    color: white;
+
+    
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+}
 @import "media";
