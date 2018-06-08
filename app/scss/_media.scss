@@ -2028,6 +2028,12 @@
 		.top-menu{
 
 			ul{
+				li.menu-item-has-children{
+					.sub-menu{
+						top: 49px;
+						width: 120%;
+					}
+				}
 
 				li{
 
@@ -2486,6 +2492,20 @@
 		.nav-container{
 
 			padding: 0 20px;
+		}
+
+		.top-menu{
+
+			ul{
+				li.menu-item-has-children{
+					.sub-menu{
+						top: 53px;
+						width: 100%;
+					}
+				}
+
+
+			}
 		}
 
 	}

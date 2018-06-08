@@ -82,7 +82,7 @@
 
     display: grid;
 
-    grid-template-columns: repeat(6, 1fr) 2fr;
+    grid-template-columns: repeat(5, 1fr) 2fr;
 
     text-align: center;
 
@@ -118,7 +118,7 @@
           display: block;
 
 
-          &:after, .arrow_box:before {
+          &:after, .xxx:before {
             bottom: 100%;
             left: 50%;
             border: solid transparent;
@@ -449,6 +449,14 @@
       margin-left: 0%;
       ul{
 
+        li.menu-item-has-children{
+
+          .sub-menu{
+            top: 50px;
+          }
+        }
+
+
         li{
 
           a{
@@ -460,5 +468,3 @@
   }
 
 }
-
-

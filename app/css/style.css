@@ -470,7 +470,7 @@
       margin-left: 10px; }
   .top-menu ul {
     display: grid;
-    grid-template-columns: repeat(6, 1fr) 2fr;
+    grid-template-columns: repeat(5, 1fr) 2fr;
     text-align: center;
     margin: 0; }
     .top-menu ul li.dropdown .dropdown-menu a {
@@ -484,7 +484,7 @@
       position: relative; }
       .top-menu ul li.menu-item-has-children:hover .sub-menu {
         display: block; }
-        .top-menu ul li.menu-item-has-children:hover .sub-menu:after, .top-menu ul li.menu-item-has-children:hover .sub-menu .arrow_box:before {
+        .top-menu ul li.menu-item-has-children:hover .sub-menu:after, .top-menu ul li.menu-item-has-children:hover .sub-menu .xxx:before {
           bottom: 100%;
           left: 50%;
           border: solid transparent;
@@ -656,6 +656,8 @@
 @media (min-width: 1200px) and (max-width: 1500px) {
   .top-navigation .top-menu {
     margin-left: 0%; }
+    .top-navigation .top-menu ul li.menu-item-has-children .sub-menu {
+      top: 50px; }
     .top-navigation .top-menu ul li a {
       font-size: 17px; } }
 
@@ -1609,7 +1611,8 @@ button {
       transition: display 1s !important; }
   .faq-content-section .grid-container {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%; }
+    grid-template-columns: 1fr;
+    gap: 50px; }
     .faq-content-section .grid-container button:focus {
       outline: none; }
     .faq-content-section .grid-container button {
@@ -2085,7 +2088,52 @@ button {
           color: white;
           -webkit-border-radius: 2px;
           -moz-border-radius: 2px;
-          border-radius: 2px; }
+          border-radius: 2px;
+          position: relative; }
+          .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .discount:hover .discount-info {
+            display: block;
+            opacity: 1; }
+          .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .discount .discount-info {
+            display: none;
+            opacity: 0;
+            position: absolute;
+            width: 200px;
+            z-index: 100;
+            left: -60px;
+            top: 50px;
+            padding: 10px 20px;
+            background: #0c3067;
+            background: -moz-linear-gradient(left, #005abb 0%, #0303bf 100%);
+            background: -webkit-linear-gradient(left, #005abb 0%, #0303bf 100%);
+            background: linear-gradient(to right, #0c397a 0%, #0c3067 30%, #0c3067 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005abb', endColorstr='#0303bf',GradientType=1 );
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: opacity 1s;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px; }
+            .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .discount .discount-info:after, .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .discount .discount-info .xxx:before {
+              bottom: 100%;
+              left: 50%;
+              border: solid #0c3067;
+              content: " ";
+              height: 0;
+              width: 0;
+              position: absolute;
+              pointer-events: none; }
+            .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .discount .discount-info:after {
+              border-color: rgba(136, 183, 213, 0);
+              border-bottom-color: #0c3067;
+              border-width: 10px;
+              margin-left: -10px; }
+            .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .discount .discount-info:before {
+              border-color: #0c3067;
+              border-bottom-color: #0c3067;
+              border-width: 36px;
+              margin-left: -36px; }
       .pricing-section-content .progress-form .progressbar-container .form-item .total {
         width: 100%;
         display: grid;
@@ -2108,7 +2156,8 @@ button {
           background-color: #f4f5f7;
           border-top-left-radius: 10px;
           border-bottom-left-radius: 10px; }
-          .pricing-section-content .progress-form .progressbar-container .form-item .total .left span {
+          .pricing-section-content .progress-form .progressbar-container .form-item .total .left span.total-month,
+          .pricing-section-content .progress-form .progressbar-container .form-item .total .left span.total-proxies {
             text-align: left;
             font-size: 30px; }
         .pricing-section-content .progress-form .progressbar-container .form-item .total .right {
@@ -2280,6 +2329,8 @@ button {
       text-align: center;
       font-size: 18px;
       line-height: 46px; }
+    .virgin-pricing-section .virgin-pricing .virgin-note {
+      font-size: 15px; }
 
 .virgin-content-section {
   padding: 75px 0; }
@@ -2728,6 +2779,9 @@ button {
   right: 0;
   top: 30px; }
 
+.text-underline {
+  text-decoration: underline; }
+
 .contact-top {
   padding: 10px 16% 5px;
   background-color: #a80000;
@@ -2738,6 +2792,9 @@ button {
     color: white; }
     .contact-top a:hover {
       text-decoration: underline; }
+
+.ufaq-faq-div {
+  margin-bottom: 30px; }
 
 @media (min-width: 320px) and (max-width: 575px) {
   .top-navigation {
@@ -3592,6 +3649,9 @@ button {
     padding: 0 10px; }
     .top-navigation .nav-container ul li {
       margin-right: 20px; }
+  .top-navigation .top-menu ul li.menu-item-has-children .sub-menu {
+    top: 49px;
+    width: 120%; }
   .top-navigation .top-menu ul li a {
     font-size: 15px; }
   .home-section .padding-box {
@@ -3781,6 +3841,9 @@ button {
 @media (min-width: 1200px) and (max-width: 1400px) {
   .top-navigation .nav-container {
     padding: 0 20px; }
+  .top-navigation .top-menu ul li.menu-item-has-children .sub-menu {
+    top: 53px;
+    width: 100%; }
   .home-section .padding-box {
     padding: 100px 0 0px; }
   .home-section .home-title {
