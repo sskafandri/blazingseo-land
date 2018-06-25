@@ -123,6 +123,7 @@
 
 					span{
 						font-size: 14px;
+						overflow: hidden;
 					}
 				}
 			}
@@ -136,6 +137,10 @@
 	.location-section{
 		.padding-box {
 
+			.row{
+				width: 100%;
+			}
+
 			&:before{
 				-webkit-background-size: 143%;
 				background-size: 143%;
@@ -145,6 +150,12 @@
 
 			.padding-box-xxl{
 				padding: 0;
+			}
+
+
+			.location-countries-list{
+				width: 100%;
+				margin: 0;
 			}
 		}
 
@@ -197,8 +208,10 @@
 						width: 300%;
 						padding: 8px 0;
 						top: 100%;
-						left: 0;
+						right: -137%;
 						margin-top: 20px;
+
+
 
 
 						ul{
@@ -220,7 +233,7 @@
 						}
 
 						&::after{
-							left: 20%;
+							left: 35%;
 
 						}
 					}
@@ -249,11 +262,16 @@
 		 }
 
 
+		.input-hidden{
+			height: 0;
+		}
+
 		.section-title{
 			font-size: 20px;
 		}
 
 		.register{
+			margin-top: 0;
 
 			label{
 				font-size: 14px;
@@ -341,12 +359,17 @@
 
 	//faq page start     		   +++
 	.faq-welcome-section{
-		padding: 150px 0 20px;
+		padding: 60px 0 20px;
 
 
 		.section-title{
 			font-size: 30px;
 		}
+
+
+      h5{
+        font-size: 12px;
+      }
 	}
 
 	.faq-content-section{
@@ -368,19 +391,24 @@
 
 
 				img{
-					width: 60%;
+					width: 100%;
+				}
+
+				i{
+					font-size: 25px;
 				}
 			}
 
 
 			button:nth-child(1){
-				grid-area: a;
+				grid-area: b;
+				padding: 0;
 			}
 			button:nth-child(2){
 				grid-area: d;
 			}
 			button:nth-child(3){
-				grid-area: b;
+				grid-area: a;
 			}
 			button:nth-child(4){
 				grid-area: c;
@@ -434,10 +462,83 @@
 	}
 	//faq page end      		   ---
 
+    //..ipv6 page start               +++
+
+
+    .join-ipv6-section{
+      padding: 40px 0;
+      h4{
+        font-size: 14px;
+      }
+
+      a.btn-ipv6-signUp{
+        padding: 15px 20px;
+        font-size: 15px;
+      }
+    }
+
+    .ipv6-benefit-section{
+      padding: 40px 0;
+
+
+      .benefit-title{
+        font-size: 18px;
+      }
+
+      p{
+
+      }
+    }
+
+    .ipv6-social-section{
+      padding: 40px 0;
+
+      text-align: center;
+
+      .ipv6-social{
+        img{
+          width: 50%;
+          margin-bottom: 30px;
+        }
+
+        h3{
+          font-size: 25px;
+        }
+      }
+    }
+
+    .people-saying-section {
+      padding: 40px 0;
+      h2{
+        font-size: 25px;
+        margin-bottom: 0 ;
+      }
+
+      p{
+        font-size: 15px;
+      }
+    }
+
+    .ipv6-opportunity-section {
+      padding: 40px 0;
+
+
+      h2{
+        margin-bottom: 35px;
+        font-size: 25px;
+      }
+
+      a.ipv6-oppor-btn {
+        padding: 15px 20px;
+        font-size: 15px;
+      }
+    }
+    //..ipv6 page end                 ___
+
 
 	//affiliate page start         +++
 	.affiliate-welcome-section{
-		padding: 150px 0 65px;
+		padding: 60px 0 65px;
 
 		.section-title{
 			font-size: 30px;
@@ -562,7 +663,7 @@
 	//pricing page start
 	.pricing-welcome-section{
 
-		padding: 150px 0 40px;
+		padding: 60px 0 40px;
 
 		.section-title{
 
@@ -617,6 +718,7 @@
 
 
 		.prices {
+			padding: 0;
 			.price {
 				.price-body {
 					.select-container {
@@ -712,7 +814,6 @@
 		}
 	}
 
-
 	.virgin-content-section{
 		padding: 40px 0;
 
@@ -741,7 +842,6 @@
 
 	}
 	//virgin ips page end                         ---
-
 
 	//vpn page start                              +++
 	.vpn-welcome-section{
@@ -889,6 +989,78 @@
 //----------------------------------------------------------------------------------------------------------------------
 @media (min-width: 576px) and (max-width: 767px) {
 
+  //..ipv6 page start               +++
+
+
+  .join-ipv6-section{
+    padding: 40px 0;
+    h4{
+      font-size: 14px;
+    }
+
+    a.btn-ipv6-signUp{
+      padding: 15px 20px;
+      font-size: 15px;
+    }
+  }
+
+  .ipv6-benefit-section{
+    padding: 40px 0;
+
+
+    .benefit-title{
+      font-size: 18px;
+    }
+
+    p{
+
+    }
+  }
+
+  .ipv6-social-section{
+    padding: 40px 0;
+
+    text-align: center;
+
+    .ipv6-social{
+      img{
+        width: 50%;
+        margin-bottom: 30px;
+      }
+
+      h3{
+        font-size: 25px;
+      }
+    }
+  }
+
+  .people-saying-section {
+    padding: 40px 0;
+    h2{
+      font-size: 25px;
+      margin-bottom: 0 ;
+    }
+
+    p{
+      font-size: 15px;
+    }
+  }
+
+  .ipv6-opportunity-section {
+    padding: 40px 0;
+
+
+    h2{
+      margin-bottom: 35px;
+      font-size: 25px;
+    }
+
+    a.ipv6-oppor-btn {
+      padding: 15px 20px;
+      font-size: 15px;
+    }
+  }
+  //..ipv6 page end
 
 	//homepage start               +++
 	.top-navigation{
@@ -1687,6 +1859,19 @@
     		button{
     			font-size: 11px;
     		}
+
+
+			button{
+
+				i{
+					font-size: 40px;
+
+				}
+
+				div{
+					font-size: 15px;
+				}
+			}
     	}
 
     	.question{
@@ -2499,7 +2684,7 @@
 			ul{
 				li.menu-item-has-children{
 					.sub-menu{
-						top: 53px;
+						top: 50px;
 						width: 100%;
 					}
 				}
@@ -2509,7 +2694,6 @@
 		}
 
 	}
-
 
 	.home-section {
 
@@ -2772,6 +2956,10 @@
 
 	.faq-subsection{
 		padding: 50px 0;
+
+		.section-title{
+			font-size: 35px;
+		}
 	}
 	//affiliate page end
 	
@@ -2788,6 +2976,20 @@
       }
 
 
+	}
+
+	.faq-content-section{
+		.grid-container{
+			button{
+				img{
+					width: 50%;
+				}
+
+				i{
+					font-size: 40px;
+				}
+			}
+		}
 	}
 	//faq page end
 
@@ -2861,6 +3063,18 @@
 									top: 77%;
 									left: 36%;
 								}
+							}
+						}
+					}
+
+				 	.total {
+						.left{
+							padding:30px 0px;
+						}
+						.right{
+							span.total-money{
+
+								font-size: 30px;
 							}
 						}
 					}

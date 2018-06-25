@@ -341,7 +341,7 @@ button{
 .compare-section{
 
   color: white;
-  padding: 100px;
+  padding: 50px;
   background: url("../img/compare-bg.png") no-repeat center center;
   background-size: cover ;
   //background-color: #16142b;
@@ -917,6 +917,12 @@ button{
     letter-spacing: -.9px;
   }
 
+  .input-hidden{
+    display: block;
+    height: 0;
+    width: 0;
+  }
+
 
   a {
     &:hover,
@@ -928,7 +934,7 @@ button{
   }
 
   .register {
-    margin: 50px auto 0;
+    margin: 0px auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1078,7 +1084,7 @@ button{
 
   .price-nav{
     padding: 0 30px;
-    margin-bottom: 100px;
+    margin-bottom: 75px;
 
     ul{
       display: grid;
@@ -1413,10 +1419,23 @@ button{
 .faq-content-section{
   background-color: #ededed;
   padding: 80px 0 100px;
+  position: relative;
 
-.show{
-  display: block !important;
-}
+  .padding-box{
+    padding: 0px 10%;
+
+
+    .sticky-nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+  }
+
+  .show{
+    display: block !important;
+  }
 
   .questions-wrap{
     position: relative;
@@ -1436,7 +1455,7 @@ button{
     // grid-template-columns: repeat(5, 1fr);
     //grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-columns: 1fr;
-    gap: 50px;
+    grid-row-gap: 50px;
 
     button:focus{
       outline: none;
@@ -1457,7 +1476,7 @@ button{
       transition: color 0.7s;
       
       i{
-        font-size: 35px;
+        font-size: 50px;
         margin-bottom: 20px;
       }
       
@@ -1467,6 +1486,9 @@ button{
 
       div{
         min-height: 30px;
+        font-family: $semi-bold-font;
+        font-size: 15px;
+
       }
 
       &:hover{
@@ -1803,7 +1825,7 @@ button{
   color: white;
   padding: 100px 0 125px;
   //background-color: red;
-  background: url("../img/home-ellipse.png") no-repeat  center, #FE181A;
+  background: url("../img/home-ellipse.png") no-repeat  center, $main-red;
   -webkit-background-size: cover;
   background-size: cover;
 
@@ -1872,8 +1894,8 @@ button{
 
   .progress-form{
 
-    margin: 0 200px;
-    padding-top: 70px;
+    margin: 0 150px;
+    padding-top: 0px;
 
 
     .progressbar-container{
@@ -2275,11 +2297,10 @@ button{
           grid-template-columns: 1fr 1fr;
           //background-color: blue;
           /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#005abb+0,0303bf+100 */
-          background: $main-blue; /* Old browsers */
-          background: -moz-linear-gradient(left, rgba(0,90,187,1) 0%, rgba(3,3,191,1) 100%); /* FF3.6-15 */
-          background: -webkit-linear-gradient(left, rgba(0,90,187,1) 0%,rgba(3,3,191,1) 100%); /* Chrome10-25,Safari5.1-6 */
-          background: linear-gradient(to right, rgba(0,90,187,1) 0%,rgba(3,3,191,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005abb', endColorstr='#0303bf',GradientType=1 ); /* IE6-9 */
+          background: #004cbc; /* Old browsers */
+
+          -webkit-border-radius: 15px;
+          -moz-border-radius: 15px;
           border-radius: 15px;
           font-family: $semi-bold-font;
 
@@ -2304,12 +2325,73 @@ button{
             display: flex;
             flex-direction: column;
             margin: auto;
+            position: relative;
 
             color: white;
             font-size: 20px;
+
+            .price-loading-animation{
+              display: none;
+              position: absolute;
+              width: 100%;
+              /* MARGIN: AUTO; */
+              HEIGHT: 100%;
+              Z-INDEX: 10000;
+
+
+
+
+              background:#004cbc ;
+              -webkit-border-radius: 20%;
+              -moz-border-radius: 20%;
+              border-radius: 20%;
+
+              .lds-ellipsis{
+                margin: auto;
+              }
+
+            }
+
+            .trial-text{
+              display: none;
+              opacity: 0;
+              font-size: 25px;
+              margin:0 10px;
+            }
+
+            .trial-text.active-trial{
+              display: block;
+              opacity: 1;
+
+
+            }
             span.total-money{
               display: block;
               font-size: 40px;
+
+
+            }
+
+            .total-money.trial-text-below{
+              font-family: MetropolisRegular, sans-serif;
+              font-size: 19px !important;
+
+              margin: 10px;
+            }
+
+            .total-money span{
+
+              position: relative;
+
+              &:after{
+                display: none;
+                position: absolute;
+                color: #dddd;
+                content: '/mo';
+                top: 50%;
+                right: 2%;
+                font-size: 20px;
+              }
             }
 
           }
@@ -2493,8 +2575,8 @@ button{
   background-color: #f7f7f7;
   
   .section-title{
-    font-family: $bold-font;
-    font-size: 25px;
+    font-family: $semi-bold-font;
+    font-size: 30px;
     letter-spacing: -0.9px;
   }
 
@@ -2807,6 +2889,9 @@ button{
 
 .vpn-features-section{
   background-color: #211f35;
+  background: url("../img/compare-bg.png") repeat center center;
+  background-size: cover;
+
   padding: 100px 0;
   color: white;
 
@@ -2880,7 +2965,14 @@ button{
 
 .vpn-get-started-section{
   padding: 100px 0;
-  background-color: #229ed5;
+  background: #026FCE;
+  background: linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+  background-image: linear-gradient(45deg, rgb(11, 65, 130) 1%, rgb(30, 136, 229) 64%, rgb(64, 186, 245) 97%);
+  background-image: -ms-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+  background-image: -moz-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+  background-image: -o-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+  background-image: -webkit-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+  background-image: linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
   color: white;
 
   .section-title{
@@ -2914,7 +3006,7 @@ button{
     -o-transition: all 0.5s;
     transition: all 0.5s;
     &:hover{
-      background-color: #eeeeee;
+      background-color: #d3d3d3;
     }
 
   }
@@ -2922,6 +3014,10 @@ button{
 
 // vpn page end               ---
 
+
+.job-listing .job-preview{
+  font-family: $semi-bold-font;
+}
 
 
 //Windows vps page start          +++
@@ -3278,6 +3374,148 @@ button{
 //Blog page             ---
 
 
+
+// IPV6 page start                 +++
+
+.join-ipv6-section{
+  padding: 75px 0;
+
+  h4{
+    color: #615f5f;
+    font-size: 20px;
+  }
+
+  h2{
+
+    font-family: $semi-bold-font;
+    letter-spacing: -0.9px;
+    font-size: 30px;
+    margin-bottom: 50px;
+  }
+  a.btn-ipv6-signUp{
+    padding: 30px 50px;
+    background: #0c3067;
+    background: -moz-linear-gradient(left, #005abb 0%, #00006f 100%);
+    background: -webkit-linear-gradient(left, #005abb 0%, #00006f 100%);
+    background: linear-gradient(to right, #005abb 0%, #00006f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005abb', endColorstr='#00006f',GradientType=1 );
+
+    color: white;
+    font: $bold-font;
+    font-size: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+  }
+}
+
+
+.ipv6-benefit-section{
+  background-color: #f5f5f5;
+  padding: 75px 0;
+  .ipv6-benefit{
+    text-align: center;
+    padding: 20px;
+
+
+    i{
+      color: red;
+      font-size: 80px;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.ipv6-social-section{
+  padding: 75px 0;
+
+  .ipv6-social{
+    padding: 50px 0;
+    h3{
+      font-size: 40px;
+      font-family: $semi-bold-font;
+    }
+
+    h5{
+      font-family: $semi-bold-font;
+      color: #000;
+    }
+
+    p{
+      font-family: $regular-font;
+    }
+  }
+
+
+}
+
+.people-saying-section{
+  background-color: #229ed5;
+  padding: 75px 0;
+
+  color: white;
+
+  h2{
+    font: $semi-bold-font;
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  p{
+    font: $regular-font;
+    font-size: 25px;
+  }
+}
+
+.ipv6-opportunity-section{
+  padding: 75px 0;
+
+  h2{
+    margin-bottom: 50px;
+  }
+  
+  a.ipv6-oppor-btn{
+
+    padding: 30px 50px;
+    background: #0c3067;
+    background: -moz-linear-gradient(left, #005abb 0%, #00006f 100%);
+    background: -webkit-linear-gradient(left, #005abb 0%, #00006f 100%);
+    background: linear-gradient(to right, #005abb 0%, #00006f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005abb', endColorstr='#00006f',GradientType=1 );
+    color: white;
+    font: $bold-font;
+    font-size: 25px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    
+    &:hover{
+      font-size: 27px;
+    }
+  }
+}
+
+.terms-of-service-ipv6{
+  background-color: #005abb;
+  color: white;
+  text-align: center;
+  font: $regular-font;
+  padding: 50px;
+
+
+
+}
+// IPV6 page end                   ---
+
+
+
+
 .welcome-section-padding{
   padding: 100px 0 125px;
 }
@@ -3361,4 +3599,87 @@ button{
 .ufaq-faq-div{
   margin-bottom: 30px;
 }
+
+
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(19px, 0);
+  }
+}
+
+.validation-info{
+  border: 2px solid $main-red;
+  text-align: center;
+  opacity: 0;
+
+  margin: 50px auto 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 100%;
+  font-family: $regular-font;
+
+  padding: 20px;
+
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+
+
 @import "media";
+

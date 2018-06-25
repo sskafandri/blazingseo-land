@@ -1,0 +1,20 @@
+{"pricing": [{
+  "productId":44,
+  "meta":{
+    "ipVersion":"4",
+    "type":"single",
+    "country":"us",
+    "category":"sneaker",
+    "ext":null
+  },
+  "trial":"2",
+  "trialQuantity":5,
+  "pricingTiersForCycles":{
+    "monthly":{
+      "tiers":[{
+        "from":1,
+        "to":199,
+        "price":0.41
+      }, {
+        "from":
+        200,"to":999,"price":1.1}]},"quarterly":{"tiers":[{"from":1,"to":9999999,"price":4}]},"semiannually":{"tiers":[{"from":1,"to":9999999,"price":8}]}}},{"productId":41,"meta":{"ipVersion":"4","type":"single","country":"de","category":"dedicated","ext":null},"trial":"11","trialQuantity":5,"pricingTiersForCycles":{"monthly":{"tiers":[{"from":1,"to":9999999,"price":0.42}]}}},{"productId":2484,"meta":{"ipVersion":"4","type":"single","country":"de","category":"semi-3","ext":null},"trial":0,"trialQuantity":5,"pricingTiersForCycles":{"monthly":{"tiers":[{"from":3,"to":10,"price":1},{"from":11,"to":9999999,"price":1.1}]}}},{"productId":3010,"meta":{"ipVersion":"4","type":"single","country":"gb","category":"semi-3","ext":null},"trial":0,"trialQuantity":5,"pricingTiersForCycles":{"monthly":{"tiers":[{"from":1,"to":9999999,"price":1}]}}},{"productId":3037,"meta":{"ipVersion":"4","type":"single","country":"gb","category":"sneaker","ext":null},"trial":0,"trialQuantity":5,"pricingTiersForCycles":{"monthly":{"tiers":[{"from":1,"to":9999999,"price":1}]}}},{"productId":3683,"meta":{"ipVersion":"4","type":"single","country":"us","category":"block","ext":null},"trial":0,"trialQuantity":5,"pricingTiersForCycles":{"monthly":{"tiers":[{"from":1,"to":9999999,"price":1}]}}},{"productId":2890,"meta":{"ipVersion":"6","type":"block_n_per_block","country":null,"category":null,"ext":{"subnet":56,"perSubnet":2}},"trial":0,"trialQuantity":5,"pricingTiersForCycles":{"monthly":{"tiers":[{"from":1,"to":9999999,"price":2}]},"quarterly":{"tiers":[{"from":1,"to":9999999,"price":2}]}}},{"productId":55,"meta":{"ipVersion":"4","type":"single","country":"us","category":"dedicated","ext":null},"trial":"2","trialQuantity":5,"pricingTiersForCycles":{"monthly":{"tiers":[{"from":1,"to":3,"price":1},{"from":4,"to":19,"price":1},{"from":20,"to":499,"price":1},{"from":500,"to":9999,"price":1.1}]},"quarterly":{"tiers":[{"from":1,"to":4,"price":2},{"from":5,"to":9999999,"price":5}]},"semiannually":{"tiers":[{"from":1,"to":22,"price":3},{"from":23,"to":9999999,"price":3}]}}},{"productId":2266,"meta":{"ipVersion":"4","type":"single","country":"gb","category":"dedicated","ext":null},"trial":0,"trialQuantity":5,"pricingTiersForCycles":{"monthly":{"tiers":[{"from":1,"to":1,"price":0.01},{"from":2,"to":9999999,"price":0.02}]},"quarterly":{"tiers":[{"from":1,"to":9999999,"price":1}]}}},{"productId":39,"meta":{"ipVersion":"4","type":"single","country":"us","category":"semi-3","ext":null},"trial":0,"trialQuantity":5,"pricingTiersForCycles":{"monthly":{"tiers":[{"from":1,"to":99,"price":0.5},{"from":100,"to":9999999,"price":0.4}]},"quarterly":{"tiers":[{"from":3,"to":9999999,"price":5}]}}},{"productId":236,"meta":{"ipVersion":"4","type":"single","country":"us","category":"rotating","ext":null},"trial":"1","trialQuantity":5,"pricingTiersForCycles":{"monthly":{"tiers":[{"from":1,"to":10,"price":1},{"from":20,"to":29,"price":1},{"from":50,"to":149,"price":1}]},"quarterly":{"tiers":[{"from":1,"to":24,"price":2},{"from":25,"to":9999999,"price":1}]},"semiannually":{"tiers":[{"from":1,"to":9999999,"price":1}]}}}]}

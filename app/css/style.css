@@ -432,7 +432,7 @@
   src: url("../fonts/futura/FuturaLight.ttf") format("truetype"); }
 
 .top-navigation {
-  background-color: #0c3067; }
+  background-color: #a80000; }
   .top-navigation .navbar-brand {
     margin-top: 20px; }
 
@@ -461,7 +461,8 @@
     -moz-border-radius: 10px;
     border-radius: 10px; }
   .top-menu .menu-list li.current-menu-item:nth-child(2),
-  .top-menu .menu-list li.current-menu-item:nth-child(3) {
+  .top-menu .menu-list li.current-menu-item:nth-child(3),
+  .top-menu .menu-list li.current-menu-item:nth-child(5) {
     background-color: transparent; }
   .top-menu .menu-list .menu-item-has-children {
     margin-top: 10px;
@@ -495,7 +496,7 @@
           pointer-events: none; }
         .top-menu ul li.menu-item-has-children:hover .sub-menu:after {
           border-color: rgba(136, 183, 213, 0);
-          border-bottom-color: white;
+          border-bottom-color: #ededee;
           border-width: 10px;
           margin-left: -10px; }
         .top-menu ul li.menu-item-has-children:hover .sub-menu:before {
@@ -503,8 +504,6 @@
           border-bottom-color: #c2e1f5;
           border-width: 36px;
           margin-left: -36px; }
-        .top-menu ul li.menu-item-has-children:hover .sub-menu li:hover {
-          background-color: #eee; }
       .top-menu ul li.menu-item-has-children .sub-menu {
         padding: 5px;
         display: none;
@@ -515,7 +514,7 @@
         border-radius: 10px;
         color: #a80000;
         width: 100%;
-        background-color: #fff;
+        background-color: #eee;
         -webkit-transition: all 0.6s;
         -moz-transition: all 0.6s;
         -ms-transition: all 0.6s;
@@ -523,6 +522,17 @@
         transition: all 0.6s; }
         .top-menu ul li.menu-item-has-children .sub-menu a {
           color: #a80000; }
+        .top-menu ul li.menu-item-has-children .sub-menu li {
+          transition: all .15s linear; }
+          .top-menu ul li.menu-item-has-children .sub-menu li:hover {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(3, 27, 78, 0.06);
+            position: relative;
+            -webkit-transform: scale(1.15);
+            -moz-transform: scale(1.15);
+            -ms-transform: scale(1.15);
+            -o-transform: scale(1.15);
+            transform: scale(1.15); }
     .top-menu ul li {
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
@@ -864,7 +874,7 @@ button {
 
 .compare-section {
   color: white;
-  padding: 100px;
+  padding: 50px;
   background: url("../img/compare-bg.png") no-repeat center center;
   background-size: cover; }
   .compare-section .container {
@@ -1251,10 +1261,14 @@ button {
     font-family: MetropolisSemiBold, sans-serif;
     font-size: 30px;
     letter-spacing: -.9px; }
+  .join-section .input-hidden {
+    display: block;
+    height: 0;
+    width: 0; }
   .join-section a:hover, .join-section a:visited, .join-section a:hover, .join-section a:link {
     color: rgba(255, 255, 255, 0.6); }
   .join-section .register {
-    margin: 50px auto 0;
+    margin: 0px auto 0;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -1367,7 +1381,7 @@ button {
       /* IE6-9 */ }
   .pricing-section .price-nav {
     padding: 0 30px;
-    margin-bottom: 100px; }
+    margin-bottom: 75px; }
     .pricing-section .price-nav ul {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -1600,7 +1614,14 @@ button {
 
 .faq-content-section {
   background-color: #ededed;
-  padding: 80px 0 100px; }
+  padding: 80px 0 100px;
+  position: relative; }
+  .faq-content-section .padding-box {
+    padding: 0px 10%; }
+    .faq-content-section .padding-box .sticky-nav {
+      position: fixed;
+      top: 0;
+      width: 100%; }
   .faq-content-section .show {
     display: block !important; }
   .faq-content-section .questions-wrap {
@@ -1612,7 +1633,7 @@ button {
   .faq-content-section .grid-container {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 50px; }
+    grid-row-gap: 50px; }
     .faq-content-section .grid-container button:focus {
       outline: none; }
     .faq-content-section .grid-container button {
@@ -1629,12 +1650,14 @@ button {
       -o-transition: color 0.7s;
       transition: color 0.7s; }
       .faq-content-section .grid-container button i {
-        font-size: 35px;
+        font-size: 50px;
         margin-bottom: 20px; }
       .faq-content-section .grid-container button img {
         margin-bottom: 10px; }
       .faq-content-section .grid-container button div {
-        min-height: 30px; }
+        min-height: 30px;
+        font-family: MetropolisSemiBold, sans-serif;
+        font-size: 15px; }
       .faq-content-section .grid-container button:hover {
         color: red; }
       .faq-content-section .grid-container button.active {
@@ -1831,7 +1854,7 @@ button {
 .pricing-welcome-section {
   color: white;
   padding: 100px 0 125px;
-  background: url("../img/home-ellipse.png") no-repeat center, #FE181A;
+  background: url("../img/home-ellipse.png") no-repeat center, #a80000;
   -webkit-background-size: cover;
   background-size: cover; }
   .pricing-welcome-section h1 {
@@ -1869,8 +1892,8 @@ button {
   .pricing-section-content .price.recommended .price-body {
     padding-top: 0; }
   .pricing-section-content .progress-form {
-    margin: 0 200px;
-    padding-top: 70px; }
+    margin: 0 150px;
+    padding-top: 0px; }
     .pricing-section-content .progress-form .progressbar-container {
       display: grid;
       grid-row-gap: 50px;
@@ -2139,16 +2162,10 @@ button {
         display: grid;
         grid-template-columns: 1fr 1fr;
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#005abb+0,0303bf+100 */
-        background: #0c3067;
+        background: #004cbc;
         /* Old browsers */
-        background: -moz-linear-gradient(left, #005abb 0%, #0303bf 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #005abb 0%, #0303bf 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #005abb 0%, #0303bf 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005abb', endColorstr='#0303bf',GradientType=1 );
-        /* IE6-9 */
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
         border-radius: 15px;
         font-family: MetropolisSemiBold, sans-serif; }
         .pricing-section-content .progress-form .progressbar-container .form-item .total .left {
@@ -2164,11 +2181,47 @@ button {
           display: flex;
           flex-direction: column;
           margin: auto;
+          position: relative;
           color: white;
           font-size: 20px; }
+          .pricing-section-content .progress-form .progressbar-container .form-item .total .right .price-loading-animation {
+            display: none;
+            position: absolute;
+            width: 100%;
+            /* MARGIN: AUTO; */
+            HEIGHT: 100%;
+            Z-INDEX: 10000;
+            background: #004cbc;
+            -webkit-border-radius: 20%;
+            -moz-border-radius: 20%;
+            border-radius: 20%; }
+            .pricing-section-content .progress-form .progressbar-container .form-item .total .right .price-loading-animation .lds-ellipsis {
+              margin: auto; }
+          .pricing-section-content .progress-form .progressbar-container .form-item .total .right .trial-text {
+            display: none;
+            opacity: 0;
+            font-size: 25px;
+            margin: 0 10px; }
+          .pricing-section-content .progress-form .progressbar-container .form-item .total .right .trial-text.active-trial {
+            display: block;
+            opacity: 1; }
           .pricing-section-content .progress-form .progressbar-container .form-item .total .right span.total-money {
             display: block;
             font-size: 40px; }
+          .pricing-section-content .progress-form .progressbar-container .form-item .total .right .total-money.trial-text-below {
+            font-family: MetropolisRegular, sans-serif;
+            font-size: 19px !important;
+            margin: 10px; }
+          .pricing-section-content .progress-form .progressbar-container .form-item .total .right .total-money span {
+            position: relative; }
+            .pricing-section-content .progress-form .progressbar-container .form-item .total .right .total-money span:after {
+              display: none;
+              position: absolute;
+              color: #dddd;
+              content: '/mo';
+              top: 50%;
+              right: 2%;
+              font-size: 20px; }
       .pricing-section-content .progress-form .progressbar-container .form-item .complete-order-btn {
         margin-top: 20px;
         width: 100%;
@@ -2271,8 +2324,8 @@ button {
   padding: 50px 0;
   background-color: #f7f7f7; }
   .virgin-benefit-section .section-title {
-    font-family: MetropolisBold, sans-serif;
-    font-size: 25px;
+    font-family: MetropolisSemiBold, sans-serif;
+    font-size: 30px;
     letter-spacing: -0.9px; }
   .virgin-benefit-section .virgin-benefit {
     display: grid;
@@ -2457,6 +2510,8 @@ button {
 
 .vpn-features-section {
   background-color: #211f35;
+  background: url("../img/compare-bg.png") repeat center center;
+  background-size: cover;
   padding: 100px 0;
   color: white; }
   .vpn-features-section .section-title {
@@ -2508,7 +2563,14 @@ button {
 
 .vpn-get-started-section {
   padding: 100px 0;
-  background-color: #229ed5;
+  background: #026FCE;
+  background: linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+  background-image: linear-gradient(45deg, #0b4182 1%, #1e88e5 64%, #40baf5 97%);
+  background-image: -ms-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+  background-image: -moz-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+  background-image: -o-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+  background-image: -webkit-linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
+  background-image: linear-gradient(45deg, #0B4182 1%, #1e88e5 64%, #40BAF5 97%);
   color: white; }
   .vpn-get-started-section .section-title {
     font-size: 50px;
@@ -2534,7 +2596,10 @@ button {
     -o-transition: all 0.5s;
     transition: all 0.5s; }
     .vpn-get-started-section .vpn-btn-get-started:hover {
-      background-color: #eeeeee; }
+      background-color: #d3d3d3; }
+
+.job-listing .job-preview {
+  font-family: MetropolisSemiBold, sans-serif; }
 
 .windows-vps-content-section {
   padding: 100px 0; }
@@ -2743,6 +2808,98 @@ button {
   font-family: FuturaMedium, sans-serif, sans-serif !important;
   font-weight: 400 !important; }
 
+.join-ipv6-section {
+  padding: 75px 0; }
+  .join-ipv6-section h4 {
+    color: #615f5f;
+    font-size: 20px; }
+  .join-ipv6-section h2 {
+    font-family: MetropolisSemiBold, sans-serif;
+    letter-spacing: -0.9px;
+    font-size: 30px;
+    margin-bottom: 50px; }
+  .join-ipv6-section a.btn-ipv6-signUp {
+    padding: 30px 50px;
+    background: #0c3067;
+    background: -moz-linear-gradient(left, #005abb 0%, #00006f 100%);
+    background: -webkit-linear-gradient(left, #005abb 0%, #00006f 100%);
+    background: linear-gradient(to right, #005abb 0%, #00006f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005abb', endColorstr='#00006f',GradientType=1 );
+    color: white;
+    font: MetropolisBold, sans-serif;
+    font-size: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px; }
+
+.ipv6-benefit-section {
+  background-color: #f5f5f5;
+  padding: 75px 0; }
+  .ipv6-benefit-section .ipv6-benefit {
+    text-align: center;
+    padding: 20px; }
+    .ipv6-benefit-section .ipv6-benefit i {
+      color: red;
+      font-size: 80px;
+      margin-bottom: 25px; }
+
+.ipv6-social-section {
+  padding: 75px 0; }
+  .ipv6-social-section .ipv6-social {
+    padding: 50px 0; }
+    .ipv6-social-section .ipv6-social h3 {
+      font-size: 40px;
+      font-family: MetropolisSemiBold, sans-serif; }
+    .ipv6-social-section .ipv6-social h5 {
+      font-family: MetropolisSemiBold, sans-serif;
+      color: #000; }
+    .ipv6-social-section .ipv6-social p {
+      font-family: MetropolisRegular, sans-serif; }
+
+.people-saying-section {
+  background-color: #229ed5;
+  padding: 75px 0;
+  color: white; }
+  .people-saying-section h2 {
+    font: MetropolisSemiBold, sans-serif;
+    font-size: 40px;
+    margin-bottom: 30px; }
+  .people-saying-section p {
+    font: MetropolisRegular, sans-serif;
+    font-size: 25px; }
+
+.ipv6-opportunity-section {
+  padding: 75px 0; }
+  .ipv6-opportunity-section h2 {
+    margin-bottom: 50px; }
+  .ipv6-opportunity-section a.ipv6-oppor-btn {
+    padding: 30px 50px;
+    background: #0c3067;
+    background: -moz-linear-gradient(left, #005abb 0%, #00006f 100%);
+    background: -webkit-linear-gradient(left, #005abb 0%, #00006f 100%);
+    background: linear-gradient(to right, #005abb 0%, #00006f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005abb', endColorstr='#00006f',GradientType=1 );
+    color: white;
+    font: MetropolisBold, sans-serif;
+    font-size: 25px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .ipv6-opportunity-section a.ipv6-oppor-btn:hover {
+      font-size: 27px; }
+
+.terms-of-service-ipv6 {
+  background-color: #005abb;
+  color: white;
+  text-align: center;
+  font: MetropolisRegular, sans-serif;
+  padding: 50px; }
+
 .welcome-section-padding {
   padding: 100px 0 125px; }
 
@@ -2795,6 +2952,72 @@ button {
 
 .ufaq-faq-div {
   margin-bottom: 30px; }
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px; }
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 27px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0); }
+
+.lds-ellipsis div:nth-child(1) {
+  left: 6px;
+  animation: lds-ellipsis1 0.6s infinite; }
+
+.lds-ellipsis div:nth-child(2) {
+  left: 6px;
+  animation: lds-ellipsis2 0.6s infinite; }
+
+.lds-ellipsis div:nth-child(3) {
+  left: 26px;
+  animation: lds-ellipsis2 0.6s infinite; }
+
+.lds-ellipsis div:nth-child(4) {
+  left: 45px;
+  animation: lds-ellipsis3 0.6s infinite; }
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0); } }
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0); }
+  100% {
+    transform: translate(19px, 0); } }
+
+.validation-info {
+  border: 2px solid #a80000;
+  text-align: center;
+  opacity: 0;
+  margin: 50px auto 0;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  width: 100%;
+  font-family: MetropolisRegular, sans-serif;
+  padding: 20px;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s; }
 
 @media (min-width: 320px) and (max-width: 575px) {
   .top-navigation {
@@ -2857,15 +3080,21 @@ button {
       .solution-section .card .card-header button img {
         margin-right: 0 !important; }
       .solution-section .card .card-header button span {
-        font-size: 14px; }
+        font-size: 14px;
+        overflow: hidden; }
     .solution-section .card .card-body {
       padding: 15px !important; }
+  .location-section .padding-box .row {
+    width: 100%; }
   .location-section .padding-box:before {
     -webkit-background-size: 143%;
     background-size: 143%;
     background-position: -100px 42%; }
   .location-section .padding-box .padding-box-xxl {
     padding: 0; }
+  .location-section .padding-box .location-countries-list {
+    width: 100%;
+    margin: 0; }
   .location-section .section-title {
     font-size: 27px; }
   .location-section p {
@@ -2891,7 +3120,7 @@ button {
       width: 300%;
       padding: 8px 0;
       top: 100%;
-      left: 0;
+      right: -137%;
       margin-top: 20px; }
       .location-section ul.location-countries-list li button .cities-popup ul {
         width: 100%;
@@ -2906,7 +3135,7 @@ button {
           border-radius: 15px;
           border: 0; }
       .location-section ul.location-countries-list li button .cities-popup::after {
-        left: 20%; }
+        left: 35%; }
     .location-section ul.location-countries-list li button .cities-popup-show {
       visibility: visible; }
   .join-section {
@@ -2914,17 +3143,21 @@ button {
     margin-top: 50px; }
     .join-section .field input {
       width: 90%; }
+    .join-section .input-hidden {
+      height: 0; }
     .join-section .section-title {
       font-size: 20px; }
-    .join-section .register label {
-      font-size: 14px; }
-    .join-section .register .field input.active {
-      font-size: 14px; }
-    .join-section .register button {
-      font-size: 0;
-      width: 25%; }
-      .join-section .register button img {
-        margin-left: 16px; }
+    .join-section .register {
+      margin-top: 0; }
+      .join-section .register label {
+        font-size: 14px; }
+      .join-section .register .field input.active {
+        font-size: 14px; }
+      .join-section .register button {
+        font-size: 0;
+        width: 25%; }
+        .join-section .register button img {
+          margin-left: 16px; }
   .pricing-section {
     padding: 50px 0; }
     .pricing-section .section-title {
@@ -2957,9 +3190,11 @@ button {
       margin-top: 20px;
       font-size: 10px; }
   .faq-welcome-section {
-    padding: 150px 0 20px; }
+    padding: 60px 0 20px; }
     .faq-welcome-section .section-title {
       font-size: 30px; }
+    .faq-welcome-section h5 {
+      font-size: 12px; }
   .faq-content-section {
     padding: 50px 0 50px; }
     .faq-content-section .grid-container {
@@ -2970,13 +3205,16 @@ button {
       .faq-content-section .grid-container button div {
         display: none; }
       .faq-content-section .grid-container button img {
-        width: 60%; }
+        width: 100%; }
+      .faq-content-section .grid-container button i {
+        font-size: 25px; }
       .faq-content-section .grid-container button:nth-child(1) {
-        grid-area: a; }
+        grid-area: b;
+        padding: 0; }
       .faq-content-section .grid-container button:nth-child(2) {
         grid-area: d; }
       .faq-content-section .grid-container button:nth-child(3) {
-        grid-area: b; }
+        grid-area: a; }
       .faq-content-section .grid-container button:nth-child(4) {
         grid-area: c; }
       .faq-content-section .grid-container button:nth-child(5) {
@@ -3002,8 +3240,42 @@ button {
       .faq-content-section .question .question-body .text {
         padding: 17px;
         font-size: 12px; }
+  .join-ipv6-section {
+    padding: 40px 0; }
+    .join-ipv6-section h4 {
+      font-size: 14px; }
+    .join-ipv6-section a.btn-ipv6-signUp {
+      padding: 15px 20px;
+      font-size: 15px; }
+  .ipv6-benefit-section {
+    padding: 40px 0; }
+    .ipv6-benefit-section .benefit-title {
+      font-size: 18px; }
+  .ipv6-social-section {
+    padding: 40px 0;
+    text-align: center; }
+    .ipv6-social-section .ipv6-social img {
+      width: 50%;
+      margin-bottom: 30px; }
+    .ipv6-social-section .ipv6-social h3 {
+      font-size: 25px; }
+  .people-saying-section {
+    padding: 40px 0; }
+    .people-saying-section h2 {
+      font-size: 25px;
+      margin-bottom: 0; }
+    .people-saying-section p {
+      font-size: 15px; }
+  .ipv6-opportunity-section {
+    padding: 40px 0; }
+    .ipv6-opportunity-section h2 {
+      margin-bottom: 35px;
+      font-size: 25px; }
+    .ipv6-opportunity-section a.ipv6-oppor-btn {
+      padding: 15px 20px;
+      font-size: 15px; }
   .affiliate-welcome-section {
-    padding: 150px 0 65px; }
+    padding: 60px 0 65px; }
     .affiliate-welcome-section .section-title {
       font-size: 30px; }
   .affiliate-content-section .starter-banner .banner-left {
@@ -3064,7 +3336,7 @@ button {
         padding: 17px;
         font-size: 12px; }
   .pricing-welcome-section {
-    padding: 150px 0 40px; }
+    padding: 60px 0 40px; }
     .pricing-welcome-section .section-title {
       font-size: 30px; }
   .pricing-section-content .progress-form {
@@ -3081,8 +3353,10 @@ button {
         font-size: 30px; }
       .pricing-section-content .progress-form .progressbar-container .progressbar-item {
         display: none; }
-  .pricing-section-content .prices .price .price-body .select-container {
-    width: 85%; }
+  .pricing-section-content .prices {
+    padding: 0; }
+    .pricing-section-content .prices .price .price-body .select-container {
+      width: 85%; }
   .page-not-found-content h2 {
     font-size: 18px; }
     .page-not-found-content h2 span {
@@ -3188,6 +3462,40 @@ button {
       padding: 10px 10px; } }
 
 @media (min-width: 576px) and (max-width: 767px) {
+  .join-ipv6-section {
+    padding: 40px 0; }
+    .join-ipv6-section h4 {
+      font-size: 14px; }
+    .join-ipv6-section a.btn-ipv6-signUp {
+      padding: 15px 20px;
+      font-size: 15px; }
+  .ipv6-benefit-section {
+    padding: 40px 0; }
+    .ipv6-benefit-section .benefit-title {
+      font-size: 18px; }
+  .ipv6-social-section {
+    padding: 40px 0;
+    text-align: center; }
+    .ipv6-social-section .ipv6-social img {
+      width: 50%;
+      margin-bottom: 30px; }
+    .ipv6-social-section .ipv6-social h3 {
+      font-size: 25px; }
+  .people-saying-section {
+    padding: 40px 0; }
+    .people-saying-section h2 {
+      font-size: 25px;
+      margin-bottom: 0; }
+    .people-saying-section p {
+      font-size: 15px; }
+  .ipv6-opportunity-section {
+    padding: 40px 0; }
+    .ipv6-opportunity-section h2 {
+      margin-bottom: 35px;
+      font-size: 25px; }
+    .ipv6-opportunity-section a.ipv6-oppor-btn {
+      padding: 15px 20px;
+      font-size: 15px; }
   .top-navigation {
     padding: 0; }
     .top-navigation .nav-container {
@@ -3527,6 +3835,10 @@ button {
     padding: 50px 0 80px; }
     .faq-content-section .grid-container button {
       font-size: 11px; }
+    .faq-content-section .grid-container button i {
+      font-size: 40px; }
+    .faq-content-section .grid-container button div {
+      font-size: 15px; }
     .faq-content-section .question .question-btn {
       padding: 20px 30px; }
       .faq-content-section .question .question-btn span {
@@ -3842,7 +4154,7 @@ button {
   .top-navigation .nav-container {
     padding: 0 20px; }
   .top-navigation .top-menu ul li.menu-item-has-children .sub-menu {
-    top: 53px;
+    top: 50px;
     width: 100%; }
   .home-section .padding-box {
     padding: 100px 0 0px; }
@@ -3962,10 +4274,16 @@ button {
     font-size: 40px; }
   .faq-subsection {
     padding: 50px 0; }
+    .faq-subsection .section-title {
+      font-size: 35px; }
   .faq-welcome-section .section-title {
     font-size: 40px; }
   .faq-welcome-section h5 {
     font-size: 25px !important; }
+  .faq-content-section .grid-container button img {
+    width: 50%; }
+  .faq-content-section .grid-container button i {
+    font-size: 40px; }
   .pricing-welcome-section .section-title {
     font-size: 40px; }
   .pricing-section-content .price-nav {
@@ -3998,6 +4316,10 @@ button {
         .pricing-section-content .progress-form .progressbar-container .form-item .duration .duration-item .select-duration-container .checkmark {
           top: 77%;
           left: 36%; }
+      .pricing-section-content .progress-form .progressbar-container .form-item .total .left {
+        padding: 30px 0px; }
+      .pricing-section-content .progress-form .progressbar-container .form-item .total .right span.total-money {
+        font-size: 30px; }
   .vpn-welcome-section .vpn-welcome-title {
     font-size: 42px; }
   .vpn-sub-welcome-section {
